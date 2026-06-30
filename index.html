@@ -3,68 +3,730 @@
 
 <head>
 
-    <!-- Basic -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <title>Investment Technology Indonesia | Digital Transformation & Software Development</title>
+<title>Investment Technology Indonesia | Digital Transformation</title>
 
-    <meta name="description"
-        content="Investment Technology Indonesia menyediakan layanan Software Development, Mobile Apps, Website, ERP, AI, Networking, Cloud, Cyber Security dan Digital Transformation.">
+<meta name="description"
+content="Investment Technology Indonesia - Software Development, Website, Mobile App, ERP, AI, Cloud, Networking, Cyber Security">
 
-    <meta name="keywords"
-        content="Software House Indonesia, Mobile App, Website, ERP, AI, Company Profile, Investment Technology Indonesia">
+<meta name="keywords"
+content="Software House Indonesia, ERP, AI, Website, Mobile App">
 
-    <meta name="author"
-        content="Investment Technology Indonesia">
+<meta name="author"
+content="Investment Technology Indonesia">
 
-    <meta name="robots"
-        content="index, follow">
+<meta name="robots"
+content="index,follow">
 
-    <!-- Open Graph -->
-    <meta property="og:title"
-        content="Investment Technology Indonesia">
+<meta property="og:type"
+content="website">
 
-    <meta property="og:description"
-        content="Digital Transformation & Software Development Company">
+<meta property="og:title"
+content="Investment Technology Indonesia">
 
-    <meta property="og:type"
-        content="website">
+<meta property="og:description"
+content="Digital Transformation Company">
 
-    <meta property="og:image"
-        content="assets/images/logo.png">
+<meta property="og:image"
+content="assets/images/logo.png">
 
-    <!-- Favicon -->
-    <link rel="icon"
-        href="assets/images/favicon.ico">
+<link rel="icon"
+href="assets/images/favicon.ico">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- AOS Animation -->
-    <link rel="stylesheet"
-        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet"
-        href="assets/css/style.css">
+<style>
 
-</head>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f1117;
+color:#ffffff;
+overflow-x:hidden;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+}
+
+ul{
+list-style:none;
+}
+
+.container{
+width:90%;
+max-width:1280px;
+margin:auto;
+}
+
+section{
+padding:110px 0;
+}
+
+:root{
+
+--primary:#d60000;
+--secondary:#ff4040;
+--dark:#0f1117;
+--light:#ffffff;
+--gray:#cccccc;
+--glass:rgba(255,255,255,.08);
+
+}
+
+.btn{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:15px 30px;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+
+}
+
+.btn-primary{
+
+background:var(--primary);
+color:white;
+
+}
+
+.btn-primary:hover{
+
+background:var(--secondary);
+
+}
+
+.btn-outline{
+
+border:2px solid white;
+color:white;
+
+}
+
+.btn-outline:hover{
+
+background:white;
+color:#111;
+
+}
+
+.section-title{
+
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.section-title span{
+
+color:#ff4040;
+font-weight:600;
+letter-spacing:2px;
+text-transform:uppercase;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+margin-top:15px;
+
+}
+
+.section-title p{
+
+max-width:760px;
+margin:20px auto;
+line-height:1.8;
+color:#ccc;
+
+}
+
+/* PRELOADER */
+
+#preloader{
+
+position:fixed;
+inset:0;
+background:#0f1117;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+
+}
+
+.loader{
+
+text-align:center;
+
+}
+
+.loader img{
+
+width:110px;
+animation:rotateLogo 8s linear infinite;
+
+}
+
+.loader h2{
+
+margin-top:20px;
+font-size:30px;
+
+}
+
+.loader span{
+
+color:#bbb;
+
+}
+
+@keyframes rotateLogo{
+
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 0;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(15px);
+border-bottom:1px solid rgba(255,255,255,.08);
+z-index:9999;
+
+}
+
+.navbar-wrapper{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:15px;
+color:white;
+
+}
+
+.logo img{
+
+width:55px;
+
+}
+
+.logo h3{
+
+font-size:18px;
+
+}
+
+.logo small{
+
+color:#ccc;
+
+}
+
+.nav-menu{
+
+display:flex;
+gap:30px;
+
+}
+
+.nav-menu a{
+
+color:white;
+font-weight:500;
+transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+color:#ff4040;
+
+}
+
+/* ========================================= */
+/* HERO */
+/* ========================================= */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.75),
+    rgba(0,0,0,.75)),
+    url("assets/images/hero-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-wrapper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    background:#d60000;
+
+    border-radius:40px;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1 span{
+
+    color:#ff4040;
+
+}
+
+.hero p{
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.hero-button{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+
+}
+
+.hero-contact{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-contact i{
+
+    color:#25D366;
+
+    margin-right:8px;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:450px;
+
+}
+
+/* ========================================= */
+/* FLOATING SOCIAL */
+/* ========================================= */
+
+.floating-social{
+
+    position:fixed;
+
+    right:25px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    z-index:999;
+
+}
+
+.floating-social a{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#1d1d1d;
+
+    color:white;
+
+    font-size:24px;
+
+    transition:.3s;
+
+}
+
+.floating-social a:hover{
+
+    background:#d60000;
+
+    transform:translateY(-5px);
+
+}
+
+/* ========================================= */
+/* HERO STATISTIC */
+/* ========================================= */
+
+.hero-stat{
+
+    background:#111;
+
+    padding:80px 0;
+
+}
+
+.stat-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.stat-card{
+
+    background:#1b1b1b;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat-card h2{
+
+    color:#ff4040;
+
+    font-size:48px;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:#ccc;
+
+}
+
+/* ========================================= */
+/* ABOUT */
+/* ========================================= */
+
+.about{
+
+    background:#181818;
+
+}
+
+.about-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+.about-content{
+
+    flex:1;
+
+}
+
+.about-content h3{
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
+}
+
+.about-content p{
+
+    color:#d0d0d0;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+.vision-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+.vision-card{
+
+    background:#202020;
+
+    padding:25px;
+
+    border-radius:16px;
+
+}
+
+.vision-card i{
+
+    color:#ff4040;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+.vision-card h4{
+
+    margin-bottom:10px;
+
+}
+
+/* ========================================= */
+/* SERVICES */
+/* ========================================= */
+
+.services{
+
+    background:#111;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:#1b1b1b;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    border:1px solid #ff4040;
+
+}
+
+.service-card i{
+
+    color:#ff4040;
+
+    font-size:46px;
+
+    margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.service-card p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+}
 
 <body>
+
+<!-- ========================================= -->
+<!-- PRELOADER -->
+<!-- ========================================= -->
+
+<div id="preloader">
+
+    <div class="loader">
+
+        <img src="assets/images/logo.png"
+             alt="Investment Technology Indonesia">
+
+        <h2>
+
+            Investment Technology Indonesia
+
+        </h2>
+
+        <span>
+
+            Digital Transformation Company
+
+        </span>
+
+    </div>
+
+</div>
 
 <!-- ========================================= -->
 <!-- HEADER -->
@@ -76,75 +738,114 @@
 
         <div class="container">
 
-            <div class="nav-wrapper">
+            <div class="navbar-wrapper">
 
                 <!-- Logo -->
 
-                <a href="#home" class="logo">
+                <a href="#home"
+                   class="logo">
 
                     <img src="assets/images/logo.png"
-                        alt="Investment Technology Indonesia">
+                         alt="Investment Technology Indonesia">
 
-                    <span>
+                    <div>
 
-                        Investment Technology Indonesia
+                        <h3>
 
-                    </span>
+                            Investment Technology Indonesia
+
+                        </h3>
+
+                        <small>
+
+                            Digital Transformation Company
+
+                        </small>
+
+                    </div>
 
                 </a>
 
-                <!-- Menu -->
+                <!-- Navigation -->
 
                 <ul class="nav-menu">
 
                     <li>
+
                         <a href="#home">
+
                             Home
+
                         </a>
+
                     </li>
 
                     <li>
+
                         <a href="#about">
+
                             About
+
                         </a>
+
                     </li>
 
                     <li>
+
                         <a href="#services">
+
                             Services
+
                         </a>
+
                     </li>
 
                     <li>
+
                         <a href="#products">
+
                             Products
+
                         </a>
+
                     </li>
 
                     <li>
+
                         <a href="#portfolio">
+
                             Portfolio
+
                         </a>
+
                     </li>
 
                     <li>
+
                         <a href="#clients">
+
                             Clients
+
                         </a>
+
                     </li>
 
                     <li>
+
                         <a href="#contact">
+
                             Contact
+
                         </a>
+
                     </li>
 
                 </ul>
 
-                <!-- Tombol Demo -->
+                <!-- Button -->
 
                 <a href="#demo"
-                    class="btn-demo">
+                   class="btn btn-primary">
 
                     <i class="fa-solid fa-laptop-code"></i>
 
@@ -162,6 +863,7 @@
 
 <!-- ========================================= -->
 <!-- HERO -->
+<!-- PART 3B DIMULAI SETELAH BARIS INI -->
 <!-- ========================================= -->
 
 <section id="hero" class="hero">
@@ -170,11 +872,14 @@
 
         <div class="hero-wrapper">
 
-            <!-- Hero Content -->
+            <!-- ========================================= -->
+            <!-- HERO CONTENT -->
+            <!-- ========================================= -->
 
-            <div class="hero-content">
+            <div class="hero-content"
+                 data-aos="fade-right">
 
-                <span class="badge">
+                <span class="hero-badge">
 
                     🚧 Website Sedang Dalam Pengembangan
 
@@ -182,11 +887,11 @@
 
                 <h1>
 
-                    Solusi Digital Terpercaya untuk
+                    Digital Transformation
 
                     <span>
 
-                        Bisnis & Instansi
+                        For Better Future
 
                     </span>
 
@@ -194,37 +899,25 @@
 
                 <p>
 
-                    Investment Technology Indonesia menyediakan layanan
-
-                    Software Development,
-
+                    Investment Technology Indonesia merupakan perusahaan
+                    yang bergerak di bidang Software Development,
                     Website Development,
-
-                    Mobile Apps,
-
+                    Mobile Application,
                     ERP,
-
                     Artificial Intelligence,
-
-                    Cloud,
-
+                    Cloud Computing,
                     Networking,
-
                     Cyber Security,
-
-                    CCTV,
-
                     Smart Office,
-
                     Digital Marketing,
-
-                    serta berbagai solusi IT lainnya.
+                    dan IT Consulting.
 
                 </p>
 
                 <div class="hero-button">
 
-                    <a href="#demo" class="btn-primary">
+                    <a href="#demo"
+                       class="btn btn-primary">
 
                         <i class="fa-solid fa-laptop-code"></i>
 
@@ -232,11 +925,12 @@
 
                     </a>
 
-                    <a href="#services" class="btn-outline">
+                    <a href="#services"
+                       class="btn btn-outline">
 
-                        <i class="fa-solid fa-arrow-down"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
 
-                        Lihat Layanan
+                        Explore Services
 
                     </a>
 
@@ -264,13 +958,15 @@
 
             </div>
 
-            <!-- Hero Image -->
+            <!-- ========================================= -->
+            <!-- HERO IMAGE -->
+            <!-- ========================================= -->
 
-            <div class="hero-image">
+            <div class="hero-image"
+                 data-aos="fade-left">
 
                 <img src="assets/images/owner.png"
-
-                    alt="CEO Investment Technology Indonesia">
+                     alt="CEO Investment Technology Indonesia">
 
             </div>
 
@@ -281,23 +977,165 @@
 </section>
 
 <!-- ========================================= -->
-<!-- ABOUT -->
+<!-- FLOATING SOCIAL -->
+<!-- ========================================= -->
+
+<div class="floating-social">
+
+    <a href="https://wa.me/6285283397198"
+       target="_blank">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+    <a href="https://github.com/axeexeea"
+       target="_blank">
+
+        <i class="fa-brands fa-github"></i>
+
+    </a>
+
+    <a href="#contact">
+
+        <i class="fa-solid fa-envelope"></i>
+
+    </a>
+
+</div>
+
+<!-- ========================================= -->
+<!-- HERO STATISTIC -->
+<!-- PART 3C DIMULAI DARI SINI -->
+<!-- ========================================= -->
+
+<section class="hero-stat">
+
+    <div class="container">
+
+        <div class="stat-grid">
+
+            <div class="stat-card"
+                 data-aos="fade-up">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+                <h2>
+
+                    15+
+
+                </h2>
+
+                <p>
+
+                    IT Services
+
+                </p>
+
+            </div>
+
+            <div class="stat-card"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <i class="fa-solid fa-diagram-project"></i>
+
+                <h2>
+
+                    50+
+
+                </h2>
+
+                <p>
+
+                    Projects Completed
+
+                </p>
+
+            </div>
+
+            <div class="stat-card"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <i class="fa-solid fa-handshake"></i>
+
+                <h2>
+
+                    20+
+
+                </h2>
+
+                <p>
+
+                    Business Clients
+
+                </p>
+
+            </div>
+
+            <div class="stat-card"
+                 data-aos="fade-up"
+                 data-aos-delay="300">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h2>
+
+                    24 / 7
+
+                </h2>
+
+                <p>
+
+                    Technical Support
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- SCROLL TO TOP -->
+<!-- ========================================= -->
+
+<a href="#home"
+   class="scroll-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+<!-- ========================================= -->
+<!-- ABOUT US -->
+<!-- PART 4 DIMULAI DARI SINI -->
 <!-- ========================================= -->
 
 <section id="about" class="about">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
 
-            <span>Tentang Kami</span>
+            <span>About Us</span>
 
-            <h2>Investment Technology Indonesia</h2>
+            <h2>
+
+                Investment Technology Indonesia
+
+            </h2>
 
             <p>
 
-                Partner transformasi digital untuk perusahaan,
-                UMKM, instansi pemerintah, BUMN, dan startup.
+                Kami menghadirkan solusi teknologi yang inovatif,
+                aman, modern dan scalable untuk perusahaan,
+                instansi pemerintah, BUMN, startup,
+                maupun UMKM di seluruh Indonesia.
 
             </p>
 
@@ -305,68 +1143,82 @@
 
         <div class="about-wrapper">
 
-            <!-- Image -->
+            <!-- ========================================= -->
+            <!-- IMAGE -->
+            <!-- ========================================= -->
 
-            <div class="about-image">
+            <div class="about-image"
+                 data-aos="fade-right">
 
                 <img src="assets/images/about.jpg"
-                     alt="About Investment Technology Indonesia">
+                     alt="Investment Technology Indonesia">
 
             </div>
 
-            <!-- Content -->
+            <!-- ========================================= -->
+            <!-- CONTENT -->
+            <!-- ========================================= -->
 
-            <div class="about-content">
+            <div class="about-content"
+                 data-aos="fade-left">
+
+                <span class="hero-badge">
+
+                    Digital Transformation Partner
+
+                </span>
 
                 <h3>
 
-                    Solusi Teknologi Terintegrasi
+                    Membangun Masa Depan Digital Indonesia
 
                 </h3>
 
                 <p>
 
                     Investment Technology Indonesia merupakan perusahaan
-                    yang berfokus pada pengembangan solusi teknologi,
-                    transformasi digital, software development,
-                    artificial intelligence, cloud computing,
-                    networking, cyber security,
-                    dan sistem informasi terintegrasi.
+                    yang menyediakan layanan pengembangan software,
+                    website, mobile application,
+                    artificial intelligence,
+                    cloud computing,
+                    networking,
+                    cyber security,
+                    smart office,
+                    digital marketing,
+                    ERP,
+                    serta berbagai solusi digital lainnya.
 
                 </p>
 
-                <div class="vision-mission">
+                <p>
 
-                    <div class="box">
+                    Kami membantu perusahaan meningkatkan efisiensi,
+                    produktivitas,
+                    keamanan data,
+                    serta mempercepat transformasi digital
+                    menggunakan teknologi modern.
 
-                        <i class="fa-solid fa-eye"></i>
+                </p>
 
-                        <h4>Visi</h4>
+                <div class="hero-button">
 
-                        <p>
+                    <a href="#services"
+                       class="btn btn-primary">
 
-                            Menjadi perusahaan teknologi
-                            terpercaya di Indonesia.
+                        <i class="fa-solid fa-briefcase"></i>
 
-                        </p>
+                        Our Services
 
-                    </div>
+                    </a>
 
-                    <div class="box">
+                    <a href="#contact"
+                       class="btn btn-outline">
 
-                        <i class="fa-solid fa-bullseye"></i>
+                        <i class="fa-solid fa-phone"></i>
 
-                        <h4>Misi</h4>
+                        Contact Us
 
-                        <p>
-
-                            Memberikan solusi digital
-                            yang inovatif, cepat,
-                            aman, dan berkualitas.
-
-                        </p>
-
-                    </div>
+                    </a>
 
                 </div>
 
@@ -374,39 +1226,98 @@
 
         </div>
 
-        <!-- Statistik -->
+        <!-- ========================================= -->
+        <!-- VISION MISSION -->
+        <!-- ========================================= -->
 
-        <div class="counter">
+        <div class="vision-grid">
 
-            <div class="counter-box">
+            <div class="vision-card"
+                 data-aos="zoom-in">
 
-                <h2>50+</h2>
+                <i class="fa-solid fa-eye"></i>
 
-                <p>Project (Placeholder)</p>
+                <h3>
+
+                    Vision
+
+                </h3>
+
+                <p>
+
+                    Menjadi perusahaan teknologi terpercaya
+                    yang mampu memberikan solusi digital
+                    terbaik bagi Indonesia.
+
+                </p>
 
             </div>
 
-            <div class="counter-box">
+            <div class="vision-card"
+                 data-aos="zoom-in"
+                 data-aos-delay="100">
 
-                <h2>20+</h2>
+                <i class="fa-solid fa-bullseye"></i>
 
-                <p>Clients (Placeholder)</p>
+                <h3>
+
+                    Mission
+
+                </h3>
+
+                <p>
+
+                    Mengembangkan solusi teknologi
+                    yang inovatif,
+                    aman,
+                    efisien
+                    dan mudah digunakan.
+
+                </p>
 
             </div>
 
-            <div class="counter-box">
+            <div class="vision-card"
+                 data-aos="zoom-in"
+                 data-aos-delay="200">
 
-                <h2>15+</h2>
+                <i class="fa-solid fa-lightbulb"></i>
 
-                <p>IT Services</p>
+                <h3>
+
+                    Innovation
+
+                </h3>
+
+                <p>
+
+                    Selalu menghadirkan teknologi terbaru
+                    sesuai kebutuhan pelanggan.
+
+                </p>
 
             </div>
 
-            <div class="counter-box">
+            <div class="vision-card"
+                 data-aos="zoom-in"
+                 data-aos-delay="300">
 
-                <h2>24/7</h2>
+                <i class="fa-solid fa-handshake"></i>
 
-                <p>Support</p>
+                <h3>
+
+                    Commitment
+
+                </h3>
+
+                <p>
+
+                    Memberikan pelayanan terbaik,
+                    profesional,
+                    cepat,
+                    dan berkelanjutan.
+
+                </p>
 
             </div>
 
@@ -418,98 +1329,565 @@
 
 <!-- ========================================= -->
 <!-- SERVICES -->
+<!-- PART 5 DIMULAI DARI SINI -->
 <!-- ========================================= -->
 
 <section id="services" class="services">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
 
-            <span>Layanan Kami</span>
+            <span>Our Services</span>
 
-            <h2>IT Solutions & Digital Transformation</h2>
+            <h2>
+
+                Professional IT Services
+
+            </h2>
 
             <p>
-                Kami menyediakan berbagai solusi teknologi untuk membantu
-                perusahaan, UMKM, instansi pemerintah, BUMN, dan startup.
+
+                Kami menyediakan solusi teknologi informasi
+                yang lengkap untuk perusahaan,
+                instansi pemerintah,
+                startup,
+                UMKM,
+                maupun organisasi.
+
             </p>
 
         </div>
 
         <div class="services-grid">
 
-            <div class="service-card">
+            <!-- Card 1 -->
+
+            <div class="service-card" data-aos="fade-up">
+
                 <i class="fa-solid fa-code"></i>
-                <h3>Software Development</h3>
-                <p>Custom software sesuai kebutuhan bisnis.</p>
+
+                <h3>
+
+                    Software Development
+
+                </h3>
+
+                <p>
+
+                    Custom Software,
+                    Enterprise System,
+                    Desktop Application.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <!-- Card 2 -->
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+
                 <i class="fa-solid fa-globe"></i>
-                <h3>Website Development</h3>
-                <p>Company Profile, Landing Page, Portal & Web App.</p>
+
+                <h3>
+
+                    Website Development
+
+                </h3>
+
+                <p>
+
+                    Company Profile,
+                    Landing Page,
+                    Portal,
+                    Web Application.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <!-- Card 3 -->
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+
                 <i class="fa-solid fa-mobile-screen-button"></i>
-                <h3>Mobile Application</h3>
-                <p>Android & iOS menggunakan Flutter.</p>
+
+                <h3>
+
+                    Mobile Application
+
+                </h3>
+
+                <p>
+
+                    Android,
+                    iOS,
+                    Flutter,
+                    Hybrid Application.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <!-- Card 4 -->
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+
                 <i class="fa-solid fa-building"></i>
-                <h3>ERP System</h3>
-                <p>Enterprise Resource Planning untuk perusahaan.</p>
+
+                <h3>
+
+                    ERP System
+
+                </h3>
+
+                <p>
+
+                    Enterprise Resource Planning,
+                    HR,
+                    Finance,
+                    Inventory.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <!-- Card 5 -->
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+
                 <i class="fa-solid fa-robot"></i>
-                <h3>Artificial Intelligence</h3>
-                <p>AI, Chatbot, Machine Learning & Automation.</p>
+
+                <h3>
+
+                    Artificial Intelligence
+
+                </h3>
+
+                <p>
+
+                    Chatbot,
+                    Machine Learning,
+                    OCR,
+                    Automation.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <!-- Card 6 -->
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+
                 <i class="fa-solid fa-cloud"></i>
-                <h3>Cloud Solution</h3>
-                <p>Cloud Server, Backup & Migration.</p>
+
+                <h3>
+
+                    Cloud Computing
+
+                </h3>
+
+                <p>
+
+                    Cloud Server,
+                    Migration,
+                    Backup,
+                    Virtual Machine.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <!-- Card 7 -->
+
+            <div class="service-card" data-aos="fade-up">
+
                 <i class="fa-solid fa-network-wired"></i>
-                <h3>Networking</h3>
-                <p>LAN, WAN, WiFi, Fiber Optic & Infrastructure.</p>
+
+                <h3>
+
+                    Networking
+
+                </h3>
+
+                <p>
+
+                    LAN,
+                    WAN,
+                    VPN,
+                    Fiber Optic,
+                    Mikrotik.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <!-- Card 8 -->
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+
                 <i class="fa-solid fa-shield-halved"></i>
-                <h3>Cyber Security</h3>
-                <p>Security Assessment & Protection.</p>
+
+                <h3>
+
+                    Cyber Security
+
+                </h3>
+
+                <p>
+
+                    Firewall,
+                    Penetration Test,
+                    Security Assessment.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <!-- Card 9 -->
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+
                 <i class="fa-solid fa-video"></i>
-                <h3>CCTV & Smart Office</h3>
-                <p>Monitoring, Access Control & Smart Office.</p>
+
+                <h3>
+
+                    CCTV & Smart Office
+
+                </h3>
+
+                <p>
+
+                    CCTV,
+                    Access Control,
+                    Attendance,
+                    Smart Office.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <!-- Card 10 -->
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+
                 <i class="fa-solid fa-chart-line"></i>
-                <h3>Digital Marketing</h3>
-                <p>SEO, Google Ads, Meta Ads & Branding.</p>
+
+                <h3>
+
+                    Digital Marketing
+
+                </h3>
+
+                <p>
+
+                    SEO,
+                    Google Ads,
+                    Meta Ads,
+                    Branding.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
+            <!-- Card 11 -->
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+
+                <i class="fa-solid fa-server"></i>
+
+                <h3>
+
+                    Server & Data Center
+
+                </h3>
+
+                <p>
+
+                    Rack Server,
+                    NAS,
+                    Storage,
+                    Data Center.
+
+                </p>
+
+            </div>
+
+            <!-- Card 12 -->
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+
                 <i class="fa-solid fa-headset"></i>
-                <h3>IT Support</h3>
-                <p>Maintenance & Technical Support.</p>
+
+                <h3>
+
+                    IT Support
+
+                </h3>
+
+                <p>
+
+                    Maintenance,
+                    Monitoring,
+                    Helpdesk,
+                    Technical Support.
+
+                </p>
+
             </div>
 
-            <div class="service-card">
-                <i class="fa-solid fa-handshake"></i>
-                <h3>IT Consulting</h3>
-                <p>Konsultasi transformasi digital dan teknologi.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- WHY CHOOSE US -->
+<!-- PART 6 DIMULAI DARI SINI -->
+<!-- ========================================= -->
+
+<section id="why-us" class="why-us">
+
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <span>Why Choose Us</span>
+
+            <h2>
+
+                Mengapa Memilih Kami?
+
+            </h2>
+
+            <p>
+
+                Kami tidak hanya membangun aplikasi,
+                tetapi juga membantu bisnis Anda berkembang
+                melalui solusi digital yang inovatif,
+                aman, dan berkelanjutan.
+
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <!-- Card 1 -->
+
+            <div class="why-card" data-aos="fade-up">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <h3>
+
+                    Professional Team
+
+                </h3>
+
+                <p>
+
+                    Tim developer, UI/UX designer,
+                    network engineer, dan konsultan
+                    yang berpengalaman.
+
+                </p>
+
             </div>
+
+            <!-- Card 2 -->
+
+            <div class="why-card"
+                 data-aos="fade-up"
+                 data-aos-delay="50">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <h3>
+
+                    Fast Development
+
+                </h3>
+
+                <p>
+
+                    Metode pengembangan yang cepat
+                    dengan kualitas terbaik.
+
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="why-card"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>
+
+                    Secure System
+
+                </h3>
+
+                <p>
+
+                    Fokus pada keamanan data
+                    dan perlindungan sistem.
+
+                </p>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="why-card"
+                 data-aos="fade-up"
+                 data-aos-delay="150">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <h3>
+
+                    Cloud Ready
+
+                </h3>
+
+                <p>
+
+                    Mendukung implementasi
+                    Cloud maupun On-Premise.
+
+                </p>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="why-card"
+                 data-aos="fade-up">
+
+                <i class="fa-solid fa-brain"></i>
+
+                <h3>
+
+                    AI Ready
+
+                </h3>
+
+                <p>
+
+                    Integrasi Artificial Intelligence,
+                    Chatbot, OCR dan Automation.
+
+                </p>
+
+            </div>
+
+            <!-- Card 6 -->
+
+            <div class="why-card"
+                 data-aos="fade-up"
+                 data-aos-delay="50">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>
+
+                    24/7 Support
+
+                </h3>
+
+                <p>
+
+                    Dukungan teknis cepat
+                    untuk memastikan sistem
+                    tetap berjalan optimal.
+
+                </p>
+
+            </div>
+
+            <!-- Card 7 -->
+
+            <div class="why-card"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <i class="fa-solid fa-expand"></i>
+
+                <h3>
+
+                    Scalable Solution
+
+                </h3>
+
+                <p>
+
+                    Solusi yang mudah dikembangkan
+                    sesuai pertumbuhan bisnis.
+
+                </p>
+
+            </div>
+
+            <!-- Card 8 -->
+
+            <div class="why-card"
+                 data-aos="fade-up"
+                 data-aos-delay="150">
+
+                <i class="fa-solid fa-earth-asia"></i>
+
+                <h3>
+
+                    Nationwide Service
+
+                </h3>
+
+                <p>
+
+                    Melayani perusahaan,
+                    instansi pemerintah,
+                    dan organisasi
+                    di seluruh Indonesia.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CTA -->
+
+        <div class="why-cta"
+             data-aos="zoom-in">
+
+            <h3>
+
+                Siap Memulai Transformasi Digital?
+
+            </h3>
+
+            <p>
+
+                Hubungi tim kami untuk konsultasi
+                dan demo solusi yang sesuai
+                dengan kebutuhan bisnis Anda.
+
+            </p>
+
+            <a href="#demo"
+               class="btn btn-primary">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+                Minta Demo Sekarang
+
+            </a>
 
         </div>
 
@@ -519,73 +1897,330 @@
 
 <!-- ========================================= -->
 <!-- PRODUCTS -->
+<!-- PART 7 DIMULAI DARI SINI -->
 <!-- ========================================= -->
 
-<section id="why-us" class="why-us">
+<section id="products" class="products">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
 
-            <span>Why Choose Us</span>
+            <span>Our Products</span>
 
-            <h2>Mengapa Memilih Investment Technology Indonesia?</h2>
+            <h2>
+
+                Digital Products & Solutions
+
+            </h2>
 
             <p>
-                Kami menghadirkan solusi teknologi yang modern, aman, dan
-                dapat disesuaikan dengan kebutuhan bisnis Anda.
+
+                Berbagai solusi digital yang kami kembangkan
+                untuk membantu perusahaan,
+                instansi pemerintah,
+                startup,
+                maupun UMKM.
+
             </p>
 
         </div>
 
-        <div class="why-grid">
+        <div class="products-grid">
 
-            <div class="why-card">
-                <i class="fa-solid fa-user-tie"></i>
-                <h3>Tim Profesional</h3>
-                <p>Tim berpengalaman dalam berbagai proyek teknologi.</p>
+            <!-- Product 1 -->
+
+            <div class="product-card" data-aos="fade-up">
+
+                <img src="https://placehold.co/600x400?text=TokoAntar+Super+App"
+                     alt="TokoAntar">
+
+                <div class="product-content">
+
+                    <h3>
+
+                        TokoAntar Super App
+
+                    </h3>
+
+                    <p>
+
+                        Transportasi,
+                        Delivery,
+                        Marketplace,
+                        Wallet,
+                        AI Assistant.
+
+                    </p>
+
+                    <a href="#demo"
+                       class="btn btn-primary">
+
+                        Request Demo
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="why-card">
-                <i class="fa-solid fa-bolt"></i>
-                <h3>Pengerjaan Cepat</h3>
-                <p>Metode kerja yang efisien untuk mempercepat implementasi.</p>
+            <!-- Product 2 -->
+
+            <div class="product-card"
+                 data-aos="fade-up"
+                 data-aos-delay="50">
+
+                <img src="https://placehold.co/600x400?text=ERP+System"
+                     alt="ERP">
+
+                <div class="product-content">
+
+                    <h3>
+
+                        ERP System
+
+                    </h3>
+
+                    <p>
+
+                        HR,
+                        Finance,
+                        Procurement,
+                        Inventory,
+                        Payroll.
+
+                    </p>
+
+                    <a href="#demo"
+                       class="btn btn-primary">
+
+                        Request Demo
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="why-card">
-                <i class="fa-solid fa-shield-halved"></i>
-                <h3>Keamanan Data</h3>
-                <p>Solusi dengan fokus pada keamanan dan privasi data.</p>
+            <!-- Product 3 -->
+
+            <div class="product-card"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <img src="https://placehold.co/600x400?text=AI+Platform"
+                     alt="AI Platform">
+
+                <div class="product-content">
+
+                    <h3>
+
+                        AI Platform
+
+                    </h3>
+
+                    <p>
+
+                        Chatbot,
+                        OCR,
+                        Machine Learning,
+                        Automation.
+
+                    </p>
+
+                    <a href="#demo"
+                       class="btn btn-primary">
+
+                        Request Demo
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="why-card">
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-                <h3>Cloud Ready</h3>
-                <p>Mendukung implementasi di cloud maupun on-premise.</p>
+            <!-- Product 4 -->
+
+            <div class="product-card"
+                 data-aos="fade-up">
+
+                <img src="https://placehold.co/600x400?text=Website+Development"
+                     alt="Website">
+
+                <div class="product-content">
+
+                    <h3>
+
+                        Website Development
+
+                    </h3>
+
+                    <p>
+
+                        Company Profile,
+                        Portal,
+                        Landing Page,
+                        E-Commerce.
+
+                    </p>
+
+                    <a href="#demo"
+                       class="btn btn-primary">
+
+                        Request Demo
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="why-card">
-                <i class="fa-solid fa-brain"></i>
-                <h3>AI Ready</h3>
-                <p>Integrasi Artificial Intelligence untuk meningkatkan efisiensi.</p>
+            <!-- Product 5 -->
+
+            <div class="product-card"
+                 data-aos="fade-up"
+                 data-aos-delay="50">
+
+                <img src="https://placehold.co/600x400?text=Mobile+Application"
+                     alt="Mobile App">
+
+                <div class="product-content">
+
+                    <h3>
+
+                        Mobile Application
+
+                    </h3>
+
+                    <p>
+
+                        Android,
+                        iOS,
+                        Flutter,
+                        Hybrid Apps.
+
+                    </p>
+
+                    <a href="#demo"
+                       class="btn btn-primary">
+
+                        Request Demo
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="why-card">
-                <i class="fa-solid fa-headset"></i>
-                <h3>24/7 Support</h3>
-                <p>Dukungan teknis yang responsif sesuai kebutuhan proyek.</p>
+            <!-- Product 6 -->
+
+            <div class="product-card"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <img src="https://placehold.co/600x400?text=Cloud+Infrastructure"
+                     alt="Cloud">
+
+                <div class="product-content">
+
+                    <h3>
+
+                        Cloud Infrastructure
+
+                    </h3>
+
+                    <p>
+
+                        Cloud Server,
+                        Backup,
+                        Storage,
+                        Virtual Machine.
+
+                    </p>
+
+                    <a href="#demo"
+                       class="btn btn-primary">
+
+                        Request Demo
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="why-card">
-                <i class="fa-solid fa-expand"></i>
-                <h3>Scalable Solution</h3>
-                <p>Solusi yang dapat berkembang mengikuti pertumbuhan bisnis.</p>
+            <!-- Product 7 -->
+
+            <div class="product-card"
+                 data-aos="fade-up">
+
+                <img src="https://placehold.co/600x400?text=Networking"
+                     alt="Networking">
+
+                <div class="product-content">
+
+                    <h3>
+
+                        Networking Solution
+
+                    </h3>
+
+                    <p>
+
+                        LAN,
+                        WAN,
+                        VPN,
+                        Fiber Optic,
+                        Mikrotik.
+
+                    </p>
+
+                    <a href="#demo"
+                       class="btn btn-primary">
+
+                        Request Demo
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="why-card">
-                <i class="fa-solid fa-earth-asia"></i>
-                <h3>Nationwide Service</h3>
-                <p>Melayani klien dari berbagai wilayah di Indonesia.</p>
+            <!-- Product 8 -->
+
+            <div class="product-card"
+                 data-aos="fade-up"
+                 data-aos-delay="50">
+
+                <img src="https://placehold.co/600x400?text=Cyber+Security"
+                     alt="Cyber Security">
+
+                <div class="product-content">
+
+                    <h3>
+
+                        Cyber Security
+
+                    </h3>
+
+                    <p>
+
+                        Firewall,
+                        Penetration Test,
+                        Vulnerability Assessment,
+                        Security Monitoring.
+
+                    </p>
+
+                    <a href="#demo"
+                       class="btn btn-primary">
+
+                        Request Demo
+
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
@@ -593,35 +2228,824 @@
     </div>
 
 </section>
+
 <!-- ========================================= -->
 <!-- PORTFOLIO -->
+<!-- PART 8 DIMULAI DARI SINI -->
 <!-- ========================================= -->
 
-<section id="portfolio">
+<section id="portfolio" class="portfolio">
+
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <span>Portfolio</span>
+
+            <h2>
+
+                Our Recent Projects
+
+            </h2>
+
+            <p>
+
+                Berikut beberapa contoh proyek dan solusi digital yang
+                pernah kami kerjakan maupun prototype yang kami kembangkan.
+
+            </p>
+
+        </div>
+
+        <div class="portfolio-grid">
+
+            <!-- Portfolio 1 -->
+
+            <div class="portfolio-card" data-aos="fade-up">
+
+                <img src="https://placehold.co/600x400?text=Website+Company+Profile"
+                    alt="Website Company Profile">
+
+                <div class="portfolio-content">
+
+                    <span>Website</span>
+
+                    <h3>
+
+                        Company Profile
+
+                    </h3>
+
+                    <p>
+
+                        Website perusahaan modern,
+                        responsive dan SEO Friendly.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Portfolio 2 -->
+
+            <div class="portfolio-card"
+                data-aos="fade-up"
+                data-aos-delay="50">
+
+                <img src="https://placehold.co/600x400?text=Mobile+Application"
+                    alt="Mobile App">
+
+                <div class="portfolio-content">
+
+                    <span>Mobile App</span>
+
+                    <h3>
+
+                        Android & iOS
+
+                    </h3>
+
+                    <p>
+
+                        Flutter Application,
+                        Dashboard,
+                        Payment,
+                        GPS.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Portfolio 3 -->
+
+            <div class="portfolio-card"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <img src="https://placehold.co/600x400?text=ERP+Dashboard"
+                    alt="ERP">
+
+                <div class="portfolio-content">
+
+                    <span>ERP</span>
+
+                    <h3>
+
+                        Enterprise System
+
+                    </h3>
+
+                    <p>
+
+                        HR,
+                        Finance,
+                        Procurement,
+                        Inventory.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Portfolio 4 -->
+
+            <div class="portfolio-card"
+                data-aos="fade-up">
+
+                <img src="https://placehold.co/600x400?text=Artificial+Intelligence"
+                    alt="AI">
+
+                <div class="portfolio-content">
+
+                    <span>Artificial Intelligence</span>
+
+                    <h3>
+
+                        AI Platform
+
+                    </h3>
+
+                    <p>
+
+                        Chatbot,
+                        OCR,
+                        Machine Learning.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Portfolio 5 -->
+
+            <div class="portfolio-card"
+                data-aos="fade-up"
+                data-aos-delay="50">
+
+                <img src="https://placehold.co/600x400?text=Networking"
+                    alt="Networking">
+
+                <div class="portfolio-content">
+
+                    <span>Networking</span>
+
+                    <h3>
+
+                        Enterprise Network
+
+                    </h3>
+
+                    <p>
+
+                        Mikrotik,
+                        Cisco,
+                        Fiber Optic,
+                        VPN.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Portfolio 6 -->
+
+            <div class="portfolio-card"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <img src="https://placehold.co/600x400?text=UI+UX+Design"
+                    alt="UI UX">
+
+                <div class="portfolio-content">
+
+                    <span>UI / UX</span>
+
+                    <h3>
+
+                        Modern Interface
+
+                    </h3>
+
+                    <p>
+
+                        Dashboard,
+                        Mobile Design,
+                        Web Design.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio-button"
+            data-aos="zoom-in">
+
+            <a href="#demo"
+                class="btn btn-primary">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+                Request Demo Project
+
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
 <!-- ========================================= -->
 <!-- CLIENTS -->
+<!-- PART 9 DIMULAI DARI SINI -->
 <!-- ========================================= -->
 
-<section id="clients">
+<section id="clients" class="clients">
+
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <span>Clients & Partners</span>
+
+            <h2>
+
+                Trusted by Business & Government
+
+            </h2>
+
+            <p>
+
+                Kami siap bekerja sama dengan perusahaan,
+                instansi pemerintah,
+                BUMN,
+                startup,
+                UMKM,
+                dan organisasi di seluruh Indonesia.
+
+            </p>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- PARTNER LOGO -->
+        <!-- ========================================= -->
+
+        <div class="client-grid">
+
+            <div class="client-card" data-aos="zoom-in">
+
+                <img src="https://placehold.co/220x120?text=Partner+1"
+                    alt="Partner 1">
+
+            </div>
+
+            <div class="client-card" data-aos="zoom-in" data-aos-delay="50">
+
+                <img src="https://placehold.co/220x120?text=Partner+2"
+                    alt="Partner 2">
+
+            </div>
+
+            <div class="client-card" data-aos="zoom-in" data-aos-delay="100">
+
+                <img src="https://placehold.co/220x120?text=Partner+3"
+                    alt="Partner 3">
+
+            </div>
+
+            <div class="client-card" data-aos="zoom-in" data-aos-delay="150">
+
+                <img src="https://placehold.co/220x120?text=Partner+4"
+                    alt="Partner 4">
+
+            </div>
+
+            <div class="client-card" data-aos="zoom-in">
+
+                <img src="https://placehold.co/220x120?text=Partner+5"
+                    alt="Partner 5">
+
+            </div>
+
+            <div class="client-card" data-aos="zoom-in" data-aos-delay="50">
+
+                <img src="https://placehold.co/220x120?text=Partner+6"
+                    alt="Partner 6">
+
+            </div>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- COMPANY ACHIEVEMENT -->
+        <!-- ========================================= -->
+
+        <div class="achievement-grid">
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>100%</h3>
+
+                <p>
+
+                    Client Satisfaction (Placeholder)
+
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-diagram-project"></i>
+
+                <h3>50+</h3>
+
+                <p>
+
+                    Completed Projects
+
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-user-group"></i>
+
+                <h3>20+</h3>
+
+                <p>
+
+                    Business Clients
+
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>24/7</h3>
+
+                <p>
+
+                    Technical Support
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- TESTIMONIAL -->
+        <!-- ========================================= -->
+
+        <div class="testimonial">
+
+            <h3>
+
+                Client Testimonial
+
+            </h3>
+
+            <p>
+
+                "Investment Technology Indonesia membantu kami
+                membangun sistem digital yang lebih modern,
+                aman, dan mudah digunakan.
+                Timnya profesional dan responsif."
+
+            </p>
+
+            <strong>
+
+                — Placeholder Client
+
+            </strong>
+
+        </div>
+
+    </div>
 
 </section>
 
 <!-- ========================================= -->
 <!-- REQUEST DEMO -->
+<!-- PART 10 DIMULAI DARI SINI -->
 <!-- ========================================= -->
 
-<section id="demo">
+<section id="demo" class="demo">
+
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <span>Request Demo</span>
+
+            <h2>
+
+                Minta Demo Aplikasi
+
+            </h2>
+
+            <p>
+
+                Isi formulir berikut, tim kami akan menghubungi Anda
+                untuk menjadwalkan presentasi dan demo aplikasi.
+
+            </p>
+
+        </div>
+
+        <div class="demo-wrapper">
+
+            <!-- LEFT -->
+
+            <div class="demo-info"
+                 data-aos="fade-right">
+
+                <h3>
+
+                    Konsultasi GRATIS
+
+                </h3>
+
+                <p>
+
+                    Kami siap membantu memilih solusi terbaik
+                    sesuai kebutuhan perusahaan Anda.
+
+                </p>
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Free Consultation
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Demo Application
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Proposal Project
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Estimasi Biaya
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="demo-form"
+                 data-aos="fade-left">
+
+                <form id="requestDemo">
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="nama"
+                            placeholder="Nama Lengkap"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="perusahaan"
+                            placeholder="Nama Perusahaan">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Email">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="telepon"
+                            placeholder="Nomor WhatsApp">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <select id="layanan">
+
+                            <option>
+
+                                Software Development
+
+                            </option>
+
+                            <option>
+
+                                Website Development
+
+                            </option>
+
+                            <option>
+
+                                Mobile Application
+
+                            </option>
+
+                            <option>
+
+                                ERP System
+
+                            </option>
+
+                            <option>
+
+                                Artificial Intelligence
+
+                            </option>
+
+                            <option>
+
+                                Networking
+
+                            </option>
+
+                            <option>
+
+                                Cloud Computing
+
+                            </option>
+
+                            <option>
+
+                                Cyber Security
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="budget"
+                            placeholder="Estimasi Budget">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <textarea
+                            id="kebutuhan"
+                            rows="6"
+                            placeholder="Jelaskan kebutuhan proyek Anda..."></textarea>
+
+                    </div>
+
+                    <div class="form-button">
+
+                        <button
+                            type="button"
+                            onclick="sendWA1()"
+                            class="btn btn-primary">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            Sales 1
+
+                        </button>
+
+                        <button
+                            type="button"
+                            onclick="sendWA2()"
+                            class="btn btn-outline">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            Sales 2
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 <!-- ========================================= -->
 <!-- CONTACT -->
+<!-- PART 11 DIMULAI DARI SINI -->
 <!-- ========================================= -->
 
-<section id="contact">
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <span>Contact Us</span>
+
+            <h2>
+
+                Let's Build Your Digital Future
+
+            </h2>
+
+            <p>
+
+                Hubungi kami untuk konsultasi,
+                presentasi,
+                maupun kerja sama pengembangan
+                sistem informasi.
+
+            </p>
+
+        </div>
+
+        <div class="contact-wrapper">
+
+            <!-- LEFT -->
+
+            <div class="contact-info"
+                 data-aos="fade-right">
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+
+                        <h3>
+
+                            Sales 1
+
+                        </h3>
+
+                        <p>
+
+                            +62 852 8339 7198
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+
+                        <h3>
+
+                            Sales 2
+
+                        </h3>
+
+                        <p>
+
+                            +62 853 5323 4429
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <h3>
+
+                            Email
+
+                        </h3>
+
+                        <p>
+
+                            info@investmenttechnology.id
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <div>
+
+                        <h3>
+
+                            GitHub
+
+                        </h3>
+
+                        <p>
+
+                            github.com/axeexeea
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+
+                        <h3>
+
+                            Office
+
+                        </h3>
+
+                        <p>
+
+                            Indonesia
+                            (Placeholder)
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="contact-map"
+                 data-aos="fade-left">
+
+                <img src="https://placehold.co/700x500?text=Google+Maps"
+                     alt="Google Maps">
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -629,31 +3053,321 @@
 <!-- FOOTER -->
 <!-- ========================================= -->
 
-<footer>
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img src="assets/images/logo.png"
+                     width="80">
+
+                <h3>
+
+                    Investment Technology Indonesia
+
+                </h3>
+
+                <p>
+
+                    Digital Transformation,
+                    Software Development,
+                    Artificial Intelligence,
+                    ERP,
+                    Mobile Apps,
+                    Website,
+                    Networking,
+                    Cloud,
+                    Cyber Security.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Services
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="#services">Software Development</a></li>
+
+                    <li><a href="#services">Website Development</a></li>
+
+                    <li><a href="#services">Mobile Application</a></li>
+
+                    <li><a href="#services">ERP System</a></li>
+
+                    <li><a href="#services">Artificial Intelligence</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Products
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="#products">TokoAntar</a></li>
+
+                    <li><a href="#products">ERP System</a></li>
+
+                    <li><a href="#products">AI Platform</a></li>
+
+                    <li><a href="#products">Cloud Infrastructure</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Follow Us
+
+                </h3>
+
+                <p>
+
+                    WhatsApp
+
+                </p>
+
+                <p>
+
+                    GitHub
+
+                </p>
+
+                <p>
+
+                    LinkedIn
+
+                </p>
+
+                <p>
+
+                    Instagram
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            © 2026 Investment Technology Indonesia.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
 
 </footer>
 
-<!-- Floating WhatsApp -->
+<!-- ========================================= -->
+<!-- FLOATING WHATSAPP -->
+<!-- ========================================= -->
 
-<div id="floating-whatsapp">
+<a href="https://wa.me/6285283397198"
+   class="floating-wa"
+   target="_blank">
 
-</div>
+    <i class="fa-brands fa-whatsapp"></i>
 
-<!-- Popup Demo -->
+</a>
 
-<div id="demo-modal">
+<!-- ========================================= -->
+<!-- JAVASCRIPT -->
+<!-- PART 12 DIMULAI DARI SINI -->
+<!-- ========================================= -->
 
-</div>
+<!-- ========================================= -->
+<!-- JAVASCRIPT LIBRARY -->
+<!-- ========================================= -->
 
-<!-- JavaScript -->
-<script src="assets/js/script.js"></script>
-
-<!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
-AOS.init();
+
+AOS.init({
+
+    duration:1000,
+
+    once:true
+
+});
+
+/* ========================================= */
+/* PRELOADER */
+/* ========================================= */
+
+window.addEventListener("load",function(){
+
+    const preloader=document.getElementById("preloader");
+
+    if(preloader){
+
+        preloader.style.opacity="0";
+
+        setTimeout(function(){
+
+            preloader.style.display="none";
+
+        },500);
+
+    }
+
+});
+
+/* ========================================= */
+/* STICKY NAVBAR */
+/* ========================================= */
+
+window.addEventListener("scroll",function(){
+
+    const navbar=document.querySelector(".navbar");
+
+    if(!navbar) return;
+
+    if(window.scrollY>80){
+
+        navbar.style.background="#101114";
+
+        navbar.style.boxShadow="0 10px 30px rgba(0,0,0,.25)";
+
+    }else{
+
+        navbar.style.background="rgba(0,0,0,.45)";
+
+        navbar.style.boxShadow="none";
+
+    }
+
+});
+
+/* ========================================= */
+/* SCROLL TOP */
+/* ========================================= */
+
+const scrollTop=document.querySelector(".scroll-top");
+
+window.addEventListener("scroll",function(){
+
+    if(!scrollTop) return;
+
+    if(window.scrollY>500){
+
+        scrollTop.style.display="flex";
+
+    }else{
+
+        scrollTop.style.display="none";
+
+    }
+
+});
+
+/* ========================================= */
+/* WHATSAPP MESSAGE */
+/* ========================================= */
+
+function getMessage(){
+
+    let nama=document.getElementById("nama").value;
+
+    let perusahaan=document.getElementById("perusahaan").value;
+
+    let email=document.getElementById("email").value;
+
+    let telepon=document.getElementById("telepon").value;
+
+    let layanan=document.getElementById("layanan").value;
+
+    let budget=document.getElementById("budget").value;
+
+    let kebutuhan=document.getElementById("kebutuhan").value;
+
+    return encodeURIComponent(
+
+`Halo Investment Technology Indonesia
+
+Saya ingin meminta Demo Aplikasi.
+
+Nama : ${nama}
+
+Perusahaan : ${perusahaan}
+
+Email : ${email}
+
+WhatsApp : ${telepon}
+
+Layanan : ${layanan}
+
+Estimasi Budget : ${budget}
+
+Kebutuhan :
+
+${kebutuhan}
+
+Mohon informasi lebih lanjut.
+
+Terima kasih.`
+
+    );
+
+}
+
+/* ========================================= */
+/* SALES 1 */
+/* ========================================= */
+
+function sendWA1(){
+
+    window.open(
+
+    "https://wa.me/6285283397198?text="+getMessage(),
+
+    "_blank"
+
+    );
+
+}
+
+/* ========================================= */
+/* SALES 2 */
+/* ========================================= */
+
+function sendWA2(){
+
+    window.open(
+
+    "https://wa.me/6285353234429?text="+getMessage(),
+
+    "_blank"
+
+    );
+
+}
+
 </script>
 
 </body>
+
 </html>
