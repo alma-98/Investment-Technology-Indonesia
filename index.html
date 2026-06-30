@@ -2851,23 +2851,12 @@ color:#ff4040;
 
                         <button
                             type="button"
-                            onclick="sendWA1()"
+                            onclick="sendDemo()"
                             class="btn btn-primary">
-
+                        
                             <i class="fa-brands fa-whatsapp"></i>
-
-                            Sales 1
-
-                        </button>
-
-                        <button
-                            type="button"
-                            onclick="sendWA2()"
-                            class="btn btn-outline">
-
-                            <i class="fa-brands fa-whatsapp"></i>
-
-                            Sales 2
+                        
+                            Kirim Permintaan Demo
 
                         </button>
 
@@ -3338,30 +3327,39 @@ Terima kasih.`
 /* SALES 1 */
 /* ========================================= */
 
-function sendWA1(){
+function sendDemo(){
+
+    let nama=document.getElementById("nama").value;
+    let perusahaan=document.getElementById("perusahaan").value;
+    let email=document.getElementById("email").value;
+    let telepon=document.getElementById("telepon").value;
+    let layanan=document.getElementById("layanan").value;
+    let budget=document.getElementById("budget").value;
+    let kebutuhan=document.getElementById("kebutuhan").value;
+
+    let pesan=`Halo Investment Technology Indonesia
+
+Saya ingin meminta Demo Aplikasi.
+
+Nama : ${nama}
+
+Perusahaan : ${perusahaan}
+
+Email : ${email}
+
+WhatsApp : ${telepon}
+
+Layanan : ${layanan}
+
+Estimasi Budget : ${budget}
+
+Kebutuhan :
+
+${kebutuhan}`;
 
     window.open(
-
-    "https://wa.me/6285283397198?text="+getMessage(),
-
-    "_blank"
-
-    );
-
-}
-
-/* ========================================= */
-/* SALES 2 */
-/* ========================================= */
-
-function sendWA2(){
-
-    window.open(
-
-    "https://wa.me/6285353234429?text="+getMessage(),
-
-    "_blank"
-
+        "https://wa.me/6285283397198?text="+encodeURIComponent(pesan),
+        "_blank"
     );
 
 }
