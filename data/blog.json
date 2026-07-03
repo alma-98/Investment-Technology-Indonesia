@@ -1,0 +1,210 @@
+{
+  "company": "Investment Technology Indonesia",
+  "version": "1.0.0",
+  "lastUpdated": "2026-07-03",
+  "totalPosts": 10,
+  "categories": [
+    "Technology",
+    "Artificial Intelligence",
+    "Cyber Security",
+    "Cloud Computing",
+    "Software Development",
+    "Networking",
+    "Digital Transformation",
+    "Mobile Application",
+    "Business",
+    "Investment"
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "slug": "digital-transformation-business",
+      "title": "Digital Transformation for Modern Business",
+      "category": "Digital Transformation",
+      "author": "Investment Technology Indonesia",
+      "date": "2026-01-10",
+      "featured": true,
+      "image": "assets/images/blog/blog1.jpg",
+      "thumbnail": "assets/images/blog/blog1.jpg",
+      "readTime": "5 min",
+      "tags": [
+        "Digital",
+        "Business",
+        "Technology"
+      ],
+      "summary": "How digital transformation improves productivity and business competitiveness.",
+      "content": "Digital transformation integrates modern technology into business processes to improve efficiency, customer experience, and long-term growth."
+    },
+    {
+      "id": 2,
+      "slug": "artificial-intelligence-business",
+      "title": "Artificial Intelligence in Business",
+      "category": "Artificial Intelligence",
+      "author": "Investment Technology Indonesia",
+      "date": "2026-01-20",
+      "featured": true,
+      "image": "assets/images/blog/blog2.jpg",
+      "thumbnail": "assets/images/blog/blog2.jpg",
+      "readTime": "6 min",
+      "tags": [
+        "AI",
+        "Automation",
+        "Machine Learning"
+      ],
+      "summary": "How AI helps companies automate business processes.",
+      "content": "Artificial Intelligence enables organizations to automate repetitive work, improve decision making, and increase operational efficiency."
+    },
+    {
+      "id": 3,
+      "slug": "cyber-security-awareness",
+      "title": "Cyber Security Best Practices",
+      "category": "Cyber Security",
+      "author": "Investment Technology Indonesia",
+      "date": "2026-02-02",
+      "featured": true,
+      "image": "assets/images/blog/blog3.jpg",
+      "thumbnail": "assets/images/blog/blog3.jpg",
+      "readTime": "7 min",
+      "tags": [
+        "Cyber Security",
+        "Firewall",
+        "Network"
+      ],
+      "summary": "Protect your organization from modern cyber threats.",
+      "content": "Cyber security requires continuous monitoring, employee awareness, firewall implementation, and regular vulnerability assessment."
+    },
+    {
+      "id": 4,
+      "slug": "cloud-computing-benefits",
+      "title": "Benefits of Cloud Computing",
+      "category": "Cloud Computing",
+      "author": "Investment Technology Indonesia",
+      "date": "2026-02-15",
+      "featured": false,
+      "image": "assets/images/blog/blog4.jpg",
+      "thumbnail": "assets/images/blog/blog4.jpg",
+      "readTime": "4 min",
+      "tags": [
+        "Cloud",
+        "AWS",
+        "Azure"
+      ],
+      "summary": "Cloud infrastructure for scalable businesses.",
+      "content": "Cloud computing reduces infrastructure costs while increasing flexibility and scalability."
+    },
+    {
+      "id": 5,
+      "slug": "modern-web-development",
+      "title": "Modern Website Development",
+      "category": "Software Development",
+      "author": "Investment Technology Indonesia",
+      "date": "2026-03-01",
+      "featured": false,
+      "image": "assets/images/blog/blog5.jpg",
+      "thumbnail": "assets/images/blog/blog5.jpg",
+      "readTime": "5 min",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "summary": "Building responsive and SEO-friendly websites.",
+      "content": "Modern websites prioritize performance, responsive design, accessibility, and search engine optimization."
+    },
+    {
+      "id": 6,
+      "slug": "enterprise-networking",
+      "title": "Enterprise Networking Solution",
+      "category": "Networking",
+      "author": "Investment Technology Indonesia",
+      "date": "2026-03-18",
+      "featured": false,
+      "image": "assets/images/blog/blog6.jpg",
+      "thumbnail": "assets/images/blog/blog6.jpg",
+      "readTime": "6 min",
+      "tags": [
+        "Network",
+        "Cisco",
+        "MikroTik"
+      ],
+      "summary": "Reliable enterprise networking infrastructure.",
+      "content": "Professional networking provides secure connectivity for modern organizations."
+    },
+    {
+      "id": 7,
+      "slug": "mobile-app-development",
+      "title": "Cross Platform Mobile Development",
+      "category": "Mobile Application",
+      "author": "Investment Technology Indonesia",
+      "date": "2026-04-05",
+      "featured": true,
+      "image": "assets/images/blog/blog7.jpg",
+      "thumbnail": "assets/images/blog/blog7.jpg",
+      "readTime": "5 min",
+      "tags": [
+        "Flutter",
+        "Android",
+        "iOS"
+      ],
+      "summary": "Build Android and iOS apps with Flutter.",
+      "content": "Flutter enables high-performance mobile applications using a single codebase."
+    },
+    {
+      "id": 8,
+      "slug": "smart-business-automation",
+      "title": "Business Automation with Technology",
+      "category": "Business",
+      "author": "Investment Technology Indonesia",
+      "date": "2026-04-20",
+      "featured": false,
+      "image": "assets/images/blog/blog8.jpg",
+      "thumbnail": "assets/images/blog/blog8.jpg",
+      "readTime": "5 min",
+      "tags": [
+        "Automation",
+        "ERP",
+        "CRM"
+      ],
+      "summary": "Increase productivity through automation.",
+      "content": "Automation reduces manual work and improves business efficiency."
+    },
+    {
+      "id": 9,
+      "slug": "technology-investment",
+      "title": "Technology Investment Opportunities",
+      "category": "Investment",
+      "author": "Investment Technology Indonesia",
+      "date": "2026-05-08",
+      "featured": true,
+      "image": "assets/images/blog/blog9.jpg",
+      "thumbnail": "assets/images/blog/blog9.jpg",
+      "readTime": "6 min",
+      "tags": [
+        "Investment",
+        "Technology",
+        "Startup"
+      ],
+      "summary": "Why investing in technology is important.",
+      "content": "Technology investment supports innovation and creates long-term business value."
+    },
+    {
+      "id": 10,
+      "slug": "future-of-information-technology",
+      "title": "Future of Information Technology",
+      "category": "Technology",
+      "author": "Investment Technology Indonesia",
+      "date": "2026-06-01",
+      "featured": true,
+      "image": "assets/images/blog/blog10.jpg",
+      "thumbnail": "assets/images/blog/blog10.jpg",
+      "readTime": "7 min",
+      "tags": [
+        "Technology",
+        "Innovation",
+        "Future"
+      ],
+      "summary": "Emerging technologies shaping the future.",
+      "content": "Artificial Intelligence, Cloud Computing, IoT, Blockchain, and Automation will continue transforming industries worldwide."
+    }
+  ]
+}

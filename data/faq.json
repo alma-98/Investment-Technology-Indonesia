@@ -1,0 +1,160 @@
+{
+  "company": "Investment Technology Indonesia",
+  "version": "1.0.0",
+  "lastUpdated": "2026-07-03",
+  "totalQuestions": 20,
+  "categories": [
+    "General",
+    "Services",
+    "Software Development",
+    "Website",
+    "Mobile App",
+    "Networking",
+    "Cloud",
+    "Cyber Security",
+    "Support",
+    "Investment"
+  ],
+  "faq": [
+    {
+      "id": 1,
+      "category": "General",
+      "featured": true,
+      "question": "What is Investment Technology Indonesia?",
+      "answer": "Investment Technology Indonesia is an information technology company providing software development, website development, mobile applications, networking, cloud computing, cybersecurity, server infrastructure, and digital transformation solutions."
+    },
+    {
+      "id": 2,
+      "category": "General",
+      "featured": true,
+      "question": "What industries do you serve?",
+      "answer": "We serve government institutions, private companies, startups, SMEs, educational institutions, healthcare organizations, financial services, manufacturing, logistics, and retail businesses."
+    },
+    {
+      "id": 3,
+      "category": "Services",
+      "featured": true,
+      "question": "What services do you provide?",
+      "answer": "Our services include Software Development, Website Development, Mobile Application Development, Networking, Server & Data Center, Cloud Solutions, Cyber Security, CCTV Systems, Smart Office, Digital Marketing, IT Consulting, Maintenance & Support, Fiber Optic Infrastructure, and Super App & AI solutions."
+    },
+    {
+      "id": 4,
+      "category": "Software Development",
+      "featured": true,
+      "question": "Can you build custom software?",
+      "answer": "Yes. We develop custom software tailored to business requirements, including ERP, CRM, HRIS, POS, inventory systems, finance systems, dashboards, and enterprise applications."
+    },
+    {
+      "id": 5,
+      "category": "Website",
+      "featured": true,
+      "question": "Do you develop responsive websites?",
+      "answer": "Yes. Every website we build is fully responsive, SEO-friendly, optimized for performance, and compatible with desktop, tablet, and mobile devices."
+    },
+    {
+      "id": 6,
+      "category": "Mobile App",
+      "featured": false,
+      "question": "Do you develop Android and iOS applications?",
+      "answer": "Yes. We build cross-platform mobile applications using Flutter, allowing one codebase for both Android and iOS."
+    },
+    {
+      "id": 7,
+      "category": "Networking",
+      "featured": false,
+      "question": "Do you provide networking installation?",
+      "answer": "Yes. We provide LAN, WAN, WiFi, VPN, MikroTik, Cisco, Ubiquiti, firewall, structured cabling, and enterprise networking solutions."
+    },
+    {
+      "id": 8,
+      "category": "Cloud",
+      "featured": false,
+      "question": "Can you migrate our infrastructure to the cloud?",
+      "answer": "Yes. We provide cloud migration services, cloud backup, virtualization, business email, Microsoft 365, Google Workspace, AWS, Azure, and Google Cloud integration."
+    },
+    {
+      "id": 9,
+      "category": "Cyber Security",
+      "featured": false,
+      "question": "Do you provide cybersecurity services?",
+      "answer": "Yes. We offer security audits, penetration testing, firewall deployment, endpoint protection, vulnerability assessment, and continuous security monitoring."
+    },
+    {
+      "id": 10,
+      "category": "Support",
+      "featured": false,
+      "question": "Do you provide maintenance after project completion?",
+      "answer": "Yes. We offer preventive maintenance, corrective maintenance, software updates, server monitoring, backup management, and technical support."
+    },
+    {
+      "id": 11,
+      "category": "Services",
+      "featured": false,
+      "question": "Can you integrate existing systems?",
+      "answer": "Yes. We provide API integration, payment gateway integration, ERP integration, CRM integration, and third-party system connectivity."
+    },
+    {
+      "id": 12,
+      "category": "Website",
+      "featured": false,
+      "question": "Will my website be SEO optimized?",
+      "answer": "Yes. Every website includes technical SEO, structured data, responsive design, optimized performance, sitemap, robots.txt, and metadata."
+    },
+    {
+      "id": 13,
+      "category": "Software Development",
+      "featured": false,
+      "question": "What technologies do you use?",
+      "answer": "We use HTML5, CSS3, JavaScript, PHP, Laravel, Node.js, React, Flutter, MySQL, PostgreSQL, Docker, Linux, Firebase, and REST APIs."
+    },
+    {
+      "id": 14,
+      "category": "Investment",
+      "featured": false,
+      "question": "Can investors collaborate with your company?",
+      "answer": "Yes. We welcome strategic partnerships and investment opportunities for technology products, digital platforms, AI solutions, and Super App development."
+    },
+    {
+      "id": 15,
+      "category": "General",
+      "featured": false,
+      "question": "Do you work with clients outside Indonesia?",
+      "answer": "Yes. We provide remote software development and IT consulting services for international clients."
+    },
+    {
+      "id": 16,
+      "category": "Support",
+      "featured": false,
+      "question": "How can I request technical support?",
+      "answer": "You can contact us via WhatsApp, email, contact form, or schedule an online consultation with our technical team."
+    },
+    {
+      "id": 17,
+      "category": "Software Development",
+      "featured": false,
+      "question": "How long does software development take?",
+      "answer": "Project duration depends on complexity. Small projects generally take 2–4 weeks, while enterprise systems may require several months."
+    },
+    {
+      "id": 18,
+      "category": "Website",
+      "featured": false,
+      "question": "Do you provide website hosting?",
+      "answer": "Yes. We assist with domain registration, hosting, VPS deployment, SSL certificates, email configuration, and ongoing maintenance."
+    },
+    {
+      "id": 19,
+      "category": "Services",
+      "featured": false,
+      "question": "Can you develop AI-based solutions?",
+      "answer": "Yes. We build AI-powered chatbots, automation systems, recommendation engines, business intelligence dashboards, and machine learning integrations."
+    },
+    {
+      "id": 20,
+      "category": "General",
+      "featured": true,
+      "question": "How do I start a project with Investment Technology Indonesia?",
+      "answer": "Simply contact us through our website, WhatsApp, or email. We will discuss your requirements, prepare a proposal, estimate the timeline, and begin development after project approval."
+    }
+  ]
+}
