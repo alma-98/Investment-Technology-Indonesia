@@ -1,0 +1,6512 @@
+/* ===========================================================
+   CONTACT.CSS
+   Investment Technology Indonesia
+   Part 1
+   Contact Hero & Header
+=========================================================== */
+
+/* ===========================================================
+   CONTACT SECTION
+=========================================================== */
+
+.contact{
+
+    position:relative;
+
+    padding:120px 0;
+
+    background:#f8fafc;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+   CONTAINER
+=========================================================== */
+
+.contact-container{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:1280px;
+
+    margin:0 auto;
+
+    padding:0 24px;
+
+}
+
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+.contact-header{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+/* ===========================================================
+   BADGE
+=========================================================== */
+
+.contact-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 20px;
+
+    margin-bottom:24px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.08);
+
+    border:1px solid rgba(214,0,0,.12);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.contact-badge i{
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+   LABEL
+=========================================================== */
+
+.contact-label{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+/* ===========================================================
+   TITLE
+=========================================================== */
+
+.contact-title{
+
+    margin-bottom:22px;
+
+    color:var(--secondary);
+
+    font-size:54px;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+}
+
+.contact-title span{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   SUBTITLE
+=========================================================== */
+
+.contact-subtitle{
+
+    margin-bottom:20px;
+
+    color:#444444;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+}
+
+/* ===========================================================
+   DESCRIPTION
+=========================================================== */
+
+.contact-description{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+}
+
+.contact-description p{
+
+    margin-bottom:18px;
+
+    color:#666666;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+}
+
+.contact-description p:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ===========================================================
+   DIVIDER
+=========================================================== */
+
+.contact-divider{
+
+    width:90px;
+
+    height:4px;
+
+    margin:34px auto;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #ff7070
+    );
+
+}
+
+/* ===========================================================
+   HERO INTRO
+=========================================================== */
+
+.contact-intro{
+
+    margin-top:60px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.contact-intro h3{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+    font-size:30px;
+
+}
+
+.contact-intro p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   QUICK CONTACT BAR
+=========================================================== */
+
+.contact-quick{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-top:50px;
+
+}
+
+.contact-quick a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px 28px;
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    color:var(--secondary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.contact-quick a:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    transform:translateY(-4px);
+
+}
+
+.contact-quick i{
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+   SUMMARY CARDS
+=========================================================== */
+
+.contact-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-top:70px;
+
+}
+
+.contact-summary-card{
+
+    padding:32px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.contact-summary-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 65px rgba(0,0,0,.12);
+
+}
+
+.contact-summary-icon{
+
+    width:72px;
+
+    height:72px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:30px;
+
+}
+
+.contact-summary-card h3{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:38px;
+
+}
+
+.contact-summary-card span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.contact-summary-card p{
+
+    color:#777777;
+
+    line-height:1.8;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   HIGHLIGHT
+=========================================================== */
+
+.contact-highlight{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   BACKGROUND DECORATION
+=========================================================== */
+
+.contact-decoration{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+.contact-decoration.one{
+
+    top:-90px;
+
+    left:-90px;
+
+    width:220px;
+
+    height:220px;
+
+    background:rgba(214,0,0,.05);
+
+}
+
+.contact-decoration.two{
+
+    top:220px;
+
+    right:-120px;
+
+    width:260px;
+
+    height:260px;
+
+    background:rgba(214,0,0,.04);
+
+}
+
+.contact-decoration.three{
+
+    bottom:-80px;
+
+    left:35%;
+
+    width:170px;
+
+    height:170px;
+
+    background:rgba(255,193,7,.10);
+
+}
+
+/* ===========================================================
+   GRID HELPERS
+=========================================================== */
+
+.contact-grid{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+.contact-grid-2{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.contact-grid-3{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.contact-grid-4{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+/* ===========================================================
+   SECTION SPACING
+=========================================================== */
+
+.contact-section{
+
+    margin-top:90px;
+
+}
+
+.contact-section:first-child{
+
+    margin-top:0;
+
+}
+
+/* ===========================================================
+   END PART 1
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 2
+   Contact Information & Office Details
+=========================================================== */
+
+/* ===========================================================
+   CONTACT INFORMATION
+=========================================================== */
+
+.contact-information{
+
+    margin-top:100px;
+
+}
+
+.contact-info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:32px;
+
+}
+
+/* ===========================================================
+   CONTACT CARD
+=========================================================== */
+
+.contact-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:36px;
+
+    background:#ffffff;
+
+    border-radius:30px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 65px rgba(0,0,0,.12);
+
+}
+
+.contact-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:var(--primary);
+
+}
+
+/* ===========================================================
+   CONTACT HEADER
+=========================================================== */
+
+.contact-card-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:28px;
+
+}
+
+.contact-card-icon{
+
+    width:72px;
+
+    height:72px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:30px;
+
+    flex-shrink:0;
+
+}
+
+.contact-card-title h3{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.contact-card-title span{
+
+    color:#888888;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   CONTACT DETAILS
+=========================================================== */
+
+.contact-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.contact-detail{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+}
+
+.contact-detail i{
+
+    margin-top:3px;
+
+    color:var(--primary);
+
+    font-size:18px;
+
+}
+
+.contact-detail-content{
+
+    flex:1;
+
+}
+
+.contact-detail-content h5{
+
+    margin-bottom:6px;
+
+    color:var(--secondary);
+
+}
+
+.contact-detail-content p,
+
+.contact-detail-content a{
+
+    color:#666666;
+
+    text-decoration:none;
+
+    line-height:1.8;
+
+    transition:.3s ease;
+
+}
+
+.contact-detail-content a:hover{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   OFFICE INFORMATION
+=========================================================== */
+
+.office-information{
+
+    margin-top:100px;
+
+}
+
+.office-information-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.office-information-card{
+
+    padding:34px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.office-information-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.office-information-card i{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.office-information-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.office-information-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   PHONE DIRECTORY
+=========================================================== */
+
+.phone-directory{
+
+    margin-top:100px;
+
+}
+
+.phone-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.phone-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:24px;
+
+    padding:24px 28px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+}
+
+.phone-info h4{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.phone-info span{
+
+    color:#888888;
+
+    font-size:14px;
+
+}
+
+.phone-number{
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   EMAIL DIRECTORY
+=========================================================== */
+
+.email-directory{
+
+    margin-top:100px;
+
+}
+
+.email-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:28px;
+
+}
+
+.email-card{
+
+    padding:30px;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+}
+
+.email-card h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.email-card a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    word-break:break-word;
+
+}
+
+/* ===========================================================
+   BUSINESS HOURS
+=========================================================== */
+
+.business-hours{
+
+    margin-top:100px;
+
+}
+
+.business-hours-box{
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.business-hours-box h3{
+
+    margin-bottom:24px;
+
+    color:var(--secondary);
+
+}
+
+.business-hours-list{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.business-hours-list li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+}
+
+.business-hours-list li:last-child{
+
+    border-bottom:none;
+
+}
+
+.business-hours-list strong{
+
+    color:var(--secondary);
+
+}
+
+.business-hours-list span{
+
+    color:#666666;
+
+}
+
+/* ===========================================================
+   VISITOR INFORMATION
+=========================================================== */
+
+.visitor-information{
+
+    margin-top:100px;
+
+}
+
+.visitor-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.visitor-card{
+
+    padding:28px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.visitor-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.visitor-card i{
+
+    font-size:36px;
+
+    margin-bottom:16px;
+
+    color:var(--primary);
+
+}
+
+.visitor-card h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.visitor-card p{
+
+    color:#666666;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   OFFICE NOTICE
+=========================================================== */
+
+.office-notice{
+
+    margin-top:60px;
+
+    padding:30px;
+
+    border-left:5px solid var(--primary);
+
+    border-radius:20px;
+
+    background:#fff8f8;
+
+}
+
+.office-notice h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.office-notice p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   END PART 2
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 3
+   Contact Form
+=========================================================== */
+
+/* ===========================================================
+   CONTACT FORM SECTION
+=========================================================== */
+
+.contact-form-section{
+
+    margin-top:100px;
+
+}
+
+.contact-form-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+/* ===========================================================
+   FORM CARD
+=========================================================== */
+
+.contact-form-card{
+
+    padding:45px;
+
+    background:#ffffff;
+
+    border-radius:32px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.contact-form-header{
+
+    margin-bottom:35px;
+
+}
+
+.contact-form-header h2{
+
+    margin-bottom:16px;
+
+    color:var(--secondary);
+
+}
+
+.contact-form-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   FORM GRID
+=========================================================== */
+
+.contact-form{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+   INPUT
+=========================================================== */
+
+.contact-form input,
+
+.contact-form select,
+
+.contact-form textarea{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    border:1px solid #dddddd;
+
+    border-radius:16px;
+
+    background:#ffffff;
+
+    color:#333333;
+
+    font-size:15px;
+
+    transition:.3s ease;
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+.contact-form input::placeholder,
+
+.contact-form textarea::placeholder{
+
+    color:#999999;
+
+}
+
+/* ===========================================================
+   FOCUS
+=========================================================== */
+
+.contact-form input:focus,
+
+.contact-form select:focus,
+
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(214,0,0,.10);
+
+}
+
+/* ===========================================================
+   FILE UPLOAD
+=========================================================== */
+
+.file-upload{
+
+    position:relative;
+
+}
+
+.file-upload input[type="file"]{
+
+    display:none;
+
+}
+
+.file-upload label{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    padding:22px;
+
+    border:2px dashed rgba(214,0,0,.25);
+
+    border-radius:20px;
+
+    background:#fafafa;
+
+    color:#666666;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.file-upload label:hover{
+
+    background:#fff5f5;
+
+    border-color:var(--primary);
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   CHECKBOX
+=========================================================== */
+
+.form-check{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+}
+
+.form-check input{
+
+    width:18px;
+
+    height:18px;
+
+    margin-top:3px;
+
+}
+
+.form-check label{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   SUBMIT BUTTON
+=========================================================== */
+
+.contact-submit{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-top:10px;
+
+}
+
+.contact-submit button{
+
+    border:none;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.contact-submit button:hover{
+
+    background:#a40000;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================================================
+   FORM NOTE
+=========================================================== */
+
+.form-note{
+
+    color:#888888;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   VALIDATION
+=========================================================== */
+
+.contact-form input.error,
+
+.contact-form textarea.error,
+
+.contact-form select.error{
+
+    border-color:#dc3545;
+
+}
+
+.contact-form input.success,
+
+.contact-form textarea.success,
+
+.contact-form select.success{
+
+    border-color:#28a745;
+
+}
+
+/* ===========================================================
+   ERROR MESSAGE
+=========================================================== */
+
+.error-message{
+
+    margin-top:8px;
+
+    color:#dc3545;
+
+    font-size:13px;
+
+}
+
+.success-message{
+
+    margin-top:8px;
+
+    color:#28a745;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   FORM STATUS
+=========================================================== */
+
+.form-status{
+
+    display:none;
+
+    margin-top:20px;
+
+    padding:18px 20px;
+
+    border-radius:16px;
+
+    font-weight:600;
+
+}
+
+.form-status.success{
+
+    display:block;
+
+    background:#ecfdf3;
+
+    color:#198754;
+
+    border:1px solid #b7ebc6;
+
+}
+
+.form-status.error{
+
+    display:block;
+
+    background:#fff1f2;
+
+    color:#dc3545;
+
+    border:1px solid #f5c2c7;
+
+}
+
+/* ===========================================================
+   CONTACT SIDEBAR
+=========================================================== */
+
+.contact-form-sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.contact-help-card{
+
+    padding:32px;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.contact-help-card h3{
+
+    margin-bottom:16px;
+
+    color:var(--secondary);
+
+}
+
+.contact-help-card p{
+
+    margin-bottom:22px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.contact-help-list{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.contact-help-list li{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-bottom:16px;
+
+    color:#555555;
+
+}
+
+.contact-help-list li:last-child{
+
+    margin-bottom:0;
+
+}
+
+.contact-help-list i{
+
+    color:var(--primary);
+
+    margin-top:3px;
+
+}
+
+/* ===========================================================
+   RESPONSE TIME
+=========================================================== */
+
+.response-time{
+
+    padding:28px;
+
+    text-align:center;
+
+    background:#fff8f8;
+
+    border-radius:22px;
+
+}
+
+.response-time h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.response-time span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:38px;
+
+    font-weight:800;
+
+}
+
+.response-time p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   END PART 3
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 4
+   Maps • Branch Offices • Locations
+=========================================================== */
+
+/* ===========================================================
+   LOCATION SECTION
+=========================================================== */
+
+.contact-location{
+
+    margin-top:100px;
+
+}
+
+.location-header{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.location-header h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.location-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   MAP WRAPPER
+=========================================================== */
+
+.map-wrapper{
+
+    overflow:hidden;
+
+    border-radius:32px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.map-wrapper iframe{
+
+    width:100%;
+
+    height:550px;
+
+    border:0;
+
+    display:block;
+
+}
+
+/* ===========================================================
+   LOCATION INFO BAR
+=========================================================== */
+
+.location-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-top:40px;
+
+}
+
+.location-item{
+
+    padding:28px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.location-item:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.location-item i{
+
+    font-size:36px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.location-item h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.location-item p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   BRANCH OFFICES
+=========================================================== */
+
+.branch-offices{
+
+    margin-top:100px;
+
+}
+
+.branch-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.branch-card{
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.branch-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 65px rgba(0,0,0,.12);
+
+}
+
+.branch-image img{
+
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+}
+
+.branch-content{
+
+    padding:30px;
+
+}
+
+.branch-content h3{
+
+    margin-bottom:16px;
+
+    color:var(--secondary);
+
+}
+
+.branch-content p{
+
+    margin-bottom:20px;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   BRANCH DETAILS
+=========================================================== */
+
+.branch-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.branch-details div{
+
+    display:flex;
+
+    gap:12px;
+
+    align-items:flex-start;
+
+}
+
+.branch-details i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+}
+
+.branch-details span{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   REGIONAL OFFICES
+=========================================================== */
+
+.regional-offices{
+
+    margin-top:100px;
+
+}
+
+.regional-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.regional-card{
+
+    padding:28px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.regional-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.regional-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.regional-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   PARKING INFORMATION
+=========================================================== */
+
+.parking-information{
+
+    margin-top:100px;
+
+}
+
+.parking-box{
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.parking-box h3{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.parking-box p{
+
+    margin-bottom:24px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.parking-list{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.parking-list li{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-bottom:16px;
+
+}
+
+.parking-list i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+}
+
+/* ===========================================================
+   PUBLIC TRANSPORT
+=========================================================== */
+
+.public-transport{
+
+    margin-top:100px;
+
+}
+
+.transport-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.transport-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.transport-card i{
+
+    font-size:40px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.transport-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.transport-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   DIRECTION STEPS
+=========================================================== */
+
+.direction-steps{
+
+    margin-top:100px;
+
+}
+
+.direction-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.direction-step{
+
+    position:relative;
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.direction-number{
+
+    width:56px;
+
+    height:56px;
+
+    margin:0 auto 18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.direction-step h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.direction-step p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   LOCATION HIGHLIGHTS
+=========================================================== */
+
+.location-highlights{
+
+    margin-top:100px;
+
+}
+
+.highlight-box{
+
+    padding:50px;
+
+    border-radius:32px;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #fff7f7
+    );
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.highlight-box h2{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+}
+
+.highlight-box p{
+
+    margin-bottom:30px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.highlight-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.highlight-item{
+
+    display:flex;
+
+    gap:16px;
+
+    align-items:flex-start;
+
+}
+
+.highlight-item i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+}
+
+.highlight-item span{
+
+    color:#555555;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   END PART 4
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 5
+   Social • WhatsApp • CTA
+=========================================================== */
+
+/* ===========================================================
+   SOCIAL CONTACT
+=========================================================== */
+
+.contact-social{
+
+    margin-top:100px;
+
+}
+
+.contact-social-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.contact-social-card{
+
+    padding:32px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:26px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.contact-social-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+.contact-social-icon{
+
+    width:74px;
+
+    height:74px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+.contact-social-card h3{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.contact-social-card p{
+
+    margin-bottom:20px;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+.contact-social-card a{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+/* ===========================================================
+   WHATSAPP SECTION
+=========================================================== */
+
+.whatsapp-contact{
+
+    margin-top:100px;
+
+}
+
+.whatsapp-box{
+
+    display:grid;
+
+    grid-template-columns:100px 1fr auto;
+
+    gap:30px;
+
+    align-items:center;
+
+    padding:45px;
+
+    background:#25d366;
+
+    border-radius:32px;
+
+    color:#ffffff;
+
+}
+
+.whatsapp-icon{
+
+    width:90px;
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.15);
+
+    font-size:48px;
+
+}
+
+.whatsapp-content h2{
+
+    margin-bottom:16px;
+
+    color:#ffffff;
+
+}
+
+.whatsapp-content p{
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.95);
+
+}
+
+.whatsapp-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px 32px;
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    color:#25d366;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+}
+
+.whatsapp-button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ===========================================================
+   LIVE CHAT
+=========================================================== */
+
+.live-chat-section{
+
+    margin-top:100px;
+
+}
+
+.live-chat-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+}
+
+.live-chat-card{
+
+    padding:40px;
+
+    background:#ffffff;
+
+    border-radius:30px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.live-chat-card h3{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.live-chat-card p{
+
+    margin-bottom:24px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   PARTNERSHIP
+=========================================================== */
+
+.partnership-contact{
+
+    margin-top:100px;
+
+}
+
+.partnership-box{
+
+    padding:50px;
+
+    text-align:center;
+
+    border-radius:32px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.partnership-box h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.partnership-box p{
+
+    max-width:760px;
+
+    margin:0 auto 30px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.partnership-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   NEWSLETTER CONTACT
+=========================================================== */
+
+.contact-newsletter{
+
+    margin-top:100px;
+
+}
+
+.contact-newsletter-box{
+
+    padding:60px;
+
+    text-align:center;
+
+    border-radius:34px;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #fff7f7
+    );
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.contact-newsletter-box h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.contact-newsletter-box p{
+
+    max-width:700px;
+
+    margin:0 auto 30px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.contact-newsletter-form{
+
+    display:flex;
+
+    gap:16px;
+
+    max-width:680px;
+
+    margin:0 auto;
+
+}
+
+.contact-newsletter-form input{
+
+    flex:1;
+
+    padding:18px 22px;
+
+    border:1px solid #dddddd;
+
+    border-radius:999px;
+
+}
+
+.contact-newsletter-form input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+}
+
+.contact-newsletter-form button{
+
+    border:none;
+
+    padding:18px 30px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+/* ===========================================================
+   QR CONTACT
+=========================================================== */
+
+.qr-contact{
+
+    margin-top:100px;
+
+}
+
+.qr-wrapper{
+
+    display:grid;
+
+    grid-template-columns:220px 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.qr-image{
+
+    text-align:center;
+
+}
+
+.qr-image img{
+
+    width:180px;
+
+    margin:auto;
+
+}
+
+.qr-content h3{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.qr-content p{
+
+    margin-bottom:20px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   SUPPORT FEATURES
+=========================================================== */
+
+.support-features{
+
+    margin-top:100px;
+
+}
+
+.support-feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.support-feature{
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.support-feature:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.support-feature i{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.support-feature h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.support-feature p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CONTACT CTA
+=========================================================== */
+
+.contact-cta{
+
+    margin-top:100px;
+
+}
+
+.contact-cta-box{
+
+    padding:70px;
+
+    text-align:center;
+
+    border-radius:36px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #7c0000
+    );
+
+}
+
+.contact-cta-box h2{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+.contact-cta-box p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.9;
+
+}
+
+.contact-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   END PART 5
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 6
+   Support Center • FAQ • Business Hours
+=========================================================== */
+
+/* ===========================================================
+   SUPPORT CENTER
+=========================================================== */
+
+.support-center{
+
+    margin-top:100px;
+
+}
+
+.support-center-header{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.support-center-header h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.support-center-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   SUPPORT GRID
+=========================================================== */
+
+.support-center-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.support-center-card{
+
+    padding:34px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.support-center-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.14);
+
+}
+
+.support-center-card i{
+
+    width:74px;
+
+    height:74px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:32px;
+
+}
+
+.support-center-card h3{
+
+    margin-bottom:16px;
+
+    color:var(--secondary);
+
+}
+
+.support-center-card p{
+
+    margin-bottom:20px;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   FAQ PREVIEW
+=========================================================== */
+
+.contact-faq{
+
+    margin-top:100px;
+
+}
+
+.contact-faq-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-faq-item{
+
+    padding:26px 30px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.contact-faq-item:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.contact-faq-item h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.contact-faq-item p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   BUSINESS HOURS DASHBOARD
+=========================================================== */
+
+.business-dashboard{
+
+    margin-top:100px;
+
+}
+
+.business-dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.business-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.business-card h2{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:40px;
+
+}
+
+.business-card span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.business-card p{
+
+    color:#777777;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   TECHNICAL SUPPORT
+=========================================================== */
+
+.technical-support{
+
+    margin-top:100px;
+
+}
+
+.technical-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+    padding:50px;
+
+    background:#ffffff;
+
+    border-radius:32px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.technical-content h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.technical-content p{
+
+    margin-bottom:28px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.technical-list{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.technical-list li{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-bottom:16px;
+
+}
+
+.technical-list i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+}
+
+/* ===========================================================
+   SERVICE REQUEST
+=========================================================== */
+
+.service-request{
+
+    margin-top:100px;
+
+}
+
+.service-request-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.service-request-card{
+
+    padding:34px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.service-request-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.service-request-card i{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.service-request-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.service-request-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   HELP CATEGORIES
+=========================================================== */
+
+.help-categories{
+
+    margin-top:100px;
+
+}
+
+.help-category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.help-category{
+
+    padding:28px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.help-category:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.help-category i{
+
+    font-size:36px;
+
+    margin-bottom:16px;
+
+    color:var(--primary);
+
+}
+
+.help-category h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.help-category span{
+
+    color:#888888;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   SUPPORT STATISTICS
+=========================================================== */
+
+.support-statistics{
+
+    margin-top:100px;
+
+}
+
+.support-stat-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.support-stat{
+
+    padding:34px;
+
+    text-align:center;
+
+    border-radius:26px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.support-stat h2{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:42px;
+
+}
+
+.support-stat span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.support-stat p{
+
+    color:#777777;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   ENTERPRISE SUPPORT
+=========================================================== */
+
+.enterprise-support{
+
+    margin-top:100px;
+
+}
+
+.enterprise-box{
+
+    padding:60px;
+
+    text-align:center;
+
+    border-radius:34px;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #fff7f7
+    );
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.enterprise-box h2{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+}
+
+.enterprise-box p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.enterprise-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   END PART 6
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 7
+   Company Information • Statistics • Trust
+=========================================================== */
+
+/* ===========================================================
+   COMPANY OVERVIEW
+=========================================================== */
+
+.company-overview{
+
+    margin-top:100px;
+
+}
+
+.company-overview-header{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.company-overview-header h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.company-overview-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   COMPANY STATS
+=========================================================== */
+
+.company-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.company-stat-card{
+
+    padding:34px;
+
+    text-align:center;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.company-stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 70px rgba(0,0,0,.14);
+
+}
+
+.company-stat-card i{
+
+    width:72px;
+
+    height:72px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:32px;
+
+}
+
+.company-stat-card h2{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:42px;
+
+}
+
+.company-stat-card span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.company-stat-card p{
+
+    color:#777777;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CERTIFICATIONS
+=========================================================== */
+
+.certifications{
+
+    margin-top:100px;
+
+}
+
+.certification-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.certification-card{
+
+    padding:34px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.certification-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.certification-card img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    margin:0 auto 20px;
+
+}
+
+.certification-card h3{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.certification-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   BUSINESS PARTNERS
+=========================================================== */
+
+.business-partners{
+
+    margin-top:100px;
+
+}
+
+.partner-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:24px;
+
+}
+
+.partner-card{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:30px;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.partner-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.partner-card img{
+
+    max-width:100%;
+
+    max-height:70px;
+
+    object-fit:contain;
+
+}
+
+/* ===========================================================
+   GLOBAL PRESENCE
+=========================================================== */
+
+.global-presence{
+
+    margin-top:100px;
+
+}
+
+.global-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+.global-content h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.global-content p{
+
+    margin-bottom:28px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.global-list{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.global-list li{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-bottom:16px;
+
+}
+
+.global-list i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+}
+
+.global-map{
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.global-map img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ===========================================================
+   LEADERSHIP
+=========================================================== */
+
+.leadership-contact{
+
+    margin-top:100px;
+
+}
+
+.leadership-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.leader-card{
+
+    text-align:center;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.leader-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.leader-photo img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.leader-content{
+
+    padding:30px;
+
+}
+
+.leader-content h3{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.leader-content span{
+
+    display:block;
+
+    margin-bottom:16px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.leader-content p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CORPORATE INFO
+=========================================================== */
+
+.corporate-info{
+
+    margin-top:100px;
+
+}
+
+.corporate-box{
+
+    padding:45px;
+
+    background:#ffffff;
+
+    border-radius:32px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.corporate-box h2{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+}
+
+.corporate-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+.corporate-item{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.corporate-item i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+}
+
+.corporate-item h4{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.corporate-item p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   BUSINESS METRICS
+=========================================================== */
+
+.business-metrics{
+
+    margin-top:100px;
+
+}
+
+.metric-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.metric-item{
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.metric-item h2{
+
+    margin-bottom:10px;
+
+    font-size:42px;
+
+    color:var(--primary);
+
+}
+
+.metric-item span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.metric-item p{
+
+    color:#777777;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   TRUST INDICATORS
+=========================================================== */
+
+.trust-indicators{
+
+    margin-top:100px;
+
+}
+
+.trust-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.trust-card{
+
+    padding:32px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:26px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.trust-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.trust-card i{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.trust-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.trust-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   END PART 7
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 8
+   Newsletter • Partnership • Career • Investor
+=========================================================== */
+
+/* ===========================================================
+   NEWSLETTER
+=========================================================== */
+
+.newsletter-section{
+
+    margin-top:100px;
+
+}
+
+.newsletter-wrapper{
+
+    padding:60px;
+
+    text-align:center;
+
+    border-radius:36px;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #fff7f7
+    );
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.newsletter-wrapper h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.newsletter-wrapper p{
+
+    max-width:720px;
+
+    margin:0 auto 35px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.newsletter-form{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:16px;
+
+    max-width:700px;
+
+    margin:0 auto;
+
+}
+
+.newsletter-form input{
+
+    flex:1;
+
+    padding:18px 24px;
+
+    border:1px solid #dddddd;
+
+    border-radius:999px;
+
+    transition:.3s ease;
+
+}
+
+.newsletter-form input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+}
+
+.newsletter-form button{
+
+    border:none;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.newsletter-form button:hover{
+
+    background:#a40000;
+
+}
+
+/* ===========================================================
+   PARTNERSHIP PROGRAM
+=========================================================== */
+
+.partnership-program{
+
+    margin-top:100px;
+
+}
+
+.partnership-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.partnership-card{
+
+    padding:34px;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.partnership-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.partnership-card i{
+
+    width:76px;
+
+    height:76px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+.partnership-card h3{
+
+    margin-bottom:14px;
+
+    color:var(--secondary);
+
+}
+
+.partnership-card p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   CAREER CONTACT
+=========================================================== */
+
+.career-contact{
+
+    margin-top:100px;
+
+}
+
+.career-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+.career-card{
+
+    padding:45px;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.career-card h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.career-card p{
+
+    margin-bottom:26px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.career-list{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.career-list li{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-bottom:16px;
+
+}
+
+.career-list i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+}
+
+/* ===========================================================
+   MEDIA CONTACT
+=========================================================== */
+
+.media-contact{
+
+    margin-top:100px;
+
+}
+
+.media-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.media-card{
+
+    padding:36px;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.media-card h3{
+
+    margin-bottom:16px;
+
+    color:var(--secondary);
+
+}
+
+.media-card p{
+
+    margin-bottom:22px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.media-card a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   INVESTOR RELATIONS
+=========================================================== */
+
+.investor-relations{
+
+    margin-top:100px;
+
+}
+
+.investor-box{
+
+    padding:55px;
+
+    text-align:center;
+
+    border-radius:34px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.investor-box h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.investor-box p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.investor-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   COMMUNITY
+=========================================================== */
+
+.community-engagement{
+
+    margin-top:100px;
+
+}
+
+.community-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.community-item{
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.community-item:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.community-item i{
+
+    font-size:40px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.community-item h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.community-item p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CUSTOMER SUCCESS
+=========================================================== */
+
+.customer-success{
+
+    margin-top:100px;
+
+}
+
+.customer-success-box{
+
+    padding:60px;
+
+    border-radius:34px;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #fff8f8
+    );
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.customer-success-box h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.customer-success-box p{
+
+    margin-bottom:30px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.success-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+.success-card{
+
+    padding:28px;
+
+    text-align:center;
+
+    background:#fafafa;
+
+    border-radius:22px;
+
+}
+
+.success-card h3{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:40px;
+
+}
+
+.success-card span{
+
+    display:block;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   FINAL CTA
+=========================================================== */
+
+.contact-final-cta{
+
+    margin-top:100px;
+
+}
+
+.contact-final-box{
+
+    padding:75px;
+
+    text-align:center;
+
+    border-radius:38px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #780000
+    );
+
+}
+
+.contact-final-box h2{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+.contact-final-box p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.9;
+
+}
+
+.contact-final-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   END PART 8
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 9
+   Responsive Design
+=========================================================== */
+
+/* ===========================================================
+   LARGE DESKTOP
+=========================================================== */
+
+@media (max-width:1400px){
+
+.contact-container{
+
+    max-width:1180px;
+
+}
+
+.contact-title{
+
+    font-size:48px;
+
+}
+
+.contact-form-wrapper,
+.global-wrapper,
+.career-wrapper,
+.live-chat-wrapper{
+
+    gap:36px;
+
+}
+
+}
+
+/* ===========================================================
+   LAPTOP
+=========================================================== */
+
+@media (max-width:1200px){
+
+.contact{
+
+    padding:100px 0;
+
+}
+
+.contact-title{
+
+    font-size:42px;
+
+}
+
+.contact-subtitle{
+
+    font-size:20px;
+
+}
+
+.contact-summary,
+.location-info,
+.partner-grid,
+.company-stats,
+.business-dashboard-grid,
+.help-category-grid,
+.support-stat-grid,
+.metric-grid,
+.trust-grid,
+.community-grid,
+.support-feature-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.office-information-grid,
+.branch-grid,
+.transport-grid,
+.service-request-grid,
+.certification-grid,
+.leadership-grid,
+.partnership-grid,
+.success-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.direction-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width:992px){
+
+.contact-form-wrapper,
+.global-wrapper,
+.career-wrapper,
+.live-chat-wrapper,
+.technical-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+.contact-info-grid,
+.media-grid,
+.highlight-list,
+.corporate-list{
+
+    grid-template-columns:1fr;
+
+}
+
+.contact-summary,
+.location-info,
+.branch-grid,
+.regional-grid,
+.transport-grid,
+.support-center-grid,
+.service-request-grid,
+.help-category-grid,
+.company-stats,
+.certification-grid,
+.leadership-grid,
+.metric-grid,
+.trust-grid,
+.community-grid,
+.support-feature-grid,
+.business-dashboard-grid,
+.support-stat-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.qr-wrapper{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.whatsapp-box{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.whatsapp-icon{
+
+    margin:0 auto;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width:768px){
+
+.contact{
+
+    padding:80px 0;
+
+}
+
+.contact-container{
+
+    padding:0 20px;
+
+}
+
+.contact-title{
+
+    font-size:34px;
+
+}
+
+.contact-subtitle{
+
+    font-size:18px;
+
+}
+
+.contact-description p{
+
+    font-size:15px;
+
+}
+
+.contact-summary,
+.contact-info-grid,
+.office-information-grid,
+.email-list,
+.visitor-grid,
+.location-info,
+.branch-grid,
+.regional-grid,
+.transport-grid,
+.direction-grid,
+.support-center-grid,
+.service-request-grid,
+.help-category-grid,
+.company-stats,
+.certification-grid,
+.partner-grid,
+.leadership-grid,
+.metric-grid,
+.trust-grid,
+.community-grid,
+.support-feature-grid,
+.success-grid,
+.business-dashboard-grid,
+.support-stat-grid,
+.partnership-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.form-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.contact-newsletter-form,
+.newsletter-form{
+
+    flex-direction:column;
+
+}
+
+.contact-newsletter-form input,
+.newsletter-form input,
+.contact-newsletter-form button,
+.newsletter-form button{
+
+    width:100%;
+
+}
+
+.contact-form-card,
+.partnership-box,
+.newsletter-wrapper,
+.customer-success-box,
+.contact-final-box,
+.contact-cta-box{
+
+    padding:32px;
+
+}
+
+.phone-item,
+.download-item{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.contact-quick{
+
+    flex-direction:column;
+
+}
+
+.contact-quick a{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+}
+
+/* ===========================================================
+   SMALL MOBILE
+=========================================================== */
+
+@media (max-width:576px){
+
+.contact-title{
+
+    font-size:28px;
+
+}
+
+.contact-subtitle{
+
+    font-size:16px;
+
+}
+
+.contact-summary-card,
+.contact-card,
+.office-information-card,
+.branch-card,
+.transport-card,
+.service-request-card,
+.help-category,
+.company-stat-card,
+.certification-card,
+.leader-card,
+.metric-item,
+.trust-card,
+.community-item,
+.support-feature,
+.support-center-card,
+.business-card{
+
+    padding:24px;
+
+}
+
+.contact-submit{
+
+    flex-direction:column;
+
+}
+
+.contact-submit button{
+
+    width:100%;
+
+}
+
+.partnership-buttons,
+.enterprise-actions,
+.contact-final-actions,
+.contact-cta-buttons{
+
+    flex-direction:column;
+
+}
+
+.partnership-buttons .btn,
+.enterprise-actions .btn,
+.contact-final-actions .btn,
+.contact-cta-buttons .btn{
+
+    width:100%;
+
+}
+
+}
+
+/* ===========================================================
+   EXTRA SMALL
+=========================================================== */
+
+@media (max-width:400px){
+
+.contact{
+
+    padding:70px 0;
+
+}
+
+.contact-title{
+
+    font-size:24px;
+
+}
+
+.contact-subtitle{
+
+    font-size:15px;
+
+}
+
+.contact-description p{
+
+    font-size:14px;
+
+}
+
+.contact-badge{
+
+    padding:8px 14px;
+
+    font-size:12px;
+
+}
+
+.contact-summary-card h3,
+.company-stat-card h2,
+.metric-item h2,
+.business-card h2,
+.success-card h3{
+
+    font-size:32px;
+
+}
+
+.contact-card-icon,
+.contact-summary-icon,
+.contact-social-icon{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:24px;
+
+}
+
+}
+
+/* ===========================================================
+   LANDSCAPE
+=========================================================== */
+
+@media (max-height:550px) and (orientation:landscape){
+
+.contact{
+
+    padding:60px 0;
+
+}
+
+}
+
+/* ===========================================================
+   TOUCH DEVICES
+=========================================================== */
+
+@media (hover:none){
+
+.contact-summary-card:hover,
+.contact-card:hover,
+.branch-card:hover,
+.company-stat-card:hover,
+.trust-card:hover,
+.support-feature:hover{
+
+    transform:none;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE HELPERS
+=========================================================== */
+
+@media (max-width:768px){
+
+.contact-hide-mobile{
+
+    display:none !important;
+
+}
+
+.contact-show-mobile{
+
+    display:block !important;
+
+}
+
+.contact-text-center-mobile{
+
+    text-align:center !important;
+
+}
+
+.contact-full-mobile{
+
+    width:100% !important;
+
+}
+
+}
+
+/* ===========================================================
+   RESPONSIVE IMAGES
+=========================================================== */
+
+.contact img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   END PART 9
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 10
+   Dark Mode
+=========================================================== */
+
+/* ===========================================================
+   CONTACT SECTION
+=========================================================== */
+
+body.dark .contact{
+
+    background:#0f1117;
+
+    color:#ffffff;
+
+}
+
+body.dark .contact-title{
+
+    color:#ffffff;
+
+}
+
+body.dark .contact-title span{
+
+    color:#ff6666;
+
+}
+
+body.dark .contact-subtitle{
+
+    color:#d4dbe6;
+
+}
+
+body.dark .contact-description p{
+
+    color:#c5ccd6;
+
+}
+
+body.dark .contact-badge{
+
+    background:rgba(255,90,90,.12);
+
+    border-color:rgba(255,90,90,.20);
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   CARDS
+=========================================================== */
+
+body.dark .contact-summary-card,
+body.dark .contact-card,
+body.dark .office-information-card,
+body.dark .phone-item,
+body.dark .email-card,
+body.dark .business-hours-box,
+body.dark .visitor-card,
+body.dark .contact-form-card,
+body.dark .contact-help-card,
+body.dark .response-time,
+body.dark .map-wrapper,
+body.dark .location-item,
+body.dark .branch-card,
+body.dark .regional-card,
+body.dark .parking-box,
+body.dark .transport-card,
+body.dark .direction-step,
+body.dark .highlight-box,
+body.dark .contact-social-card,
+body.dark .live-chat-card,
+body.dark .partnership-box,
+body.dark .contact-newsletter-box,
+body.dark .qr-wrapper,
+body.dark .support-feature,
+body.dark .support-center-card,
+body.dark .contact-faq-item,
+body.dark .business-card,
+body.dark .technical-wrapper,
+body.dark .service-request-card,
+body.dark .help-category,
+body.dark .support-stat,
+body.dark .enterprise-box,
+body.dark .company-stat-card,
+body.dark .certification-card,
+body.dark .partner-card,
+body.dark .leader-card,
+body.dark .corporate-box,
+body.dark .metric-item,
+body.dark .trust-card,
+body.dark .newsletter-wrapper,
+body.dark .partnership-card,
+body.dark .career-card,
+body.dark .media-card,
+body.dark .investor-box,
+body.dark .community-item,
+body.dark .customer-success-box,
+body.dark .success-card{
+
+    background:#181d25;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+/* ===========================================================
+   HEADINGS
+=========================================================== */
+
+body.dark .contact h1,
+body.dark .contact h2,
+body.dark .contact h3,
+body.dark .contact h4,
+body.dark .contact h5,
+body.dark .contact h6{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   TEXT
+=========================================================== */
+
+body.dark .contact p,
+body.dark .contact span,
+body.dark .contact li,
+body.dark .contact label{
+
+    color:#c5ccd6;
+
+}
+
+/* ===========================================================
+   LINKS
+=========================================================== */
+
+body.dark .contact a{
+
+    color:#ff6666;
+
+}
+
+body.dark .contact a:hover{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   ICONS
+=========================================================== */
+
+body.dark .contact-card-icon,
+body.dark .contact-summary-icon,
+body.dark .contact-social-icon,
+body.dark .support-feature i,
+body.dark .support-center-card i,
+body.dark .company-stat-card i,
+body.dark .partnership-card i,
+body.dark .visitor-card i,
+body.dark .transport-card i,
+body.dark .trust-card i{
+
+    background:rgba(255,90,90,.15);
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   FORM
+=========================================================== */
+
+body.dark .contact-form input,
+body.dark .contact-form textarea,
+body.dark .contact-form select,
+body.dark .newsletter-form input,
+body.dark .contact-newsletter-form input{
+
+    background:#181d25;
+
+    color:#ffffff;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+body.dark .contact-form input::placeholder,
+body.dark .contact-form textarea::placeholder,
+body.dark .newsletter-form input::placeholder,
+body.dark .contact-newsletter-form input::placeholder{
+
+    color:#97a3b3;
+
+}
+
+body.dark .contact-form input:focus,
+body.dark .contact-form textarea:focus,
+body.dark .contact-form select:focus{
+
+    border-color:#ff6666;
+
+    box-shadow:0 0 0 4px rgba(255,90,90,.15);
+
+}
+
+/* ===========================================================
+   FILE UPLOAD
+=========================================================== */
+
+body.dark .file-upload label{
+
+    background:#202632;
+
+    border-color:#404958;
+
+    color:#c5ccd6;
+
+}
+
+body.dark .file-upload label:hover{
+
+    border-color:#ff6666;
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   HOURS
+=========================================================== */
+
+body.dark .business-hours-list li{
+
+    border-color:#2b3240;
+
+}
+
+body.dark .office-notice{
+
+    background:#202632;
+
+}
+
+/* ===========================================================
+   MAP
+=========================================================== */
+
+body.dark .map-wrapper{
+
+    overflow:hidden;
+
+}
+
+body.dark .map-wrapper iframe{
+
+    filter:grayscale(.25) invert(.92) contrast(.88);
+
+}
+
+/* ===========================================================
+   QR
+=========================================================== */
+
+body.dark .qr-image img{
+
+    background:#ffffff;
+
+    padding:10px;
+
+    border-radius:12px;
+
+}
+
+/* ===========================================================
+   CTA
+=========================================================== */
+
+body.dark .contact-cta-box,
+body.dark .contact-final-box,
+body.dark .whatsapp-box{
+
+    background:linear-gradient(
+        135deg,
+        #700000,
+        #280000
+    );
+
+}
+
+body.dark .contact-cta-box h2,
+body.dark .contact-final-box h2,
+body.dark .whatsapp-content h2{
+
+    color:#ffffff;
+
+}
+
+body.dark .contact-cta-box p,
+body.dark .contact-final-box p,
+body.dark .whatsapp-content p{
+
+    color:rgba(255,255,255,.92);
+
+}
+
+/* ===========================================================
+   BUTTONS
+=========================================================== */
+
+body.dark .contact .btn-primary,
+body.dark .newsletter-form button,
+body.dark .contact-newsletter-form button,
+body.dark .contact-submit button{
+
+    background:#d60000;
+
+}
+
+body.dark .contact .btn-primary:hover,
+body.dark .newsletter-form button:hover,
+body.dark .contact-newsletter-form button:hover,
+body.dark .contact-submit button:hover{
+
+    background:#ff4444;
+
+}
+
+body.dark .contact .btn-outline{
+
+    border-color:#ff6666;
+
+    color:#ff6666;
+
+}
+
+body.dark .contact .btn-outline:hover{
+
+    background:#ff6666;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   SHADOW
+=========================================================== */
+
+body.dark .contact-summary-card:hover,
+body.dark .contact-card:hover,
+body.dark .branch-card:hover,
+body.dark .leader-card:hover,
+body.dark .trust-card:hover{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.45);
+
+}
+
+/* ===========================================================
+   IMAGES
+=========================================================== */
+
+body.dark .branch-image img,
+body.dark .leader-photo img,
+body.dark .global-map img{
+
+    filter:brightness(.95);
+
+}
+
+/* ===========================================================
+   GLASS
+=========================================================== */
+
+body.dark .contact-glass{
+
+    background:rgba(24,29,37,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   TEXT SELECTION
+=========================================================== */
+
+body.dark .contact ::selection{
+
+    background:#ff5555;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   END PART 10
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 11
+   Utility Classes
+=========================================================== */
+
+/* ===========================================================
+   DISPLAY
+=========================================================== */
+
+.contact-block{display:block;}
+.contact-inline{display:inline-block;}
+.contact-inline-flex{display:inline-flex;}
+.contact-flex{display:flex;}
+.contact-grid-display{display:grid;}
+.contact-hidden{display:none!important;}
+.contact-visible{display:block!important;}
+
+/* ===========================================================
+   FLEX
+=========================================================== */
+
+.contact-row{
+
+    display:flex;
+
+    flex-direction:row;
+
+}
+
+.contact-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.contact-wrap{
+
+    flex-wrap:wrap;
+
+}
+
+.contact-nowrap{
+
+    flex-wrap:nowrap;
+
+}
+
+.contact-center{
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.contact-between{
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.contact-around{
+
+    justify-content:space-around;
+
+    align-items:center;
+
+}
+
+.contact-evenly{
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+}
+
+.contact-start{
+
+    justify-content:flex-start;
+
+    align-items:flex-start;
+
+}
+
+.contact-end{
+
+    justify-content:flex-end;
+
+    align-items:flex-end;
+
+}
+
+/* ===========================================================
+   GRID
+=========================================================== */
+
+.contact-grid{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+.contact-grid-auto{
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+}
+
+.contact-grid-2{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.contact-grid-3{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.contact-grid-4{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+/* ===========================================================
+   WIDTH
+=========================================================== */
+
+.contact-w-25{width:25%;}
+.contact-w-50{width:50%;}
+.contact-w-75{width:75%;}
+.contact-w-100{width:100%;}
+
+.contact-max{
+
+    max-width:1280px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+/* ===========================================================
+   SPACING
+=========================================================== */
+
+.contact-mt-10{margin-top:10px;}
+.contact-mt-20{margin-top:20px;}
+.contact-mt-40{margin-top:40px;}
+.contact-mt-60{margin-top:60px;}
+.contact-mt-80{margin-top:80px;}
+.contact-mt-100{margin-top:100px;}
+
+.contact-mb-10{margin-bottom:10px;}
+.contact-mb-20{margin-bottom:20px;}
+.contact-mb-40{margin-bottom:40px;}
+.contact-mb-60{margin-bottom:60px;}
+.contact-mb-80{margin-bottom:80px;}
+.contact-mb-100{margin-bottom:100px;}
+
+.contact-p-20{padding:20px;}
+.contact-p-30{padding:30px;}
+.contact-p-40{padding:40px;}
+.contact-p-60{padding:60px;}
+
+.contact-pt-40{padding-top:40px;}
+.contact-pt-80{padding-top:80px;}
+
+.contact-pb-40{padding-bottom:40px;}
+.contact-pb-80{padding-bottom:80px;}
+
+/* ===========================================================
+   BORDER RADIUS
+=========================================================== */
+
+.contact-radius-sm{border-radius:12px;}
+.contact-radius-md{border-radius:20px;}
+.contact-radius-lg{border-radius:30px;}
+.contact-radius-xl{border-radius:40px;}
+.contact-radius-full{border-radius:999px;}
+
+/* ===========================================================
+   SHADOW
+=========================================================== */
+
+.contact-shadow-sm{
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.contact-shadow-md{
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.contact-shadow-lg{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.18);
+
+}
+
+.contact-shadow-none{
+
+    box-shadow:none;
+
+}
+
+/* ===========================================================
+   BACKGROUND
+=========================================================== */
+
+.contact-bg-white{
+
+    background:#ffffff;
+
+}
+
+.contact-bg-light{
+
+    background:#f8fafc;
+
+}
+
+.contact-bg-dark{
+
+    background:#10141d;
+
+    color:#ffffff;
+
+}
+
+.contact-bg-primary{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.contact-bg-gradient{
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        #ff7070
+
+    );
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   GLASS
+=========================================================== */
+
+.contact-glass{
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+.contact-glass-dark{
+
+    background:rgba(20,25,35,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   TYPOGRAPHY
+=========================================================== */
+
+.contact-text-left{text-align:left;}
+.contact-text-center{text-align:center;}
+.contact-text-right{text-align:right;}
+
+.contact-text-primary{
+
+    color:var(--primary);
+
+}
+
+.contact-text-dark{
+
+    color:var(--secondary);
+
+}
+
+.contact-text-light{
+
+    color:#ffffff;
+
+}
+
+.contact-text-muted{
+
+    color:#777777;
+
+}
+
+.contact-bold{font-weight:700;}
+.contact-semibold{font-weight:600;}
+.contact-light{font-weight:300;}
+
+.contact-uppercase{text-transform:uppercase;}
+.contact-capitalize{text-transform:capitalize;}
+
+/* ===========================================================
+   POSITION
+=========================================================== */
+
+.contact-relative{position:relative;}
+.contact-absolute{position:absolute;}
+.contact-fixed{position:fixed;}
+.contact-sticky{position:sticky;}
+
+.contact-z1{z-index:1;}
+.contact-z10{z-index:10;}
+.contact-z50{z-index:50;}
+.contact-z100{z-index:100;}
+
+/* ===========================================================
+   OVERFLOW
+=========================================================== */
+
+.contact-overflow-hidden{overflow:hidden;}
+.contact-overflow-visible{overflow:visible;}
+.contact-overflow-auto{overflow:auto;}
+
+/* ===========================================================
+   CURSOR
+=========================================================== */
+
+.contact-pointer{
+
+    cursor:pointer;
+
+}
+
+.contact-disabled{
+
+    opacity:.6;
+
+    pointer-events:none;
+
+}
+
+/* ===========================================================
+   TRANSITIONS
+=========================================================== */
+
+.contact-transition{
+
+    transition:.35s ease;
+
+}
+
+.contact-transition-fast{
+
+    transition:.2s ease;
+
+}
+
+.contact-transition-slow{
+
+    transition:.6s ease;
+
+}
+
+/* ===========================================================
+   HOVER
+=========================================================== */
+
+.contact-hover-up:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-hover-scale:hover{
+
+    transform:scale(1.05);
+
+}
+
+.contact-hover-shadow:hover{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.16);
+
+}
+
+.contact-hover-primary:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   IMAGE HELPERS
+=========================================================== */
+
+.contact-img-cover{
+
+    object-fit:cover;
+
+}
+
+.contact-img-contain{
+
+    object-fit:contain;
+
+}
+
+.contact-img-rounded{
+
+    border-radius:24px;
+
+}
+
+.contact-img-circle{
+
+    border-radius:50%;
+
+}
+
+/* ===========================================================
+   OPACITY
+=========================================================== */
+
+.contact-opacity-25{opacity:.25;}
+.contact-opacity-50{opacity:.5;}
+.contact-opacity-75{opacity:.75;}
+.contact-opacity-100{opacity:1;}
+
+/* ===========================================================
+   POINTER EVENTS
+=========================================================== */
+
+.contact-no-pointer{
+
+    pointer-events:none;
+
+}
+
+.contact-auto-pointer{
+
+    pointer-events:auto;
+
+}
+
+/* ===========================================================
+   VISIBILITY
+=========================================================== */
+
+.contact-visible-state{
+
+    visibility:visible;
+
+}
+
+.contact-hidden-state{
+
+    visibility:hidden;
+
+}
+
+/* ===========================================================
+   END PART 11
+=========================================================== */
+/* ===========================================================
+   CONTACT.CSS
+   Part 12
+   Performance Optimization & End of File
+=========================================================== */
+
+/* ===========================================================
+   PERFORMANCE
+=========================================================== */
+
+.contact,
+.contact-container,
+.contact-card,
+.contact-summary-card,
+.contact-form-card,
+.branch-card,
+.office-information-card,
+.company-stat-card,
+.support-center-card,
+.support-feature,
+.trust-card{
+
+    will-change:transform,opacity;
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+}
+
+.contact img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   ACCESSIBILITY
+=========================================================== */
+
+.contact a:focus,
+.contact button:focus,
+.contact input:focus,
+.contact textarea:focus,
+.contact select:focus{
+
+    outline:3px solid rgba(214,0,0,.35);
+
+    outline-offset:4px;
+
+    border-radius:8px;
+
+}
+
+.contact a:focus-visible,
+.contact button:focus-visible{
+
+    box-shadow:0 0 0 5px rgba(214,0,0,.18);
+
+}
+
+/* ===========================================================
+   TEXT SELECTION
+=========================================================== */
+
+.contact ::selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.contact ::-moz-selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   LOADING STATE
+=========================================================== */
+
+.contact-loading{
+
+    position:relative;
+
+    overflow:hidden;
+
+    opacity:.75;
+
+    pointer-events:none;
+
+}
+
+.contact-loading::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    animation:contactLoading 1.5s linear infinite;
+
+}
+
+@keyframes contactLoading{
+
+    from{
+
+        transform:translateX(-100%);
+
+    }
+
+    to{
+
+        transform:translateX(100%);
+
+    }
+
+}
+
+/* ===========================================================
+   SKELETON
+=========================================================== */
+
+.contact-skeleton{
+
+    background:linear-gradient(
+        90deg,
+        #ececec,
+        #f8f8f8,
+        #ececec
+    );
+
+    background-size:200% 100%;
+
+    animation:contactSkeleton 1.4s linear infinite;
+
+}
+
+@keyframes contactSkeleton{
+
+    from{
+
+        background-position:200% 0;
+
+    }
+
+    to{
+
+        background-position:-200% 0;
+
+    }
+
+}
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.contact *,
+.contact::before,
+.contact::after{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+
+}
+
+}
+
+/* ===========================================================
+   HIGH CONTRAST
+=========================================================== */
+
+@media (prefers-contrast:more){
+
+.contact-card,
+.branch-card,
+.company-stat-card,
+.support-center-card,
+.trust-card{
+
+    border:2px solid #000000;
+
+}
+
+.contact-title{
+
+    font-weight:900;
+
+}
+
+}
+
+/* ===========================================================
+   PRINT
+=========================================================== */
+
+@media print{
+
+.contact{
+
+    background:#ffffff !important;
+
+    color:#000000 !important;
+
+    padding:40px 0;
+
+}
+
+.contact-form,
+.contact-submit,
+.contact-newsletter,
+.contact-social,
+.whatsapp-contact,
+.contact-cta,
+.contact-final-cta{
+
+    display:none !important;
+
+}
+
+.contact-card,
+.branch-card,
+.company-stat-card,
+.support-center-card{
+
+    box-shadow:none !important;
+
+    border:1px solid #cccccc;
+
+}
+
+.contact h1,
+.contact h2,
+.contact h3,
+.contact h4{
+
+    color:#000000 !important;
+
+}
+
+}
+
+/* ===========================================================
+   SAFE AREA
+=========================================================== */
+
+@supports (padding:max(0px)){
+
+.contact{
+
+    padding-left:max(24px,env(safe-area-inset-left));
+
+    padding-right:max(24px,env(safe-area-inset-right));
+
+}
+
+}
+
+/* ===========================================================
+   GPU
+=========================================================== */
+
+.contact-gpu{
+
+    transform:translate3d(0,0,0);
+
+    will-change:transform;
+
+}
+
+.contact-no-select{
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+}
+
+.contact-select{
+
+    user-select:text;
+
+}
+
+/* ===========================================================
+   IMAGE HELPERS
+=========================================================== */
+
+.contact img{
+
+    image-rendering:auto;
+
+}
+
+.branch-image img,
+.leader-photo img,
+.global-map img{
+
+    object-fit:cover;
+
+}
+
+.contact-picture{
+
+    overflow:hidden;
+
+}
+
+.contact-picture img{
+
+    transition:transform .5s ease;
+
+}
+
+.contact-picture:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================================
+   SCROLL HELPERS
+=========================================================== */
+
+.contact-scroll{
+
+    scroll-margin-top:100px;
+
+}
+
+.contact-sticky-helper{
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+/* ===========================================================
+   CONTAINERS
+=========================================================== */
+
+.contact-container-fluid{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding-left:30px;
+
+    padding-right:30px;
+
+}
+
+.contact-container-narrow{
+
+    max-width:960px;
+
+    margin:0 auto;
+
+}
+
+/* ===========================================================
+   FINAL RESET
+=========================================================== */
+
+.contact *{
+
+    box-sizing:border-box;
+
+}
+
+.contact iframe{
+
+    border:0;
+
+    max-width:100%;
+
+}
+
+.contact svg{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+.contact video{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+.contact canvas{
+
+    max-width:100%;
+
+}
+
+.contact table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.contact hr{
+
+    border:none;
+
+    height:1px;
+
+    background:rgba(0,0,0,.08);
+
+    margin:40px 0;
+
+}
+
+.contact ul,
+.contact ol{
+
+    padding-left:20px;
+
+}
+
+.contact button{
+
+    font-family:inherit;
+
+}
+
+.contact input,
+.contact textarea,
+.contact select{
+
+    font-family:inherit;
+
+}
+
+/* ===========================================================
+   END OF CONTACT.CSS
+=========================================================== */

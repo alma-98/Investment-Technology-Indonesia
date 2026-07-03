@@ -1,0 +1,3183 @@
+/* ===========================================================
+   RESPONSIVE.CSS
+   Investment Technology Indonesia
+   Part 1
+   Desktop • Laptop • Large Tablet
+=========================================================== */
+
+/* ===========================================================
+   1400px
+=========================================================== */
+
+@media screen and (max-width:1400px){
+
+.container{
+    max-width:1200px;
+}
+
+.hero-content h1{
+    font-size:58px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+.section-title h2{
+    font-size:42px;
+}
+
+}
+
+/* ===========================================================
+   1280px
+=========================================================== */
+
+@media screen and (max-width:1280px){
+
+.container{
+    width:92%;
+}
+
+.hero-image{
+    max-width:520px;
+}
+
+.counter-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.partner-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.client-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+/* ===========================================================
+   1200px
+=========================================================== */
+
+@media screen and (max-width:1200px){
+
+.container{
+    width:94%;
+}
+
+/* Layout */
+
+.about-grid,
+.founder-grid,
+.investment-grid,
+.website-box,
+.contact-grid,
+.portfolio-info,
+.software-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Hero */
+
+.hero{
+    min-height:90vh;
+}
+
+.hero-image{
+
+    position:relative;
+
+    right:auto;
+
+    bottom:auto;
+
+    margin:50px auto 0;
+
+    max-width:450px;
+
+}
+
+/* Services */
+
+.service-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Feature */
+
+.feature-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* AI */
+
+.ai-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Cyber */
+
+.cyber-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Cloud */
+
+.cloud-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Pricing */
+
+.pricing-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Portfolio */
+
+.portfolio-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Blog */
+
+.blog-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Gallery */
+
+.gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Footer */
+
+.footer-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ===========================================================
+   1024px
+=========================================================== */
+
+@media screen and (max-width:1024px){
+
+h1{
+    font-size:48px;
+}
+
+h2{
+    font-size:38px;
+}
+
+h3{
+    font-size:26px;
+}
+
+.hero-content{
+    max-width:100%;
+}
+
+.hero-content h1{
+    font-size:50px;
+}
+
+.hero-content p{
+    font-size:17px;
+}
+
+/* Timeline */
+
+.timeline-item{
+
+    width:100%;
+
+    left:0!important;
+
+    text-align:left!important;
+
+    padding-left:80px;
+
+    margin-bottom:40px;
+
+}
+
+.timeline::before{
+
+    left:35px;
+
+}
+
+.timeline-item::before{
+
+    left:25px!important;
+
+    right:auto!important;
+
+}
+
+/* Company Timeline */
+
+.timeline-card{
+
+    width:100%;
+
+    margin-bottom:35px;
+
+}
+
+.timeline-wrapper::before{
+
+    left:25px;
+
+}
+
+.timeline-card::after{
+
+    left:16px!important;
+
+    right:auto!important;
+
+}
+
+/* Contact */
+
+.contact-form{
+
+    padding:35px;
+
+}
+
+/* Download */
+
+.download-box{
+
+    padding:50px;
+
+}
+
+}
+/* ===========================================================
+   RESPONSIVE.CSS
+   Investment Technology Indonesia
+   Part 1
+   Desktop • Laptop • Large Tablet
+=========================================================== */
+
+/* ===========================================================
+   1400px
+=========================================================== */
+
+@media screen and (max-width:1400px){
+
+.container{
+    max-width:1200px;
+}
+
+.hero-content h1{
+    font-size:58px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+.section-title h2{
+    font-size:42px;
+}
+
+}
+
+/* ===========================================================
+   1280px
+=========================================================== */
+
+@media screen and (max-width:1280px){
+
+.container{
+    width:92%;
+}
+
+.hero-image{
+    max-width:520px;
+}
+
+.counter-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.partner-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.client-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+/* ===========================================================
+   1200px
+=========================================================== */
+
+@media screen and (max-width:1200px){
+
+.container{
+    width:94%;
+}
+
+/* Layout */
+
+.about-grid,
+.founder-grid,
+.investment-grid,
+.website-box,
+.contact-grid,
+.portfolio-info,
+.software-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Hero */
+
+.hero{
+    min-height:90vh;
+}
+
+.hero-image{
+
+    position:relative;
+
+    right:auto;
+
+    bottom:auto;
+
+    margin:50px auto 0;
+
+    max-width:450px;
+
+}
+
+/* Services */
+
+.service-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Feature */
+
+.feature-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* AI */
+
+.ai-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Cyber */
+
+.cyber-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Cloud */
+
+.cloud-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Pricing */
+
+.pricing-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Portfolio */
+
+.portfolio-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Blog */
+
+.blog-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Gallery */
+
+.gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Footer */
+
+.footer-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ===========================================================
+   1024px
+=========================================================== */
+
+@media screen and (max-width:1024px){
+
+h1{
+    font-size:48px;
+}
+
+h2{
+    font-size:38px;
+}
+
+h3{
+    font-size:26px;
+}
+
+.hero-content{
+    max-width:100%;
+}
+
+.hero-content h1{
+    font-size:50px;
+}
+
+.hero-content p{
+    font-size:17px;
+}
+
+/* Timeline */
+
+.timeline-item{
+
+    width:100%;
+
+    left:0!important;
+
+    text-align:left!important;
+
+    padding-left:80px;
+
+    margin-bottom:40px;
+
+}
+
+.timeline::before{
+
+    left:35px;
+
+}
+
+.timeline-item::before{
+
+    left:25px!important;
+
+    right:auto!important;
+
+}
+
+/* Company Timeline */
+
+.timeline-card{
+
+    width:100%;
+
+    margin-bottom:35px;
+
+}
+
+.timeline-wrapper::before{
+
+    left:25px;
+
+}
+
+.timeline-card::after{
+
+    left:16px!important;
+
+    right:auto!important;
+
+}
+
+/* Contact */
+
+.contact-form{
+
+    padding:35px;
+
+}
+
+/* Download */
+
+.download-box{
+
+    padding:50px;
+
+}
+
+}
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 3
+   Mobile Portrait • Small Mobile • Extra Small
+=========================================================== */
+
+/* ===========================================================
+   576px
+=========================================================== */
+
+@media screen and (max-width:576px){
+
+.container{
+    width:95%;
+}
+
+section{
+    padding:60px 0;
+}
+
+/* Typography */
+
+h1{
+    font-size:34px;
+}
+
+h2{
+    font-size:28px;
+}
+
+h3{
+    font-size:22px;
+}
+
+h4{
+    font-size:18px;
+}
+
+p{
+    font-size:15px;
+}
+
+/* Header */
+
+header .container{
+    min-height:65px;
+}
+
+.logo img{
+    height:45px;
+}
+
+/* Hero */
+
+.hero,
+.page-hero{
+    min-height:75vh;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-content p{
+    font-size:15px;
+}
+
+.hero-image{
+    max-width:280px;
+}
+
+/* Buttons */
+
+.btn-primary,
+.btn-secondary{
+    width:100%;
+    max-width:100%;
+    padding:15px 20px;
+    font-size:15px;
+}
+
+/* Cards */
+
+.service-card,
+.feature-card,
+.blog-card,
+.portfolio-card,
+.pricing-card,
+.company-card,
+.help-card,
+.info-card,
+.vm-card,
+.contact-form{
+    padding:25px;
+}
+
+}
+
+/* ===========================================================
+   480px
+=========================================================== */
+
+@media screen and (max-width:480px){
+
+.hero-content h1{
+    font-size:30px;
+}
+
+.hero-content p{
+    font-size:14px;
+}
+
+.section-title h2{
+    font-size:26px;
+}
+
+.footer{
+    text-align:center;
+}
+
+.footer-grid{
+    gap:35px;
+}
+
+.footer-logo{
+    width:150px;
+    margin:auto auto 20px;
+}
+
+.footer ul{
+    padding:0;
+}
+
+.footer ul li{
+    margin-bottom:12px;
+}
+
+/* Contact */
+
+.contact-box{
+    flex-direction:column;
+    text-align:center;
+}
+
+.contact-box i{
+    margin:auto;
+}
+
+/* Founder */
+
+.founder-photo img,
+.founder-image img{
+    max-width:250px;
+    margin:auto;
+}
+
+}
+
+/* ===========================================================
+   360px
+=========================================================== */
+
+@media screen and (max-width:360px){
+
+body{
+    font-size:14px;
+}
+
+h1{
+    font-size:28px;
+}
+
+h2{
+    font-size:24px;
+}
+
+.hero-content h1{
+    font-size:27px;
+}
+
+.hero-content h5{
+    font-size:13px;
+}
+
+.hero-content p{
+    font-size:14px;
+}
+
+.logo img{
+    height:40px;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding:14px 18px;
+    font-size:14px;
+}
+
+.service-card,
+.blog-card,
+.feature-card,
+.portfolio-card,
+.help-card,
+.info-card,
+.pricing-card{
+    padding:20px;
+}
+
+}
+
+/* ===========================================================
+   RESPONSIVE IMAGES
+=========================================================== */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.hero-image img,
+.about-image img,
+.founder-image img,
+.portfolio-image img,
+.blog-image img{
+    width:100%;
+    height:auto;
+}
+
+/* ===========================================================
+   RESPONSIVE TABLE
+=========================================================== */
+
+.table-responsive{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    padding:12px;
+    white-space:nowrap;
+}
+
+/* ===========================================================
+   POPUP CHAT
+=========================================================== */
+
+@media screen and (max-width:576px){
+
+.popup-chat{
+
+    width:95%;
+
+    right:2.5%;
+
+    bottom:90px;
+
+}
+
+.popup-body{
+
+    padding:20px;
+
+}
+
+.popup-header{
+
+    padding:15px 18px;
+
+}
+
+}
+
+/* ===========================================================
+   FLOATING BUTTONS
+=========================================================== */
+
+@media screen and (max-width:576px){
+
+.whatsapp-float{
+
+    width:56px;
+
+    height:56px;
+
+    font-size:24px;
+
+    right:18px;
+
+    bottom:18px;
+
+}
+
+#backToTop{
+
+    width:46px;
+
+    height:46px;
+
+    right:18px;
+
+    bottom:85px;
+
+}
+
+}
+
+/* ===========================================================
+   UTILITIES
+=========================================================== */
+
+.mobile-center{
+    text-align:center;
+}
+
+.mobile-hide{
+    display:none !important;
+}
+
+.mobile-show{
+    display:block !important;
+}
+
+.mobile-full{
+    width:100%;
+}
+
+.mobile-stack{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.mobile-gap{
+    gap:15px;
+}
+
+.mobile-padding{
+    padding:20px;
+}
+
+.mobile-margin{
+    margin:20px 0;
+}
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 4
+   Header • Navigation • Hero • Timeline
+=========================================================== */
+
+/* ===========================================================
+   MOBILE HEADER
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+header{
+
+    width:100%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:9999;
+
+}
+
+header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 15px;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo img{
+
+    height:45px;
+
+    width:auto;
+
+}
+
+.menu-toggle{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:45px;
+
+    height:45px;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+}
+
+/* ===========================================================
+   OFF CANVAS MENU
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+nav{
+
+    position:fixed;
+
+    top:70px;
+
+    left:-100%;
+
+    width:280px;
+
+    height:calc(100vh - 70px);
+
+    background:#ffffff;
+
+    overflow-y:auto;
+
+    transition:.35s ease;
+
+    z-index:999;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+nav.active{
+
+    left:0;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:25px;
+
+}
+
+nav ul li{
+
+    width:100%;
+
+    margin-bottom:10px;
+
+}
+
+nav ul li a{
+
+    display:block;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #eeeeee;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE DROPDOWN
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+nav ul li ul{
+
+    position:relative;
+
+    width:100%;
+
+    left:0;
+
+    top:0;
+
+    display:block;
+
+    background:#f8f8f8;
+
+    box-shadow:none;
+
+    border-radius:10px;
+
+    margin-top:10px;
+
+}
+
+nav ul li ul li a{
+
+    padding-left:18px;
+
+}
+
+}
+
+/* ===========================================================
+   HERO RESPONSIVE
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.hero,
+.page-hero{
+
+    text-align:center;
+
+    min-height:85vh;
+
+}
+
+.hero-content{
+
+    width:100%;
+
+}
+
+.hero-content h1{
+
+    font-size:38px;
+
+    line-height:1.3;
+
+}
+
+.hero-content p{
+
+    width:100%;
+
+}
+
+.hero-image{
+
+    position:relative;
+
+    right:auto;
+
+    bottom:auto;
+
+    margin:40px auto 0;
+
+}
+
+}
+
+/* ===========================================================
+   VIDEO
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.video-wrapper iframe,
+
+.video-wrapper video{
+
+    height:250px;
+
+}
+
+}
+
+/* ===========================================================
+   BLOG DETAIL
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.blog-detail{
+
+    padding:0;
+
+}
+
+.blog-detail img{
+
+    border-radius:15px;
+
+}
+
+.blog-meta{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.blog-content{
+
+    width:100%;
+
+}
+
+}
+
+/* ===========================================================
+   TIMELINE
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.timeline{
+
+    padding-left:10px;
+
+}
+
+.timeline::before{
+
+    left:20px;
+
+}
+
+.timeline-item{
+
+    width:100%;
+
+    left:0!important;
+
+    padding-left:60px;
+
+    text-align:left!important;
+
+}
+
+.timeline-item::before{
+
+    left:10px!important;
+
+}
+
+.timeline-content{
+
+    padding:25px;
+
+}
+
+}
+
+/* ===========================================================
+   COMPANY TIMELINE
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.timeline-wrapper::before{
+
+    left:20px;
+
+}
+
+.timeline-card{
+
+    width:100%;
+
+    margin-left:0!important;
+
+    margin-right:0!important;
+
+    padding-left:55px;
+
+}
+
+.timeline-card::after{
+
+    left:12px!important;
+
+}
+
+}
+
+/* ===========================================================
+   IMAGE GRID
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.portfolio-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.blog-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE SPACING
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.mb-mobile{
+
+    margin-bottom:25px;
+
+}
+
+.mt-mobile{
+
+    margin-top:25px;
+
+}
+
+.py-mobile{
+
+    padding-top:60px;
+
+    padding-bottom:60px;
+
+}
+
+}
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 5
+   About • Founder • Services • Portfolio
+=========================================================== */
+
+/* ===========================================================
+   ABOUT
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.about-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.about-image{
+    order:1;
+    text-align:center;
+}
+
+.about-image img{
+    max-width:380px;
+    margin:auto;
+}
+
+.about-content{
+    order:2;
+    text-align:center;
+}
+
+.about-list{
+    margin-top:25px;
+}
+
+.about-list li{
+    justify-content:center;
+}
+
+}
+
+/* ===========================================================
+   FOUNDER
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.founder-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+}
+
+.founder-image{
+    text-align:center;
+}
+
+.founder-image img{
+    max-width:340px;
+    margin:auto;
+}
+
+.founder-content{
+    text-align:center;
+}
+
+.founder-social{
+    justify-content:center;
+}
+
+}
+
+/* ===========================================================
+   SERVICES
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.service-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.service-card{
+    padding:28px;
+}
+
+.service-card i{
+    width:70px;
+    height:70px;
+    font-size:30px;
+}
+
+}
+
+/* ===========================================================
+   PORTFOLIO
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.portfolio-grid{
+    grid-template-columns:1fr;
+}
+
+.portfolio-card{
+    border-radius:15px;
+}
+
+.portfolio-image img{
+    width:100%;
+}
+
+.portfolio-content{
+    padding:25px;
+}
+
+}
+
+/* ===========================================================
+   INVESTMENT
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.investment-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.investment-image{
+    text-align:center;
+}
+
+.investment-image img{
+    max-width:400px;
+    margin:auto;
+}
+
+.investment-content{
+    text-align:center;
+}
+
+.investment-list li{
+    justify-content:center;
+}
+
+}
+
+/* ===========================================================
+   STATISTICS
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.counter-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.counter-box{
+    padding:15px;
+}
+
+.counter-box h2{
+    font-size:36px;
+}
+
+}
+
+/* ===========================================================
+   TESTIMONIAL
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.testimonial-grid{
+    grid-template-columns:1fr;
+}
+
+.testimonial-card{
+    text-align:center;
+}
+
+.testimonial-card img{
+    margin:auto auto 20px;
+}
+
+}
+
+/* ===========================================================
+   PARTNERS
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.partner-grid,
+.client-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.partner-logo,
+.client-logo{
+    padding:20px;
+}
+
+.partner-logo img,
+.client-logo img{
+    max-width:100px;
+}
+
+}
+
+/* ===========================================================
+   PRICING
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.pricing-grid{
+    grid-template-columns:1fr;
+}
+
+.pricing-card{
+    margin-bottom:25px;
+}
+
+}
+
+/* ===========================================================
+   FEATURES
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.feature-grid{
+    grid-template-columns:1fr;
+}
+
+.feature-card{
+    text-align:center;
+}
+
+.feature-card i{
+    margin:auto auto 20px;
+}
+
+}
+
+/* ===========================================================
+   VISION & MISSION
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.vm-grid{
+    grid-template-columns:1fr;
+}
+
+.vm-card{
+    text-align:center;
+}
+
+.vm-card i{
+    margin:auto auto 20px;
+}
+
+}
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 6
+   Contact • Blog • FAQ • Privacy • Terms
+=========================================================== */
+
+/* ===========================================================
+   CONTACT
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.contact-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.contact-info{
+    order:2;
+}
+
+.contact-form{
+    order:1;
+    padding:25px;
+}
+
+.contact-box{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:25px;
+}
+
+.contact-box i{
+    margin-bottom:15px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+    font-size:15px;
+    padding:15px;
+}
+
+.contact-form button{
+    width:100%;
+}
+
+}
+
+/* ===========================================================
+   GOOGLE MAP
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.contact-map iframe{
+    height:320px;
+    border-radius:15px;
+}
+
+}
+
+/* ===========================================================
+   SOCIAL MEDIA
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.social-grid{
+    grid-template-columns:1fr;
+}
+
+.social-card{
+    padding:25px;
+}
+
+.social-card i{
+    font-size:36px;
+}
+
+}
+
+/* ===========================================================
+   BLOG
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.blog-grid{
+    grid-template-columns:1fr;
+}
+
+.blog-card{
+    border-radius:15px;
+}
+
+.blog-content{
+    padding:22px;
+}
+
+.blog-meta{
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+}
+
+.blog-content h3{
+    font-size:22px;
+}
+
+}
+
+/* ===========================================================
+   BLOG DETAIL
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.blog-detail{
+    padding:0;
+}
+
+.blog-detail img{
+    border-radius:15px;
+}
+
+.blog-detail blockquote{
+    padding:20px;
+    font-size:15px;
+}
+
+}
+
+/* ===========================================================
+   FAQ
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.faq-container{
+    width:100%;
+}
+
+.faq-question{
+    font-size:16px;
+    padding:18px 20px;
+}
+
+.faq-answer{
+    padding:0 20px 20px;
+    font-size:15px;
+}
+
+}
+
+/* ===========================================================
+   PRIVACY POLICY
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.privacy-grid{
+    grid-template-columns:1fr;
+}
+
+.privacy-card{
+    padding:25px;
+}
+
+.privacy-card h3{
+    font-size:22px;
+}
+
+}
+
+/* ===========================================================
+   TERMS & CONDITIONS
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.terms-grid{
+    grid-template-columns:1fr;
+}
+
+.terms-card{
+    padding:25px;
+}
+
+.terms-card h3{
+    font-size:22px;
+}
+
+}
+
+/* ===========================================================
+   HELP CENTER
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.help-grid{
+    grid-template-columns:1fr;
+}
+
+.help-card{
+    padding:25px;
+    text-align:center;
+}
+
+.help-card i{
+    margin:auto auto 20px;
+}
+
+}
+
+/* ===========================================================
+   DOWNLOAD SECTION
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.download-box{
+    padding:35px 25px;
+    text-align:center;
+}
+
+.download-box h2{
+    font-size:30px;
+}
+
+.download-box p{
+    font-size:15px;
+}
+
+}
+
+/* ===========================================================
+   CALL TO ACTION
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.cta-box{
+    padding:50px 25px;
+}
+
+.cta-box h2{
+    font-size:30px;
+}
+
+.cta-buttons,
+.hero-button{
+    flex-direction:column;
+    align-items:center;
+}
+
+.cta-buttons .btn-primary,
+.cta-buttons .btn-secondary,
+.hero-button .btn-primary,
+.hero-button .btn-secondary{
+    width:100%;
+    max-width:320px;
+    justify-content:center;
+}
+
+}
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 6
+   Contact • Blog • FAQ • Privacy • Terms
+=========================================================== */
+
+/* ===========================================================
+   CONTACT
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.contact-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.contact-info{
+    order:2;
+}
+
+.contact-form{
+    order:1;
+    padding:25px;
+}
+
+.contact-box{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:25px;
+}
+
+.contact-box i{
+    margin-bottom:15px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+    font-size:15px;
+    padding:15px;
+}
+
+.contact-form button{
+    width:100%;
+}
+
+}
+
+/* ===========================================================
+   GOOGLE MAP
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.contact-map iframe{
+    height:320px;
+    border-radius:15px;
+}
+
+}
+
+/* ===========================================================
+   SOCIAL MEDIA
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.social-grid{
+    grid-template-columns:1fr;
+}
+
+.social-card{
+    padding:25px;
+}
+
+.social-card i{
+    font-size:36px;
+}
+
+}
+
+/* ===========================================================
+   BLOG
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.blog-grid{
+    grid-template-columns:1fr;
+}
+
+.blog-card{
+    border-radius:15px;
+}
+
+.blog-content{
+    padding:22px;
+}
+
+.blog-meta{
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+}
+
+.blog-content h3{
+    font-size:22px;
+}
+
+}
+
+/* ===========================================================
+   BLOG DETAIL
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.blog-detail{
+    padding:0;
+}
+
+.blog-detail img{
+    border-radius:15px;
+}
+
+.blog-detail blockquote{
+    padding:20px;
+    font-size:15px;
+}
+
+}
+
+/* ===========================================================
+   FAQ
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.faq-container{
+    width:100%;
+}
+
+.faq-question{
+    font-size:16px;
+    padding:18px 20px;
+}
+
+.faq-answer{
+    padding:0 20px 20px;
+    font-size:15px;
+}
+
+}
+
+/* ===========================================================
+   PRIVACY POLICY
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.privacy-grid{
+    grid-template-columns:1fr;
+}
+
+.privacy-card{
+    padding:25px;
+}
+
+.privacy-card h3{
+    font-size:22px;
+}
+
+}
+
+/* ===========================================================
+   TERMS & CONDITIONS
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.terms-grid{
+    grid-template-columns:1fr;
+}
+
+.terms-card{
+    padding:25px;
+}
+
+.terms-card h3{
+    font-size:22px;
+}
+
+}
+
+/* ===========================================================
+   HELP CENTER
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.help-grid{
+    grid-template-columns:1fr;
+}
+
+.help-card{
+    padding:25px;
+    text-align:center;
+}
+
+.help-card i{
+    margin:auto auto 20px;
+}
+
+}
+
+/* ===========================================================
+   DOWNLOAD SECTION
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.download-box{
+    padding:35px 25px;
+    text-align:center;
+}
+
+.download-box h2{
+    font-size:30px;
+}
+
+.download-box p{
+    font-size:15px;
+}
+
+}
+
+/* ===========================================================
+   CALL TO ACTION
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.cta-box{
+    padding:50px 25px;
+}
+
+.cta-box h2{
+    font-size:30px;
+}
+
+.cta-buttons,
+.hero-button{
+    flex-direction:column;
+    align-items:center;
+}
+
+.cta-buttons .btn-primary,
+.cta-buttons .btn-secondary,
+.hero-button .btn-primary,
+.hero-button .btn-secondary{
+    width:100%;
+    max-width:320px;
+    justify-content:center;
+}
+
+}
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 8
+   Privacy • Terms • 404 • Gallery • Timeline
+=========================================================== */
+
+/* ===========================================================
+   PRIVACY POLICY
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.privacy-intro{
+
+    text-align:center;
+
+}
+
+.privacy-grid{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+}
+
+.privacy-image img{
+
+    max-width:380px;
+
+    margin:auto;
+
+}
+
+.privacy-content{
+
+    text-align:center;
+
+}
+
+.privacy-content ul{
+
+    padding:0;
+
+}
+
+.privacy-content li{
+
+    justify-content:center;
+
+}
+
+.privacy-card{
+
+    padding:25px;
+
+}
+
+}
+
+/* ===========================================================
+   TERMS & CONDITIONS
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.terms-intro{
+
+    text-align:center;
+
+}
+
+.terms-grid{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+}
+
+.terms-image img{
+
+    max-width:380px;
+
+    margin:auto;
+
+}
+
+.terms-content{
+
+    text-align:center;
+
+}
+
+.terms-content ul{
+
+    padding:0;
+
+}
+
+.terms-content li{
+
+    justify-content:center;
+
+}
+
+.terms-card{
+
+    padding:25px;
+
+}
+
+}
+
+/* ===========================================================
+   404 PAGE
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.error-page{
+
+    min-height:80vh;
+
+    text-align:center;
+
+}
+
+.error-image{
+
+    max-width:260px;
+
+    margin:auto;
+
+}
+
+.error-code{
+
+    font-size:90px;
+
+}
+
+.search-box{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+}
+
+.search-box button{
+
+    width:100%;
+
+}
+
+.quick-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.recommended-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===========================================================
+   GALLERY
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+}
+
+.gallery-item{
+
+    border-radius:15px;
+
+}
+
+}
+
+/* ===========================================================
+   VIDEO
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.video-wrapper{
+
+    width:100%;
+
+}
+
+.video-wrapper iframe,
+
+.video-wrapper video{
+
+    width:100%;
+
+    height:240px;
+
+    border-radius:15px;
+
+}
+
+}
+
+/* ===========================================================
+   AWARDS
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.award-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.award-card{
+
+    padding:25px;
+
+}
+
+}
+
+/* ===========================================================
+   PARTNERS
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.partner-slider{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.partner-item{
+
+    padding:18px;
+
+}
+
+.partner-item img{
+
+    max-width:90px;
+
+}
+
+}
+
+/* ===========================================================
+   TIMELINE
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.timeline{
+
+    padding-left:15px;
+
+}
+
+.timeline::before{
+
+    left:20px;
+
+}
+
+.timeline-item{
+
+    width:100%;
+
+    left:0 !important;
+
+    text-align:left !important;
+
+    padding-left:55px;
+
+}
+
+.timeline-item::before{
+
+    left:12px !important;
+
+}
+
+.timeline-content{
+
+    padding:22px;
+
+}
+
+}
+
+/* ===========================================================
+   COMPANY TIMELINE
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.timeline-wrapper::before{
+
+    left:18px;
+
+}
+
+.timeline-card{
+
+    width:100%;
+
+    margin-left:0 !important;
+
+    margin-right:0 !important;
+
+    padding-left:50px;
+
+}
+
+.timeline-card::after{
+
+    left:10px !important;
+
+}
+
+}
+
+/* ===========================================================
+   UPDATE BOX
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.update-box{
+
+    width:100%;
+
+    padding:25px;
+
+}
+
+}
+
+/* ===========================================================
+   DOWNLOAD BOX
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.download-box{
+
+    padding:35px 20px;
+
+}
+
+.download-box .btn-primary{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+}
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 9
+   Footer • Floating Button • Popup • Foldable
+=========================================================== */
+
+/* ===========================================================
+   FOOTER ENTERPRISE
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.footer{
+
+    padding:60px 0 25px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+    text-align:center;
+
+}
+
+.footer-item{
+
+    width:100%;
+
+}
+
+.footer-item h3{
+
+    font-size:22px;
+
+}
+
+.footer-item p{
+
+    font-size:15px;
+
+}
+
+.footer-item ul{
+
+    padding:0;
+
+}
+
+.footer-item ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-logo{
+
+    width:150px;
+
+    margin:0 auto 20px;
+
+}
+
+.footer-bottom{
+
+    margin-top:25px;
+
+    font-size:14px;
+
+}
+
+}
+
+/* ===========================================================
+   FLOATING WHATSAPP
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.whatsapp-float{
+
+    width:60px;
+
+    height:60px;
+
+    bottom:18px;
+
+    right:18px;
+
+    font-size:28px;
+
+    animation:waPulse 2s infinite;
+
+}
+
+}
+
+@keyframes waPulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.12);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* ===========================================================
+   BACK TO TOP
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+#backToTop{
+
+    width:48px;
+
+    height:48px;
+
+    right:22px;
+
+    bottom:92px;
+
+    font-size:18px;
+
+}
+
+}
+
+/* ===========================================================
+   POPUP CHAT
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.popup-chat{
+
+    width:94%;
+
+    max-width:360px;
+
+    right:3%;
+
+    bottom:95px;
+
+}
+
+.popup-header{
+
+    font-size:16px;
+
+    padding:15px 18px;
+
+}
+
+.popup-body{
+
+    padding:18px;
+
+}
+
+.popup-body h3{
+
+    font-size:20px;
+
+}
+
+.popup-body p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+.popup-body ul{
+
+    margin:15px 0;
+
+}
+
+.popup-body li{
+
+    font-size:14px;
+
+}
+
+}
+
+/* ===========================================================
+   LANDSCAPE MOBILE
+=========================================================== */
+
+@media screen and (max-width:932px) and (orientation:landscape){
+
+.hero,
+.page-hero{
+
+    min-height:120vh;
+
+}
+
+nav{
+
+    height:calc(100vh - 70px);
+
+    overflow-y:auto;
+
+}
+
+.popup-chat{
+
+    max-height:80vh;
+
+    overflow-y:auto;
+
+}
+
+}
+
+/* ===========================================================
+   FOLDABLE DEVICES
+=========================================================== */
+
+@media screen and (max-width:720px){
+
+.hero-content{
+
+    width:100%;
+
+}
+
+.hero-button{
+
+    flex-direction:column;
+
+}
+
+.hero-button a{
+
+    width:100%;
+
+}
+
+.download-box{
+
+    padding:30px 20px;
+
+}
+
+}
+
+/* ===========================================================
+   EXTRA SMALL DEVICES
+=========================================================== */
+
+@media screen and (max-width:390px){
+
+.logo img{
+
+    height:38px;
+
+}
+
+.hero-content h1{
+
+    font-size:26px;
+
+}
+
+.hero-content p{
+
+    font-size:14px;
+
+}
+
+.section-title h2{
+
+    font-size:24px;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+    padding:13px 18px;
+
+    font-size:14px;
+
+}
+
+}
+
+/* ===========================================================
+   IMAGE OPTIMIZATION
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+.hero-image img,
+.about-image img,
+.founder-image img,
+.portfolio-image img,
+.blog-image img,
+.gallery-item img{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE UTILITIES
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+.mobile-hide{
+
+    display:none !important;
+
+}
+
+.mobile-show{
+
+    display:block !important;
+
+}
+
+.mobile-center{
+
+    text-align:center !important;
+
+}
+
+.mobile-left{
+
+    text-align:left !important;
+
+}
+
+.mobile-full{
+
+    width:100% !important;
+
+}
+
+.mobile-mt-10{
+
+    margin-top:10px;
+
+}
+
+.mobile-mt-20{
+
+    margin-top:20px;
+
+}
+
+.mobile-mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.mobile-p-15{
+
+    padding:15px;
+
+}
+
+.mobile-p-20{
+
+    padding:20px;
+
+}
+
+.mobile-rounded{
+
+    border-radius:12px;
+
+}
+
+.mobile-shadow{
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+}
+
+/* ===========================================================
+   TOUCH OPTIMIZATION
+=========================================================== */
+
+@media (hover:none){
+
+button,
+a,
+.btn-primary,
+.btn-secondary{
+
+    min-height:48px;
+
+}
+
+input,
+textarea,
+select{
+
+    min-height:46px;
+
+}
+
+}
+
+/* ===========================================================
+   RESPONSIVE.CSS
+   Part 10
+   Final Utilities
+=========================================================== */
+
+/* ===========================================================
+   DARK MODE
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+body.dark{
+    background:#0f1115;
+    color:#f5f5f5;
+}
+
+body.dark header{
+    background:#15181d;
+}
+
+body.dark nav{
+    background:#15181d;
+}
+
+body.dark .footer{
+    background:#0b0d10;
+}
+
+body.dark .service-card,
+body.dark .portfolio-card,
+body.dark .blog-card,
+body.dark .feature-card,
+body.dark .pricing-card,
+body.dark .company-card,
+body.dark .help-card,
+body.dark .info-card,
+body.dark .contact-form,
+body.dark .vm-card{
+    background:#1d2128;
+    color:#ffffff;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5{
+    color:#ffffff;
+}
+
+body.dark p{
+    color:#d8d8d8;
+}
+
+}
+
+/* ===========================================================
+   PRINT
+=========================================================== */
+
+@media print{
+
+header,
+footer,
+.whatsapp-float,
+.popup-chat,
+#backToTop,
+.menu-toggle,
+.scroll-down,
+.hero-button{
+
+    display:none !important;
+
+}
+
+body{
+
+    background:#ffffff !important;
+
+    color:#000000 !important;
+
+}
+
+section{
+
+    padding:20px 0;
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+
+}
+
+/* ===========================================================
+   ACCESSIBILITY
+=========================================================== */
+
+@media screen{
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus{
+
+    outline:3px solid rgba(214,0,0,.35);
+
+    outline-offset:3px;
+
+}
+
+}
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+
+@media (prefers-reduced-motion: reduce){
+
+*{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+
+}
+
+}
+
+/* ===========================================================
+   HIGH DPI DISPLAY
+=========================================================== */
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi){
+
+img{
+
+    image-rendering:auto;
+
+}
+
+}
+
+/* ===========================================================
+   LARGE DISPLAY
+=========================================================== */
+
+@media screen and (min-width:1920px){
+
+.container{
+
+    max-width:1440px;
+
+}
+
+.hero-content{
+
+    max-width:760px;
+
+}
+
+.hero-content h1{
+
+    font-size:72px;
+
+}
+
+}
+
+/* ===========================================================
+   EXTRA LARGE DISPLAY
+=========================================================== */
+
+@media screen and (min-width:2560px){
+
+.container{
+
+    max-width:1700px;
+
+}
+
+body{
+
+    font-size:18px;
+
+}
+
+}
+
+/* ===========================================================
+   FINAL UTILITIES
+=========================================================== */
+
+.hide-desktop{
+
+    display:none;
+
+}
+
+@media screen and (max-width:768px){
+
+.hide-desktop{
+
+    display:block;
+
+}
+
+.hide-mobile{
+
+    display:none;
+
+}
+
+.text-mobile-center{
+
+    text-align:center !important;
+
+}
+
+.flex-mobile-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.w-mobile-100{
+
+    width:100% !important;
+
+}
+
+}
+
+/* ===========================================================
+   SAFE AREA (iPhone)
+=========================================================== */
+
+body{
+
+    padding-left:env(safe-area-inset-left);
+
+    padding-right:env(safe-area-inset-right);
+
+    padding-bottom:env(safe-area-inset-bottom);
+
+}
+
+/* ===========================================================
+   END OF FILE
+=========================================================== */

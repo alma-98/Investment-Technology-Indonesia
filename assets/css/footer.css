@@ -1,0 +1,5908 @@
+/* ===========================================================
+   FOOTER.CSS
+   Investment Technology Indonesia
+   Part 1
+   Footer Base & Top Area
+=========================================================== */
+
+/* ===========================================================
+   FOOTER
+=========================================================== */
+
+.footer{
+
+    position:relative;
+
+    margin-top:120px;
+
+    overflow:hidden;
+
+    background:#111111;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   CONTAINER
+=========================================================== */
+
+.footer-container{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:1280px;
+
+    margin:0 auto;
+
+    padding:0 24px;
+
+}
+
+/* ===========================================================
+   TOP SECTION
+=========================================================== */
+
+.footer-top{
+
+    position:relative;
+
+    padding:100px 0 70px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   BADGE
+=========================================================== */
+
+.footer-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 20px;
+
+    margin-bottom:24px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.08);
+
+    color:#ffffff;
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.footer-badge i{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+.footer-header{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.footer-title{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+    font-size:52px;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+}
+
+.footer-title span{
+
+    color:var(--primary);
+
+}
+
+.footer-subtitle{
+
+    margin-bottom:18px;
+
+    color:#dddddd;
+
+    font-size:20px;
+
+    font-weight:500;
+
+    line-height:1.7;
+
+}
+
+.footer-description{
+
+    max-width:700px;
+
+    margin:0 auto;
+
+}
+
+.footer-description p{
+
+    color:#bbbbbb;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   DIVIDER
+=========================================================== */
+
+.footer-divider{
+
+    width:90px;
+
+    height:4px;
+
+    margin:34px auto;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #ff7070
+    );
+
+}
+
+/* ===========================================================
+   INTRO BOX
+=========================================================== */
+
+.footer-intro{
+
+    margin-top:60px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+}
+
+.footer-intro h3{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+    font-size:30px;
+
+}
+
+.footer-intro p{
+
+    color:#cccccc;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   QUICK ACTIONS
+=========================================================== */
+
+.footer-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
+
+.footer-actions .btn{
+
+    min-width:180px;
+
+}
+
+/* ===========================================================
+   SUMMARY
+=========================================================== */
+
+.footer-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-top:70px;
+
+}
+
+.footer-summary-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    transition:.35s ease;
+
+}
+
+.footer-summary-card:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.footer-summary-icon{
+
+    width:72px;
+
+    height:72px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:rgba(214,0,0,.18);
+
+    color:#ffffff;
+
+    font-size:30px;
+
+}
+
+.footer-summary-card h3{
+
+    margin-bottom:10px;
+
+    color:#ffffff;
+
+    font-size:36px;
+
+}
+
+.footer-summary-card span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#ffffff;
+
+    font-weight:700;
+
+}
+
+.footer-summary-card p{
+
+    color:#bbbbbb;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   HIGHLIGHT
+=========================================================== */
+
+.footer-highlight{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   BACKGROUND EFFECTS
+=========================================================== */
+
+.footer-decoration{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+.footer-decoration.one{
+
+    top:-100px;
+
+    left:-100px;
+
+    width:260px;
+
+    height:260px;
+
+    background:rgba(214,0,0,.08);
+
+}
+
+.footer-decoration.two{
+
+    top:180px;
+
+    right:-120px;
+
+    width:280px;
+
+    height:280px;
+
+    background:rgba(255,255,255,.03);
+
+}
+
+.footer-decoration.three{
+
+    bottom:-80px;
+
+    left:40%;
+
+    width:180px;
+
+    height:180px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+/* ===========================================================
+   GRID HELPERS
+=========================================================== */
+
+.footer-grid{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+.footer-grid-2{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid-3{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.footer-grid-4{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+/* ===========================================================
+   SPACING
+=========================================================== */
+
+.footer-section{
+
+    margin-top:90px;
+
+}
+
+.footer-section:first-child{
+
+    margin-top:0;
+
+}
+
+/* ===========================================================
+   END PART 1
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 2
+   Company Information & Logo
+=========================================================== */
+
+/* ===========================================================
+   MAIN FOOTER
+=========================================================== */
+
+.footer-main{
+
+    padding:90px 0;
+
+}
+
+.footer-main-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:50px;
+
+    align-items:flex-start;
+
+}
+
+/* ===========================================================
+   COMPANY SECTION
+=========================================================== */
+
+.footer-company{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ===========================================================
+   LOGO
+=========================================================== */
+
+.footer-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:28px;
+
+    text-decoration:none;
+
+}
+
+.footer-logo img{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:contain;
+
+}
+
+.footer-logo-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-logo-text h2{
+
+    margin-bottom:6px;
+
+    color:#ffffff;
+
+    font-size:28px;
+
+    font-weight:800;
+
+}
+
+.footer-logo-text span{
+
+    color:#bbbbbb;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   COMPANY DESCRIPTION
+=========================================================== */
+
+.footer-company-description{
+
+    margin-bottom:30px;
+
+}
+
+.footer-company-description p{
+
+    color:#bbbbbb;
+
+    font-size:15px;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   COMPANY STATISTICS
+=========================================================== */
+
+.footer-company-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+.footer-stat{
+
+    padding:22px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.footer-stat h3{
+
+    margin-bottom:8px;
+
+    color:var(--primary);
+
+    font-size:28px;
+
+    font-weight:800;
+
+}
+
+.footer-stat span{
+
+    color:#cccccc;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   COMPANY INFO
+=========================================================== */
+
+.footer-company-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.footer-company-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+}
+
+.footer-company-item i{
+
+    margin-top:4px;
+
+    color:var(--primary);
+
+    font-size:18px;
+
+}
+
+.footer-company-item div{
+
+    flex:1;
+
+}
+
+.footer-company-item h5{
+
+    margin-bottom:6px;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+}
+
+.footer-company-item p{
+
+    color:#bbbbbb;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   VISION & MISSION
+=========================================================== */
+
+.footer-vision{
+
+    margin-top:40px;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.footer-vision h4{
+
+    margin-bottom:14px;
+
+    color:#ffffff;
+
+}
+
+.footer-vision p{
+
+    color:#bbbbbb;
+
+    line-height:1.8;
+
+}
+
+.footer-mission{
+
+    margin-top:24px;
+
+}
+
+.footer-mission ul{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.footer-mission li{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-bottom:12px;
+
+}
+
+.footer-mission li:last-child{
+
+    margin-bottom:0;
+
+}
+
+.footer-mission i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+}
+
+.footer-mission span{
+
+    color:#bbbbbb;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   CORE VALUES
+=========================================================== */
+
+.footer-values{
+
+    margin-top:40px;
+
+}
+
+.footer-values h4{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.footer-value-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:14px;
+
+}
+
+.footer-value{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 16px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.footer-value i{
+
+    color:var(--primary);
+
+}
+
+.footer-value span{
+
+    color:#cccccc;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   BUSINESS COVERAGE
+=========================================================== */
+
+.footer-coverage{
+
+    margin-top:40px;
+
+}
+
+.footer-coverage h4{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.footer-coverage-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.footer-coverage-tags span{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    color:#dddddd;
+
+    font-size:13px;
+
+    transition:.3s ease;
+
+}
+
+.footer-coverage-tags span:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   TRUST INDICATORS
+=========================================================== */
+
+.footer-trust{
+
+    margin-top:40px;
+
+}
+
+.footer-trust h4{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.footer-trust-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.footer-trust-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.footer-trust-item i{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:rgba(214,0,0,.18);
+
+    color:#ffffff;
+
+}
+
+.footer-trust-item span{
+
+    color:#cccccc;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   END PART 2
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 3
+   Navigation • Services • Resources
+=========================================================== */
+
+/* ===========================================================
+   FOOTER COLUMN
+=========================================================== */
+
+.footer-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-column-title{
+
+    position:relative;
+
+    margin-bottom:30px;
+
+    padding-bottom:14px;
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.footer-column-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:50px;
+
+    height:3px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+}
+
+/* ===========================================================
+   FOOTER MENU
+=========================================================== */
+
+.footer-menu{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.footer-menu li{
+
+    margin-bottom:14px;
+
+}
+
+.footer-menu li:last-child{
+
+    margin-bottom:0;
+
+}
+
+.footer-menu a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#bbbbbb;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.3s ease;
+
+}
+
+.footer-menu a i{
+
+    width:18px;
+
+    color:var(--primary);
+
+    transition:.3s ease;
+
+}
+
+.footer-menu a:hover{
+
+    color:#ffffff;
+
+    transform:translateX(6px);
+
+}
+
+.footer-menu a:hover i{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   QUICK LINKS
+=========================================================== */
+
+.footer-quick-links{
+
+    margin-bottom:45px;
+
+}
+
+.footer-quick-links .footer-menu a{
+
+    font-weight:500;
+
+}
+
+/* ===========================================================
+   SERVICES
+=========================================================== */
+
+.footer-services{
+
+    margin-bottom:45px;
+
+}
+
+.footer-service-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    padding:14px 16px;
+
+    margin-bottom:12px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.03);
+
+    transition:.35s ease;
+
+}
+
+.footer-service-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.footer-service-item:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.footer-service-item i{
+
+    margin-top:4px;
+
+    color:var(--primary);
+
+}
+
+.footer-service-item div{
+
+    flex:1;
+
+}
+
+.footer-service-item h5{
+
+    margin-bottom:6px;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+}
+
+.footer-service-item p{
+
+    color:#bdbdbd;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   SOLUTIONS
+=========================================================== */
+
+.footer-solutions{
+
+    margin-bottom:45px;
+
+}
+
+.footer-solution-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.footer-solution{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.footer-solution i{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:rgba(214,0,0,.15);
+
+    color:#ffffff;
+
+}
+
+.footer-solution span{
+
+    color:#cccccc;
+
+    transition:.3s ease;
+
+}
+
+.footer-solution:hover span{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   RESOURCES
+=========================================================== */
+
+.footer-resources{
+
+    margin-bottom:45px;
+
+}
+
+.footer-resource{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 18px;
+
+    margin-bottom:12px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.03);
+
+    transition:.3s ease;
+
+}
+
+.footer-resource:last-child{
+
+    margin-bottom:0;
+
+}
+
+.footer-resource:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.footer-resource h5{
+
+    color:#ffffff;
+
+    font-size:15px;
+
+}
+
+.footer-resource small{
+
+    color:#9d9d9d;
+
+}
+
+.footer-resource i{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   BLOG LINKS
+=========================================================== */
+
+.footer-blog{
+
+    margin-bottom:45px;
+
+}
+
+.footer-blog-item{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-bottom:18px;
+
+}
+
+.footer-blog-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.footer-blog-thumb{
+
+    width:72px;
+
+    height:72px;
+
+    overflow:hidden;
+
+    border-radius:14px;
+
+    flex-shrink:0;
+
+}
+
+.footer-blog-thumb img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.footer-blog-content{
+
+    flex:1;
+
+}
+
+.footer-blog-content h5{
+
+    margin-bottom:8px;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    line-height:1.5;
+
+}
+
+.footer-blog-content span{
+
+    color:#999999;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   FAQ LINKS
+=========================================================== */
+
+.footer-faq{
+
+    margin-bottom:45px;
+
+}
+
+.footer-faq-item{
+
+    padding:18px 20px;
+
+    margin-bottom:14px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.03);
+
+    transition:.35s ease;
+
+}
+
+.footer-faq-item:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.footer-faq-item h5{
+
+    margin-bottom:8px;
+
+    color:#ffffff;
+
+}
+
+.footer-faq-item p{
+
+    color:#bbbbbb;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   SITEMAP
+=========================================================== */
+
+.footer-sitemap{
+
+    margin-top:30px;
+
+}
+
+.footer-sitemap-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+.footer-sitemap a{
+
+    display:block;
+
+    padding:12px 16px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.03);
+
+    color:#cccccc;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+.footer-sitemap a:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   NAVIGATION HOVER EFFECT
+=========================================================== */
+
+.footer-menu a,
+.footer-sitemap a,
+.footer-resource,
+.footer-service-item,
+.footer-blog-item,
+.footer-faq-item{
+
+    transition:all .35s ease;
+
+}
+
+/* ===========================================================
+   END PART 3
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 4
+   Contact Information & Office Details
+=========================================================== */
+
+/* ===========================================================
+   CONTACT SECTION
+=========================================================== */
+
+.footer-contact{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-contact-title{
+
+    margin-bottom:28px;
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   CONTACT LIST
+=========================================================== */
+
+.footer-contact-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.footer-contact-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    transition:.35s ease;
+
+}
+
+.footer-contact-item:hover{
+
+    background:rgba(255,255,255,.08);
+
+    transform:translateX(6px);
+
+}
+
+.footer-contact-icon{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:rgba(214,0,0,.18);
+
+    color:#ffffff;
+
+    flex-shrink:0;
+
+}
+
+.footer-contact-content{
+
+    flex:1;
+
+}
+
+.footer-contact-content h5{
+
+    margin-bottom:6px;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+}
+
+.footer-contact-content p{
+
+    color:#bdbdbd;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+.footer-contact-content a{
+
+    color:#bdbdbd;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+.footer-contact-content a:hover{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   OFFICE ADDRESS
+=========================================================== */
+
+.footer-office{
+
+    margin-top:40px;
+
+}
+
+.footer-office-card{
+
+    padding:26px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.footer-office-card h4{
+
+    margin-bottom:16px;
+
+    color:#ffffff;
+
+}
+
+.footer-office-card p{
+
+    color:#bbbbbb;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   EMAIL DIRECTORY
+=========================================================== */
+
+.footer-email-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-top:24px;
+
+}
+
+.footer-email-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.footer-email-item i{
+
+    color:var(--primary);
+
+}
+
+.footer-email-item a{
+
+    color:#cccccc;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+.footer-email-item a:hover{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   PHONE DIRECTORY
+=========================================================== */
+
+.footer-phone-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-top:24px;
+
+}
+
+.footer-phone-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.footer-phone-item i{
+
+    color:var(--primary);
+
+}
+
+.footer-phone-item span{
+
+    color:#cccccc;
+
+}
+
+/* ===========================================================
+   BUSINESS HOURS
+=========================================================== */
+
+.footer-business-hours{
+
+    margin-top:40px;
+
+}
+
+.footer-business-hours h4{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.footer-business-hours ul{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.footer-business-hours li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-business-hours li:last-child{
+
+    border-bottom:none;
+
+}
+
+.footer-business-hours strong{
+
+    color:#ffffff;
+
+}
+
+.footer-business-hours span{
+
+    color:#bbbbbb;
+
+}
+
+/* ===========================================================
+   REGIONAL OFFICES
+=========================================================== */
+
+.footer-regional{
+
+    margin-top:40px;
+
+}
+
+.footer-regional-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:14px;
+
+}
+
+.footer-regional-item{
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.04);
+
+    transition:.35s ease;
+
+}
+
+.footer-regional-item:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.footer-regional-item h5{
+
+    margin-bottom:8px;
+
+    color:#ffffff;
+
+}
+
+.footer-regional-item p{
+
+    color:#bbbbbb;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   VISITOR INFORMATION
+=========================================================== */
+
+.footer-visitor{
+
+    margin-top:40px;
+
+}
+
+.footer-visitor-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.footer-visitor-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+}
+
+.footer-visitor-item i{
+
+    margin-top:4px;
+
+    color:var(--primary);
+
+}
+
+.footer-visitor-item span{
+
+    color:#bbbbbb;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   MAP LINK
+=========================================================== */
+
+.footer-map{
+
+    margin-top:30px;
+
+}
+
+.footer-map a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 22px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s ease;
+
+}
+
+.footer-map a:hover{
+
+    background:#c00000;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================================================
+   CONTACT CARDS
+=========================================================== */
+
+.footer-contact-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+.footer-contact-card{
+
+    padding:24px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.04);
+
+    text-align:center;
+
+    transition:.35s ease;
+
+}
+
+.footer-contact-card:hover{
+
+    background:rgba(255,255,255,.08);
+
+    transform:translateY(-6px);
+
+}
+
+.footer-contact-card i{
+
+    font-size:30px;
+
+    color:var(--primary);
+
+    margin-bottom:14px;
+
+}
+
+.footer-contact-card h5{
+
+    margin-bottom:10px;
+
+    color:#ffffff;
+
+}
+
+.footer-contact-card p{
+
+    color:#bbbbbb;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   END PART 4
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 5
+   Social Media • Newsletter • Community
+=========================================================== */
+
+/* ===========================================================
+   SOCIAL MEDIA
+=========================================================== */
+
+.footer-social{
+
+    margin-top:40px;
+
+}
+
+.footer-social h4{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+.footer-social-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+.footer-social-link{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.05);
+
+    color:#ffffff;
+
+    font-size:20px;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.footer-social-link:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    transform:translateY(-6px);
+
+}
+
+/* ===========================================================
+   NEWSLETTER
+=========================================================== */
+
+.footer-newsletter{
+
+    margin-top:50px;
+
+}
+
+.footer-newsletter h4{
+
+    margin-bottom:14px;
+
+    color:#ffffff;
+
+}
+
+.footer-newsletter p{
+
+    margin-bottom:24px;
+
+    color:#bbbbbb;
+
+    line-height:1.8;
+
+}
+
+.footer-newsletter-form{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.footer-newsletter-form input{
+
+    flex:1;
+
+    padding:16px 18px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.08);
+
+    color:#ffffff;
+
+}
+
+.footer-newsletter-form input::placeholder{
+
+    color:#999999;
+
+}
+
+.footer-newsletter-form input:focus{
+
+    outline:none;
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.footer-newsletter-form button{
+
+    padding:16px 26px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.footer-newsletter-form button:hover{
+
+    background:#c00000;
+
+}
+
+/* ===========================================================
+   WHATSAPP
+=========================================================== */
+
+.footer-whatsapp{
+
+    margin-top:45px;
+
+}
+
+.footer-whatsapp a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px 22px;
+
+    border-radius:20px;
+
+    background:#25d366;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+}
+
+.footer-whatsapp a:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 40px rgba(37,211,102,.35);
+
+}
+
+.footer-whatsapp i{
+
+    font-size:28px;
+
+}
+
+/* ===========================================================
+   COMMUNITY LINKS
+=========================================================== */
+
+.footer-community{
+
+    margin-top:45px;
+
+}
+
+.footer-community-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+}
+
+.footer-community-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    text-decoration:none;
+
+    color:#cccccc;
+
+    transition:.35s ease;
+
+}
+
+.footer-community-item:hover{
+
+    background:rgba(255,255,255,.08);
+
+    color:#ffffff;
+
+}
+
+.footer-community-item i{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+}
+
+/* ===========================================================
+   DOWNLOAD APP
+=========================================================== */
+
+.footer-download{
+
+    margin-top:50px;
+
+}
+
+.footer-download h4{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.footer-store-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+}
+
+.footer-store{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:16px 22px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.footer-store:hover{
+
+    background:rgba(255,255,255,.10);
+
+}
+
+.footer-store i{
+
+    font-size:28px;
+
+    color:#ffffff;
+
+}
+
+.footer-store small{
+
+    display:block;
+
+    color:#aaaaaa;
+
+    font-size:12px;
+
+}
+
+.footer-store strong{
+
+    display:block;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+   QR CODE
+=========================================================== */
+
+.footer-qr{
+
+    margin-top:45px;
+
+    text-align:center;
+
+}
+
+.footer-qr img{
+
+    width:160px;
+
+    height:160px;
+
+    margin:auto;
+
+    padding:10px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+}
+
+.footer-qr p{
+
+    margin-top:16px;
+
+    color:#bbbbbb;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   CUSTOMER REVIEW
+=========================================================== */
+
+.footer-review{
+
+    margin-top:50px;
+
+    padding:28px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.footer-review-stars{
+
+    display:flex;
+
+    gap:4px;
+
+    margin-bottom:16px;
+
+}
+
+.footer-review-stars i{
+
+    color:#ffc107;
+
+}
+
+.footer-review p{
+
+    color:#cccccc;
+
+    line-height:1.8;
+
+    margin-bottom:16px;
+
+}
+
+.footer-review-author{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.footer-review-author img{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.footer-review-author h5{
+
+    color:#ffffff;
+
+    margin-bottom:4px;
+
+}
+
+.footer-review-author span{
+
+    color:#999999;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   COMMUNITY CTA
+=========================================================== */
+
+.footer-community-cta{
+
+    margin-top:50px;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(214,0,0,.18),
+        rgba(255,255,255,.05)
+    );
+
+}
+
+.footer-community-cta h3{
+
+    margin-bottom:16px;
+
+    color:#ffffff;
+
+}
+
+.footer-community-cta p{
+
+    margin-bottom:24px;
+
+    color:#cccccc;
+
+    line-height:1.8;
+
+}
+
+.footer-community-cta .btn{
+
+    min-width:200px;
+
+}
+
+/* ===========================================================
+   END PART 5
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 6
+   Certifications • Partners • Trust
+=========================================================== */
+
+/* ===========================================================
+   CERTIFICATIONS
+=========================================================== */
+
+.footer-certifications{
+
+    margin-top:50px;
+
+}
+
+.footer-certifications h4{
+
+    margin-bottom:22px;
+
+    color:#ffffff;
+
+}
+
+.footer-certification-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+.footer-certification{
+
+    padding:22px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    transition:.35s ease;
+
+}
+
+.footer-certification:hover{
+
+    background:rgba(255,255,255,.08);
+
+    transform:translateY(-6px);
+
+}
+
+.footer-certification img{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 14px;
+
+    object-fit:contain;
+
+}
+
+.footer-certification h5{
+
+    margin-bottom:8px;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+}
+
+.footer-certification p{
+
+    color:#bdbdbd;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   TECHNOLOGY PARTNERS
+=========================================================== */
+
+.footer-partners{
+
+    margin-top:60px;
+
+}
+
+.footer-partners h4{
+
+    margin-bottom:24px;
+
+    color:#ffffff;
+
+}
+
+.footer-partner-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.footer-partner{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    transition:.35s ease;
+
+}
+
+.footer-partner:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.footer-partner img{
+
+    max-width:100%;
+
+    max-height:46px;
+
+    object-fit:contain;
+
+}
+
+/* ===========================================================
+   CLIENT LOGOS
+=========================================================== */
+
+.footer-clients{
+
+    margin-top:60px;
+
+}
+
+.footer-clients h4{
+
+    margin-bottom:22px;
+
+    color:#ffffff;
+
+}
+
+.footer-client-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:16px;
+
+}
+
+.footer-client{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.03);
+
+    transition:.3s ease;
+
+}
+
+.footer-client:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.footer-client img{
+
+    max-width:100%;
+
+    max-height:42px;
+
+    object-fit:contain;
+
+}
+
+/* ===========================================================
+   AWARDS
+=========================================================== */
+
+.footer-awards{
+
+    margin-top:60px;
+
+}
+
+.footer-award-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+.footer-award{
+
+    padding:24px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.footer-award i{
+
+    font-size:34px;
+
+    margin-bottom:14px;
+
+    color:#ffc107;
+
+}
+
+.footer-award h5{
+
+    margin-bottom:8px;
+
+    color:#ffffff;
+
+}
+
+.footer-award p{
+
+    color:#bbbbbb;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   SECURITY
+=========================================================== */
+
+.footer-security{
+
+    margin-top:60px;
+
+}
+
+.footer-security-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.footer-security-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.footer-security-item i{
+
+    color:#00d084;
+
+    font-size:22px;
+
+    margin-top:3px;
+
+}
+
+.footer-security-item h5{
+
+    margin-bottom:6px;
+
+    color:#ffffff;
+
+}
+
+.footer-security-item p{
+
+    color:#bbbbbb;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   PAYMENT PARTNERS
+=========================================================== */
+
+.footer-payments{
+
+    margin-top:60px;
+
+}
+
+.footer-payment-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:14px;
+
+}
+
+.footer-payment{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.footer-payment img{
+
+    max-width:100%;
+
+    max-height:34px;
+
+    object-fit:contain;
+
+}
+
+/* ===========================================================
+   CLOUD PARTNERS
+=========================================================== */
+
+.footer-cloud{
+
+    margin-top:60px;
+
+}
+
+.footer-cloud-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.footer-cloud-card{
+
+    padding:24px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    transition:.35s ease;
+
+}
+
+.footer-cloud-card:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.footer-cloud-card img{
+
+    width:56px;
+
+    height:56px;
+
+    margin:0 auto 14px;
+
+    object-fit:contain;
+
+}
+
+.footer-cloud-card h5{
+
+    color:#ffffff;
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+   TRUST BADGES
+=========================================================== */
+
+.footer-trust-badges{
+
+    margin-top:60px;
+
+}
+
+.footer-badge-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+.footer-badge-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    transition:.3s ease;
+
+}
+
+.footer-badge-item:hover{
+
+    background:var(--primary);
+
+}
+
+.footer-badge-item i{
+
+    color:#00d084;
+
+}
+
+.footer-badge-item span{
+
+    color:#ffffff;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   END PART 6
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 7
+   CTA • Download App • Promotion
+=========================================================== */
+
+/* ===========================================================
+   DOWNLOAD APP
+=========================================================== */
+
+.footer-app{
+
+    margin-top:60px;
+
+}
+
+.footer-app-wrapper{
+
+    display:grid;
+
+    grid-template-columns:140px 1fr auto;
+
+    gap:30px;
+
+    align-items:center;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(214,0,0,.18),
+        rgba(255,255,255,.04)
+    );
+
+}
+
+.footer-app-icon{
+
+    width:120px;
+
+    height:120px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.08);
+
+    color:#ffffff;
+
+    font-size:60px;
+
+}
+
+.footer-app-content h2{
+
+    margin-bottom:16px;
+
+    color:#ffffff;
+
+}
+
+.footer-app-content p{
+
+    color:#cccccc;
+
+    line-height:1.9;
+
+}
+
+.footer-app-buttons{
+
+    display:flex;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   CONSULTATION
+=========================================================== */
+
+.footer-consultation{
+
+    margin-top:70px;
+
+}
+
+.footer-consultation-box{
+
+    padding:60px;
+
+    border-radius:34px;
+
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        #d60000,
+        #790000
+    );
+
+}
+
+.footer-consultation-box h2{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.footer-consultation-box p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.9;
+
+}
+
+.footer-consultation-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   BUSINESS CTA
+=========================================================== */
+
+.footer-business{
+
+    margin-top:70px;
+
+}
+
+.footer-business-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.footer-business-card{
+
+    padding:34px;
+
+    text-align:center;
+
+    border-radius:26px;
+
+    background:rgba(255,255,255,.05);
+
+    transition:.35s ease;
+
+}
+
+.footer-business-card:hover{
+
+    background:rgba(255,255,255,.10);
+
+    transform:translateY(-8px);
+
+}
+
+.footer-business-card i{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.footer-business-card h3{
+
+    margin-bottom:14px;
+
+    color:#ffffff;
+
+}
+
+.footer-business-card p{
+
+    color:#bbbbbb;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   INVESTMENT CTA
+=========================================================== */
+
+.footer-investment{
+
+    margin-top:70px;
+
+}
+
+.footer-investment-box{
+
+    padding:55px;
+
+    border-radius:32px;
+
+    background:rgba(255,255,255,.05);
+
+    text-align:center;
+
+}
+
+.footer-investment-box h2{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.footer-investment-box p{
+
+    max-width:760px;
+
+    margin:0 auto 30px;
+
+    color:#cccccc;
+
+    line-height:1.9;
+
+}
+
+.footer-investment-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   COMPANY HIGHLIGHTS
+=========================================================== */
+
+.footer-highlights{
+
+    margin-top:70px;
+
+}
+
+.footer-highlight-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.footer-highlight-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.05);
+
+    transition:.35s ease;
+
+}
+
+.footer-highlight-card:hover{
+
+    transform:translateY(-6px);
+
+    background:rgba(255,255,255,.09);
+
+}
+
+.footer-highlight-card h3{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:40px;
+
+}
+
+.footer-highlight-card span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#ffffff;
+
+    font-weight:700;
+
+}
+
+.footer-highlight-card p{
+
+    color:#bbbbbb;
+
+    line-height:1.8;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   GLOBAL NETWORK
+=========================================================== */
+
+.footer-network{
+
+    margin-top:70px;
+
+}
+
+.footer-network-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+.footer-network-content h2{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.footer-network-content p{
+
+    margin-bottom:28px;
+
+    color:#cccccc;
+
+    line-height:1.9;
+
+}
+
+.footer-network-list{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.footer-network-list li{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-bottom:16px;
+
+}
+
+.footer-network-list i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+}
+
+.footer-network-list span{
+
+    color:#bbbbbb;
+
+}
+
+.footer-network-image img{
+
+    width:100%;
+
+    border-radius:24px;
+
+}
+
+/* ===========================================================
+   FINAL PROMOTION
+=========================================================== */
+
+.footer-promo{
+
+    margin-top:80px;
+
+}
+
+.footer-promo-box{
+
+    padding:70px;
+
+    text-align:center;
+
+    border-radius:36px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(214,0,0,.22),
+        rgba(255,255,255,.05)
+    );
+
+}
+
+.footer-promo-box h2{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+    font-size:40px;
+
+}
+
+.footer-promo-box p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:#cccccc;
+
+    line-height:1.9;
+
+}
+
+.footer-promo-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   END PART 7
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 8
+   Copyright • Legal • Bottom Bar
+=========================================================== */
+
+/* ===========================================================
+   FOOTER BOTTOM
+=========================================================== */
+
+.footer-bottom{
+
+    padding:35px 0;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    background:#0b0b0b;
+
+}
+
+.footer-bottom-wrapper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   COPYRIGHT
+=========================================================== */
+
+.footer-copyright{
+
+    color:#aaaaaa;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+.footer-copyright strong{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   LEGAL LINKS
+=========================================================== */
+
+.footer-legal{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-legal a{
+
+    position:relative;
+
+    color:#bbbbbb;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    transition:.3s ease;
+
+}
+
+.footer-legal a:hover{
+
+    color:#ffffff;
+
+}
+
+.footer-legal a:not(:last-child)::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-10px;
+
+    top:50%;
+
+    width:1px;
+
+    height:14px;
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateY(-50%);
+
+}
+
+/* ===========================================================
+   COOKIE NOTICE
+=========================================================== */
+
+.footer-cookie{
+
+    margin-top:40px;
+
+    padding:24px 28px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.footer-cookie h4{
+
+    margin-bottom:12px;
+
+    color:#ffffff;
+
+}
+
+.footer-cookie p{
+
+    color:#bbbbbb;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   DISCLAIMER
+=========================================================== */
+
+.footer-disclaimer{
+
+    margin-top:35px;
+
+    padding:24px 28px;
+
+    border-left:4px solid var(--primary);
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.footer-disclaimer h4{
+
+    margin-bottom:12px;
+
+    color:#ffffff;
+
+}
+
+.footer-disclaimer p{
+
+    color:#bbbbbb;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   FOOTER SITEMAP
+=========================================================== */
+
+.footer-bottom-sitemap{
+
+    margin-top:50px;
+
+}
+
+.footer-bottom-sitemap h4{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+.footer-bottom-sitemap-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.footer-bottom-sitemap a{
+
+    display:block;
+
+    padding:14px 18px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.04);
+
+    color:#cccccc;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.footer-bottom-sitemap a:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   LANGUAGE
+=========================================================== */
+
+.footer-language{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.footer-language label{
+
+    color:#cccccc;
+
+    font-size:14px;
+
+}
+
+.footer-language select{
+
+    padding:10px 16px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.08);
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+}
+
+.footer-language select:focus{
+
+    outline:none;
+
+}
+
+.footer-language option{
+
+    color:#111111;
+
+}
+
+/* ===========================================================
+   PAYMENT SECURITY
+=========================================================== */
+
+.footer-security-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-security-icons img{
+
+    height:32px;
+
+    width:auto;
+
+    opacity:.85;
+
+    transition:.3s ease;
+
+}
+
+.footer-security-icons img:hover{
+
+    opacity:1;
+
+}
+
+/* ===========================================================
+   BACK TO TOP
+=========================================================== */
+
+.footer-backtop{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    box-shadow:0 18px 40px rgba(214,0,0,.35);
+
+    transition:.35s ease;
+
+    z-index:999;
+
+}
+
+.footer-backtop:hover{
+
+    transform:translateY(-6px);
+
+    background:#b30000;
+
+}
+
+.footer-backtop.hidden{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}
+
+.footer-backtop.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* ===========================================================
+   VERSION
+=========================================================== */
+
+.footer-version{
+
+    margin-top:25px;
+
+    color:#888888;
+
+    font-size:13px;
+
+    text-align:center;
+
+}
+
+/* ===========================================================
+   DEVELOPER CREDIT
+=========================================================== */
+
+.footer-credit{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    color:#888888;
+
+    font-size:14px;
+
+}
+
+.footer-credit a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.footer-credit a:hover{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   STATUS
+=========================================================== */
+
+.footer-status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(0,208,132,.12);
+
+    color:#00d084;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.footer-status::before{
+
+    content:"";
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#00d084;
+
+    animation:footerPulse 2s infinite;
+
+}
+
+@keyframes footerPulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    70%{
+
+        transform:scale(1.8);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================================================
+   END PART 8
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 9
+   Responsive Design
+=========================================================== */
+
+/* ===========================================================
+   LARGE DESKTOP
+=========================================================== */
+
+@media (max-width:1400px){
+
+.footer-container{
+
+    max-width:1180px;
+
+}
+
+.footer-title{
+
+    font-size:48px;
+
+}
+
+.footer-main-grid{
+
+    gap:40px;
+
+}
+
+}
+
+/* ===========================================================
+   LAPTOP
+=========================================================== */
+
+@media (max-width:1200px){
+
+.footer-top{
+
+    padding:90px 0 60px;
+
+}
+
+.footer-title{
+
+    font-size:42px;
+
+}
+
+.footer-subtitle{
+
+    font-size:18px;
+
+}
+
+.footer-main-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-summary,
+
+.footer-highlight-grid,
+
+.footer-partner-grid,
+
+.footer-cloud-grid,
+
+.footer-business-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-client-grid,
+
+.footer-payment-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.footer-certification-grid,
+
+.footer-award-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width:992px){
+
+.footer-main-grid,
+
+.footer-network-wrapper,
+
+.footer-app-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-app-wrapper{
+
+    text-align:center;
+
+}
+
+.footer-app-icon{
+
+    margin:0 auto;
+
+}
+
+.footer-summary,
+
+.footer-highlight-grid,
+
+.footer-business-grid,
+
+.footer-certification-grid,
+
+.footer-award-grid,
+
+.footer-cloud-grid,
+
+.footer-partner-grid,
+
+.footer-client-grid,
+
+.footer-payment-grid,
+
+.footer-bottom-sitemap-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-company-stats{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.footer-bottom-wrapper{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.footer-legal{
+
+    justify-content:center;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width:768px){
+
+.footer{
+
+    margin-top:80px;
+
+}
+
+.footer-container{
+
+    padding:0 20px;
+
+}
+
+.footer-title{
+
+    font-size:34px;
+
+}
+
+.footer-subtitle{
+
+    font-size:17px;
+
+}
+
+.footer-description p{
+
+    font-size:15px;
+
+}
+
+.footer-main-grid,
+
+.footer-summary,
+
+.footer-highlight-grid,
+
+.footer-business-grid,
+
+.footer-certification-grid,
+
+.footer-award-grid,
+
+.footer-cloud-grid,
+
+.footer-partner-grid,
+
+.footer-client-grid,
+
+.footer-payment-grid,
+
+.footer-bottom-sitemap-grid,
+
+.footer-contact-cards,
+
+.footer-company-stats,
+
+.footer-regional-grid,
+
+.footer-value-grid,
+
+.footer-community-list{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-actions,
+
+.footer-app-buttons,
+
+.footer-promo-buttons,
+
+.footer-investment-actions,
+
+.footer-consultation-actions{
+
+    flex-direction:column;
+
+}
+
+.footer-actions .btn,
+
+.footer-app-buttons .btn,
+
+.footer-promo-buttons .btn,
+
+.footer-investment-actions .btn,
+
+.footer-consultation-actions .btn{
+
+    width:100%;
+
+}
+
+.footer-newsletter-form{
+
+    flex-direction:column;
+
+}
+
+.footer-newsletter-form input,
+
+.footer-newsletter-form button{
+
+    width:100%;
+
+}
+
+.footer-store-buttons{
+
+    flex-direction:column;
+
+}
+
+.footer-store{
+
+    width:100%;
+
+}
+
+}
+
+/* ===========================================================
+   SMALL MOBILE
+=========================================================== */
+
+@media (max-width:576px){
+
+.footer-top{
+
+    padding:70px 0 50px;
+
+}
+
+.footer-title{
+
+    font-size:28px;
+
+}
+
+.footer-subtitle{
+
+    font-size:16px;
+
+}
+
+.footer-intro,
+
+.footer-consultation-box,
+
+.footer-investment-box,
+
+.footer-promo-box,
+
+.footer-community-cta{
+
+    padding:30px;
+
+}
+
+.footer-summary-card,
+
+.footer-business-card,
+
+.footer-highlight-card,
+
+.footer-contact-card,
+
+.footer-certification,
+
+.footer-award,
+
+.footer-cloud-card{
+
+    padding:22px;
+
+}
+
+.footer-logo{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.footer-social-list{
+
+    justify-content:center;
+
+}
+
+.footer-contact-item{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.footer-contact-icon{
+
+    margin:0 auto;
+
+}
+
+}
+
+/* ===========================================================
+   EXTRA SMALL
+=========================================================== */
+
+@media (max-width:400px){
+
+.footer-title{
+
+    font-size:24px;
+
+}
+
+.footer-subtitle{
+
+    font-size:15px;
+
+}
+
+.footer-description p{
+
+    font-size:14px;
+
+}
+
+.footer-summary-card h3,
+
+.footer-highlight-card h3,
+
+.footer-stat h3{
+
+    font-size:30px;
+
+}
+
+.footer-logo img{
+
+    width:60px;
+
+    height:60px;
+
+}
+
+.footer-social-link{
+
+    width:46px;
+
+    height:46px;
+
+    font-size:18px;
+
+}
+
+.footer-backtop{
+
+    width:50px;
+
+    height:50px;
+
+    right:18px;
+
+    bottom:18px;
+
+    font-size:18px;
+
+}
+
+}
+
+/* ===========================================================
+   LANDSCAPE
+=========================================================== */
+
+@media (max-height:550px) and (orientation:landscape){
+
+.footer-top{
+
+    padding:60px 0 40px;
+
+}
+
+}
+
+/* ===========================================================
+   TOUCH DEVICES
+=========================================================== */
+
+@media (hover:none){
+
+.footer-summary-card:hover,
+.footer-business-card:hover,
+.footer-highlight-card:hover,
+.footer-contact-card:hover,
+.footer-certification:hover,
+.footer-award:hover{
+
+    transform:none;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE HELPERS
+=========================================================== */
+
+@media (max-width:768px){
+
+.footer-hide-mobile{
+
+    display:none !important;
+
+}
+
+.footer-show-mobile{
+
+    display:block !important;
+
+}
+
+.footer-text-center-mobile{
+
+    text-align:center !important;
+
+}
+
+.footer-full-mobile{
+
+    width:100% !important;
+
+}
+
+}
+
+/* ===========================================================
+   RESPONSIVE IMAGES
+=========================================================== */
+
+.footer img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   END PART 9
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 10
+   Dark Mode
+=========================================================== */
+
+/* ===========================================================
+   FOOTER
+=========================================================== */
+
+body.dark .footer{
+
+    background:#090c11;
+
+    color:#ffffff;
+
+}
+
+body.dark .footer-top{
+
+    border-color:rgba(255,255,255,.08);
+
+}
+
+body.dark .footer-bottom{
+
+    background:#05070b;
+
+    border-color:rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   TEXT
+=========================================================== */
+
+body.dark .footer-title,
+body.dark .footer h1,
+body.dark .footer h2,
+body.dark .footer h3,
+body.dark .footer h4,
+body.dark .footer h5,
+body.dark .footer h6{
+
+    color:#ffffff;
+
+}
+
+body.dark .footer-subtitle,
+body.dark .footer-description p,
+body.dark .footer p,
+body.dark .footer span,
+body.dark .footer li{
+
+    color:#c9d1d9;
+
+}
+
+/* ===========================================================
+   LINKS
+=========================================================== */
+
+body.dark .footer a{
+
+    color:#d5dbe3;
+
+}
+
+body.dark .footer a:hover{
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   CARDS
+=========================================================== */
+
+body.dark .footer-summary-card,
+body.dark .footer-stat,
+body.dark .footer-company-item,
+body.dark .footer-vision,
+body.dark .footer-value,
+body.dark .footer-trust-item,
+body.dark .footer-service-item,
+body.dark .footer-resource,
+body.dark .footer-faq-item,
+body.dark .footer-sitemap a,
+body.dark .footer-contact-item,
+body.dark .footer-office-card,
+body.dark .footer-regional-item,
+body.dark .footer-contact-card,
+body.dark .footer-community-item,
+body.dark .footer-review,
+body.dark .footer-community-cta,
+body.dark .footer-certification,
+body.dark .footer-partner,
+body.dark .footer-client,
+body.dark .footer-award,
+body.dark .footer-security-item,
+body.dark .footer-payment,
+body.dark .footer-cloud-card,
+body.dark .footer-badge-item,
+body.dark .footer-business-card,
+body.dark .footer-investment-box,
+body.dark .footer-highlight-card,
+body.dark .footer-app-wrapper,
+body.dark .footer-network-wrapper,
+body.dark .footer-promo-box,
+body.dark .footer-cookie,
+body.dark .footer-disclaimer{
+
+    background:#171c24;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+/* ===========================================================
+   ICONS
+=========================================================== */
+
+body.dark .footer-summary-icon,
+body.dark .footer-contact-icon,
+body.dark .footer-business-card i,
+body.dark .footer-highlight-card h3,
+body.dark .footer-certification i,
+body.dark .footer-social-link{
+
+    background:rgba(255,90,90,.15);
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   MENU
+=========================================================== */
+
+body.dark .footer-menu a{
+
+    color:#c5ccd6;
+
+}
+
+body.dark .footer-menu a:hover{
+
+    color:#ffffff;
+
+}
+
+body.dark .footer-column-title::after{
+
+    background:#ff5555;
+
+}
+
+/* ===========================================================
+   FORMS
+=========================================================== */
+
+body.dark .footer-newsletter-form input{
+
+    background:#11161d;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#ffffff;
+
+}
+
+body.dark .footer-newsletter-form input::placeholder{
+
+    color:#93a0af;
+
+}
+
+body.dark .footer-newsletter-form input:focus{
+
+    border-color:#ff6666;
+
+}
+
+body.dark .footer-newsletter-form button{
+
+    background:#d60000;
+
+}
+
+body.dark .footer-newsletter-form button:hover{
+
+    background:#ff4444;
+
+}
+
+/* ===========================================================
+   STORE BUTTONS
+=========================================================== */
+
+body.dark .footer-store{
+
+    background:#171c24;
+
+}
+
+body.dark .footer-store:hover{
+
+    background:#202733;
+
+}
+
+/* ===========================================================
+   QR
+=========================================================== */
+
+body.dark .footer-qr img{
+
+    background:#ffffff;
+
+}
+
+/* ===========================================================
+   CTA
+=========================================================== */
+
+body.dark .footer-consultation-box,
+body.dark .footer-promo-box{
+
+    background:linear-gradient(
+        135deg,
+        #700000,
+        #260000
+    );
+
+}
+
+body.dark .footer-community-cta,
+body.dark .footer-investment-box{
+
+    background:linear-gradient(
+        135deg,
+        #1b222c,
+        #11161d
+    );
+
+}
+
+/* ===========================================================
+   APP
+=========================================================== */
+
+body.dark .footer-app-icon{
+
+    background:rgba(255,255,255,.06);
+
+}
+
+body.dark .footer-app-content p{
+
+    color:#c5ccd6;
+
+}
+
+/* ===========================================================
+   NETWORK
+=========================================================== */
+
+body.dark .footer-network-list span{
+
+    color:#c5ccd6;
+
+}
+
+body.dark .footer-network-image img{
+
+    filter:brightness(.95);
+
+}
+
+/* ===========================================================
+   BUSINESS HOURS
+=========================================================== */
+
+body.dark .footer-business-hours li{
+
+    border-color:#2c3440;
+
+}
+
+body.dark .footer-business-hours span{
+
+    color:#c5ccd6;
+
+}
+
+/* ===========================================================
+   LEGAL
+=========================================================== */
+
+body.dark .footer-copyright{
+
+    color:#9aa7b7;
+
+}
+
+body.dark .footer-legal a{
+
+    color:#c5ccd6;
+
+}
+
+body.dark .footer-legal a:hover{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   LANGUAGE
+=========================================================== */
+
+body.dark .footer-language select{
+
+    background:#171c24;
+
+    color:#ffffff;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   BACK TO TOP
+=========================================================== */
+
+body.dark .footer-backtop{
+
+    background:#d60000;
+
+}
+
+body.dark .footer-backtop:hover{
+
+    background:#ff4444;
+
+}
+
+/* ===========================================================
+   GLASS
+=========================================================== */
+
+body.dark .footer-glass{
+
+    background:rgba(23,28,36,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   SHADOW
+=========================================================== */
+
+body.dark .footer-summary-card:hover,
+body.dark .footer-business-card:hover,
+body.dark .footer-highlight-card:hover,
+body.dark .footer-certification:hover,
+body.dark .footer-contact-card:hover{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.45);
+
+}
+
+/* ===========================================================
+   SELECTION
+=========================================================== */
+
+body.dark .footer ::selection{
+
+    background:#ff5555;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   END PART 10
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 11
+   Utility Classes
+=========================================================== */
+
+/* ===========================================================
+   DISPLAY
+=========================================================== */
+
+.footer-block{display:block;}
+.footer-inline{display:inline-block;}
+.footer-flex{display:flex;}
+.footer-inline-flex{display:inline-flex;}
+.footer-grid-display{display:grid;}
+.footer-hidden{display:none!important;}
+.footer-visible{display:block!important;}
+
+/* ===========================================================
+   FLEX
+=========================================================== */
+
+.footer-row{
+
+    display:flex;
+
+    flex-direction:row;
+
+}
+
+.footer-column-flex{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-wrap{
+
+    flex-wrap:wrap;
+
+}
+
+.footer-nowrap{
+
+    flex-wrap:nowrap;
+
+}
+
+.footer-center{
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.footer-between{
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.footer-around{
+
+    justify-content:space-around;
+
+    align-items:center;
+
+}
+
+.footer-evenly{
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+}
+
+.footer-start{
+
+    justify-content:flex-start;
+
+    align-items:flex-start;
+
+}
+
+.footer-end{
+
+    justify-content:flex-end;
+
+    align-items:flex-end;
+
+}
+
+/* ===========================================================
+   GRID
+=========================================================== */
+
+.footer-grid-auto{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.footer-grid-1{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.footer-grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+/* ===========================================================
+   WIDTH
+=========================================================== */
+
+.footer-w-25{width:25%;}
+.footer-w-50{width:50%;}
+.footer-w-75{width:75%;}
+.footer-w-100{width:100%;}
+.footer-auto{width:auto;}
+
+.footer-max{
+
+    max-width:1280px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+/* ===========================================================
+   SPACING
+=========================================================== */
+
+.footer-mt-10{margin-top:10px;}
+.footer-mt-20{margin-top:20px;}
+.footer-mt-40{margin-top:40px;}
+.footer-mt-60{margin-top:60px;}
+.footer-mt-80{margin-top:80px;}
+.footer-mt-100{margin-top:100px;}
+
+.footer-mb-10{margin-bottom:10px;}
+.footer-mb-20{margin-bottom:20px;}
+.footer-mb-40{margin-bottom:40px;}
+.footer-mb-60{margin-bottom:60px;}
+.footer-mb-80{margin-bottom:80px;}
+.footer-mb-100{margin-bottom:100px;}
+
+.footer-p-20{padding:20px;}
+.footer-p-30{padding:30px;}
+.footer-p-40{padding:40px;}
+.footer-p-60{padding:60px;}
+
+.footer-pt-40{padding-top:40px;}
+.footer-pt-80{padding-top:80px;}
+
+.footer-pb-40{padding-bottom:40px;}
+.footer-pb-80{padding-bottom:80px;}
+
+/* ===========================================================
+   BORDER RADIUS
+=========================================================== */
+
+.footer-radius-sm{border-radius:12px;}
+.footer-radius-md{border-radius:20px;}
+.footer-radius-lg{border-radius:30px;}
+.footer-radius-xl{border-radius:40px;}
+.footer-radius-full{border-radius:999px;}
+
+/* ===========================================================
+   SHADOW
+=========================================================== */
+
+.footer-shadow-sm{
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.footer-shadow-md{
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.footer-shadow-lg{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.18);
+
+}
+
+.footer-shadow-none{
+
+    box-shadow:none;
+
+}
+
+/* ===========================================================
+   BACKGROUND
+=========================================================== */
+
+.footer-bg-white{
+
+    background:#ffffff;
+
+    color:#222222;
+
+}
+
+.footer-bg-light{
+
+    background:#f8fafc;
+
+    color:#222222;
+
+}
+
+.footer-bg-dark{
+
+    background:#10141d;
+
+    color:#ffffff;
+
+}
+
+.footer-bg-primary{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.footer-bg-gradient{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #ff6666
+    );
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   GLASS
+=========================================================== */
+
+.footer-glass{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+.footer-glass-dark{
+
+    background:rgba(20,25,35,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   TYPOGRAPHY
+=========================================================== */
+
+.footer-text-left{text-align:left;}
+.footer-text-center{text-align:center;}
+.footer-text-right{text-align:right;}
+
+.footer-text-primary{
+
+    color:var(--primary);
+
+}
+
+.footer-text-light{
+
+    color:#ffffff;
+
+}
+
+.footer-text-muted{
+
+    color:#999999;
+
+}
+
+.footer-bold{font-weight:700;}
+.footer-semibold{font-weight:600;}
+.footer-light{font-weight:300;}
+
+.footer-uppercase{text-transform:uppercase;}
+.footer-capitalize{text-transform:capitalize;}
+
+/* ===========================================================
+   POSITION
+=========================================================== */
+
+.footer-relative{position:relative;}
+.footer-absolute{position:absolute;}
+.footer-fixed{position:fixed;}
+.footer-sticky{position:sticky;}
+
+.footer-z1{z-index:1;}
+.footer-z10{z-index:10;}
+.footer-z50{z-index:50;}
+.footer-z100{z-index:100;}
+
+/* ===========================================================
+   OVERFLOW
+=========================================================== */
+
+.footer-overflow-hidden{overflow:hidden;}
+.footer-overflow-visible{overflow:visible;}
+.footer-overflow-auto{overflow:auto;}
+
+/* ===========================================================
+   CURSOR
+=========================================================== */
+
+.footer-pointer{
+
+    cursor:pointer;
+
+}
+
+.footer-disabled{
+
+    opacity:.6;
+
+    pointer-events:none;
+
+}
+
+/* ===========================================================
+   TRANSITIONS
+=========================================================== */
+
+.footer-transition{
+
+    transition:.35s ease;
+
+}
+
+.footer-transition-fast{
+
+    transition:.2s ease;
+
+}
+
+.footer-transition-slow{
+
+    transition:.6s ease;
+
+}
+
+/* ===========================================================
+   HOVER
+=========================================================== */
+
+.footer-hover-up:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.footer-hover-scale:hover{
+
+    transform:scale(1.05);
+
+}
+
+.footer-hover-shadow:hover{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.16);
+
+}
+
+.footer-hover-primary:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   IMAGE HELPERS
+=========================================================== */
+
+.footer-img-cover{
+
+    object-fit:cover;
+
+}
+
+.footer-img-contain{
+
+    object-fit:contain;
+
+}
+
+.footer-img-rounded{
+
+    border-radius:24px;
+
+}
+
+.footer-img-circle{
+
+    border-radius:50%;
+
+}
+
+/* ===========================================================
+   OPACITY
+=========================================================== */
+
+.footer-opacity-25{opacity:.25;}
+.footer-opacity-50{opacity:.50;}
+.footer-opacity-75{opacity:.75;}
+.footer-opacity-100{opacity:1;}
+
+/* ===========================================================
+   POINTER EVENTS
+=========================================================== */
+
+.footer-no-pointer{
+
+    pointer-events:none;
+
+}
+
+.footer-auto-pointer{
+
+    pointer-events:auto;
+
+}
+
+/* ===========================================================
+   VISIBILITY
+=========================================================== */
+
+.footer-visible-state{
+
+    visibility:visible;
+
+}
+
+.footer-hidden-state{
+
+    visibility:hidden;
+
+}
+
+/* ===========================================================
+   END PART 11
+=========================================================== */
+/* ===========================================================
+   FOOTER.CSS
+   Part 12
+   Performance Optimization & End of File
+=========================================================== */
+
+/* ===========================================================
+   PERFORMANCE
+=========================================================== */
+
+.footer,
+.footer-container,
+.footer-main,
+.footer-summary-card,
+.footer-contact-card,
+.footer-business-card,
+.footer-highlight-card,
+.footer-certification,
+.footer-cloud-card,
+.footer-partner,
+.footer-client{
+
+    will-change:transform,opacity;
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+}
+
+.footer img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   ACCESSIBILITY
+=========================================================== */
+
+.footer a:focus,
+.footer button:focus,
+.footer input:focus,
+.footer textarea:focus,
+.footer select:focus{
+
+    outline:3px solid rgba(214,0,0,.35);
+
+    outline-offset:4px;
+
+    border-radius:8px;
+
+}
+
+.footer a:focus-visible,
+.footer button:focus-visible{
+
+    box-shadow:0 0 0 5px rgba(214,0,0,.18);
+
+}
+
+/* ===========================================================
+   TEXT SELECTION
+=========================================================== */
+
+.footer ::selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.footer ::-moz-selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   LOADING STATE
+=========================================================== */
+
+.footer-loading{
+
+    position:relative;
+
+    overflow:hidden;
+
+    opacity:.75;
+
+    pointer-events:none;
+
+}
+
+.footer-loading::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.30),
+        transparent
+    );
+
+    animation:footerLoading 1.5s linear infinite;
+
+}
+
+@keyframes footerLoading{
+
+    from{
+
+        transform:translateX(-100%);
+
+    }
+
+    to{
+
+        transform:translateX(100%);
+
+    }
+
+}
+
+/* ===========================================================
+   SKELETON
+=========================================================== */
+
+.footer-skeleton{
+
+    background:linear-gradient(
+        90deg,
+        #ececec,
+        #f8f8f8,
+        #ececec
+    );
+
+    background-size:200% 100%;
+
+    animation:footerSkeleton 1.4s linear infinite;
+
+}
+
+@keyframes footerSkeleton{
+
+    from{
+
+        background-position:200% 0;
+
+    }
+
+    to{
+
+        background-position:-200% 0;
+
+    }
+
+}
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.footer *,
+.footer::before,
+.footer::after{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+
+}
+
+}
+
+/* ===========================================================
+   HIGH CONTRAST
+=========================================================== */
+
+@media (prefers-contrast:more){
+
+.footer-summary-card,
+.footer-contact-card,
+.footer-business-card,
+.footer-highlight-card,
+.footer-certification{
+
+    border:2px solid #ffffff;
+
+}
+
+.footer-title{
+
+    font-weight:900;
+
+}
+
+}
+
+/* ===========================================================
+   PRINT
+=========================================================== */
+
+@media print{
+
+.footer{
+
+    background:#ffffff !important;
+
+    color:#000000 !important;
+
+}
+
+.footer-newsletter,
+.footer-social,
+.footer-community-cta,
+.footer-app,
+.footer-consultation,
+.footer-promo,
+.footer-backtop{
+
+    display:none !important;
+
+}
+
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5{
+
+    color:#000000 !important;
+
+}
+
+.footer-summary-card,
+.footer-contact-card,
+.footer-business-card{
+
+    box-shadow:none !important;
+
+    border:1px solid #cccccc;
+
+}
+
+}
+
+/* ===========================================================
+   SAFE AREA
+=========================================================== */
+
+@supports (padding:max(0px)){
+
+.footer{
+
+    padding-left:max(0px,env(safe-area-inset-left));
+
+    padding-right:max(0px,env(safe-area-inset-right));
+
+    padding-bottom:max(0px,env(safe-area-inset-bottom));
+
+}
+
+}
+
+/* ===========================================================
+   GPU HELPERS
+=========================================================== */
+
+.footer-gpu{
+
+    transform:translate3d(0,0,0);
+
+    will-change:transform;
+
+}
+
+.footer-no-select{
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+}
+
+.footer-select{
+
+    user-select:text;
+
+}
+
+/* ===========================================================
+   IMAGE OPTIMIZATION
+=========================================================== */
+
+.footer img{
+
+    image-rendering:auto;
+
+}
+
+.footer-picture{
+
+    overflow:hidden;
+
+}
+
+.footer-picture img{
+
+    transition:transform .45s ease;
+
+}
+
+.footer-picture:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================================
+   SCROLL HELPERS
+=========================================================== */
+
+.footer-scroll{
+
+    scroll-margin-top:100px;
+
+}
+
+.footer-sticky-helper{
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+/* ===========================================================
+   CONTAINER HELPERS
+=========================================================== */
+
+.footer-container-fluid{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding-left:30px;
+
+    padding-right:30px;
+
+}
+
+.footer-container-narrow{
+
+    max-width:960px;
+
+    margin:0 auto;
+
+}
+
+/* ===========================================================
+   FINAL RESET
+=========================================================== */
+
+.footer *{
+
+    box-sizing:border-box;
+
+}
+
+.footer iframe{
+
+    border:0;
+
+    max-width:100%;
+
+}
+
+.footer svg{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+.footer video{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+.footer canvas{
+
+    max-width:100%;
+
+}
+
+.footer table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.footer hr{
+
+    border:none;
+
+    height:1px;
+
+    margin:40px 0;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.footer ul,
+.footer ol{
+
+    padding-left:20px;
+
+}
+
+.footer button,
+.footer input,
+.footer textarea,
+.footer select{
+
+    font-family:inherit;
+
+}
+
+.footer button{
+
+    cursor:pointer;
+
+}
+
+.footer a{
+
+    text-decoration:none;
+
+}
+
+.footer strong{
+
+    font-weight:700;
+
+}
+
+.footer em{
+
+    font-style:italic;
+
+}
+
+/* ===========================================================
+   END OF FOOTER.CSS
+=========================================================== */

@@ -1,0 +1,6670 @@
+/* ===========================================================
+   PORTFOLIO.CSS
+   Investment Technology Indonesia
+   Part 1
+   Portfolio Base
+=========================================================== */
+
+/* ===========================================================
+   PORTFOLIO SECTION
+=========================================================== */
+
+.portfolio{
+
+    position:relative;
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+   CONTAINER
+=========================================================== */
+
+.portfolio-container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:1280px;
+
+    margin:0 auto;
+
+    padding:0 24px;
+
+}
+
+/* ===========================================================
+   SECTION HEADER
+=========================================================== */
+
+.portfolio-header{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+/* ===========================================================
+   BADGE
+=========================================================== */
+
+.portfolio-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    margin-bottom:22px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.08);
+
+    border:1px solid rgba(214,0,0,.12);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.portfolio-badge i{
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+   LABEL
+=========================================================== */
+
+.portfolio-label{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+/* ===========================================================
+   TITLE
+=========================================================== */
+
+.portfolio-title{
+
+    margin-bottom:24px;
+
+    color:var(--secondary);
+
+    font-size:54px;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+}
+
+.portfolio-title span{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   SUBTITLE
+=========================================================== */
+
+.portfolio-subtitle{
+
+    margin-bottom:20px;
+
+    color:#444444;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+}
+
+/* ===========================================================
+   DESCRIPTION
+=========================================================== */
+
+.portfolio-description{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+}
+
+.portfolio-description p{
+
+    margin-bottom:18px;
+
+    color:#666666;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+}
+
+.portfolio-description p:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ===========================================================
+   DIVIDER
+=========================================================== */
+
+.portfolio-divider{
+
+    width:90px;
+
+    height:4px;
+
+    margin:32px auto;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        #ff6666
+
+    );
+
+}
+
+/* ===========================================================
+   HIGHLIGHT
+=========================================================== */
+
+.portfolio-highlight{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   INTRO BOX
+=========================================================== */
+
+.portfolio-intro{
+
+    margin-top:40px;
+
+    padding:32px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.portfolio-intro h4{
+
+    margin-bottom:16px;
+
+    color:var(--secondary);
+
+    font-size:24px;
+
+}
+
+.portfolio-intro p{
+
+    margin:0;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   BACKGROUND DECORATION
+=========================================================== */
+
+.portfolio-decoration{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+.portfolio-decoration.one{
+
+    top:-70px;
+
+    left:-70px;
+
+    width:190px;
+
+    height:190px;
+
+    background:rgba(214,0,0,.05);
+
+}
+
+.portfolio-decoration.two{
+
+    right:-90px;
+
+    top:180px;
+
+    width:220px;
+
+    height:220px;
+
+    background:rgba(214,0,0,.04);
+
+}
+
+.portfolio-decoration.three{
+
+    bottom:-50px;
+
+    left:25%;
+
+    width:120px;
+
+    height:120px;
+
+    background:rgba(255,193,7,.10);
+
+}
+
+/* ===========================================================
+   GRID HELPERS
+=========================================================== */
+
+.portfolio-grid{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+.portfolio-grid-2{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.portfolio-grid-3{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.portfolio-grid-4{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+/* ===========================================================
+   SECTION SPACING
+=========================================================== */
+
+.portfolio-section{
+
+    margin-top:90px;
+
+}
+
+.portfolio-section:first-child{
+
+    margin-top:0;
+
+}
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 2
+   Portfolio Cards
+=========================================================== */
+
+/* ===========================================================
+   PORTFOLIO LIST
+=========================================================== */
+
+.portfolio-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+/* ===========================================================
+   PORTFOLIO CARD
+=========================================================== */
+
+.portfolio-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
+
+}
+
+.portfolio-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 75px rgba(0,0,0,.14);
+
+}
+
+/* ===========================================================
+   TOP BORDER
+=========================================================== */
+
+.portfolio-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        #ff7070
+
+    );
+
+    transform:scaleX(0);
+
+    transition:.35s;
+
+    z-index:2;
+
+}
+
+.portfolio-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+/* ===========================================================
+   PROJECT IMAGE
+=========================================================== */
+
+.portfolio-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.portfolio-image img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:transform .7s ease;
+
+}
+
+.portfolio-card:hover .portfolio-image img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================================================
+   OVERLAY
+=========================================================== */
+
+.portfolio-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:16px;
+
+    background:rgba(10,10,10,.60);
+
+    opacity:0;
+
+    transition:.35s ease;
+
+}
+
+.portfolio-card:hover .portfolio-overlay{
+
+    opacity:1;
+
+}
+
+/* ===========================================================
+   ACTION BUTTONS
+=========================================================== */
+
+.portfolio-action{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    transition:.35s;
+
+}
+
+.portfolio-action:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    transform:scale(1.1);
+
+}
+
+/* ===========================================================
+   CATEGORY BADGE
+=========================================================== */
+
+.portfolio-category{
+
+    position:absolute;
+
+    top:22px;
+
+    left:22px;
+
+    z-index:3;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.92);
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   CONTENT
+=========================================================== */
+
+.portfolio-content{
+
+    padding:30px;
+
+}
+
+.portfolio-content h3{
+
+    margin-bottom:14px;
+
+    color:var(--secondary);
+
+    font-size:26px;
+
+}
+
+.portfolio-content p{
+
+    margin-bottom:20px;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   META
+=========================================================== */
+
+.portfolio-meta{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(0,0,0,.08);
+
+}
+
+.portfolio-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+.portfolio-meta i{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   TECHNOLOGY TAGS
+=========================================================== */
+
+.portfolio-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.portfolio-tag{
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+   FEATURED CARD
+=========================================================== */
+
+.portfolio-featured{
+
+    border:2px solid rgba(214,0,0,.12);
+
+    background:linear-gradient(
+
+        180deg,
+
+        #ffffff,
+
+        #fff9f9
+
+    );
+
+}
+
+/* ===========================================================
+   PREMIUM CARD
+=========================================================== */
+
+.portfolio-premium{
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        #850000
+
+    );
+
+    color:#ffffff;
+
+}
+
+.portfolio-premium h3,
+
+.portfolio-premium p,
+
+.portfolio-premium span,
+
+.portfolio-premium a{
+
+    color:#ffffff;
+
+}
+
+.portfolio-premium .portfolio-tag{
+
+    background:rgba(255,255,255,.16);
+
+    color:#ffffff;
+
+}
+
+.portfolio-premium .portfolio-category{
+
+    background:rgba(255,255,255,.15);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   GLASS CARD
+=========================================================== */
+
+.portfolio-glass{
+
+    background:rgba(255,255,255,.80);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.30);
+
+}
+
+/* ===========================================================
+   PROJECT STATUS
+=========================================================== */
+
+.project-status{
+
+    position:absolute;
+
+    top:22px;
+
+    right:22px;
+
+    z-index:3;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(0,0,0,.65);
+
+    color:#ffffff;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+.project-status.completed{
+
+    background:#16a34a;
+
+}
+
+.project-status.ongoing{
+
+    background:#f59e0b;
+
+}
+
+.project-status.planning{
+
+    background:#3b82f6;
+
+}
+
+/* ===========================================================
+   HOVER GLOW
+=========================================================== */
+
+.portfolio-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-90px;
+
+    right:-90px;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(214,0,0,.08);
+
+    opacity:0;
+
+    transition:.35s;
+
+    pointer-events:none;
+
+}
+
+.portfolio-card:hover::after{
+
+    opacity:1;
+
+}
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 3
+   Portfolio Filter & Categories
+=========================================================== */
+
+/* ===========================================================
+   FILTER SECTION
+=========================================================== */
+
+.portfolio-filter{
+
+    margin-top:80px;
+
+}
+
+.filter-wrapper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:24px;
+
+    margin-bottom:50px;
+
+}
+
+/* ===========================================================
+   FILTER BUTTONS
+=========================================================== */
+
+.filter-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+}
+
+.filter-btn{
+
+    position:relative;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    color:var(--secondary);
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.filter-btn:hover,
+
+.filter-btn.active{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    transform:translateY(-4px);
+
+}
+
+.filter-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    transition:.35s;
+
+    transform:translateX(-50%);
+
+}
+
+.filter-btn.active::after{
+
+    width:50%;
+
+}
+
+/* ===========================================================
+   SEARCH BAR
+=========================================================== */
+
+.portfolio-search{
+
+    position:relative;
+
+    width:320px;
+
+}
+
+.portfolio-search input{
+
+    width:100%;
+
+    padding:16px 22px 16px 54px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    font-size:15px;
+
+}
+
+.portfolio-search input:focus{
+
+    outline:none;
+
+}
+
+.portfolio-search i{
+
+    position:absolute;
+
+    left:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:var(--primary);
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+   SORT DROPDOWN
+=========================================================== */
+
+.portfolio-sort{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.portfolio-sort label{
+
+    color:var(--secondary);
+
+    font-weight:600;
+
+}
+
+.portfolio-sort select{
+
+    padding:14px 18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#ffffff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    cursor:pointer;
+
+}
+
+/* ===========================================================
+   CATEGORY GRID
+=========================================================== */
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-top:60px;
+
+}
+
+.category-item{
+
+    padding:28px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.category-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 26px 60px rgba(0,0,0,.12);
+
+}
+
+.category-item i{
+
+    width:72px;
+
+    height:72px;
+
+    margin:0 auto 18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:30px;
+
+}
+
+.category-item h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.category-item p{
+
+    color:#777777;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   TECHNOLOGY FILTER
+=========================================================== */
+
+.tech-filter{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-top:50px;
+
+}
+
+.tech-filter-item{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#f5f5f5;
+
+    color:#555555;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.tech-filter-item:hover,
+
+.tech-filter-item.active{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   FILTER COUNTER
+=========================================================== */
+
+.filter-counter{
+
+    margin-top:25px;
+
+    color:#777777;
+
+    font-size:15px;
+
+}
+
+.filter-counter strong{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   VIEW TOGGLE
+=========================================================== */
+
+.portfolio-view{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.view-btn{
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#ffffff;
+
+    color:#555555;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.view-btn:hover,
+
+.view-btn.active{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   FILTER ANIMATION
+=========================================================== */
+
+.portfolio-card.hide{
+
+    opacity:0;
+
+    transform:scale(.9);
+
+    pointer-events:none;
+
+}
+
+.portfolio-card.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+    transition:.4s ease;
+
+}
+
+/* ===========================================================
+   LOAD MORE
+=========================================================== */
+
+.portfolio-load-more{
+
+    margin-top:60px;
+
+    text-align:center;
+
+}
+
+.portfolio-load-more .btn{
+
+    min-width:220px;
+
+}
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 4
+   Featured Projects & Case Studies
+=========================================================== */
+
+/* ===========================================================
+   FEATURED PROJECT
+=========================================================== */
+
+.featured-project{
+
+    margin-top:100px;
+
+}
+
+.featured-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+    padding:50px;
+
+    background:#ffffff;
+
+    border-radius:32px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.featured-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+}
+
+.featured-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:transform .6s ease;
+
+}
+
+.featured-wrapper:hover .featured-image img{
+
+    transform:scale(1.06);
+
+}
+
+/* ===========================================================
+   FEATURED CONTENT
+=========================================================== */
+
+.featured-content h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.featured-content p{
+
+    margin-bottom:22px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   PROJECT INFO
+=========================================================== */
+
+.project-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin:35px 0;
+
+}
+
+.project-info-item{
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:#fafafa;
+
+}
+
+.project-info-item span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#888888;
+
+    font-size:14px;
+
+}
+
+.project-info-item strong{
+
+    color:var(--secondary);
+
+}
+
+/* ===========================================================
+   CASE STUDY
+=========================================================== */
+
+.case-study-section{
+
+    margin-top:100px;
+
+}
+
+.case-study-card{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:45px;
+
+    align-items:center;
+
+    margin-bottom:80px;
+
+}
+
+.case-study-card:last-child{
+
+    margin-bottom:0;
+
+}
+
+.case-study-card.reverse .case-study-image{
+
+    order:2;
+
+}
+
+.case-study-card.reverse .case-study-content{
+
+    order:1;
+
+}
+
+.case-study-image{
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+}
+
+.case-study-image img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.case-study-content h3{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.case-study-content p{
+
+    margin-bottom:22px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   RESULTS
+=========================================================== */
+
+.project-results{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    margin-top:30px;
+
+}
+
+.result-card{
+
+    padding:22px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+    text-align:center;
+
+    box-shadow:0 14px 35px rgba(0,0,0,.08);
+
+}
+
+.result-card h3{
+
+    margin-bottom:8px;
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+.result-card span{
+
+    color:#555555;
+
+}
+
+/* ===========================================================
+   CLIENT PROFILE
+=========================================================== */
+
+.client-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.client-profile img{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.client-profile h5{
+
+    margin-bottom:6px;
+
+    color:var(--secondary);
+
+}
+
+.client-profile span{
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   PROJECT GALLERY
+=========================================================== */
+
+.project-gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    margin-top:70px;
+
+}
+
+.project-gallery img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:20px;
+
+    transition:.35s ease;
+
+}
+
+.project-gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================================
+   VIDEO PREVIEW
+=========================================================== */
+
+.project-video{
+
+    position:relative;
+
+    margin-top:80px;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+}
+
+.project-video img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.video-play{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.video-play:hover{
+
+    transform:translate(-50%,-50%) scale(1.1);
+
+}
+
+/* ===========================================================
+   SUCCESS STORIES
+=========================================================== */
+
+.success-stories{
+
+    margin-top:100px;
+
+}
+
+.story-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.story-card{
+
+    padding:34px;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.story-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.story-card i{
+
+    font-size:38px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.story-card h4{
+
+    margin-bottom:14px;
+
+    color:var(--secondary);
+
+}
+
+.story-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   IMPACT METRICS
+=========================================================== */
+
+.impact-metrics{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+    margin-top:25px;
+
+}
+
+.impact-badge{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 5
+   Technology Stack & Architecture
+=========================================================== */
+
+/* ===========================================================
+   TECHNOLOGY STACK
+=========================================================== */
+
+.project-tech{
+
+    margin-top:100px;
+
+}
+
+.project-tech-header{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.project-tech-header h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.project-tech-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   TECHNOLOGY GRID
+=========================================================== */
+
+.tech-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+.tech-item{
+
+    padding:34px 28px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.tech-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 65px rgba(0,0,0,.12);
+
+}
+
+.tech-item img{
+
+    width:72px;
+
+    height:72px;
+
+    object-fit:contain;
+
+    margin:0 auto 18px;
+
+}
+
+.tech-item h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.tech-item p{
+
+    color:#777777;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   DEVELOPMENT TOOLS
+=========================================================== */
+
+.dev-tools{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-top:50px;
+
+    justify-content:center;
+
+}
+
+.dev-tool{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.35s ease;
+
+}
+
+.dev-tool:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.dev-tool img{
+
+    width:22px;
+
+    height:22px;
+
+}
+
+/* ===========================================================
+   PLATFORM SUPPORT
+=========================================================== */
+
+.platform-support{
+
+    margin-top:90px;
+
+}
+
+.platform-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:24px;
+
+}
+
+.platform-card{
+
+    padding:28px;
+
+    text-align:center;
+
+    background:#fafafa;
+
+    border-radius:22px;
+
+    transition:.35s ease;
+
+}
+
+.platform-card:hover{
+
+    background:#ffffff;
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.platform-card i{
+
+    font-size:38px;
+
+    color:var(--primary);
+
+    margin-bottom:16px;
+
+}
+
+.platform-card h5{
+
+    color:var(--secondary);
+
+}
+
+/* ===========================================================
+   ARCHITECTURE
+=========================================================== */
+
+.project-architecture{
+
+    margin-top:100px;
+
+}
+
+.architecture-wrapper{
+
+    padding:45px;
+
+    background:#ffffff;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.architecture-wrapper h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.architecture-wrapper p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.architecture-image{
+
+    margin-top:40px;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+}
+
+.architecture-image img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ===========================================================
+   CLOUD INFRASTRUCTURE
+=========================================================== */
+
+.cloud-infrastructure{
+
+    margin-top:100px;
+
+}
+
+.cloud-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.cloud-card{
+
+    padding:32px;
+
+    border-radius:26px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.cloud-card i{
+
+    font-size:36px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.cloud-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.cloud-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   SECURITY FEATURES
+=========================================================== */
+
+.security-features{
+
+    margin-top:100px;
+
+}
+
+.security-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+.security-item{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 16px 38px rgba(0,0,0,.08);
+
+}
+
+.security-item i{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:28px;
+
+}
+
+.security-item h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.security-item p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   PERFORMANCE
+=========================================================== */
+
+.performance-section{
+
+    margin-top:100px;
+
+}
+
+.performance-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.performance-box{
+
+    text-align:center;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.performance-box h2{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:42px;
+
+}
+
+.performance-box span{
+
+    display:block;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.performance-box p{
+
+    margin-top:10px;
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   DEPLOYMENT
+=========================================================== */
+
+.deployment{
+
+    margin-top:100px;
+
+}
+
+.deployment-steps{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.deployment-step{
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.deployment-step:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.deployment-step h3{
+
+    width:60px;
+
+    height:60px;
+
+    margin:0 auto 18px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.deployment-step h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.deployment-step p{
+
+    color:#666666;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 6
+   Statistics • Awards • KPI
+=========================================================== */
+
+/* ===========================================================
+   PORTFOLIO STATISTICS
+=========================================================== */
+
+.portfolio-stats{
+
+    margin-top:100px;
+
+}
+
+.portfolio-stats-header{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.portfolio-stats-header h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.portfolio-stats-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   STATS GRID
+=========================================================== */
+
+.portfolio-stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+.portfolio-stat-card{
+
+    padding:34px;
+
+    text-align:center;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.portfolio-stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 28px 70px rgba(0,0,0,.12);
+
+}
+
+.portfolio-stat-icon{
+
+    width:78px;
+
+    height:78px;
+
+    margin:0 auto 20px;
+
+    border-radius:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:30px;
+
+}
+
+.portfolio-stat-card h3{
+
+    margin-bottom:10px;
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    font-weight:800;
+
+}
+
+.portfolio-stat-card span{
+
+    display:block;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.portfolio-stat-card p{
+
+    margin-top:10px;
+
+    color:#777777;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   AWARDS
+=========================================================== */
+
+.portfolio-awards{
+
+    margin-top:100px;
+
+}
+
+.awards-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.award-card{
+
+    padding:34px;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.award-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.award-card i{
+
+    font-size:42px;
+
+    color:#f4b400;
+
+    margin-bottom:18px;
+
+}
+
+.award-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.award-card span{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.award-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CLIENT STATISTICS
+=========================================================== */
+
+.client-statistics{
+
+    margin-top:100px;
+
+}
+
+.client-stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.client-stat{
+
+    padding:34px;
+
+    border-radius:26px;
+
+    background:#fafafa;
+
+    text-align:center;
+
+    transition:.35s ease;
+
+}
+
+.client-stat:hover{
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.client-stat h2{
+
+    font-size:46px;
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+.client-stat span{
+
+    display:block;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.client-stat p{
+
+    margin-top:10px;
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   GLOBAL COVERAGE
+=========================================================== */
+
+.global-coverage{
+
+    margin-top:100px;
+
+}
+
+.coverage-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+.coverage-map{
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.coverage-map img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.coverage-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.coverage-item{
+
+    padding:24px;
+
+    border-radius:22px;
+
+    background:#ffffff;
+
+    box-shadow:0 14px 35px rgba(0,0,0,.08);
+
+}
+
+.coverage-item h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.coverage-item p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   BUSINESS GROWTH
+=========================================================== */
+
+.business-growth{
+
+    margin-top:100px;
+
+}
+
+.growth-card{
+
+    padding:45px;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #fff8f8
+    );
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.growth-card h2{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+}
+
+.growth-card p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.growth-progress{
+
+    margin-top:35px;
+
+}
+
+.growth-progress-item{
+
+    margin-bottom:24px;
+
+}
+
+.growth-progress-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.growth-label{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:#555555;
+
+}
+
+.growth-bar{
+
+    height:10px;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    background:#ececec;
+
+}
+
+.growth-bar span{
+
+    display:block;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #ff7070
+    );
+
+}
+
+/* ===========================================================
+   INDUSTRY EXPERIENCE
+=========================================================== */
+
+.industry-experience{
+
+    margin-top:100px;
+
+}
+
+.industry-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.industry-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.industry-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.industry-card i{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.industry-card h5{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.industry-card p{
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   KPI DASHBOARD
+=========================================================== */
+
+.portfolio-kpi{
+
+    margin-top:100px;
+
+}
+
+.kpi-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.kpi-card{
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.kpi-card h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.kpi-value{
+
+    font-size:40px;
+
+    color:var(--primary);
+
+    font-weight:800;
+
+    margin-bottom:12px;
+
+}
+
+.kpi-progress{
+
+    width:100%;
+
+    height:10px;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    background:#eeeeee;
+
+}
+
+.kpi-progress span{
+
+    display:block;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #ff6d6d
+    );
+
+}
+
+.kpi-description{
+
+    margin-top:12px;
+
+    color:#777777;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 7
+   Clients • Partners • Industries
+=========================================================== */
+
+/* ===========================================================
+   CLIENT SHOWCASE
+=========================================================== */
+
+.client-showcase{
+
+    margin-top:100px;
+
+}
+
+.client-showcase-header{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.client-showcase-header h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.client-showcase-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   CLIENT GRID
+=========================================================== */
+
+.client-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+.client-card{
+
+    padding:34px;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.client-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 70px rgba(0,0,0,.12);
+
+}
+
+.client-card img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    margin:0 auto 20px;
+
+}
+
+.client-card h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.client-card p{
+
+    color:#777777;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   TRUSTED BY
+=========================================================== */
+
+.trusted-section{
+
+    margin-top:100px;
+
+}
+
+.trusted-logos{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:24px;
+
+    align-items:center;
+
+}
+
+.trusted-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+    transition:.35s ease;
+
+}
+
+.trusted-logo:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.trusted-logo img{
+
+    max-width:120px;
+
+    max-height:60px;
+
+    filter:grayscale(100%);
+
+    opacity:.7;
+
+    transition:.35s ease;
+
+}
+
+.trusted-logo:hover img{
+
+    filter:none;
+
+    opacity:1;
+
+}
+
+/* ===========================================================
+   INDUSTRIES
+=========================================================== */
+
+.industries{
+
+    margin-top:100px;
+
+}
+
+.industry-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.industry-item{
+
+    padding:32px;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.industry-item:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.industry-icon{
+
+    width:72px;
+
+    height:72px;
+
+    margin-bottom:22px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:30px;
+
+}
+
+.industry-item h3{
+
+    margin-bottom:14px;
+
+    color:var(--secondary);
+
+}
+
+.industry-item p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   PARTNERSHIP
+=========================================================== */
+
+.partnership{
+
+    margin-top:100px;
+
+}
+
+.partner-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.partner-card{
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.partner-card h3{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.partner-card p{
+
+    margin-bottom:24px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.partner-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.partner-tags span{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+   ENTERPRISE CLIENTS
+=========================================================== */
+
+.enterprise-clients{
+
+    margin-top:100px;
+
+}
+
+.enterprise-banner{
+
+    padding:60px;
+
+    border-radius:32px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #7c0000
+    );
+
+    color:#ffffff;
+
+}
+
+.enterprise-banner h2{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+.enterprise-banner p{
+
+    margin-bottom:35px;
+
+    color:rgba(255,255,255,.90);
+
+    line-height:1.9;
+
+}
+
+.enterprise-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+.enterprise-feature{
+
+    padding:24px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.enterprise-feature h4{
+
+    margin-bottom:10px;
+
+    color:#ffffff;
+
+}
+
+.enterprise-feature p{
+
+    color:rgba(255,255,255,.88);
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   SUCCESS TIMELINE
+=========================================================== */
+
+.success-timeline{
+
+    margin-top:100px;
+
+    position:relative;
+
+    padding-left:55px;
+
+}
+
+.success-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:18px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:rgba(214,0,0,.15);
+
+}
+
+.success-item{
+
+    position:relative;
+
+    margin-bottom:50px;
+
+}
+
+.success-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.success-dot{
+
+    position:absolute;
+
+    left:-44px;
+
+    top:8px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    box-shadow:0 0 0 8px rgba(214,0,0,.10);
+
+}
+
+.success-content{
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+}
+
+.success-content h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.success-content span{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.success-content p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CUSTOMER SATISFACTION
+=========================================================== */
+
+.customer-satisfaction{
+
+    margin-top:100px;
+
+}
+
+.satisfaction-wrapper{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.satisfaction-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.satisfaction-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.satisfaction-card h2{
+
+    margin-bottom:10px;
+
+    font-size:42px;
+
+    color:var(--primary);
+
+}
+
+.satisfaction-card span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.satisfaction-card p{
+
+    color:#777777;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   END PART 7
+=========================================================== */
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 8
+   Testimonials • CTA • Contact
+=========================================================== */
+
+/* ===========================================================
+   TESTIMONIAL SECTION
+=========================================================== */
+
+.portfolio-testimonials{
+
+    margin-top:100px;
+
+}
+
+.testimonial-header{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.testimonial-header h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.testimonial-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   TESTIMONIAL GRID
+=========================================================== */
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.testimonial-item{
+
+    padding:34px;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.testimonial-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 70px rgba(0,0,0,.12);
+
+}
+
+.testimonial-stars{
+
+    display:flex;
+
+    gap:6px;
+
+    margin-bottom:18px;
+
+    color:#f4b400;
+
+}
+
+.testimonial-text{
+
+    margin-bottom:28px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+    font-style:italic;
+
+}
+
+.testimonial-user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.testimonial-user img{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.testimonial-user h5{
+
+    margin-bottom:6px;
+
+    color:var(--secondary);
+
+}
+
+.testimonial-user span{
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   VIDEO TESTIMONIAL
+=========================================================== */
+
+.video-testimonial{
+
+    margin-top:100px;
+
+}
+
+.video-wrapper{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.10);
+
+}
+
+.video-wrapper img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.video-button{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.video-button:hover{
+
+    transform:translate(-50%,-50%) scale(1.1);
+
+}
+
+/* ===========================================================
+   LATEST PROJECTS
+=========================================================== */
+
+.portfolio-news{
+
+    margin-top:100px;
+
+}
+
+.news-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.news-card{
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.news-image{
+
+    overflow:hidden;
+
+}
+
+.news-image img{
+
+    width:100%;
+
+    transition:transform .6s ease;
+
+}
+
+.news-card:hover .news-image img{
+
+    transform:scale(1.08);
+
+}
+
+.news-content{
+
+    padding:28px;
+
+}
+
+.news-date{
+
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.news-content h3{
+
+    margin-bottom:14px;
+
+    color:var(--secondary);
+
+}
+
+.news-content p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CTA
+=========================================================== */
+
+.portfolio-cta{
+
+    margin-top:100px;
+
+}
+
+.portfolio-cta-wrapper{
+
+    padding:70px;
+
+    text-align:center;
+
+    border-radius:34px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        #7c0000
+
+    );
+
+}
+
+.portfolio-cta-wrapper h2{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+.portfolio-cta-wrapper p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.9;
+
+}
+
+.portfolio-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   CONSULTATION
+=========================================================== */
+
+.consultation-section{
+
+    margin-top:100px;
+
+}
+
+.consultation-box{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.consultation-content h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.consultation-content p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   CONTACT FORM
+=========================================================== */
+
+.portfolio-form{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+.portfolio-form input,
+
+.portfolio-form textarea,
+
+.portfolio-form select{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    border:1px solid #dddddd;
+
+    border-radius:16px;
+
+    font-size:15px;
+
+    transition:.3s ease;
+
+}
+
+.portfolio-form textarea{
+
+    resize:vertical;
+
+    min-height:160px;
+
+}
+
+.portfolio-form input:focus,
+
+.portfolio-form textarea:focus,
+
+.portfolio-form select:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(214,0,0,.10);
+
+}
+
+.portfolio-form button{
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.portfolio-form button:hover{
+
+    background:#a40000;
+
+}
+
+/* ===========================================================
+   CONTACT INFO
+=========================================================== */
+
+.contact-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+.contact-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.contact-icon{
+
+    width:56px;
+
+    height:56px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:22px;
+
+}
+
+.contact-text h5{
+
+    margin-bottom:6px;
+
+    color:var(--secondary);
+
+}
+
+.contact-text span{
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   FINAL CTA
+=========================================================== */
+
+.final-project-cta{
+
+    margin-top:100px;
+
+    text-align:center;
+
+}
+
+.final-project-cta h2{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+}
+
+.final-project-cta p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   END PART 8
+=========================================================== */
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 8
+   Testimonials • CTA • Contact
+=========================================================== */
+
+/* ===========================================================
+   TESTIMONIAL SECTION
+=========================================================== */
+
+.portfolio-testimonials{
+
+    margin-top:100px;
+
+}
+
+.testimonial-header{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.testimonial-header h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.testimonial-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   TESTIMONIAL GRID
+=========================================================== */
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.testimonial-item{
+
+    padding:34px;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.testimonial-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 70px rgba(0,0,0,.12);
+
+}
+
+.testimonial-stars{
+
+    display:flex;
+
+    gap:6px;
+
+    margin-bottom:18px;
+
+    color:#f4b400;
+
+}
+
+.testimonial-text{
+
+    margin-bottom:28px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+    font-style:italic;
+
+}
+
+.testimonial-user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.testimonial-user img{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.testimonial-user h5{
+
+    margin-bottom:6px;
+
+    color:var(--secondary);
+
+}
+
+.testimonial-user span{
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   VIDEO TESTIMONIAL
+=========================================================== */
+
+.video-testimonial{
+
+    margin-top:100px;
+
+}
+
+.video-wrapper{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.10);
+
+}
+
+.video-wrapper img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.video-button{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.video-button:hover{
+
+    transform:translate(-50%,-50%) scale(1.1);
+
+}
+
+/* ===========================================================
+   LATEST PROJECTS
+=========================================================== */
+
+.portfolio-news{
+
+    margin-top:100px;
+
+}
+
+.news-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.news-card{
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.news-image{
+
+    overflow:hidden;
+
+}
+
+.news-image img{
+
+    width:100%;
+
+    transition:transform .6s ease;
+
+}
+
+.news-card:hover .news-image img{
+
+    transform:scale(1.08);
+
+}
+
+.news-content{
+
+    padding:28px;
+
+}
+
+.news-date{
+
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.news-content h3{
+
+    margin-bottom:14px;
+
+    color:var(--secondary);
+
+}
+
+.news-content p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CTA
+=========================================================== */
+
+.portfolio-cta{
+
+    margin-top:100px;
+
+}
+
+.portfolio-cta-wrapper{
+
+    padding:70px;
+
+    text-align:center;
+
+    border-radius:34px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        #7c0000
+
+    );
+
+}
+
+.portfolio-cta-wrapper h2{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+.portfolio-cta-wrapper p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.9;
+
+}
+
+.portfolio-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   CONSULTATION
+=========================================================== */
+
+.consultation-section{
+
+    margin-top:100px;
+
+}
+
+.consultation-box{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.consultation-content h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.consultation-content p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   CONTACT FORM
+=========================================================== */
+
+.portfolio-form{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+.portfolio-form input,
+
+.portfolio-form textarea,
+
+.portfolio-form select{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    border:1px solid #dddddd;
+
+    border-radius:16px;
+
+    font-size:15px;
+
+    transition:.3s ease;
+
+}
+
+.portfolio-form textarea{
+
+    resize:vertical;
+
+    min-height:160px;
+
+}
+
+.portfolio-form input:focus,
+
+.portfolio-form textarea:focus,
+
+.portfolio-form select:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(214,0,0,.10);
+
+}
+
+.portfolio-form button{
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.portfolio-form button:hover{
+
+    background:#a40000;
+
+}
+
+/* ===========================================================
+   CONTACT INFO
+=========================================================== */
+
+.contact-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+.contact-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.contact-icon{
+
+    width:56px;
+
+    height:56px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:22px;
+
+}
+
+.contact-text h5{
+
+    margin-bottom:6px;
+
+    color:var(--secondary);
+
+}
+
+.contact-text span{
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   FINAL CTA
+=========================================================== */
+
+.final-project-cta{
+
+    margin-top:100px;
+
+    text-align:center;
+
+}
+
+.final-project-cta h2{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+}
+
+.final-project-cta p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   END PART 8
+=========================================================== */
+
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 9
+   Responsive Design
+=========================================================== */
+
+/* ===========================================================
+   LARGE DESKTOP
+=========================================================== */
+
+@media (max-width:1400px){
+
+.portfolio-container{
+
+    max-width:1180px;
+
+}
+
+.portfolio-title{
+
+    font-size:48px;
+
+}
+
+.featured-wrapper{
+
+    gap:40px;
+
+}
+
+}
+
+/* ===========================================================
+   LAPTOP
+=========================================================== */
+
+@media (max-width:1200px){
+
+.portfolio{
+
+    padding:100px 0;
+
+}
+
+.portfolio-title{
+
+    font-size:42px;
+
+}
+
+.portfolio-subtitle{
+
+    font-size:20px;
+
+}
+
+.portfolio-list,
+
+.portfolio-grid-3,
+
+.tech-grid,
+
+.project-gallery,
+
+.client-grid,
+
+.performance-grid,
+
+.portfolio-stats-grid,
+
+.kpi-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.story-grid,
+
+.awards-grid,
+
+.news-grid,
+
+.testimonial-grid,
+
+.industry-list{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.platform-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.trusted-logos{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.enterprise-features{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width:992px){
+
+.featured-wrapper,
+
+.case-study-card,
+
+.coverage-wrapper,
+
+.consultation-box,
+
+.partner-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.featured-image{
+
+    order:1;
+
+}
+
+.featured-content{
+
+    order:2;
+
+}
+
+.project-info{
+
+    grid-template-columns:1fr;
+
+}
+
+.project-results{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.tech-grid,
+
+.client-grid,
+
+.performance-grid,
+
+.portfolio-stats-grid,
+
+.kpi-grid,
+
+.industry-grid,
+
+.satisfaction-wrapper{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.project-gallery{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.deployment-steps{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.security-list{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width:768px){
+
+.portfolio{
+
+    padding:80px 0;
+
+}
+
+.portfolio-container{
+
+    padding:0 20px;
+
+}
+
+.portfolio-title{
+
+    font-size:34px;
+
+}
+
+.portfolio-subtitle{
+
+    font-size:18px;
+
+}
+
+.portfolio-description p{
+
+    font-size:15px;
+
+}
+
+.portfolio-list,
+
+.portfolio-grid-2,
+
+.portfolio-grid-3,
+
+.portfolio-grid-4,
+
+.story-grid,
+
+.awards-grid,
+
+.news-grid,
+
+.testimonial-grid,
+
+.client-grid,
+
+.industry-list,
+
+.performance-grid,
+
+.portfolio-stats-grid,
+
+.kpi-grid,
+
+.tech-grid,
+
+.cloud-grid,
+
+.enterprise-features,
+
+.platform-grid,
+
+.project-results,
+
+.deployment-steps,
+
+.project-gallery,
+
+.industry-grid,
+
+.satisfaction-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+.filter-wrapper{
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+}
+
+.filter-buttons{
+
+    justify-content:center;
+
+}
+
+.portfolio-search{
+
+    width:100%;
+
+}
+
+.portfolio-sort{
+
+    justify-content:space-between;
+
+}
+
+.portfolio-cta-wrapper,
+
+.enterprise-banner,
+
+.featured-wrapper,
+
+.consultation-box,
+
+.growth-card{
+
+    padding:35px;
+
+}
+
+}
+
+/* ===========================================================
+   SMALL MOBILE
+=========================================================== */
+
+@media (max-width:576px){
+
+.portfolio-title{
+
+    font-size:28px;
+
+}
+
+.portfolio-subtitle{
+
+    font-size:16px;
+
+}
+
+.portfolio-card,
+
+.tech-item,
+
+.story-card,
+
+.client-card,
+
+.award-card,
+
+.news-card,
+
+.testimonial-item,
+
+.partner-card,
+
+.performance-box,
+
+.portfolio-stat-card,
+
+.kpi-card{
+
+    padding:24px;
+
+}
+
+.project-gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+.project-info{
+
+    gap:15px;
+
+}
+
+.project-info-item{
+
+    padding:18px;
+
+}
+
+.portfolio-cta-buttons{
+
+    flex-direction:column;
+
+}
+
+.portfolio-cta-buttons .btn{
+
+    width:100%;
+
+}
+
+.client-profile{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+}
+
+/* ===========================================================
+   EXTRA SMALL
+=========================================================== */
+
+@media (max-width:400px){
+
+.portfolio{
+
+    padding:70px 0;
+
+}
+
+.portfolio-title{
+
+    font-size:24px;
+
+}
+
+.portfolio-description p{
+
+    font-size:14px;
+
+}
+
+.portfolio-badge{
+
+    font-size:12px;
+
+    padding:8px 14px;
+
+}
+
+.filter-btn{
+
+    padding:12px 20px;
+
+    font-size:14px;
+
+}
+
+.portfolio-action{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:18px;
+
+}
+
+.video-button{
+
+    width:70px;
+
+    height:70px;
+
+    font-size:24px;
+
+}
+
+}
+
+/* ===========================================================
+   LANDSCAPE
+=========================================================== */
+
+@media (max-height:550px) and (orientation:landscape){
+
+.portfolio{
+
+    padding:60px 0;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE HELPERS
+=========================================================== */
+
+@media (max-width:768px){
+
+.portfolio-text-center-mobile{
+
+    text-align:center !important;
+
+}
+
+.portfolio-hide-mobile{
+
+    display:none !important;
+
+}
+
+.portfolio-show-mobile{
+
+    display:block !important;
+
+}
+
+.portfolio-full-mobile{
+
+    width:100% !important;
+
+}
+
+}
+
+/* ===========================================================
+   TOUCH DEVICES
+=========================================================== */
+
+@media (hover:none){
+
+.portfolio-card:hover,
+
+.story-card:hover,
+
+.client-card:hover,
+
+.award-card:hover,
+
+.news-card:hover,
+
+.tech-item:hover{
+
+    transform:none;
+
+}
+
+.portfolio-overlay{
+
+    opacity:1;
+
+    background:rgba(0,0,0,.35);
+
+}
+
+}
+
+/* ===========================================================
+   RESPONSIVE IMAGE HELPERS
+=========================================================== */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+.portfolio-image img,
+
+.featured-image img,
+
+.case-study-image img,
+
+.news-image img{
+
+    object-fit:cover;
+
+}
+
+/* ===========================================================
+   END PART 9
+=========================================================== */
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 10
+   Dark Mode
+=========================================================== */
+
+/* ===========================================================
+   PORTFOLIO SECTION
+=========================================================== */
+
+body.dark .portfolio{
+
+    background:#0f1117;
+
+    color:#ffffff;
+
+}
+
+body.dark .portfolio-title{
+
+    color:#ffffff;
+
+}
+
+body.dark .portfolio-title span{
+
+    color:#ff5d5d;
+
+}
+
+body.dark .portfolio-subtitle{
+
+    color:#d2d8e3;
+
+}
+
+body.dark .portfolio-description p{
+
+    color:#bfc6d2;
+
+}
+
+body.dark .portfolio-label{
+
+    color:#ff6b6b;
+
+}
+
+body.dark .portfolio-badge{
+
+    background:rgba(255,90,90,.12);
+
+    border-color:rgba(255,90,90,.20);
+
+    color:#ff6b6b;
+
+}
+
+/* ===========================================================
+   CARD BACKGROUNDS
+=========================================================== */
+
+body.dark .portfolio-card,
+
+body.dark .featured-wrapper,
+
+body.dark .case-study-card,
+
+body.dark .story-card,
+
+body.dark .tech-item,
+
+body.dark .client-card,
+
+body.dark .award-card,
+
+body.dark .news-card,
+
+body.dark .testimonial-item,
+
+body.dark .partner-card,
+
+body.dark .performance-box,
+
+body.dark .portfolio-stat-card,
+
+body.dark .kpi-card,
+
+body.dark .coverage-item,
+
+body.dark .project-info-item,
+
+body.dark .cloud-card,
+
+body.dark .security-item,
+
+body.dark .industry-item,
+
+body.dark .deployment-step,
+
+body.dark .consultation-box,
+
+body.dark .growth-card{
+
+    background:#181d25;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+/* ===========================================================
+   HEADINGS
+=========================================================== */
+
+body.dark .portfolio h2,
+
+body.dark .portfolio h3,
+
+body.dark .portfolio h4,
+
+body.dark .portfolio h5{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   TEXT
+=========================================================== */
+
+body.dark .portfolio p,
+
+body.dark .portfolio span,
+
+body.dark .portfolio li{
+
+    color:#c5cad4;
+
+}
+
+/* ===========================================================
+   ICONS
+=========================================================== */
+
+body.dark .industry-icon,
+
+body.dark .portfolio-stat-icon,
+
+body.dark .contact-icon,
+
+body.dark .security-item i,
+
+body.dark .deployment-step h3{
+
+    background:rgba(255,90,90,.15);
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   TAGS
+=========================================================== */
+
+body.dark .portfolio-tag,
+
+body.dark .partner-tags span,
+
+body.dark .impact-badge{
+
+    background:rgba(255,90,90,.15);
+
+    color:#ff8080;
+
+}
+
+/* ===========================================================
+   FILTERS
+=========================================================== */
+
+body.dark .filter-btn,
+
+body.dark .view-btn,
+
+body.dark .portfolio-search input,
+
+body.dark .portfolio-sort select{
+
+    background:#181d25;
+
+    color:#ffffff;
+
+    border:1px solid rgba(255,255,255,.06);
+
+}
+
+body.dark .filter-btn.active,
+
+body.dark .filter-btn:hover,
+
+body.dark .view-btn.active,
+
+body.dark .view-btn:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   FORM
+=========================================================== */
+
+body.dark .portfolio-form input,
+
+body.dark .portfolio-form textarea,
+
+body.dark .portfolio-form select{
+
+    background:#181d25;
+
+    color:#ffffff;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+body.dark .portfolio-form input::placeholder,
+
+body.dark .portfolio-form textarea::placeholder{
+
+    color:#9aa4b2;
+
+}
+
+body.dark .portfolio-form input:focus,
+
+body.dark .portfolio-form textarea:focus,
+
+body.dark .portfolio-form select:focus{
+
+    border-color:#ff5a5a;
+
+    box-shadow:0 0 0 4px rgba(255,90,90,.15);
+
+}
+
+/* ===========================================================
+   PROJECT META
+=========================================================== */
+
+body.dark .portfolio-meta{
+
+    border-color:#2b3240;
+
+}
+
+body.dark .portfolio-meta span{
+
+    color:#bfc6d2;
+
+}
+
+/* ===========================================================
+   STATISTICS
+=========================================================== */
+
+body.dark .portfolio-stat-card h3,
+
+body.dark .performance-box h2,
+
+body.dark .client-stat h2,
+
+body.dark .kpi-value{
+
+    color:#ff6666;
+
+}
+
+body.dark .growth-bar,
+
+body.dark .kpi-progress{
+
+    background:#2b3240;
+
+}
+
+/* ===========================================================
+   TIMELINE
+=========================================================== */
+
+body.dark .success-timeline::before{
+
+    background:#2c3442;
+
+}
+
+body.dark .success-content{
+
+    background:#181d25;
+
+}
+
+body.dark .success-content span{
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   CLIENT LOGOS
+=========================================================== */
+
+body.dark .trusted-logo{
+
+    background:#181d25;
+
+}
+
+body.dark .trusted-logo img{
+
+    opacity:.85;
+
+}
+
+/* ===========================================================
+   CTA
+=========================================================== */
+
+body.dark .portfolio-cta-wrapper,
+
+body.dark .enterprise-banner{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #7a0000,
+
+        #2b0000
+
+    );
+
+}
+
+body.dark .portfolio-cta-wrapper h2,
+
+body.dark .enterprise-banner h2{
+
+    color:#ffffff;
+
+}
+
+body.dark .portfolio-cta-wrapper p,
+
+body.dark .enterprise-banner p{
+
+    color:rgba(255,255,255,.90);
+
+}
+
+/* ===========================================================
+   BUTTONS
+=========================================================== */
+
+body.dark .portfolio .btn{
+
+    transition:.35s ease;
+
+}
+
+body.dark .portfolio .btn-primary{
+
+    background:#d60000;
+
+}
+
+body.dark .portfolio .btn-primary:hover{
+
+    background:#ff3d3d;
+
+}
+
+body.dark .portfolio .btn-outline{
+
+    border-color:#ff6666;
+
+    color:#ff6666;
+
+}
+
+body.dark .portfolio .btn-outline:hover{
+
+    background:#ff6666;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   GLASS EFFECT
+=========================================================== */
+
+body.dark .portfolio-glass{
+
+    background:rgba(24,29,37,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   HOVER
+=========================================================== */
+
+body.dark .portfolio-card:hover,
+
+body.dark .story-card:hover,
+
+body.dark .client-card:hover,
+
+body.dark .award-card:hover,
+
+body.dark .news-card:hover,
+
+body.dark .tech-item:hover{
+
+    box-shadow:0 30px 75px rgba(0,0,0,.45);
+
+}
+
+/* ===========================================================
+   SELECTION
+=========================================================== */
+
+body.dark .portfolio ::selection{
+
+    background:#ff5555;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   END PART 10
+=========================================================== */
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 11
+   Utility Classes
+=========================================================== */
+
+/* ===========================================================
+   DISPLAY
+=========================================================== */
+
+.portfolio-block{display:block;}
+.portfolio-inline{display:inline-block;}
+.portfolio-flex{display:flex;}
+.portfolio-inline-flex{display:inline-flex;}
+.portfolio-grid-display{display:grid;}
+.portfolio-hidden{display:none !important;}
+
+/* ===========================================================
+   FLEX
+=========================================================== */
+
+.portfolio-row{flex-direction:row;}
+.portfolio-column{flex-direction:column;}
+.portfolio-wrap{flex-wrap:wrap;}
+.portfolio-nowrap{flex-wrap:nowrap;}
+
+.portfolio-center{
+    justify-content:center;
+    align-items:center;
+}
+
+.portfolio-between{
+    justify-content:space-between;
+    align-items:center;
+}
+
+.portfolio-start{
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+
+.portfolio-end{
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+
+/* ===========================================================
+   GRID HELPERS
+=========================================================== */
+
+.portfolio-grid-1{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+}
+
+.portfolio-grid-auto{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================================================
+   WIDTH
+=========================================================== */
+
+.portfolio-w-25{width:25%;}
+.portfolio-w-50{width:50%;}
+.portfolio-w-75{width:75%;}
+.portfolio-w-100{width:100%;}
+.portfolio-auto{width:auto;}
+
+.portfolio-max{
+
+    max-width:1280px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+/* ===========================================================
+   SPACING
+=========================================================== */
+
+.portfolio-mt-10{margin-top:10px;}
+.portfolio-mt-20{margin-top:20px;}
+.portfolio-mt-40{margin-top:40px;}
+.portfolio-mt-60{margin-top:60px;}
+.portfolio-mt-80{margin-top:80px;}
+
+.portfolio-mb-10{margin-bottom:10px;}
+.portfolio-mb-20{margin-bottom:20px;}
+.portfolio-mb-40{margin-bottom:40px;}
+.portfolio-mb-60{margin-bottom:60px;}
+.portfolio-mb-80{margin-bottom:80px;}
+
+.portfolio-pt-40{padding-top:40px;}
+.portfolio-pt-80{padding-top:80px;}
+
+.portfolio-pb-40{padding-bottom:40px;}
+.portfolio-pb-80{padding-bottom:80px;}
+
+.portfolio-p-20{padding:20px;}
+.portfolio-p-30{padding:30px;}
+.portfolio-p-40{padding:40px;}
+.portfolio-p-60{padding:60px;}
+
+/* ===========================================================
+   BORDER RADIUS
+=========================================================== */
+
+.portfolio-radius-sm{
+
+    border-radius:12px;
+
+}
+
+.portfolio-radius-md{
+
+    border-radius:20px;
+
+}
+
+.portfolio-radius-lg{
+
+    border-radius:30px;
+
+}
+
+.portfolio-radius-full{
+
+    border-radius:999px;
+
+}
+
+/* ===========================================================
+   SHADOW
+=========================================================== */
+
+.portfolio-shadow-sm{
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.portfolio-shadow-md{
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.portfolio-shadow-lg{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.18);
+
+}
+
+.portfolio-shadow-none{
+
+    box-shadow:none;
+
+}
+
+/* ===========================================================
+   BACKGROUND
+=========================================================== */
+
+.portfolio-bg-white{
+
+    background:#ffffff;
+
+}
+
+.portfolio-bg-light{
+
+    background:#f8fafc;
+
+}
+
+.portfolio-bg-dark{
+
+    background:#10141d;
+
+}
+
+.portfolio-bg-primary{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.portfolio-bg-gradient{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #ff7070
+    );
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   GLASS EFFECT
+=========================================================== */
+
+.portfolio-glass-light{
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+.portfolio-glass-dark{
+
+    background:rgba(22,28,38,.78);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   TYPOGRAPHY
+=========================================================== */
+
+.portfolio-text-center{text-align:center;}
+.portfolio-text-left{text-align:left;}
+.portfolio-text-right{text-align:right;}
+
+.portfolio-text-primary{
+
+    color:var(--primary);
+
+}
+
+.portfolio-text-dark{
+
+    color:var(--secondary);
+
+}
+
+.portfolio-text-light{
+
+    color:#ffffff;
+
+}
+
+.portfolio-text-muted{
+
+    color:#777777;
+
+}
+
+.portfolio-bold{
+
+    font-weight:700;
+
+}
+
+.portfolio-semibold{
+
+    font-weight:600;
+
+}
+
+.portfolio-light{
+
+    font-weight:300;
+
+}
+
+.portfolio-uppercase{
+
+    text-transform:uppercase;
+
+}
+
+.portfolio-capitalize{
+
+    text-transform:capitalize;
+
+}
+
+/* ===========================================================
+   POSITION
+=========================================================== */
+
+.portfolio-relative{position:relative;}
+.portfolio-absolute{position:absolute;}
+.portfolio-fixed{position:fixed;}
+.portfolio-sticky-position{position:sticky;}
+
+.portfolio-z1{z-index:1;}
+.portfolio-z5{z-index:5;}
+.portfolio-z10{z-index:10;}
+.portfolio-z50{z-index:50;}
+
+/* ===========================================================
+   OVERFLOW
+=========================================================== */
+
+.portfolio-overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+.portfolio-overflow-visible{
+
+    overflow:visible;
+
+}
+
+.portfolio-overflow-auto{
+
+    overflow:auto;
+
+}
+
+/* ===========================================================
+   CURSOR
+=========================================================== */
+
+.portfolio-pointer{
+
+    cursor:pointer;
+
+}
+
+.portfolio-disabled{
+
+    pointer-events:none;
+
+    opacity:.6;
+
+}
+
+/* ===========================================================
+   TRANSITIONS
+=========================================================== */
+
+.portfolio-transition{
+
+    transition:.35s ease;
+
+}
+
+.portfolio-transition-fast{
+
+    transition:.2s ease;
+
+}
+
+.portfolio-transition-slow{
+
+    transition:.6s ease;
+
+}
+
+/* ===========================================================
+   HOVER EFFECTS
+=========================================================== */
+
+.portfolio-hover-up:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.portfolio-hover-scale:hover{
+
+    transform:scale(1.05);
+
+}
+
+.portfolio-hover-shadow:hover{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.16);
+
+}
+
+.portfolio-hover-primary:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   IMAGE HELPERS
+=========================================================== */
+
+.portfolio-img-cover{
+
+    object-fit:cover;
+
+}
+
+.portfolio-img-contain{
+
+    object-fit:contain;
+
+}
+
+.portfolio-img-rounded{
+
+    border-radius:24px;
+
+}
+
+.portfolio-img-circle{
+
+    border-radius:50%;
+
+}
+
+/* ===========================================================
+   OPACITY
+=========================================================== */
+
+.portfolio-opacity-25{opacity:.25;}
+.portfolio-opacity-50{opacity:.50;}
+.portfolio-opacity-75{opacity:.75;}
+.portfolio-opacity-100{opacity:1;}
+
+/* ===========================================================
+   POINTER EVENTS
+=========================================================== */
+
+.portfolio-no-pointer{
+
+    pointer-events:none;
+
+}
+
+.portfolio-auto-pointer{
+
+    pointer-events:auto;
+
+}
+
+/* ===========================================================
+   VISIBILITY
+=========================================================== */
+
+.portfolio-visible{
+
+    visibility:visible;
+
+}
+
+.portfolio-invisible{
+
+    visibility:hidden;
+
+}
+
+/* ===========================================================
+   END PART 11
+=========================================================== */
+
+/* ===========================================================
+   PORTFOLIO.CSS
+   Part 12
+   Final Optimization & End of File
+=========================================================== */
+
+/* ===========================================================
+   PERFORMANCE
+=========================================================== */
+
+.portfolio,
+.portfolio-container,
+.portfolio-card,
+.featured-wrapper,
+.story-card,
+.client-card,
+.news-card,
+.tech-item{
+
+    will-change:transform, opacity;
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+}
+
+.portfolio img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   ACCESSIBILITY
+=========================================================== */
+
+.portfolio a:focus,
+.portfolio button:focus,
+.portfolio input:focus,
+.portfolio textarea:focus,
+.portfolio select:focus{
+
+    outline:3px solid rgba(214,0,0,.35);
+
+    outline-offset:4px;
+
+    border-radius:8px;
+
+}
+
+.portfolio a:focus-visible,
+.portfolio button:focus-visible{
+
+    box-shadow:0 0 0 5px rgba(214,0,0,.18);
+
+}
+
+/* ===========================================================
+   TEXT SELECTION
+=========================================================== */
+
+.portfolio ::selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.portfolio ::-moz-selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   LOADING
+=========================================================== */
+
+.portfolio-loading{
+
+    position:relative;
+
+    overflow:hidden;
+
+    opacity:.7;
+
+    pointer-events:none;
+
+}
+
+.portfolio-loading::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.30),
+
+        transparent
+
+    );
+
+    animation:portfolioLoading 1.5s linear infinite;
+
+}
+
+@keyframes portfolioLoading{
+
+    from{
+
+        transform:translateX(-100%);
+
+    }
+
+    to{
+
+        transform:translateX(100%);
+
+    }
+
+}
+
+/* ===========================================================
+   SKELETON
+=========================================================== */
+
+.portfolio-skeleton{
+
+    background:linear-gradient(
+
+        90deg,
+
+        #ececec,
+
+        #f7f7f7,
+
+        #ececec
+
+    );
+
+    background-size:200% 100%;
+
+    animation:portfolioSkeleton 1.4s linear infinite;
+
+}
+
+@keyframes portfolioSkeleton{
+
+    from{
+
+        background-position:200% 0;
+
+    }
+
+    to{
+
+        background-position:-200% 0;
+
+    }
+
+}
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.portfolio *,
+.portfolio::before,
+.portfolio::after{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+
+}
+
+}
+
+/* ===========================================================
+   HIGH CONTRAST
+=========================================================== */
+
+@media (prefers-contrast:more){
+
+.portfolio-card,
+.story-card,
+.client-card,
+.news-card,
+.tech-item{
+
+    border:2px solid #000000;
+
+}
+
+.portfolio-title{
+
+    font-weight:900;
+
+}
+
+}
+
+/* ===========================================================
+   PRINT
+=========================================================== */
+
+@media print{
+
+.portfolio{
+
+    background:#ffffff !important;
+
+    color:#000000 !important;
+
+    padding:40px 0;
+
+}
+
+.portfolio-badge,
+.filter-wrapper,
+.portfolio-cta,
+.enterprise-banner,
+.video-testimonial{
+
+    display:none !important;
+
+}
+
+.portfolio-card,
+.story-card,
+.client-card,
+.tech-item{
+
+    box-shadow:none !important;
+
+    border:1px solid #cccccc;
+
+}
+
+.portfolio h1,
+.portfolio h2,
+.portfolio h3,
+.portfolio h4{
+
+    color:#000000 !important;
+
+}
+
+}
+
+/* ===========================================================
+   SAFE AREA
+=========================================================== */
+
+@supports (padding:max(0px)){
+
+.portfolio{
+
+    padding-left:max(24px, env(safe-area-inset-left));
+
+    padding-right:max(24px, env(safe-area-inset-right));
+
+}
+
+}
+
+/* ===========================================================
+   GPU HELPERS
+=========================================================== */
+
+.portfolio-gpu{
+
+    transform:translate3d(0,0,0);
+
+    will-change:transform;
+
+}
+
+.portfolio-no-select{
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+}
+
+.portfolio-select{
+
+    user-select:text;
+
+}
+
+/* ===========================================================
+   IMAGE HELPERS
+=========================================================== */
+
+.portfolio img{
+
+    image-rendering:auto;
+
+}
+
+.portfolio-image img,
+.featured-image img,
+.case-study-image img{
+
+    object-fit:cover;
+
+}
+
+/* ===========================================================
+   SCROLL HELPERS
+=========================================================== */
+
+.portfolio-scroll{
+
+    scroll-margin-top:100px;
+
+}
+
+.portfolio-sticky{
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+/* ===========================================================
+   CONTAINER HELPERS
+=========================================================== */
+
+.portfolio-container-fluid{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding-left:30px;
+
+    padding-right:30px;
+
+}
+
+.portfolio-container-narrow{
+
+    max-width:960px;
+
+    margin:0 auto;
+
+}
+
+/* ===========================================================
+   FINAL RESET
+=========================================================== */
+
+.portfolio *{
+
+    box-sizing:border-box;
+
+}
+
+.portfolio iframe{
+
+    border:0;
+
+    max-width:100%;
+
+}
+
+.portfolio svg{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+.portfolio video{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   OPTIMIZED IMAGE RENDERING
+=========================================================== */
+
+.portfolio-picture{
+
+    overflow:hidden;
+
+}
+
+.portfolio-picture img{
+
+    transition:transform .5s ease;
+
+}
+
+.portfolio-picture:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================================
+   END OF PORTFOLIO.CSS
+=========================================================== */

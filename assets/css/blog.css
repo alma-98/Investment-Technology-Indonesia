@@ -1,0 +1,6148 @@
+/* ===========================================================
+   BLOG.CSS
+   Investment Technology Indonesia
+   Part 1
+   Blog Base & Hero
+=========================================================== */
+
+/* ===========================================================
+   BLOG SECTION
+=========================================================== */
+
+.blog{
+
+    position:relative;
+
+    padding:120px 0;
+
+    background:#f8fafc;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+   CONTAINER
+=========================================================== */
+
+.blog-container{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:1280px;
+
+    margin:0 auto;
+
+    padding:0 24px;
+
+}
+
+/* ===========================================================
+   SECTION HEADER
+=========================================================== */
+
+.blog-header{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+/* ===========================================================
+   BADGE
+=========================================================== */
+
+.blog-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 20px;
+
+    margin-bottom:24px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.08);
+
+    border:1px solid rgba(214,0,0,.12);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.blog-badge i{
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+   LABEL
+=========================================================== */
+
+.blog-label{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+/* ===========================================================
+   TITLE
+=========================================================== */
+
+.blog-title{
+
+    margin-bottom:22px;
+
+    color:var(--secondary);
+
+    font-size:54px;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+}
+
+.blog-title span{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   SUBTITLE
+=========================================================== */
+
+.blog-subtitle{
+
+    margin-bottom:20px;
+
+    color:#444444;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+}
+
+/* ===========================================================
+   DESCRIPTION
+=========================================================== */
+
+.blog-description{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+}
+
+.blog-description p{
+
+    margin-bottom:18px;
+
+    color:#666666;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+}
+
+.blog-description p:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ===========================================================
+   DIVIDER
+=========================================================== */
+
+.blog-divider{
+
+    width:90px;
+
+    height:4px;
+
+    margin:34px auto;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        #ff7070
+
+    );
+
+}
+
+/* ===========================================================
+   HIGHLIGHT
+=========================================================== */
+
+.blog-highlight{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   HERO INTRO
+=========================================================== */
+
+.blog-intro{
+
+    margin-top:45px;
+
+    padding:36px;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.blog-intro h3{
+
+    margin-bottom:16px;
+
+    color:var(--secondary);
+
+    font-size:28px;
+
+}
+
+.blog-intro p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   HERO SUMMARY
+=========================================================== */
+
+.blog-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+    margin-top:60px;
+
+}
+
+.blog-summary-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.blog-summary-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 65px rgba(0,0,0,.12);
+
+}
+
+.blog-summary-card h3{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:42px;
+
+}
+
+.blog-summary-card span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.blog-summary-card p{
+
+    color:#777777;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   HERO SEARCH
+=========================================================== */
+
+.blog-search{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    max-width:720px;
+
+    margin:50px auto 0;
+
+    padding:10px;
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.blog-search input{
+
+    flex:1;
+
+    border:none;
+
+    background:transparent;
+
+    padding:16px 20px;
+
+    font-size:15px;
+
+}
+
+.blog-search input:focus{
+
+    outline:none;
+
+}
+
+.blog-search button{
+
+    border:none;
+
+    padding:16px 28px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.blog-search button:hover{
+
+    background:#a40000;
+
+}
+
+/* ===========================================================
+   BACKGROUND DECORATION
+=========================================================== */
+
+.blog-decoration{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+.blog-decoration.one{
+
+    top:-90px;
+
+    left:-90px;
+
+    width:220px;
+
+    height:220px;
+
+    background:rgba(214,0,0,.05);
+
+}
+
+.blog-decoration.two{
+
+    top:180px;
+
+    right:-120px;
+
+    width:260px;
+
+    height:260px;
+
+    background:rgba(214,0,0,.04);
+
+}
+
+.blog-decoration.three{
+
+    bottom:-70px;
+
+    left:35%;
+
+    width:150px;
+
+    height:150px;
+
+    background:rgba(255,193,7,.10);
+
+}
+
+/* ===========================================================
+   GRID HELPERS
+=========================================================== */
+
+.blog-grid{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+.blog-grid-2{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.blog-grid-3{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.blog-grid-4{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+/* ===========================================================
+   SECTION SPACING
+=========================================================== */
+
+.blog-section{
+
+    margin-top:90px;
+
+}
+
+.blog-section:first-child{
+
+    margin-top:0;
+
+}
+
+/* ===========================================================
+   BLOG.CSS
+   Part 2
+   Featured Article & Blog Cards
+=========================================================== */
+
+/* ===========================================================
+   FEATURED ARTICLE
+=========================================================== */
+
+.blog-featured{
+
+    margin-top:100px;
+
+}
+
+.featured-post{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:40px;
+
+    align-items:center;
+
+    padding:40px;
+
+    background:#ffffff;
+
+    border-radius:32px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+    overflow:hidden;
+
+}
+
+.featured-post:hover{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+.featured-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+}
+
+.featured-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:transform .6s ease;
+
+}
+
+.featured-post:hover .featured-image img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================================
+   FEATURED BADGE
+=========================================================== */
+
+.featured-badge{
+
+    position:absolute;
+
+    top:20px;
+
+    left:20px;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   FEATURED CONTENT
+=========================================================== */
+
+.featured-content h2{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+    font-size:40px;
+
+    line-height:1.25;
+
+}
+
+.featured-content p{
+
+    margin-bottom:28px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   POST META
+=========================================================== */
+
+.post-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-bottom:24px;
+
+}
+
+.post-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+.post-meta i{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   FEATURED BUTTON
+=========================================================== */
+
+.featured-action{
+
+    margin-top:25px;
+
+}
+
+/* ===========================================================
+   BLOG GRID
+=========================================================== */
+
+.blog-posts{
+
+    margin-top:100px;
+
+}
+
+.blog-post-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+/* ===========================================================
+   BLOG CARD
+=========================================================== */
+
+.blog-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.blog-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.14);
+
+}
+
+/* ===========================================================
+   BLOG IMAGE
+=========================================================== */
+
+.blog-card-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.blog-card-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:transform .6s ease;
+
+}
+
+.blog-card:hover .blog-card-image img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================================================
+   CATEGORY BADGE
+=========================================================== */
+
+.blog-category{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.92);
+
+    color:#ffffff;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   BLOG CONTENT
+=========================================================== */
+
+.blog-card-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+    padding:30px;
+
+}
+
+.blog-card-content h3{
+
+    margin-bottom:16px;
+
+    color:var(--secondary);
+
+    line-height:1.4;
+
+    transition:.3s;
+
+}
+
+.blog-card:hover .blog-card-content h3{
+
+    color:var(--primary);
+
+}
+
+.blog-card-content p{
+
+    margin-bottom:24px;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   AUTHOR
+=========================================================== */
+
+.blog-author{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:auto;
+
+}
+
+.blog-author img{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.blog-author h5{
+
+    margin-bottom:4px;
+
+    color:var(--secondary);
+
+}
+
+.blog-author span{
+
+    color:#777777;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   READ MORE
+=========================================================== */
+
+.blog-read-more{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:22px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+.blog-read-more:hover{
+
+    gap:16px;
+
+}
+
+/* ===========================================================
+   CARD FOOTER
+=========================================================== */
+
+.blog-card-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:26px;
+
+    padding-top:22px;
+
+    border-top:1px solid rgba(0,0,0,.08);
+
+}
+
+.blog-date{
+
+    color:#888888;
+
+    font-size:13px;
+
+}
+
+.blog-reading-time{
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   FEATURED QUOTE
+=========================================================== */
+
+.featured-quote{
+
+    margin-top:28px;
+
+    padding:24px;
+
+    border-left:4px solid var(--primary);
+
+    background:#fafafa;
+
+    border-radius:18px;
+
+}
+
+.featured-quote p{
+
+    margin:0;
+
+    font-style:italic;
+
+    color:#555555;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   END PART 2
+=========================================================== */
+/* ===========================================================
+   BLOG.CSS
+   Part 3
+   Sidebar • Categories • Widgets
+=========================================================== */
+
+/* ===========================================================
+   BLOG LAYOUT
+=========================================================== */
+
+.blog-layout{
+
+    display:grid;
+
+    grid-template-columns:2fr 380px;
+
+    gap:40px;
+
+    align-items:start;
+
+    margin-top:100px;
+
+}
+
+/* ===========================================================
+   SIDEBAR
+=========================================================== */
+
+.blog-sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+/* ===========================================================
+   WIDGET
+=========================================================== */
+
+.blog-widget{
+
+    padding:32px;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.blog-widget h3{
+
+    margin-bottom:22px;
+
+    color:var(--secondary);
+
+    font-size:24px;
+
+}
+
+/* ===========================================================
+   SEARCH
+=========================================================== */
+
+.sidebar-search{
+
+    position:relative;
+
+}
+
+.sidebar-search input{
+
+    width:100%;
+
+    padding:16px 60px 16px 20px;
+
+    border:1px solid #dddddd;
+
+    border-radius:999px;
+
+    font-size:15px;
+
+    transition:.3s ease;
+
+}
+
+.sidebar-search input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(214,0,0,.10);
+
+}
+
+.sidebar-search button{
+
+    position:absolute;
+
+    top:50%;
+
+    right:8px;
+
+    transform:translateY(-50%);
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.sidebar-search button:hover{
+
+    background:#a40000;
+
+}
+
+/* ===========================================================
+   CATEGORIES
+=========================================================== */
+
+.blog-categories{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.blog-categories li{
+
+    margin-bottom:14px;
+
+}
+
+.blog-categories li:last-child{
+
+    margin-bottom:0;
+
+}
+
+.blog-categories a{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 18px;
+
+    border-radius:16px;
+
+    text-decoration:none;
+
+    color:#555555;
+
+    background:#fafafa;
+
+    transition:.3s ease;
+
+}
+
+.blog-categories a:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.blog-categories span{
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   RECENT POSTS
+=========================================================== */
+
+.recent-post-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.recent-post{
+
+    display:flex;
+
+    gap:16px;
+
+    align-items:center;
+
+}
+
+.recent-post img{
+
+    width:88px;
+
+    height:88px;
+
+    border-radius:18px;
+
+    object-fit:cover;
+
+}
+
+.recent-post-content h5{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+    line-height:1.4;
+
+}
+
+.recent-post-content span{
+
+    color:#888888;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   POPULAR POSTS
+=========================================================== */
+
+.popular-post{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-bottom:22px;
+
+}
+
+.popular-post:last-child{
+
+    margin-bottom:0;
+
+}
+
+.popular-number{
+
+    width:42px;
+
+    height:42px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.popular-content h5{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.popular-content span{
+
+    color:#888888;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   TAG CLOUD
+=========================================================== */
+
+.blog-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.blog-tags a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#f5f5f5;
+
+    color:#555555;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    transition:.3s ease;
+
+}
+
+.blog-tags a:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   ARCHIVES
+=========================================================== */
+
+.blog-archives{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.blog-archives li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+}
+
+.blog-archives li:last-child{
+
+    border-bottom:none;
+
+}
+
+.blog-archives a{
+
+    text-decoration:none;
+
+    color:#555555;
+
+}
+
+.blog-archives span{
+
+    color:#999999;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   ADVERTISEMENT
+=========================================================== */
+
+.blog-ad{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #8b0000
+    );
+
+    color:#ffffff;
+
+}
+
+.blog-ad h3{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.blog-ad p{
+
+    margin-bottom:28px;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.8;
+
+}
+
+.blog-ad .btn{
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   NEWSLETTER
+=========================================================== */
+
+.newsletter-widget{
+
+    text-align:center;
+
+}
+
+.newsletter-widget p{
+
+    margin-bottom:24px;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+.newsletter-form{
+
+    display:grid;
+
+    gap:16px;
+
+}
+
+.newsletter-form input{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    border:1px solid #dddddd;
+
+    border-radius:16px;
+
+    transition:.3s ease;
+
+}
+
+.newsletter-form input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(214,0,0,.10);
+
+}
+
+.newsletter-form button{
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.newsletter-form button:hover{
+
+    background:#a40000;
+
+}
+
+/* ===========================================================
+   END PART 3
+=========================================================== */
+/* ===========================================================
+   BLOG.CSS
+   Part 4
+   Article Detail & Typography
+=========================================================== */
+
+/* ===========================================================
+   ARTICLE LAYOUT
+=========================================================== */
+
+.article{
+
+    margin-top:100px;
+
+}
+
+.article-wrapper{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:50px;
+
+    background:#ffffff;
+
+    border-radius:32px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+/* ===========================================================
+   ARTICLE HEADER
+=========================================================== */
+
+.article-header{
+
+    margin-bottom:45px;
+
+}
+
+.article-category{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 18px;
+
+    margin-bottom:20px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.article-title{
+
+    margin-bottom:24px;
+
+    color:var(--secondary);
+
+    font-size:48px;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+}
+
+.article-subtitle{
+
+    margin-bottom:28px;
+
+    color:#555555;
+
+    font-size:22px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   ARTICLE META
+=========================================================== */
+
+.article-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:22px;
+
+    align-items:center;
+
+}
+
+.article-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+.article-meta i{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   FEATURED IMAGE
+=========================================================== */
+
+.article-featured-image{
+
+    margin:45px 0;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+}
+
+.article-featured-image img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.article-caption{
+
+    margin-top:14px;
+
+    text-align:center;
+
+    color:#888888;
+
+    font-size:14px;
+
+    font-style:italic;
+
+}
+
+/* ===========================================================
+   ARTICLE CONTENT
+=========================================================== */
+
+.article-content{
+
+    color:#555555;
+
+    font-size:17px;
+
+    line-height:2;
+
+}
+
+.article-content p{
+
+    margin-bottom:24px;
+
+}
+
+/* ===========================================================
+   TYPOGRAPHY
+=========================================================== */
+
+.article-content h1,
+
+.article-content h2,
+
+.article-content h3,
+
+.article-content h4,
+
+.article-content h5,
+
+.article-content h6{
+
+    margin:45px 0 20px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+    line-height:1.35;
+
+}
+
+.article-content h1{
+
+    font-size:42px;
+
+}
+
+.article-content h2{
+
+    font-size:36px;
+
+}
+
+.article-content h3{
+
+    font-size:30px;
+
+}
+
+.article-content h4{
+
+    font-size:26px;
+
+}
+
+.article-content h5{
+
+    font-size:22px;
+
+}
+
+.article-content h6{
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+   LINKS
+=========================================================== */
+
+.article-content a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+.article-content a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================================================
+   IMAGES
+=========================================================== */
+
+.article-content img{
+
+    width:100%;
+
+    margin:35px 0;
+
+    border-radius:24px;
+
+}
+
+/* ===========================================================
+   BLOCKQUOTE
+=========================================================== */
+
+.article-content blockquote{
+
+    margin:40px 0;
+
+    padding:30px 35px;
+
+    border-left:6px solid var(--primary);
+
+    background:#fafafa;
+
+    border-radius:20px;
+
+    font-size:20px;
+
+    font-style:italic;
+
+    color:#444444;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CODE BLOCK
+=========================================================== */
+
+.article-content pre{
+
+    margin:35px 0;
+
+    padding:24px;
+
+    overflow:auto;
+
+    border-radius:20px;
+
+    background:#111827;
+
+    color:#f3f4f6;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+.article-content code{
+
+    padding:3px 8px;
+
+    border-radius:6px;
+
+    background:#f2f4f7;
+
+    color:var(--primary);
+
+    font-family:monospace;
+
+}
+
+.article-content pre code{
+
+    padding:0;
+
+    background:transparent;
+
+    color:inherit;
+
+}
+
+/* ===========================================================
+   LIST
+=========================================================== */
+
+.article-content ul,
+
+.article-content ol{
+
+    margin:30px 0 30px 24px;
+
+}
+
+.article-content li{
+
+    margin-bottom:14px;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   TABLE
+=========================================================== */
+
+.article-content table{
+
+    width:100%;
+
+    margin:35px 0;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+}
+
+.article-content th{
+
+    padding:18px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    text-align:left;
+
+}
+
+.article-content td{
+
+    padding:18px;
+
+    border-bottom:1px solid #eeeeee;
+
+}
+
+.article-content tr:nth-child(even){
+
+    background:#fafafa;
+
+}
+
+/* ===========================================================
+   HORIZONTAL RULE
+=========================================================== */
+
+.article-content hr{
+
+    margin:50px 0;
+
+    border:none;
+
+    border-top:1px solid #e5e7eb;
+
+}
+
+/* ===========================================================
+   EMBED
+=========================================================== */
+
+.article-embed{
+
+    margin:40px 0;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+}
+
+.article-embed iframe,
+
+.article-embed video{
+
+    width:100%;
+
+    min-height:500px;
+
+    display:block;
+
+}
+
+/* ===========================================================
+   READING PROGRESS
+=========================================================== */
+
+.reading-progress{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:4px;
+
+    z-index:9999;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        #ff7070
+
+    );
+
+}
+
+/* ===========================================================
+   HIGHLIGHT
+=========================================================== */
+
+.article-highlight{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   END PART 4
+=========================================================== */
+/* ===========================================================
+   BLOG.CSS
+   Part 5
+   Author • Comments • Related Posts
+=========================================================== */
+
+/* ===========================================================
+   AUTHOR BOX
+=========================================================== */
+
+.author-box{
+
+    display:flex;
+
+    gap:28px;
+
+    align-items:flex-start;
+
+    margin-top:80px;
+
+    padding:40px;
+
+    background:#ffffff;
+
+    border-radius:30px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.author-avatar{
+
+    flex-shrink:0;
+
+}
+
+.author-avatar img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.author-content{
+
+    flex:1;
+
+}
+
+.author-role{
+
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+.author-content h3{
+
+    margin-bottom:16px;
+
+    color:var(--secondary);
+
+}
+
+.author-content p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.author-social{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-top:24px;
+
+}
+
+.author-social a{
+
+    width:44px;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#f4f4f4;
+
+    color:var(--secondary);
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.author-social a:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   ARTICLE NAVIGATION
+=========================================================== */
+
+.article-navigation{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+    margin-top:70px;
+
+}
+
+.article-nav{
+
+    padding:28px;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.article-nav:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.article-nav small{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.article-nav h4{
+
+    color:var(--secondary);
+
+    line-height:1.5;
+
+}
+
+/* ===========================================================
+   RELATED POSTS
+=========================================================== */
+
+.related-posts{
+
+    margin-top:100px;
+
+}
+
+.related-header{
+
+    margin-bottom:40px;
+
+    text-align:center;
+
+}
+
+.related-header h2{
+
+    color:var(--secondary);
+
+}
+
+.related-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.related-card{
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.related-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.related-card img{
+
+    width:100%;
+
+    display:block;
+
+    transition:transform .5s ease;
+
+}
+
+.related-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.related-content{
+
+    padding:28px;
+
+}
+
+.related-content h4{
+
+    margin-bottom:14px;
+
+    color:var(--secondary);
+
+    line-height:1.5;
+
+}
+
+.related-content p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   REACTIONS
+=========================================================== */
+
+.article-reactions{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:60px;
+
+}
+
+.reaction-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#f5f5f5;
+
+    color:#555555;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.reaction-btn:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   COMMENTS
+=========================================================== */
+
+.comments{
+
+    margin-top:100px;
+
+}
+
+.comments h2{
+
+    margin-bottom:35px;
+
+    color:var(--secondary);
+
+}
+
+.comment{
+
+    display:flex;
+
+    gap:22px;
+
+    margin-bottom:30px;
+
+    padding-bottom:30px;
+
+    border-bottom:1px solid #eeeeee;
+
+}
+
+.comment:last-child{
+
+    margin-bottom:0;
+
+    border-bottom:none;
+
+}
+
+.comment-avatar img{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.comment-body{
+
+    flex:1;
+
+}
+
+.comment-body h4{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.comment-date{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:#999999;
+
+    font-size:13px;
+
+}
+
+.comment-body p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.comment-reply{
+
+    display:inline-block;
+
+    margin-top:16px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+/* ===========================================================
+   COMMENT FORM
+=========================================================== */
+
+.comment-form{
+
+    margin-top:70px;
+
+    padding:40px;
+
+    background:#ffffff;
+
+    border-radius:30px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.comment-form h3{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+}
+
+.comment-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.comment-form input,
+
+.comment-form textarea{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    border:1px solid #dddddd;
+
+    border-radius:16px;
+
+    transition:.3s ease;
+
+}
+
+.comment-form textarea{
+
+    grid-column:1 / -1;
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+.comment-form input:focus,
+
+.comment-form textarea:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(214,0,0,.10);
+
+}
+
+.comment-form button{
+
+    margin-top:24px;
+
+    border:none;
+
+    padding:16px 34px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.comment-form button:hover{
+
+    background:#a40000;
+
+}
+
+/* ===========================================================
+   ENGAGEMENT BOX
+=========================================================== */
+
+.reader-engagement{
+
+    margin-top:80px;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #fff8f8
+    );
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.reader-engagement h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.reader-engagement p{
+
+    max-width:700px;
+
+    margin:0 auto 30px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   END PART 5
+=========================================================== */
+/* ===========================================================
+   BLOG.CSS
+   Part 6
+   Newsletter • Social • CTA
+=========================================================== */
+
+/* ===========================================================
+   NEWSLETTER
+=========================================================== */
+
+.blog-newsletter{
+
+    margin-top:100px;
+
+}
+
+.newsletter-wrapper{
+
+    padding:70px;
+
+    border-radius:34px;
+
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #8b0000
+    );
+
+    color:#ffffff;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.newsletter-wrapper h2{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+    font-size:42px;
+
+}
+
+.newsletter-wrapper p{
+
+    max-width:720px;
+
+    margin:0 auto 35px;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   NEWSLETTER FORM
+=========================================================== */
+
+.newsletter-subscribe{
+
+    display:flex;
+
+    gap:16px;
+
+    max-width:720px;
+
+    margin:0 auto;
+
+}
+
+.newsletter-subscribe input{
+
+    flex:1;
+
+    padding:18px 22px;
+
+    border:none;
+
+    border-radius:999px;
+
+    font-size:15px;
+
+}
+
+.newsletter-subscribe input:focus{
+
+    outline:none;
+
+}
+
+.newsletter-subscribe button{
+
+    border:none;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.newsletter-subscribe button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================================================
+   BLOG CTA
+=========================================================== */
+
+.blog-cta{
+
+    margin-top:100px;
+
+}
+
+.blog-cta-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+    padding:50px;
+
+    border-radius:32px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.blog-cta-content h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.blog-cta-content p{
+
+    margin-bottom:28px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.blog-cta-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+   SOCIAL SHARE
+=========================================================== */
+
+.social-share{
+
+    margin-top:80px;
+
+}
+
+.social-share h4{
+
+    margin-bottom:22px;
+
+    color:var(--secondary);
+
+}
+
+.social-share-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+}
+
+.social-share-list a{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#f4f4f4;
+
+    color:var(--secondary);
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.social-share-list a:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    transform:translateY(-4px);
+
+}
+
+/* ===========================================================
+   FOLLOW SOCIAL
+=========================================================== */
+
+.follow-social{
+
+    margin-top:100px;
+
+}
+
+.follow-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.follow-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.follow-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.follow-card i{
+
+    font-size:42px;
+
+    margin-bottom:16px;
+
+    color:var(--primary);
+
+}
+
+.follow-card h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.follow-card span{
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   BLOG STATISTICS
+=========================================================== */
+
+.blog-statistics{
+
+    margin-top:100px;
+
+}
+
+.blog-stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.blog-stat{
+
+    padding:34px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.blog-stat h2{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:42px;
+
+}
+
+.blog-stat span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.blog-stat p{
+
+    color:#777777;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   SUBSCRIBE BOX
+=========================================================== */
+
+.subscribe-box{
+
+    margin-top:100px;
+
+    padding:45px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:#fafafa;
+
+}
+
+.subscribe-box h3{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.subscribe-box p{
+
+    max-width:680px;
+
+    margin:0 auto 28px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.subscribe-inline{
+
+    display:flex;
+
+    gap:16px;
+
+    max-width:680px;
+
+    margin:0 auto;
+
+}
+
+.subscribe-inline input{
+
+    flex:1;
+
+    padding:16px 20px;
+
+    border:1px solid #dddddd;
+
+    border-radius:999px;
+
+}
+
+.subscribe-inline input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+}
+
+.subscribe-inline button{
+
+    border:none;
+
+    padding:16px 30px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+/* ===========================================================
+   FINAL CTA
+=========================================================== */
+
+.blog-final-cta{
+
+    margin-top:100px;
+
+    text-align:center;
+
+}
+
+.blog-final-cta h2{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+}
+
+.blog-final-cta p{
+
+    max-width:760px;
+
+    margin:0 auto 35px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.blog-final-cta .btn{
+
+    min-width:220px;
+
+}
+
+/* ===========================================================
+   END PART 6
+=========================================================== */
+/* ===========================================================
+   BLOG.CSS
+   Part 7
+   Pagination • Tags • Widgets
+=========================================================== */
+
+/* ===========================================================
+   PAGINATION
+=========================================================== */
+
+.blog-pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-top:100px;
+
+}
+
+.blog-pagination a,
+
+.blog-pagination span{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:var(--secondary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.blog-pagination a:hover,
+
+.blog-pagination .active{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   TAGS SECTION
+=========================================================== */
+
+.article-tags{
+
+    display:flex;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:60px;
+
+}
+
+.article-tags strong{
+
+    color:var(--secondary);
+
+}
+
+.article-tags a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#f5f5f5;
+
+    color:#555555;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.article-tags a:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   POPULAR TOPICS
+=========================================================== */
+
+.popular-topics{
+
+    margin-top:100px;
+
+}
+
+.topic-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.topic-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.topic-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.topic-card i{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:16px;
+
+}
+
+.topic-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.topic-card span{
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   TRENDING POSTS
+=========================================================== */
+
+.trending-posts{
+
+    margin-top:100px;
+
+}
+
+.trending-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.trending-item{
+
+    display:flex;
+
+    gap:20px;
+
+    padding:22px;
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    box-shadow:0 14px 35px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.trending-item:hover{
+
+    transform:translateX(6px);
+
+}
+
+.trending-thumb{
+
+    flex-shrink:0;
+
+}
+
+.trending-thumb img{
+
+    width:110px;
+
+    height:90px;
+
+    border-radius:16px;
+
+    object-fit:cover;
+
+}
+
+.trending-content{
+
+    flex:1;
+
+}
+
+.trending-content h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    line-height:1.5;
+
+}
+
+.trending-content p{
+
+    color:#666666;
+
+    line-height:1.7;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   FEATURED CATEGORY
+=========================================================== */
+
+.featured-categories{
+
+    margin-top:100px;
+
+}
+
+.featured-category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.featured-category{
+
+    padding:40px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.featured-category:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.featured-category i{
+
+    font-size:46px;
+
+    margin-bottom:20px;
+
+    color:var(--primary);
+
+}
+
+.featured-category h3{
+
+    margin-bottom:14px;
+
+    color:var(--secondary);
+
+}
+
+.featured-category p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CALENDAR
+=========================================================== */
+
+.blog-calendar{
+
+    margin-top:100px;
+
+}
+
+.calendar-widget{
+
+    padding:35px;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.calendar-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:26px;
+
+}
+
+.calendar-header h4{
+
+    color:var(--secondary);
+
+}
+
+.calendar-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:10px;
+
+}
+
+.calendar-day{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    aspect-ratio:1;
+
+    border-radius:12px;
+
+    background:#f5f5f5;
+
+    color:#666666;
+
+    font-size:14px;
+
+    transition:.3s ease;
+
+}
+
+.calendar-day.active{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   STICKY SIDEBAR
+=========================================================== */
+
+.sidebar-sticky{
+
+    position:sticky;
+
+    top:120px;
+
+}
+
+/* ===========================================================
+   FEATURED WIDGET
+=========================================================== */
+
+.featured-widget{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #8c0000
+    );
+
+    color:#ffffff;
+
+}
+
+.featured-widget h3{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+.featured-widget p{
+
+    margin-bottom:24px;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.8;
+
+}
+
+.featured-widget .btn{
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   ARCHIVE TIMELINE
+=========================================================== */
+
+.archive-timeline{
+
+    margin-top:100px;
+
+}
+
+.archive-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:24px;
+
+}
+
+.archive-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.archive-date{
+
+    width:80px;
+
+    text-align:center;
+
+    padding:12px;
+
+    border-radius:16px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.archive-content{
+
+    flex:1;
+
+}
+
+.archive-content h5{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.archive-content span{
+
+    color:#888888;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   END PART 7
+=========================================================== */
+/* ===========================================================
+   BLOG.CSS
+   Part 8
+   Statistics • Trending • Knowledge Center
+=========================================================== */
+
+/* ===========================================================
+   BLOG STATISTICS
+=========================================================== */
+
+.blog-dashboard{
+
+    margin-top:100px;
+
+}
+
+.blog-dashboard-header{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.blog-dashboard-header h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.blog-dashboard-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+.blog-dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.dashboard-card{
+
+    padding:34px;
+
+    text-align:center;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.dashboard-card i{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.dashboard-card h2{
+
+    margin-bottom:10px;
+
+    font-size:42px;
+
+    color:var(--primary);
+
+}
+
+.dashboard-card span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.dashboard-card p{
+
+    color:#777777;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   MOST VIEWED ARTICLES
+=========================================================== */
+
+.most-viewed{
+
+    margin-top:100px;
+
+}
+
+.most-viewed-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.viewed-item{
+
+    display:grid;
+
+    grid-template-columns:120px 1fr auto;
+
+    gap:24px;
+
+    align-items:center;
+
+    padding:24px;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.viewed-item:hover{
+
+    transform:translateX(6px);
+
+}
+
+.viewed-item img{
+
+    width:120px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+}
+
+.viewed-content h3{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.viewed-content p{
+
+    color:#666666;
+
+    line-height:1.7;
+
+}
+
+.view-count{
+
+    text-align:center;
+
+}
+
+.view-count h2{
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+.view-count span{
+
+    color:#888888;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   EDITOR CHOICE
+=========================================================== */
+
+.editor-choice{
+
+    margin-top:100px;
+
+}
+
+.editor-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.editor-card{
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.editor-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.editor-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.editor-content{
+
+    padding:30px;
+
+}
+
+.editor-label{
+
+    display:inline-block;
+
+    margin-bottom:16px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+.editor-content h3{
+
+    margin-bottom:14px;
+
+    color:var(--secondary);
+
+}
+
+.editor-content p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   READING ANALYTICS
+=========================================================== */
+
+.reading-analytics{
+
+    margin-top:100px;
+
+}
+
+.analytics-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.analytics-card{
+
+    padding:34px;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.analytics-card h4{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.analytics-value{
+
+    margin-bottom:16px;
+
+    font-size:46px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+}
+
+.analytics-bar{
+
+    width:100%;
+
+    height:10px;
+
+    overflow:hidden;
+
+    border-radius:999px;
+
+    background:#eeeeee;
+
+}
+
+.analytics-bar span{
+
+    display:block;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        #ff6d6d
+
+    );
+
+}
+
+/* ===========================================================
+   KNOWLEDGE CENTER
+=========================================================== */
+
+.knowledge-center{
+
+    margin-top:100px;
+
+}
+
+.knowledge-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.knowledge-card{
+
+    padding:32px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.knowledge-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.knowledge-card i{
+
+    font-size:40px;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.knowledge-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.knowledge-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   ACHIEVEMENTS
+=========================================================== */
+
+.blog-achievements{
+
+    margin-top:100px;
+
+}
+
+.achievement-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.achievement-card{
+
+    padding:34px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.achievement-card h2{
+
+    margin-bottom:10px;
+
+    font-size:40px;
+
+    color:var(--primary);
+
+}
+
+.achievement-card span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.achievement-card p{
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   FEATURED INSIGHT
+=========================================================== */
+
+.featured-insight{
+
+    margin-top:100px;
+
+}
+
+.insight-banner{
+
+    padding:70px;
+
+    text-align:center;
+
+    border-radius:34px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #ffffff,
+
+        #fff8f8
+
+    );
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+}
+
+.insight-banner h2{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+}
+
+.insight-banner p{
+
+    max-width:760px;
+
+    margin:0 auto 30px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   END PART 8
+=========================================================== */
+/* ===========================================================
+   BLOG.CSS
+   Part 9
+   Responsive Design
+=========================================================== */
+
+/* ===========================================================
+   LARGE DESKTOP
+=========================================================== */
+
+@media (max-width:1400px){
+
+.blog-container{
+
+    max-width:1180px;
+
+}
+
+.blog-title{
+
+    font-size:48px;
+
+}
+
+.featured-post,
+
+.blog-cta-wrapper{
+
+    gap:36px;
+
+}
+
+}
+
+/* ===========================================================
+   LAPTOP
+=========================================================== */
+
+@media (max-width:1200px){
+
+.blog{
+
+    padding:100px 0;
+
+}
+
+.blog-title{
+
+    font-size:42px;
+
+}
+
+.blog-subtitle{
+
+    font-size:20px;
+
+}
+
+.blog-post-grid,
+
+.related-grid,
+
+.editor-grid,
+
+.featured-category-grid,
+
+.blog-dashboard-grid,
+
+.blog-stats-grid,
+
+.topic-grid,
+
+.follow-grid,
+
+.knowledge-grid,
+
+.achievement-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.blog-summary{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width:992px){
+
+.blog-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+.featured-post,
+
+.blog-cta-wrapper,
+
+.author-box{
+
+    grid-template-columns:1fr;
+
+    display:grid;
+
+}
+
+.author-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    align-items:center;
+
+}
+
+.article-navigation{
+
+    grid-template-columns:1fr;
+
+}
+
+.newsletter-subscribe,
+
+.subscribe-inline{
+
+    flex-direction:column;
+
+}
+
+.comment-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.follow-grid,
+
+.blog-dashboard-grid,
+
+.blog-stats-grid,
+
+.knowledge-grid,
+
+.achievement-grid,
+
+.topic-grid,
+
+.analytics-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.sidebar-sticky{
+
+    position:static;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width:768px){
+
+.blog{
+
+    padding:80px 0;
+
+}
+
+.blog-container{
+
+    padding:0 20px;
+
+}
+
+.blog-title{
+
+    font-size:34px;
+
+}
+
+.blog-subtitle{
+
+    font-size:18px;
+
+}
+
+.blog-description p{
+
+    font-size:15px;
+
+}
+
+.blog-summary,
+
+.blog-post-grid,
+
+.related-grid,
+
+.editor-grid,
+
+.featured-category-grid,
+
+.blog-dashboard-grid,
+
+.blog-stats-grid,
+
+.topic-grid,
+
+.follow-grid,
+
+.knowledge-grid,
+
+.achievement-grid,
+
+.analytics-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.featured-post,
+
+.blog-cta-wrapper,
+
+.article-wrapper,
+
+.comment-form,
+
+.blog-widget,
+
+.newsletter-wrapper{
+
+    padding:30px;
+
+}
+
+.featured-content h2{
+
+    font-size:30px;
+
+}
+
+.article-title{
+
+    font-size:34px;
+
+}
+
+.article-subtitle{
+
+    font-size:18px;
+
+}
+
+.post-meta{
+
+    gap:12px;
+
+}
+
+.viewed-item{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.view-count{
+
+    margin-top:10px;
+
+}
+
+.comment{
+
+    flex-direction:column;
+
+}
+
+.comment-avatar{
+
+    text-align:center;
+
+}
+
+.article-content h1{
+
+    font-size:34px;
+
+}
+
+.article-content h2{
+
+    font-size:30px;
+
+}
+
+.article-content h3{
+
+    font-size:26px;
+
+}
+
+.article-content table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+.article-embed iframe,
+
+.article-embed video{
+
+    min-height:260px;
+
+}
+
+}
+
+/* ===========================================================
+   SMALL MOBILE
+=========================================================== */
+
+@media (max-width:576px){
+
+.blog-title{
+
+    font-size:28px;
+
+}
+
+.article-title{
+
+    font-size:28px;
+
+}
+
+.article-wrapper{
+
+    padding:24px;
+
+}
+
+.blog-card-content,
+
+.related-content,
+
+.dashboard-card,
+
+.blog-stat,
+
+.topic-card,
+
+.follow-card,
+
+.knowledge-card,
+
+.achievement-card,
+
+.analytics-card,
+
+.blog-widget{
+
+    padding:24px;
+
+}
+
+.blog-search{
+
+    flex-direction:column;
+
+    border-radius:24px;
+
+}
+
+.blog-search input{
+
+    width:100%;
+
+}
+
+.blog-search button{
+
+    width:100%;
+
+}
+
+.newsletter-wrapper{
+
+    padding:24px;
+
+}
+
+.newsletter-wrapper h2{
+
+    font-size:30px;
+
+}
+
+.newsletter-subscribe button,
+
+.subscribe-inline button{
+
+    width:100%;
+
+}
+
+.article-content blockquote{
+
+    padding:22px;
+
+    font-size:18px;
+
+}
+
+}
+
+/* ===========================================================
+   EXTRA SMALL
+=========================================================== */
+
+@media (max-width:400px){
+
+.blog{
+
+    padding:70px 0;
+
+}
+
+.blog-title{
+
+    font-size:24px;
+
+}
+
+.blog-subtitle{
+
+    font-size:15px;
+
+}
+
+.blog-description p{
+
+    font-size:14px;
+
+}
+
+.blog-badge{
+
+    font-size:12px;
+
+    padding:8px 14px;
+
+}
+
+.featured-content h2{
+
+    font-size:24px;
+
+}
+
+.article-title{
+
+    font-size:24px;
+
+}
+
+.article-content{
+
+    font-size:15px;
+
+}
+
+.dashboard-card h2,
+
+.blog-stat h2,
+
+.analytics-value{
+
+    font-size:34px;
+
+}
+
+}
+
+/* ===========================================================
+   LANDSCAPE
+=========================================================== */
+
+@media (max-height:550px) and (orientation:landscape){
+
+.blog{
+
+    padding:60px 0;
+
+}
+
+}
+
+/* ===========================================================
+   TOUCH DEVICES
+=========================================================== */
+
+@media (hover:none){
+
+.blog-card:hover,
+
+.related-card:hover,
+
+.editor-card:hover,
+
+.dashboard-card:hover,
+
+.topic-card:hover,
+
+.follow-card:hover,
+
+.knowledge-card:hover{
+
+    transform:none;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE HELPERS
+=========================================================== */
+
+@media (max-width:768px){
+
+.blog-hide-mobile{
+
+    display:none !important;
+
+}
+
+.blog-show-mobile{
+
+    display:block !important;
+
+}
+
+.blog-text-center-mobile{
+
+    text-align:center !important;
+
+}
+
+.blog-full-mobile{
+
+    width:100% !important;
+
+}
+
+}
+
+/* ===========================================================
+   RESPONSIVE IMAGES
+=========================================================== */
+
+.blog img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+/* ===========================================================
+   END PART 9
+=========================================================== */
+/* ===========================================================
+   BLOG.CSS
+   Part 10
+   Dark Mode
+=========================================================== */
+
+/* ===========================================================
+   BLOG SECTION
+=========================================================== */
+
+body.dark .blog{
+
+    background:#0f1117;
+
+    color:#ffffff;
+
+}
+
+body.dark .blog-title{
+
+    color:#ffffff;
+
+}
+
+body.dark .blog-title span{
+
+    color:#ff6666;
+
+}
+
+body.dark .blog-subtitle{
+
+    color:#d6dde7;
+
+}
+
+body.dark .blog-description p{
+
+    color:#bfc8d6;
+
+}
+
+body.dark .blog-badge{
+
+    background:rgba(255,90,90,.12);
+
+    border:1px solid rgba(255,90,90,.18);
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   CARDS
+=========================================================== */
+
+body.dark .featured-post,
+body.dark .blog-card,
+body.dark .related-card,
+body.dark .dashboard-card,
+body.dark .topic-card,
+body.dark .follow-card,
+body.dark .knowledge-card,
+body.dark .achievement-card,
+body.dark .analytics-card,
+body.dark .blog-widget,
+body.dark .article-wrapper,
+body.dark .comment-form,
+body.dark .author-box,
+body.dark .article-nav,
+body.dark .comment,
+body.dark .reader-engagement,
+body.dark .calendar-widget,
+body.dark .subscribe-box,
+body.dark .viewed-item,
+body.dark .trending-item{
+
+    background:#181d25;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+/* ===========================================================
+   HEADINGS
+=========================================================== */
+
+body.dark .blog h1,
+body.dark .blog h2,
+body.dark .blog h3,
+body.dark .blog h4,
+body.dark .blog h5,
+body.dark .blog h6{
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   TEXT
+=========================================================== */
+
+body.dark .blog p,
+body.dark .blog span,
+body.dark .blog li{
+
+    color:#c5ccd6;
+
+}
+
+/* ===========================================================
+   LINKS
+=========================================================== */
+
+body.dark .blog a{
+
+    color:#ff6666;
+
+}
+
+body.dark .blog a:hover{
+
+    color:#ff8a8a;
+
+}
+
+/* ===========================================================
+   SEARCH
+=========================================================== */
+
+body.dark .blog-search,
+body.dark .sidebar-search input{
+
+    background:#181d25;
+
+}
+
+body.dark .blog-search{
+
+    box-shadow:0 18px 45px rgba(0,0,0,.35);
+
+}
+
+body.dark .blog-search input,
+body.dark .sidebar-search input{
+
+    color:#ffffff;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+body.dark .blog-search input::placeholder,
+body.dark .sidebar-search input::placeholder{
+
+    color:#95a0b2;
+
+}
+
+body.dark .sidebar-search button{
+
+    background:#d60000;
+
+}
+
+/* ===========================================================
+   ARTICLE CONTENT
+=========================================================== */
+
+body.dark .article-content{
+
+    color:#d4dae4;
+
+}
+
+body.dark .article-content blockquote{
+
+    background:#202632;
+
+    border-left-color:#ff5555;
+
+    color:#f1f5f9;
+
+}
+
+body.dark .article-content code{
+
+    background:#2b3240;
+
+    color:#ff7b7b;
+
+}
+
+body.dark .article-content pre{
+
+    background:#0b0f15;
+
+}
+
+body.dark .article-content hr{
+
+    border-color:#2b3240;
+
+}
+
+/* ===========================================================
+   TABLE
+=========================================================== */
+
+body.dark .article-content table{
+
+    background:#181d25;
+
+}
+
+body.dark .article-content td{
+
+    border-color:#2b3240;
+
+}
+
+body.dark .article-content tr:nth-child(even){
+
+    background:#202632;
+
+}
+
+/* ===========================================================
+   CATEGORY & TAGS
+=========================================================== */
+
+body.dark .blog-category,
+body.dark .editor-label{
+
+    background:#d60000;
+
+}
+
+body.dark .article-tags a,
+body.dark .blog-tags a{
+
+    background:#202632;
+
+    color:#ffffff;
+
+}
+
+body.dark .article-tags a:hover,
+body.dark .blog-tags a:hover{
+
+    background:#d60000;
+
+}
+
+/* ===========================================================
+   PAGINATION
+=========================================================== */
+
+body.dark .blog-pagination a,
+body.dark .blog-pagination span{
+
+    background:#181d25;
+
+    color:#ffffff;
+
+}
+
+body.dark .blog-pagination .active,
+body.dark .blog-pagination a:hover{
+
+    background:#d60000;
+
+}
+
+/* ===========================================================
+   FORM
+=========================================================== */
+
+body.dark input,
+body.dark textarea,
+body.dark select{
+
+    background:#181d25;
+
+    color:#ffffff;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder{
+
+    color:#97a3b3;
+
+}
+
+body.dark input:focus,
+body.dark textarea:focus,
+body.dark select:focus{
+
+    border-color:#ff6666;
+
+    box-shadow:0 0 0 4px rgba(255,90,90,.15);
+
+}
+
+/* ===========================================================
+   COMMENTS
+=========================================================== */
+
+body.dark .comment{
+
+    border-color:#2b3240;
+
+}
+
+body.dark .comment-date{
+
+    color:#9aa4b5;
+
+}
+
+body.dark .comment-reply{
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   CTA
+=========================================================== */
+
+body.dark .newsletter-wrapper,
+body.dark .featured-widget{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #6f0000,
+
+        #2a0000
+
+    );
+
+}
+
+body.dark .newsletter-wrapper h2,
+body.dark .featured-widget h3{
+
+    color:#ffffff;
+
+}
+
+body.dark .newsletter-wrapper p,
+body.dark .featured-widget p{
+
+    color:rgba(255,255,255,.92);
+
+}
+
+/* ===========================================================
+   BUTTONS
+=========================================================== */
+
+body.dark .blog .btn-primary{
+
+    background:#d60000;
+
+}
+
+body.dark .blog .btn-primary:hover{
+
+    background:#ff4444;
+
+}
+
+body.dark .blog .btn-outline{
+
+    border-color:#ff6666;
+
+    color:#ff6666;
+
+}
+
+body.dark .blog .btn-outline:hover{
+
+    background:#ff6666;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   SHADOW
+=========================================================== */
+
+body.dark .blog-card:hover,
+body.dark .related-card:hover,
+body.dark .editor-card:hover,
+body.dark .dashboard-card:hover{
+
+    box-shadow:0 28px 70px rgba(0,0,0,.45);
+
+}
+
+/* ===========================================================
+   IMAGE
+=========================================================== */
+
+body.dark .featured-image img,
+body.dark .blog-card-image img{
+
+    filter:brightness(.95);
+
+}
+
+/* ===========================================================
+   SELECTION
+=========================================================== */
+
+body.dark .blog ::selection{
+
+    background:#ff5555;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   END PART 10
+=========================================================== */
+/* ===========================================================
+   BLOG.CSS
+   Part 11
+   Utility Classes
+=========================================================== */
+
+/* ===========================================================
+   DISPLAY
+=========================================================== */
+
+.blog-block{display:block;}
+.blog-inline{display:inline-block;}
+.blog-flex{display:flex;}
+.blog-inline-flex{display:inline-flex;}
+.blog-grid-display{display:grid;}
+.blog-hidden{display:none !important;}
+
+/* ===========================================================
+   FLEX HELPERS
+=========================================================== */
+
+.blog-row{flex-direction:row;}
+.blog-column{flex-direction:column;}
+.blog-wrap{flex-wrap:wrap;}
+.blog-nowrap{flex-wrap:nowrap;}
+
+.blog-center{
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.blog-between{
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.blog-start{
+
+    justify-content:flex-start;
+
+    align-items:flex-start;
+
+}
+
+.blog-end{
+
+    justify-content:flex-end;
+
+    align-items:flex-end;
+
+}
+
+/* ===========================================================
+   GRID HELPERS
+=========================================================== */
+
+.blog-grid-auto{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.blog-grid-1{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+}
+
+.blog-grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.blog-grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.blog-grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+/* ===========================================================
+   WIDTH
+=========================================================== */
+
+.blog-w-25{width:25%;}
+.blog-w-50{width:50%;}
+.blog-w-75{width:75%;}
+.blog-w-100{width:100%;}
+.blog-auto{width:auto;}
+
+.blog-max{
+
+    max-width:1280px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+/* ===========================================================
+   SPACING
+=========================================================== */
+
+.blog-mt-10{margin-top:10px;}
+.blog-mt-20{margin-top:20px;}
+.blog-mt-40{margin-top:40px;}
+.blog-mt-60{margin-top:60px;}
+.blog-mt-80{margin-top:80px;}
+.blog-mt-100{margin-top:100px;}
+
+.blog-mb-10{margin-bottom:10px;}
+.blog-mb-20{margin-bottom:20px;}
+.blog-mb-40{margin-bottom:40px;}
+.blog-mb-60{margin-bottom:60px;}
+.blog-mb-80{margin-bottom:80px;}
+.blog-mb-100{margin-bottom:100px;}
+
+.blog-p-20{padding:20px;}
+.blog-p-30{padding:30px;}
+.blog-p-40{padding:40px;}
+.blog-p-60{padding:60px;}
+
+.blog-pt-40{padding-top:40px;}
+.blog-pt-80{padding-top:80px;}
+
+.blog-pb-40{padding-bottom:40px;}
+.blog-pb-80{padding-bottom:80px;}
+
+/* ===========================================================
+   BORDER RADIUS
+=========================================================== */
+
+.blog-radius-sm{border-radius:12px;}
+.blog-radius-md{border-radius:20px;}
+.blog-radius-lg{border-radius:30px;}
+.blog-radius-xl{border-radius:40px;}
+.blog-radius-full{border-radius:999px;}
+
+/* ===========================================================
+   SHADOW
+=========================================================== */
+
+.blog-shadow-sm{
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.blog-shadow-md{
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.blog-shadow-lg{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.18);
+
+}
+
+.blog-shadow-none{
+
+    box-shadow:none;
+
+}
+
+/* ===========================================================
+   BACKGROUND
+=========================================================== */
+
+.blog-bg-white{
+
+    background:#ffffff;
+
+}
+
+.blog-bg-light{
+
+    background:#f8fafc;
+
+}
+
+.blog-bg-dark{
+
+    background:#10141d;
+
+    color:#ffffff;
+
+}
+
+.blog-bg-primary{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.blog-bg-gradient{
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        #ff7070
+
+    );
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   GLASS EFFECT
+=========================================================== */
+
+.blog-glass{
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+.blog-glass-dark{
+
+    background:rgba(20,25,35,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   TYPOGRAPHY
+=========================================================== */
+
+.blog-text-left{text-align:left;}
+.blog-text-center{text-align:center;}
+.blog-text-right{text-align:right;}
+
+.blog-text-primary{
+
+    color:var(--primary);
+
+}
+
+.blog-text-dark{
+
+    color:var(--secondary);
+
+}
+
+.blog-text-light{
+
+    color:#ffffff;
+
+}
+
+.blog-text-muted{
+
+    color:#777777;
+
+}
+
+.blog-bold{font-weight:700;}
+.blog-semibold{font-weight:600;}
+.blog-light{font-weight:300;}
+
+.blog-uppercase{text-transform:uppercase;}
+.blog-capitalize{text-transform:capitalize;}
+
+/* ===========================================================
+   POSITION
+=========================================================== */
+
+.blog-relative{position:relative;}
+.blog-absolute{position:absolute;}
+.blog-fixed{position:fixed;}
+.blog-sticky{position:sticky;}
+
+.blog-z1{z-index:1;}
+.blog-z10{z-index:10;}
+.blog-z50{z-index:50;}
+.blog-z100{z-index:100;}
+
+/* ===========================================================
+   OVERFLOW
+=========================================================== */
+
+.blog-overflow-hidden{overflow:hidden;}
+.blog-overflow-visible{overflow:visible;}
+.blog-overflow-auto{overflow:auto;}
+
+/* ===========================================================
+   CURSOR
+=========================================================== */
+
+.blog-pointer{
+
+    cursor:pointer;
+
+}
+
+.blog-disabled{
+
+    opacity:.6;
+
+    pointer-events:none;
+
+}
+
+/* ===========================================================
+   TRANSITIONS
+=========================================================== */
+
+.blog-transition{
+
+    transition:.35s ease;
+
+}
+
+.blog-transition-fast{
+
+    transition:.2s ease;
+
+}
+
+.blog-transition-slow{
+
+    transition:.6s ease;
+
+}
+
+/* ===========================================================
+   HOVER
+=========================================================== */
+
+.blog-hover-up:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.blog-hover-scale:hover{
+
+    transform:scale(1.05);
+
+}
+
+.blog-hover-shadow:hover{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.16);
+
+}
+
+.blog-hover-primary:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   IMAGE HELPERS
+=========================================================== */
+
+.blog-img-cover{
+
+    object-fit:cover;
+
+}
+
+.blog-img-contain{
+
+    object-fit:contain;
+
+}
+
+.blog-img-rounded{
+
+    border-radius:24px;
+
+}
+
+.blog-img-circle{
+
+    border-radius:50%;
+
+}
+
+/* ===========================================================
+   OPACITY
+=========================================================== */
+
+.blog-opacity-25{opacity:.25;}
+.blog-opacity-50{opacity:.50;}
+.blog-opacity-75{opacity:.75;}
+.blog-opacity-100{opacity:1;}
+
+/* ===========================================================
+   POINTER EVENTS
+=========================================================== */
+
+.blog-no-pointer{
+
+    pointer-events:none;
+
+}
+
+.blog-auto-pointer{
+
+    pointer-events:auto;
+
+}
+
+/* ===========================================================
+   VISIBILITY
+=========================================================== */
+
+.blog-visible{
+
+    visibility:visible;
+
+}
+
+.blog-invisible{
+
+    visibility:hidden;
+
+}
+
+/* ===========================================================
+   END PART 11
+=========================================================== */
+/* ===========================================================
+   BLOG.CSS
+   Part 12
+   Performance Optimization & End of File
+=========================================================== */
+
+/* ===========================================================
+   PERFORMANCE
+=========================================================== */
+
+.blog,
+.blog-container,
+.blog-card,
+.related-card,
+.editor-card,
+.dashboard-card,
+.topic-card,
+.follow-card,
+.knowledge-card,
+.achievement-card,
+.analytics-card,
+.featured-post{
+
+    will-change:transform,opacity;
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+}
+
+.blog img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   ACCESSIBILITY
+=========================================================== */
+
+.blog a:focus,
+.blog button:focus,
+.blog input:focus,
+.blog textarea:focus,
+.blog select:focus{
+
+    outline:3px solid rgba(214,0,0,.35);
+
+    outline-offset:4px;
+
+    border-radius:8px;
+
+}
+
+.blog a:focus-visible,
+.blog button:focus-visible{
+
+    box-shadow:0 0 0 5px rgba(214,0,0,.18);
+
+}
+
+/* ===========================================================
+   TEXT SELECTION
+=========================================================== */
+
+.blog ::selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.blog ::-moz-selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   LOADING STATE
+=========================================================== */
+
+.blog-loading{
+
+    position:relative;
+
+    overflow:hidden;
+
+    opacity:.75;
+
+    pointer-events:none;
+
+}
+
+.blog-loading::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.35),
+
+        transparent
+
+    );
+
+    animation:blogLoading 1.5s linear infinite;
+
+}
+
+@keyframes blogLoading{
+
+    from{
+
+        transform:translateX(-100%);
+
+    }
+
+    to{
+
+        transform:translateX(100%);
+
+    }
+
+}
+
+/* ===========================================================
+   SKELETON
+=========================================================== */
+
+.blog-skeleton{
+
+    background:linear-gradient(
+
+        90deg,
+
+        #ececec,
+
+        #f8f8f8,
+
+        #ececec
+
+    );
+
+    background-size:200% 100%;
+
+    animation:blogSkeleton 1.4s linear infinite;
+
+}
+
+@keyframes blogSkeleton{
+
+    from{
+
+        background-position:200% 0;
+
+    }
+
+    to{
+
+        background-position:-200% 0;
+
+    }
+
+}
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.blog *,
+.blog::before,
+.blog::after{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+
+}
+
+}
+
+/* ===========================================================
+   HIGH CONTRAST
+=========================================================== */
+
+@media (prefers-contrast:more){
+
+.blog-card,
+.related-card,
+.editor-card,
+.dashboard-card,
+.topic-card{
+
+    border:2px solid #000000;
+
+}
+
+.blog-title{
+
+    font-weight:900;
+
+}
+
+}
+
+/* ===========================================================
+   PRINT
+=========================================================== */
+
+@media print{
+
+.blog{
+
+    background:#ffffff !important;
+
+    color:#000000 !important;
+
+    padding:40px 0;
+
+}
+
+.blog-search,
+.blog-newsletter,
+.blog-cta,
+.social-share,
+.follow-social,
+.comment-form,
+.reader-engagement{
+
+    display:none !important;
+
+}
+
+.blog-card,
+.related-card,
+.editor-card,
+.article-wrapper{
+
+    box-shadow:none !important;
+
+    border:1px solid #cccccc;
+
+}
+
+.blog h1,
+.blog h2,
+.blog h3,
+.blog h4{
+
+    color:#000000 !important;
+
+}
+
+}
+
+/* ===========================================================
+   SAFE AREA SUPPORT
+=========================================================== */
+
+@supports (padding:max(0px)){
+
+.blog{
+
+    padding-left:max(24px,env(safe-area-inset-left));
+
+    padding-right:max(24px,env(safe-area-inset-right));
+
+}
+
+}
+
+/* ===========================================================
+   GPU HELPERS
+=========================================================== */
+
+.blog-gpu{
+
+    transform:translate3d(0,0,0);
+
+    will-change:transform;
+
+}
+
+.blog-no-select{
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+}
+
+.blog-select{
+
+    user-select:text;
+
+}
+
+/* ===========================================================
+   IMAGE HELPERS
+=========================================================== */
+
+.blog img{
+
+    image-rendering:auto;
+
+}
+
+.featured-image img,
+.blog-card-image img,
+.related-card img{
+
+    object-fit:cover;
+
+}
+
+.blog-picture{
+
+    overflow:hidden;
+
+}
+
+.blog-picture img{
+
+    transition:transform .5s ease;
+
+}
+
+.blog-picture:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================================
+   SCROLL HELPERS
+=========================================================== */
+
+.blog-scroll{
+
+    scroll-margin-top:100px;
+
+}
+
+.blog-sticky-helper{
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+/* ===========================================================
+   CONTAINER HELPERS
+=========================================================== */
+
+.blog-container-fluid{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding-left:30px;
+
+    padding-right:30px;
+
+}
+
+.blog-container-narrow{
+
+    max-width:960px;
+
+    margin:0 auto;
+
+}
+
+/* ===========================================================
+   FINAL RESET
+=========================================================== */
+
+.blog *{
+
+    box-sizing:border-box;
+
+}
+
+.blog iframe{
+
+    border:0;
+
+    max-width:100%;
+
+}
+
+.blog svg{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+.blog video{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   END OF BLOG.CSS
