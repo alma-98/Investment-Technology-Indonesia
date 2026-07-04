@@ -571,11 +571,101 @@ nav ul li ul li a:hover{
 
     display:none;
 
-    font-size:28px;
+    font-size:28px;å
 
-    cursor:pointer;
+    cursor:pointer;å
 
     color:var(--secondary);
+
+}
+
+/* ===========================================================
+   HERO INFO
+=========================================================== */
+
+.hero-info{
+
+    margin-top:-80px;
+
+    position:relative;
+
+    z-index:20;
+
+}
+
+.hero-info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.hero-info-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.hero-info-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.hero-info-card i{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+.hero-info-card h3{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.hero-info-card p{
+
+    margin:0;
+
+    color:#666;
+
+    font-size:17px;
 
 }
 
