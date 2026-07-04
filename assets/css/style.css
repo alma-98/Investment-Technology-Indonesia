@@ -1745,6 +1745,139 @@ nav ul li ul li a:hover{
 }
 
 /* ===========================================================
+   WHY CHOOSE US
+=========================================================== */
+
+.why-about{
+
+    background:#f8f9fc;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.why-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px 30px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    min-height:330px;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.why-card i{
+
+    width:80px;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+}
+
+.why-card h3{
+
+    min-height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:18px;
+
+}
+
+.why-card p{
+
+    flex:1;
+
+    margin:0;
+
+    color:#666;
+
+}
+
+.why-card.featured{
+
+    background:linear-gradient(135deg,#d60000,#960000);
+
+}
+
+.why-card.featured h3,
+
+.why-card.featured p{
+
+    color:#ffffff;
+
+}
+
+.why-card .badge{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    color:#d60000;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ===========================================================
    PARTNERS
 =========================================================== */
 
@@ -3661,7 +3794,31 @@ nav ul li ul li a:hover{
 /* ===========================================================
    RESPONSIVE - LARGE DESKTOP
 =========================================================== */
+@media(max-width:992px){
 
+.why-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.why-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.why-card{
+
+    min-height:auto;
+
+}
+
+}
 @media (max-width:1400px){
 
 .container{
