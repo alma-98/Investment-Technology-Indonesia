@@ -219,10 +219,13 @@ href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </style>
 
 
+
+
+
 <style id="digital-innovation-final-style">
 
 /* =========================================
-   DIGITAL INNOVATION GRID CARDS
+   DIGITAL INNOVATION — LIGHT ICON CARDS
    ========================================= */
 
 .digital-innovation-grid {
@@ -233,43 +236,33 @@ href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     margin-top: 28px !important;
 }
 
-/* Setiap item menjadi kartu */
+/* Kartu terang */
 .digital-innovation-grid > div {
     position: relative !important;
-    overflow: hidden !important;
 
     min-height: 145px !important;
-    padding: 24px 16px !important;
+    padding: 26px 18px !important;
 
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 14px !important;
+    gap: 15px !important;
 
     text-align: center !important;
 
-    color: #ffffff !important;
+    color: #1a1a1a !important;
     font-size: 15px !important;
     font-weight: 700 !important;
     line-height: 1.4 !important;
 
-    background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(229, 9, 20, 0.22),
-            transparent 60%
-        ),
-        #111111 !important;
+    background: #ffffff !important;
 
-    border:
-        1px solid rgba(229, 9, 20, 0.38) !important;
-
+    border: 1px solid #eeeeee !important;
     border-radius: 18px !important;
 
     box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.30),
-        0 0 18px rgba(229, 9, 20, 0.10) !important;
+        0 10px 30px rgba(0, 0, 0, 0.07) !important;
 
     transition:
         transform 0.35s ease,
@@ -277,41 +270,15 @@ href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
         box-shadow 0.35s ease !important;
 }
 
-/* Glow */
+/* Hilangkan glow background gelap lama */
 .digital-innovation-grid > div::before {
-    content: "" !important;
-
-    position: absolute !important;
-    top: -80px !important;
-    left: 50% !important;
-
-    width: 180px !important;
-    height: 180px !important;
-
-    transform: translateX(-50%) !important;
-
-    background:
-        rgba(229, 9, 20, 0.25) !important;
-
-    filter: blur(55px) !important;
-    border-radius: 50% !important;
-
-    opacity: 0.65 !important;
-
-    transition:
-        opacity 0.35s ease,
-        transform 0.35s ease !important;
-
-    pointer-events: none !important;
+    display: none !important;
 }
 
 /* Icon */
 .digital-innovation-grid > div > i {
-    position: relative !important;
-    z-index: 2 !important;
-
-    width: 54px !important;
-    height: 54px !important;
+    width: 58px !important;
+    height: 58px !important;
 
     display: flex !important;
     align-items: center !important;
@@ -319,19 +286,15 @@ href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
     margin: 0 !important;
 
-    color: #ff2b35 !important;
-    font-size: 25px !important;
+    color: #e50914 !important;
+    font-size: 26px !important;
 
-    background:
-        rgba(229, 9, 20, 0.10) !important;
+    background: rgba(229, 9, 20, 0.07) !important;
 
-    border:
-        1px solid rgba(229, 9, 20, 0.45) !important;
+    border: 1px solid rgba(229, 9, 20, 0.18) !important;
+    border-radius: 16px !important;
 
-    border-radius: 15px !important;
-
-    box-shadow:
-        0 0 16px rgba(229, 9, 20, 0.18) !important;
+    box-shadow: none !important;
 
     transition:
         transform 0.35s ease,
@@ -340,36 +303,28 @@ href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
         box-shadow 0.35s ease !important;
 }
 
-/* Hover */
+/* Hover kartu */
 .digital-innovation-grid > div:hover {
-    transform: translateY(-8px) !important;
+    transform: translateY(-7px) !important;
 
-    border-color:
-        rgba(255, 35, 45, 1) !important;
+    background: #ffffff !important;
+
+    border-color: rgba(229, 9, 20, 0.40) !important;
 
     box-shadow:
-        0 18px 42px rgba(0, 0, 0, 0.42),
-        0 0 18px rgba(229, 9, 20, 0.45),
-        0 0 42px rgba(229, 9, 20, 0.20) !important;
+        0 16px 38px rgba(0, 0, 0, 0.10),
+        0 0 18px rgba(229, 9, 20, 0.08) !important;
 }
 
-.digital-innovation-grid > div:hover::before {
-    opacity: 1 !important;
-
-    transform:
-        translateX(-50%)
-        scale(1.25) !important;
-}
-
+/* Hover icon menyala merah */
 .digital-innovation-grid > div:hover > i {
     color: #ffffff !important;
     background: #e50914 !important;
 
-    transform: scale(1.10) !important;
+    transform: scale(1.08) !important;
 
     box-shadow:
-        0 0 18px rgba(229, 9, 20, 0.80),
-        0 0 38px rgba(229, 9, 20, 0.45) !important;
+        0 8px 22px rgba(229, 9, 20, 0.28) !important;
 }
 
 /* Tablet */
@@ -385,10 +340,6 @@ href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     .digital-innovation-grid {
         grid-template-columns: 1fr !important;
         gap: 14px !important;
-    }
-
-    .digital-innovation-grid > div {
-        min-height: 135px !important;
     }
 }
 
@@ -623,7 +574,7 @@ aman, scalable, dan mudah dikembangkan.
 
 <div>
 
-<i class="fa-solid fa-circle-check"></i>
+<i class="fa-solid fa-globe"></i>
 
 Website Development
 
@@ -631,7 +582,7 @@ Website Development
 
 <div>
 
-<i class="fa-solid fa-circle-check"></i>
+<i class="fa-solid fa-code"></i>
 
 Software Development
 
@@ -639,7 +590,7 @@ Software Development
 
 <div>
 
-<i class="fa-solid fa-circle-check"></i>
+<i class="fa-solid fa-brain"></i>
 
 Artificial Intelligence
 
@@ -647,7 +598,7 @@ Artificial Intelligence
 
 <div>
 
-<i class="fa-solid fa-circle-check"></i>
+<i class="fa-solid fa-building"></i>
 
 ERP & CRM
 
@@ -655,7 +606,7 @@ ERP & CRM
 
 <div>
 
-<i class="fa-solid fa-circle-check"></i>
+<i class="fa-solid fa-cloud"></i>
 
 Cloud Computing
 
@@ -663,7 +614,7 @@ Cloud Computing
 
 <div>
 
-<i class="fa-solid fa-circle-check"></i>
+<i class="fa-solid fa-arrows-rotate"></i>
 
 Digital Transformation
 
