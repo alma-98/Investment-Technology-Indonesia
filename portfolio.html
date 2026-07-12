@@ -2937,3 +2937,185 @@ document.getElementById("popup-chat").style.display="none";
 }
 
 </style>
+
+<style id="testimonial-light-cards-final">
+/* =========================================
+   CLIENT TESTIMONIAL — LIGHT CARDS
+   ========================================= */
+
+/* Section terang */
+.testimonial-section,
+.testimonials-section {
+    background: #ffffff !important;
+}
+
+/* Grid */
+.testimonial-grid,
+.testimonials-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+}
+
+/* Kartu testimonial */
+.testimonial-grid > *,
+.testimonials-grid > * {
+    position: relative !important;
+    overflow: hidden !important;
+
+    min-height: 260px !important;
+    padding: 32px 28px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #ececec !important;
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Garis merah atas */
+.testimonial-grid > *::before,
+.testimonials-grid > *::before {
+    content: "" !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 4px !important;
+
+    background: #e50914 !important;
+
+    transform: scaleX(0) !important;
+    transform-origin: center !important;
+
+    transition: transform 0.35s ease !important;
+}
+
+/* Teks testimonial */
+.testimonial-grid p,
+.testimonials-grid p {
+    color: #555555 !important;
+
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+
+    margin: 0 0 22px !important;
+}
+
+/* Nama / jenis klien */
+.testimonial-grid h3,
+.testimonial-grid h4,
+.testimonials-grid h3,
+.testimonials-grid h4 {
+    color: #111111 !important;
+
+    font-size: 17px !important;
+    font-weight: 700 !important;
+
+    margin: 0 0 15px !important;
+}
+
+/* =========================================
+   BINTANG EMAS TERANG
+   ========================================= */
+
+/* Class rating yang umum */
+.testimonial-grid .stars,
+.testimonial-grid .rating,
+.testimonials-grid .stars,
+.testimonials-grid .rating {
+    color: #ffc107 !important;
+
+    font-size: 22px !important;
+    letter-spacing: 4px !important;
+
+    text-shadow:
+        0 0 5px rgba(255, 193, 7, 0.85),
+        0 0 12px rgba(255, 193, 7, 0.55),
+        0 0 20px rgba(255, 193, 7, 0.30) !important;
+}
+
+/* Jika bintang menggunakan icon */
+.testimonial-grid .stars i,
+.testimonial-grid .rating i,
+.testimonials-grid .stars i,
+.testimonials-grid .rating i {
+    color: #ffc107 !important;
+    font-size: 21px !important;
+
+    filter:
+        drop-shadow(0 0 4px rgba(255, 193, 7, 0.85))
+        drop-shadow(0 0 8px rgba(255, 193, 7, 0.45)) !important;
+}
+
+/* Jika bintang ditulis langsung sebagai ★★★★★ */
+.testimonial-grid span,
+.testimonials-grid span {
+    color: #ffc107 !important;
+}
+
+/* Hover kartu */
+.testimonial-grid > *:hover,
+.testimonials-grid > *:hover {
+    transform: translateY(-8px) !important;
+
+    border-color:
+        rgba(229, 9, 20, 0.35) !important;
+
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.11),
+        0 0 18px rgba(229, 9, 20, 0.07) !important;
+}
+
+/* Garis merah muncul */
+.testimonial-grid > *:hover::before,
+.testimonials-grid > *:hover::before {
+    transform: scaleX(1) !important;
+}
+
+/* Bintang makin terang saat hover */
+.testimonial-grid > *:hover .stars,
+.testimonial-grid > *:hover .rating,
+.testimonials-grid > *:hover .stars,
+.testimonials-grid > *:hover .rating {
+    text-shadow:
+        0 0 6px rgba(255, 193, 7, 1),
+        0 0 15px rgba(255, 193, 7, 0.75),
+        0 0 28px rgba(255, 193, 7, 0.45) !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .testimonial-grid,
+    .testimonials-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+    }
+}
+
+</style>
