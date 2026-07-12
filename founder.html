@@ -5727,3 +5727,781 @@ document.getElementById("popup-chat").style.display="none";
 }
 </style>
 
+
+<style id="founder-remaining-sections-card-grid-final">
+
+/* =========================================================
+   FOUNDER PAGE - REMAINING SECTIONS CARD GRID
+   Tidak mengubah Professional Summary & Core Expertise
+========================================================= */
+
+/* ---------- SECTION TITLE ---------- */
+
+.technology .section-title,
+.tech-stack .section-title,
+.leadership .section-title,
+.education .section-title,
+.experience .section-title,
+.career .section-title,
+.career-journey .section-title,
+.skills .section-title,
+.key-skills .section-title,
+.certifications .section-title,
+.research .section-title,
+.publication .section-title,
+.values .section-title,
+.professional-values .section-title {
+    text-align: center !important;
+}
+
+.technology .section-title p,
+.tech-stack .section-title p,
+.education .section-title p,
+.certifications .section-title p,
+.research .section-title p,
+.publication .section-title p,
+.values .section-title p,
+.professional-values .section-title p {
+    max-width: 850px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* =========================================================
+   TECHNOLOGY STACK
+   8 KARTU - 4 KOLOM
+========================================================= */
+
+.tech-grid,
+.technology-grid,
+.stack-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+.tech-card,
+.technology-card,
+.stack-card {
+    min-height: 150px !important;
+    padding: 28px 20px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease !important;
+}
+
+.tech-card:hover,
+.technology-card:hover,
+.stack-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.08) !important;
+}
+
+.tech-card i,
+.technology-card i,
+.stack-card i {
+    margin-bottom: 16px !important;
+    color: #dc2626 !important;
+    font-size: 34px !important;
+}
+
+
+/* =========================================================
+   LEADERSHIP
+========================================================= */
+
+.leadership-box,
+.leadership-card,
+.quote-box {
+    max-width: 1000px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 45px !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 24px !important;
+
+    box-shadow: 0 18px 45px rgba(0,0,0,.06) !important;
+}
+
+.leadership-box p,
+.leadership-card p,
+.quote-box p {
+    margin: 0 !important;
+    font-size: 20px !important;
+    line-height: 1.8 !important;
+}
+
+
+/* =========================================================
+   STATISTICS
+   4 KARTU SEJAJAR
+========================================================= */
+
+.stats-grid,
+.statistics-grid,
+.counter-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+}
+
+.stat-card,
+.stats-card,
+.counter-item {
+    min-height: 150px !important;
+    margin: 0 !important;
+    padding: 28px 20px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+}
+
+.stat-card h3,
+.stats-card h3,
+.counter-item h3,
+.counter-item .counter {
+    color: #dc2626 !important;
+    font-size: 38px !important;
+    font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+}
+
+.education-card,
+.education-item {
+    padding: 34px !important;
+    margin: 0 !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition: .3s ease !important;
+}
+
+.education-card:hover,
+.education-item:hover {
+    transform: translateY(-5px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.08) !important;
+}
+
+
+/* =========================================================
+   PROFESSIONAL EXPERIENCE
+   3 KARTU SEJAJAR
+========================================================= */
+
+.experience-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+}
+
+.experience-card,
+.experience-item {
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 32px 28px !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition: .3s ease !important;
+}
+
+.experience-card:hover,
+.experience-item:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.08) !important;
+}
+
+
+/* =========================================================
+   CAREER JOURNEY
+   4 KARTU SEJAJAR
+========================================================= */
+
+.career-grid,
+.journey-grid,
+.career-journey-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+}
+
+.career-card,
+.journey-card,
+.career-item,
+.journey-item {
+    min-height: 210px !important;
+    margin: 0 !important;
+    padding: 30px 24px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition: .3s ease !important;
+}
+
+.career-card:hover,
+.journey-card:hover,
+.career-item:hover,
+.journey-item:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.08) !important;
+}
+
+
+/* =========================================================
+   KEY SKILLS
+   8 KARTU - 4 x 2
+========================================================= */
+
+.skills-grid,
+.key-skills-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+}
+
+.skill-card,
+.key-skill-card {
+    min-height: 170px !important;
+    margin: 0 !important;
+    padding: 28px 20px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition: .3s ease !important;
+}
+
+.skill-card:hover,
+.key-skill-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.08) !important;
+}
+
+.skill-card i,
+.key-skill-card i {
+    margin-bottom: 18px !important;
+    color: #dc2626 !important;
+    font-size: 32px !important;
+}
+
+
+/* =========================================================
+   MOTTO
+========================================================= */
+
+.motto-box {
+    max-width: 1000px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 50px 40px !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 24px !important;
+
+    box-shadow: 0 18px 45px rgba(0,0,0,.06) !important;
+}
+
+.motto-box h2 {
+    color: #dc2626 !important;
+}
+
+
+/* =========================================================
+   CERTIFICATIONS
+   4 KARTU SEJAJAR
+========================================================= */
+
+.certification-grid,
+.certifications-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+}
+
+.certification-card,
+.certification-item {
+    min-height: 230px !important;
+    margin: 0 !important;
+    padding: 32px 24px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition: .3s ease !important;
+}
+
+.certification-card:hover,
+.certification-item:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.08) !important;
+}
+
+
+/* =========================================================
+   RESEARCH & PUBLICATION
+   KARTU LEBAR
+========================================================= */
+
+.research-box,
+.research-card,
+.publication-box,
+.publication-card {
+    max-width: 1000px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 40px !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 22px !important;
+
+    box-shadow: 0 16px 40px rgba(0,0,0,.05) !important;
+}
+
+
+/* =========================================================
+   PROFESSIONAL VALUES
+   4 KARTU SEJAJAR
+========================================================= */
+
+.values-grid,
+.professional-values-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+}
+
+.value-card,
+.values-card,
+.value-item {
+    min-height: 210px !important;
+    margin: 0 !important;
+    padding: 30px 24px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition: .3s ease !important;
+}
+
+.value-card:hover,
+.values-card:hover,
+.value-item:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.08) !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .tech-grid,
+    .technology-grid,
+    .stack-grid,
+    .stats-grid,
+    .statistics-grid,
+    .counter-grid,
+    .experience-grid,
+    .career-grid,
+    .journey-grid,
+    .career-journey-grid,
+    .skills-grid,
+    .key-skills-grid,
+    .certification-grid,
+    .certifications-grid,
+    .values-grid,
+    .professional-values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .tech-grid,
+    .technology-grid,
+    .stack-grid,
+    .stats-grid,
+    .statistics-grid,
+    .counter-grid,
+    .education-grid,
+    .experience-grid,
+    .career-grid,
+    .journey-grid,
+    .career-journey-grid,
+    .skills-grid,
+    .key-skills-grid,
+    .certification-grid,
+    .certifications-grid,
+    .values-grid,
+    .professional-values-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .leadership-box,
+    .leadership-card,
+    .quote-box,
+    .motto-box,
+    .research-box,
+    .research-card,
+    .publication-box,
+    .publication-card {
+        padding: 28px 22px !important;
+    }
+}
+
+</style>
+
+
+<style id="technology-stack-grid-final">
+
+/* TECHNOLOGY STACK */
+.tech-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    width: 100% !important;
+    margin-top: 40px !important;
+}
+
+.tech-card {
+    min-height: 170px !important;
+    padding: 30px 20px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+.tech-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+.tech-card i {
+    width: 62px !important;
+    height: 62px !important;
+    margin: 0 0 18px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fff1f2 !important;
+    border-radius: 18px !important;
+
+    color: #dc2626 !important;
+    font-size: 30px !important;
+}
+
+.tech-card h3,
+.tech-card h4 {
+    margin: 0 !important;
+    color: #111111 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .tech-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+</style>
+
+
+<style id="technology-stack-match-core-expertise">
+
+/* TECHNOLOGY STACK = TEMPLATE CORE EXPERTISE */
+
+.tech-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    width: 100% !important;
+    margin-top: 40px !important;
+}
+
+.tech-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 190px !important;
+    margin: 0 !important;
+    padding: 30px 20px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+.tech-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+.tech-card i {
+    width: 64px !important;
+    height: 64px !important;
+    margin: 0 0 20px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fff1f2 !important;
+    border-radius: 18px !important;
+
+    color: #dc2626 !important;
+    font-size: 28px !important;
+}
+
+.tech-card h3 {
+    margin: 0 !important;
+    color: #111111 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .tech-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .tech-card {
+        min-height: 170px !important;
+    }
+}
+
+</style>
+
+
+<style id="technology-stack-core-expertise-final">
+/* ========================================
+   TECHNOLOGY STACK
+   SAME STYLE AS CORE EXPERTISE
+======================================== */
+
+.technology .tech-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    width: 100% !important;
+    margin-top: 40px !important;
+}
+
+/* KARTU */
+.technology .tech-grid > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 190px !important;
+    margin: 0 !important;
+    padding: 30px 20px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0 !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+/* HOVER */
+.technology .tech-grid > div:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ICON */
+.technology .tech-grid > div i {
+    width: 64px !important;
+    height: 64px !important;
+    margin: 0 0 20px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fff1f2 !important;
+    border-radius: 18px !important;
+
+    color: #dc2626 !important;
+    font-size: 28px !important;
+}
+
+/* NAMA TEKNOLOGI */
+.technology .tech-grid > div span {
+    display: block !important;
+    margin: 0 !important;
+
+    color: #111111 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .technology .tech-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .technology .tech-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .technology .tech-grid > div {
+        min-height: 170px !important;
+    }
+}
+</style>
+
