@@ -232,6 +232,163 @@ header .container {
 
 </style>
 
+
+<style id="packages-force-grid-fix">
+
+/* FORCE SERVICE PACKAGES GRID */
+section.packages div.package-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: stretch !important;
+}
+
+/* FORCE EACH PACKAGE AS CARD */
+section.packages div.package-grid > div.package-card {
+    position: relative !important;
+    float: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    min-height: 500px !important;
+    height: 100% !important;
+
+    margin: 0 !important;
+    padding: 36px 26px 28px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 20px !important;
+
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* HOVER */
+section.packages div.package-grid > div.package-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.08) !important;
+}
+
+/* POPULAR CARD */
+section.packages div.package-grid > div.package-card.active {
+    border: 2px solid #dc2626 !important;
+    background: #ffffff !important;
+}
+
+/* BADGE */
+section.packages .package-card .badge {
+    position: absolute !important;
+    top: 16px !important;
+    right: 16px !important;
+
+    padding: 7px 12px !important;
+
+    background: #fee2e2 !important;
+    color: #dc2626 !important;
+    border: 1px solid #fecaca !important;
+    border-radius: 999px !important;
+
+    font-size: 11px !important;
+    font-weight: 800 !important;
+}
+
+/* TITLE */
+section.packages .package-card h3 {
+    margin: 0 0 10px !important;
+    color: #111111 !important;
+    font-size: 24px !important;
+    font-weight: 800 !important;
+}
+
+section.packages .package-card.active h3 {
+    padding-right: 80px !important;
+}
+
+/* SUBTITLE */
+section.packages .package-card h4 {
+    margin: 0 0 26px !important;
+    color: #dc2626 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+/* FEATURE LIST */
+section.packages .package-card ul {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 0 28px !important;
+    padding: 0 !important;
+    list-style: none !important;
+    flex: 1 1 auto !important;
+}
+
+section.packages .package-card ul li {
+    display: block !important;
+    margin: 0 !important;
+    padding: 11px 0 !important;
+
+    color: #555555 !important;
+    font-size: 15px !important;
+
+    border-bottom: 1px solid #eeeeee !important;
+}
+
+/* BUTTON AT BOTTOM */
+section.packages .package-card a.btn-primary {
+    width: 100% !important;
+    min-height: 50px !important;
+    margin: auto 0 0 !important;
+    padding: 13px 18px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #ffffff !important;
+    color: #dc2626 !important;
+
+    border: 2px solid #dc2626 !important;
+    border-radius: 999px !important;
+
+    text-decoration: none !important;
+    font-weight: 700 !important;
+}
+
+/* POPULAR BUTTON */
+section.packages .package-card.active a.btn-primary {
+    background: #dc2626 !important;
+    color: #ffffff !important;
+}
+
+/* TABLET */
+@media (max-width: 1100px) {
+    section.packages div.package-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    section.packages div.package-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    section.packages div.package-grid > div.package-card {
+        min-height: auto !important;
+    }
+}
+
+</style>
+
 </head>
 
 <body>
