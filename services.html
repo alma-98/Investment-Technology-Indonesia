@@ -2327,3 +2327,348 @@ document.getElementById("popup-chat").style.display="none";
 }
 </style>
 
+
+<style id="process-technology-industry-card-grid-final">
+
+/* =====================================================
+   OUR PROCESS
+   6 KARTU - 3 KOLOM
+===================================================== */
+
+.work-process .process-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+    align-items: stretch !important;
+}
+
+.work-process .process-card {
+    position: relative !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 290px !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 38px 28px 32px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+.work-process .process-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* NOMOR 01 - 06 */
+.work-process .process-number {
+    position: absolute !important;
+    top: 18px !important;
+    right: 20px !important;
+
+    color: #dc2626 !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+}
+
+/* ICON PROCESS */
+.work-process .process-card > i {
+    width: 68px !important;
+    height: 68px !important;
+    min-width: 68px !important;
+    margin: 0 0 22px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fee2e2 !important;
+    border: 1px solid #fecaca !important;
+    border-radius: 18px !important;
+
+    color: #dc2626 !important;
+    font-size: 29px !important;
+
+    box-shadow: 0 8px 22px rgba(220, 38, 38, 0.12) !important;
+}
+
+.work-process .process-card:hover > i {
+    background: #dc2626 !important;
+    border-color: #dc2626 !important;
+    color: #ffffff !important;
+}
+
+.work-process .process-card h3 {
+    margin: 0 0 14px !important;
+    color: #111111 !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+}
+
+.work-process .process-card p {
+    margin: 0 !important;
+    color: #666666 !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+    text-align: center !important;
+}
+
+
+/* =====================================================
+   TECHNOLOGY STACK
+   KARTU GRID 4 KOLOM
+===================================================== */
+
+.technology-stack .tech-grid,
+.technology-stack .technology-grid,
+.tech-stack .tech-grid,
+.tech-stack .technology-grid,
+.technology .tech-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    width: 100% !important;
+    align-items: stretch !important;
+}
+
+/* Mendukung item berupa DIV biasa */
+.technology-stack .tech-grid > div,
+.technology-stack .technology-grid > div,
+.tech-stack .tech-grid > div,
+.tech-stack .technology-grid > div,
+.technology .tech-grid > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 190px !important;
+    margin: 0 !important;
+    padding: 30px 20px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+
+    text-align: center !important;
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+.technology-stack .tech-grid > div:hover,
+.technology-stack .technology-grid > div:hover,
+.tech-stack .tech-grid > div:hover,
+.tech-stack .technology-grid > div:hover,
+.technology .tech-grid > div:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ICON TECHNOLOGY */
+.technology-stack .tech-grid > div i,
+.technology-stack .technology-grid > div i,
+.tech-stack .tech-grid > div i,
+.tech-stack .technology-grid > div i,
+.technology .tech-grid > div i {
+    width: 68px !important;
+    height: 68px !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fee2e2 !important;
+    border: 1px solid #fecaca !important;
+    border-radius: 18px !important;
+
+    color: #dc2626 !important;
+    font-size: 29px !important;
+
+    box-shadow: 0 8px 22px rgba(220, 38, 38, 0.12) !important;
+}
+
+.technology-stack .tech-grid > div:hover i,
+.technology-stack .technology-grid > div:hover i,
+.tech-stack .tech-grid > div:hover i,
+.tech-stack .technology-grid > div:hover i,
+.technology .tech-grid > div:hover i {
+    background: #dc2626 !important;
+    border-color: #dc2626 !important;
+    color: #ffffff !important;
+}
+
+/* TEXT TECHNOLOGY */
+.technology-stack .tech-grid > div span,
+.technology-stack .technology-grid > div span,
+.tech-stack .tech-grid > div span,
+.tech-stack .technology-grid > div span,
+.technology .tech-grid > div span {
+    color: #111111 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+}
+
+
+/* =====================================================
+   INDUSTRY
+   8 KARTU - 4 KOLOM
+===================================================== */
+
+.industry .industry-grid,
+.industries .industry-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    width: 100% !important;
+    align-items: stretch !important;
+}
+
+/* Mendukung item DIV biasa */
+.industry .industry-grid > div,
+.industries .industry-grid > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 190px !important;
+    margin: 0 !important;
+    padding: 30px 20px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+
+    text-align: center !important;
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+.industry .industry-grid > div:hover,
+.industries .industry-grid > div:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ICON INDUSTRY */
+.industry .industry-grid > div i,
+.industries .industry-grid > div i {
+    width: 68px !important;
+    height: 68px !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fee2e2 !important;
+    border: 1px solid #fecaca !important;
+    border-radius: 18px !important;
+
+    color: #dc2626 !important;
+    font-size: 29px !important;
+
+    box-shadow: 0 8px 22px rgba(220, 38, 38, 0.12) !important;
+}
+
+.industry .industry-grid > div:hover i,
+.industries .industry-grid > div:hover i {
+    background: #dc2626 !important;
+    border-color: #dc2626 !important;
+    color: #ffffff !important;
+}
+
+/* TEXT INDUSTRY */
+.industry .industry-grid > div span,
+.industries .industry-grid > div span,
+.industry .industry-grid > div h3,
+.industries .industry-grid > div h3 {
+    margin: 0 !important;
+    color: #111111 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .work-process .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .technology-stack .tech-grid,
+    .technology-stack .technology-grid,
+    .tech-stack .tech-grid,
+    .tech-stack .technology-grid,
+    .technology .tech-grid,
+    .industry .industry-grid,
+    .industries .industry-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .work-process .process-grid,
+    .technology-stack .tech-grid,
+    .technology-stack .technology-grid,
+    .tech-stack .tech-grid,
+    .tech-stack .technology-grid,
+    .technology .tech-grid,
+    .industry .industry-grid,
+    .industries .industry-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .work-process .process-card {
+        min-height: 260px !important;
+    }
+}
+
+</style>
+
