@@ -1,0 +1,4196 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <!-- ========================================= -->
+    <!-- META -->
+    <!-- ========================================= -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Investment Technology Indonesia | Transformasi Digital Menuju Indonesia Maju
+    </title>
+
+    <meta name="description"
+        content="Investment Technology Indonesia menyediakan layanan Software Development, Website Development, Mobile Apps, Artificial Intelligence, Cloud Computing, Networking, Cyber Security, Server, CCTV, ERP, CRM, Digital Marketing dan IT Consulting.">
+
+    <meta name="keywords"
+        content="Software House Indonesia, AI Indonesia, ERP, CRM, Website Development, Mobile Apps, Artificial Intelligence, Cloud Computing, Networking, Server, Data Center, Cyber Security">
+
+    <meta name="author"
+        content="Investment Technology Indonesia">
+
+    <meta property="og:title"
+        content="Investment Technology Indonesia">
+
+    <meta property="og:description"
+        content="Transformasi Digital Menuju Indonesia Maju">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:url"
+        content="https://investmenttechnologyindonesia.github.io">
+
+    <link rel="icon"
+        href="favicon.ico">
+
+    <!-- ========================================= -->
+    <!-- CSS -->
+    <!-- ========================================= -->
+
+    <link rel="stylesheet"
+        href="assets/css/style.css">
+
+    <link rel="stylesheet"
+        href="assets/css/responsive.css">
+
+    <link rel="stylesheet"
+        href="assets/css/animation.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+
+<style id="iti-no-image-style">
+/* =========================================
+   ITI LETTER-BASED VISUAL SYSTEM
+   No external images required
+   ========================================= */
+
+.iti-letter-visual {
+    position: relative;
+    width: 100%;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    isolation: isolate;
+    background:
+        radial-gradient(
+            circle at 75% 25%,
+            rgba(220, 38, 38, 0.22),
+            transparent 34%
+        ),
+        linear-gradient(
+            135deg,
+            #090909 0%,
+            #171717 55%,
+            #250707 100%
+        );
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+}
+
+.iti-letter-visual::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    aspect-ratio: 1;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    transform: translate(40%, -35%);
+}
+
+.iti-letter-visual::after {
+    content: "IT INDONESIA";
+    position: absolute;
+    left: 24px;
+    bottom: 18px;
+    color: rgba(255, 255, 255, 0.38);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+}
+
+.iti-letter-visual > span {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(4rem, 11vw, 9rem);
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -0.12em;
+    text-transform: uppercase;
+    transform: skew(-8deg);
+    text-shadow:
+        8px 8px 0 rgba(220, 38, 38, 0.55),
+        16px 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Logo replacements */
+header .iti-letter-visual,
+nav .iti-letter-visual,
+footer .iti-letter-visual {
+    width: 52px;
+    min-width: 52px;
+    height: 52px;
+    min-height: 52px;
+    border-radius: 12px;
+}
+
+header .iti-letter-visual::after,
+nav .iti-letter-visual::after,
+footer .iti-letter-visual::after {
+    display: none;
+}
+
+header .iti-letter-visual > span,
+nav .iti-letter-visual > span,
+footer .iti-letter-visual > span {
+    font-size: 21px;
+    letter-spacing: -0.15em;
+    text-shadow: 3px 3px 0 rgba(220, 38, 38, 0.75);
+}
+
+/* Client letter marks */
+.iti-letter-visual:has(> span:first-child:last-child) {
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.iti-letter-visual:hover {
+    transform: translateY(-4px);
+    border-color: rgba(220, 38, 38, 0.55);
+}
+
+@media (max-width: 768px) {
+    .iti-letter-visual {
+        min-height: 180px;
+        border-radius: 18px;
+    }
+
+    .iti-letter-visual::after {
+        left: 16px;
+        bottom: 14px;
+        font-size: 8px;
+    }
+}
+</style>
+
+
+<style id="iti-sector-style">
+
+/* =========================================
+   ITI SECTOR TEXT SYSTEM
+   ========================================= */
+
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.sector-card {
+    position: relative;
+    min-height: 145px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(220, 38, 38, 0.18),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #0a0a0a,
+            #171717
+        );
+
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.sector-card::after {
+    content: "IT";
+    position: absolute;
+    right: -8px;
+    bottom: -25px;
+
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -12px;
+
+    color: rgba(255,255,255,0.025);
+
+    transform: skew(-8deg);
+}
+
+.sector-number {
+    position: relative;
+    z-index: 2;
+
+    color: #e30613;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .18em;
+}
+
+.sector-name {
+    position: relative;
+    z-index: 2;
+
+    color: #ffffff;
+
+    font-size: clamp(.9rem, 1.3vw, 1.1rem);
+    font-weight: 800;
+
+    letter-spacing: .04em;
+    line-height: 1.25;
+}
+
+.sector-card:hover {
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(227, 6, 19, .55);
+
+    box-shadow:
+        0 18px 45px
+        rgba(0,0,0,.18);
+}
+
+@media (max-width: 992px) {
+
+    .client-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .client-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sector-card {
+        min-height: 120px;
+    }
+
+}
+
+</style>
+
+
+<style id="it-indonesia-logo-style">
+
+/* =========================================
+   IT INDONESIA TEXT LOGO
+   ========================================= */
+
+.it-indonesia-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.it-logo-main {
+    position: relative;
+    display: inline-block;
+
+    font-family:
+        "Arial Black",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+    font-size: 34px;
+    font-weight: 900;
+    font-style: italic;
+
+    line-height: 1;
+    letter-spacing: -5px;
+
+    color: #e30613;
+
+    transform: skew(-7deg);
+
+    text-shadow:
+        2px 2px 0 #111111;
+}
+
+.it-logo-main::after {
+    content: "";
+    position: absolute;
+
+    left: -3px;
+    right: -7px;
+    bottom: -5px;
+
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #e30613,
+        #111111
+    );
+
+    border-radius: 999px;
+
+    transform:
+        skew(-18deg)
+        rotate(-3deg);
+}
+
+.it-logo-country {
+    font-family:
+        "Arial Black",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+    font-size: 17px;
+    font-weight: 800;
+    font-style: italic;
+
+    letter-spacing: -0.6px;
+
+    color: #111111;
+}
+
+/* Dark footer/header support */
+footer .it-logo-country,
+.dark .it-logo-country {
+    color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .it-logo-main {
+        font-size: 29px;
+    }
+
+    .it-logo-country {
+        font-size: 14px;
+    }
+
+}
+
+</style>
+
+
+<style id="iti-hero-final-polish">
+
+/* ==================================================
+   IT INDONESIA — FINAL HERO POLISH
+   ================================================== */
+
+.hero {
+    overflow: hidden;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* HERO GRID */
+.hero-grid,
+.hero-wrapper,
+.hero .row {
+    align-items: center !important;
+}
+
+/* =========================
+   LEFT CONTENT
+   ========================= */
+
+.hero-content {
+    max-width: 760px !important;
+}
+
+/* Partner badge */
+.hero-content .hero-badge,
+.hero-content .hero-tag,
+.hero-content .hero-label {
+    margin-bottom: 28px !important;
+}
+
+/* WELCOME TO */
+.hero-content h5 {
+    margin: 0 0 16px !important;
+    color: #e30613 !important;
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    letter-spacing: .32em !important;
+    text-transform: uppercase;
+}
+
+/* Investment Technology Indonesia */
+.hero-content h1 {
+    max-width: 760px;
+    margin: 0 0 18px !important;
+
+    font-size: clamp(46px, 5vw, 76px) !important;
+    font-weight: 900 !important;
+    line-height: .98 !important;
+    letter-spacing: -3.5px !important;
+}
+
+/* Main tagline */
+.hero-content h2 {
+    max-width: 700px;
+    margin: 0 0 24px !important;
+
+    font-size: clamp(24px, 2.2vw, 36px) !important;
+    font-weight: 800 !important;
+    line-height: 1.15 !important;
+    letter-spacing: -1px;
+}
+
+/* Description */
+.hero-content > p,
+.hero-description {
+    max-width: 720px !important;
+    margin: 0 0 32px !important;
+
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+}
+
+/* =========================
+   SERVICE FEATURES
+   ========================= */
+
+.hero-features {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 14px 18px !important;
+
+    margin: 0 0 34px !important;
+}
+
+.hero-features > * {
+    min-height: 58px;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.hero-buttons,
+.hero-btns,
+.hero-actions {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+    gap: 14px !important;
+}
+
+/* =========================
+   RIGHT — IT INDONESIA LOGO
+   TEXT ONLY
+   ========================= */
+
+.hero .it-indonesia-logo {
+    width: 100% !important;
+    max-width: 720px !important;
+    min-height: 520px !important;
+
+    margin: 0 auto !important;
+    padding: 30px 10px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 0 !important;
+
+    background: transparent !important;
+    background-image: none !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+/* Remove decorations */
+.hero .it-indonesia-logo::before,
+.hero .it-indonesia-logo::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* =========================
+   GIANT IT
+   ========================= */
+
+.hero .it-logo-main {
+    position: relative !important;
+    display: block !important;
+
+    margin: 0 !important;
+
+    font-family:
+        "Arial Black",
+        Impact,
+        "Helvetica Neue",
+        Arial,
+        sans-serif !important;
+
+    font-size: clamp(190px, 19vw, 310px) !important;
+    font-weight: 900 !important;
+    font-style: italic !important;
+
+    line-height: .67 !important;
+    letter-spacing: -32px !important;
+
+    color: #e30613 !important;
+
+    transform: skew(-6deg) !important;
+
+    text-shadow:
+        5px 5px 0 rgba(0,0,0,.08) !important;
+}
+
+/* Red swoosh / underline */
+.hero .it-logo-main::after {
+    content: "" !important;
+    display: block !important;
+
+    position: absolute !important;
+
+    left: -35px !important;
+    right: -60px !important;
+    bottom: -38px !important;
+
+    height: 14px !important;
+
+    background: #e30613 !important;
+
+    border-radius: 100% 0 100% 0 !important;
+
+    transform:
+        rotate(-3deg)
+        skew(-25deg) !important;
+
+    box-shadow: none !important;
+}
+
+/* =========================
+   INDONESIA
+   ========================= */
+
+.hero .it-logo-country {
+    position: relative;
+    z-index: 2;
+
+    display: block !important;
+
+    margin: 62px 0 0 !important;
+
+    font-family:
+        "Arial Black",
+        Impact,
+        "Helvetica Neue",
+        Arial,
+        sans-serif !important;
+
+    font-size: clamp(68px, 7.5vw, 120px) !important;
+    font-weight: 900 !important;
+    font-style: italic !important;
+
+    line-height: .82 !important;
+    letter-spacing: -7px !important;
+
+    color: #111111 !important;
+
+    transform: skew(-5deg);
+}
+
+/* =========================
+   TAGLINE
+   ========================= */
+
+.hero .it-logo-tagline {
+    display: block !important;
+
+    max-width: 620px !important;
+    margin: 42px auto 0 !important;
+
+    font-size: clamp(20px, 2vw, 30px) !important;
+    font-weight: 700 !important;
+    font-style: italic;
+
+    line-height: 1.3 !important;
+    letter-spacing: -.5px;
+
+    text-align: center !important;
+
+    color: #222222 !important;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .hero-features {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .hero .it-indonesia-logo {
+        min-height: 440px !important;
+    }
+
+    .hero .it-logo-main {
+        font-size: 190px !important;
+        letter-spacing: -20px !important;
+    }
+
+    .hero .it-logo-country {
+        font-size: 76px !important;
+        letter-spacing: -5px !important;
+    }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 46px !important;
+        letter-spacing: -2px !important;
+    }
+
+    .hero-content h2 {
+        font-size: 27px !important;
+    }
+
+    .hero-features {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .hero .it-indonesia-logo {
+        min-height: 390px !important;
+        margin-top: 50px !important;
+        padding: 20px 5px !important;
+    }
+
+    .hero .it-logo-main {
+        font-size: 170px !important;
+        letter-spacing: -18px !important;
+    }
+
+    .hero .it-logo-country {
+        margin-top: 52px !important;
+
+        font-size: 68px !important;
+        letter-spacing: -4px !important;
+    }
+
+    .hero .it-logo-tagline {
+        max-width: 390px !important;
+
+        margin-top: 32px !important;
+
+        font-size: 20px !important;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .hero-features {
+        grid-template-columns: 1fr !important;
+    }
+
+    .hero .it-indonesia-logo {
+        min-height: 330px !important;
+    }
+
+    .hero .it-logo-main {
+        font-size: 125px !important;
+        letter-spacing: -13px !important;
+    }
+
+    .hero .it-logo-main::after {
+        left: -15px !important;
+        right: -25px !important;
+        bottom: -28px !important;
+        height: 9px !important;
+    }
+
+    .hero .it-logo-country {
+        margin-top: 42px !important;
+
+        font-size: 50px !important;
+        letter-spacing: -3px !important;
+    }
+
+    .hero .it-logo-tagline {
+        margin-top: 26px !important;
+
+        font-size: 17px !important;
+        line-height: 1.4 !important;
+    }
+}
+
+</style>
+
+
+<style id="it-indonesia-no-slogan">
+.hero .it-logo-tagline {
+    display: none !important;
+}
+
+.hero .it-indonesia-logo {
+    justify-content: center !important;
+}
+
+.hero .it-logo-country {
+    margin-bottom: 0 !important;
+}
+</style>
+
+
+<style id="iti-hero-full-width-final">
+
+/* =========================================
+   HERO FULL WIDTH — TANPA LOGO KANAN
+   ========================================= */
+
+.hero {
+    min-height: auto !important;
+}
+
+/* Buat wrapper hero menjadi satu kolom penuh */
+.hero-grid,
+.hero-wrapper,
+.hero .row {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+}
+
+/* Sembunyikan kolom visual kanan jika kosong */
+.hero-visual:empty,
+.hero-image:empty,
+.hero-right:empty {
+    display: none !important;
+}
+
+/* Konten memenuhi area hero */
+.hero-content {
+    width: 100% !important;
+    max-width: 1100px !important;
+
+    margin: 0 !important;
+    padding: 80px 0 !important;
+}
+
+/* Badge */
+.hero-content .hero-badge,
+.hero-content .hero-tag,
+.hero-content .hero-label {
+    display: inline-flex !important;
+    margin-bottom: 28px !important;
+}
+
+/* WELCOME TO */
+.hero-content h5 {
+    margin: 0 0 14px !important;
+
+    font-size: 14px !important;
+    font-weight: 900 !important;
+
+    letter-spacing: .28em !important;
+
+    color: #e30613 !important;
+}
+
+/* Investment Technology Indonesia */
+.hero-content h1 {
+    max-width: 1050px !important;
+
+    margin: 0 0 20px !important;
+
+    font-size: clamp(52px, 6.5vw, 96px) !important;
+    font-weight: 900 !important;
+
+    line-height: .96 !important;
+    letter-spacing: -5px !important;
+}
+
+/* Transformasi Digital Menuju Indonesia Maju */
+.hero-content h2 {
+    max-width: 1000px !important;
+
+    margin: 0 0 28px !important;
+
+    font-size: clamp(28px, 3.2vw, 48px) !important;
+    font-weight: 800 !important;
+
+    line-height: 1.1 !important;
+    letter-spacing: -1.8px !important;
+}
+
+/* Deskripsi */
+.hero-content > p,
+.hero-description {
+    max-width: 950px !important;
+
+    margin: 0 0 38px !important;
+
+    font-size: 18px !important;
+    line-height: 1.85 !important;
+}
+
+/* =========================================
+   SERVICE LIST — MEMANJANG KE SAMPING
+   ========================================= */
+
+.hero-features {
+    width: 100% !important;
+    max-width: 1100px !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 16px 22px !important;
+
+    margin: 0 0 38px !important;
+}
+
+.hero-features > * {
+    min-height: 58px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    margin: 0 !important;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.hero-buttons,
+.hero-btns,
+.hero-actions {
+    display: flex !important;
+
+    align-items: center !important;
+    flex-wrap: wrap !important;
+
+    gap: 14px !important;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 992px) {
+
+    .hero-content {
+        padding: 65px 0 !important;
+    }
+
+    .hero-content h1 {
+        font-size: 64px !important;
+        letter-spacing: -3px !important;
+    }
+
+    .hero-features {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 576px) {
+
+    .hero-content {
+        padding: 50px 0 !important;
+    }
+
+    .hero-content h1 {
+        font-size: 44px !important;
+        letter-spacing: -2px !important;
+    }
+
+    .hero-content h2 {
+        font-size: 27px !important;
+    }
+
+    .hero-content > p,
+    .hero-description {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+    }
+
+    .hero-features {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+}
+
+</style>
+
+
+<style id="remove-hero-it-logo-final">
+.hero .it-indonesia-logo,
+.hero .it-logo-main,
+.hero .it-logo-country,
+.hero .it-logo-tagline {
+    display: none !important;
+}
+</style>
+
+
+<style id="iti-hero-correct-layout-final">
+
+/* ==================================================
+   HERO FINAL
+   Full width tanpa kolom gambar kanan
+   ================================================== */
+
+/* Container hero dibuat lebih lebar */
+.hero > .container {
+    width: min(94%, 1400px) !important;
+    max-width: 1400px !important;
+}
+
+/* Grid hero asli: paksa menjadi satu kolom */
+.hero-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 0 !important;
+}
+
+/* Konten hero menggunakan seluruh lebar */
+.hero-content {
+    width: 100% !important;
+    max-width: 1250px !important;
+    margin: 0 !important;
+}
+
+/* Hapus area kanan yang kosong */
+.hero-image {
+    display: none !important;
+}
+
+/* Judul utama */
+.hero-content h1 {
+    width: 100% !important;
+    max-width: 1250px !important;
+}
+
+/* Tagline */
+.hero-content h3 {
+    width: 100% !important;
+    max-width: 1100px !important;
+}
+
+/* Deskripsi dibuat melebar */
+.hero-content > p {
+    width: 100% !important;
+    max-width: 1150px !important;
+    margin-bottom: 34px !important;
+    line-height: 1.8 !important;
+}
+
+/* ==================================================
+   HERO SERVICES
+   2 KOLOM x 3 BARIS
+   ================================================== */
+
+.hero .hero-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+    width: 100% !important;
+    max-width: 900px !important;
+
+    gap: 14px 24px !important;
+    margin: 0 0 36px !important;
+}
+
+/* Setiap item layanan */
+.hero .hero-list > div {
+    display: flex !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+    padding: 14px 18px !important;
+
+    box-sizing: border-box !important;
+}
+
+/* Icon */
+.hero .hero-list > div i {
+    flex: 0 0 auto !important;
+    margin-right: 12px !important;
+}
+
+/* Tombol */
+.hero .hero-button {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 14px !important;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .hero-content {
+        max-width: 100% !important;
+    }
+
+    .hero .hero-list {
+        max-width: 100% !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .hero > .container {
+        width: 90% !important;
+    }
+
+    .hero .hero-list {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+}
+
+</style>
+
+
+<style id="iti-hero-title-wide-final">
+
+/* =========================================
+   HERO TITLE — MEMANJANG KE SAMPING
+   ========================================= */
+
+.hero-content {
+    width: 100% !important;
+    max-width: 1400px !important;
+}
+
+/* INVESTMENT TECHNOLOGY INDONESIA — SATU BARIS */
+.hero-content h1 {
+    width: max-content !important;
+    max-width: none !important;
+
+    margin: 0 0 20px !important;
+
+    white-space: nowrap !important;
+
+    font-size: clamp(52px, 5.4vw, 88px) !important;
+    font-weight: 900 !important;
+
+    line-height: 1 !important;
+    letter-spacing: -4px !important;
+}
+
+/* SLOGAN BARU */
+.hero-content h3 {
+    width: 100% !important;
+    max-width: 1100px !important;
+
+    margin: 0 0 26px !important;
+
+    font-size: clamp(28px, 3vw, 46px) !important;
+    font-weight: 800 !important;
+
+    line-height: 1.15 !important;
+    letter-spacing: -1.5px !important;
+}
+
+/* TABLET */
+@media (max-width: 1100px) {
+
+    .hero-content h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        white-space: normal !important;
+
+        font-size: 62px !important;
+    }
+
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .hero-content h1 {
+        font-size: 42px !important;
+        letter-spacing: -2px !important;
+    }
+
+    .hero-content h3 {
+        font-size: 27px !important;
+    }
+
+}
+
+</style>
+
+
+<style id="iti-hero-service-cards-final">
+
+/* ==================================================
+   HERO SERVICE CARDS
+   Gaya seperti Digital Solutions / Happy Clients
+   ================================================== */
+
+.hero .hero-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    width: 100% !important;
+    max-width: 1150px !important;
+
+    gap: 18px !important;
+    margin: 38px 0 40px !important;
+}
+
+/* KARTU */
+.hero .hero-list > div {
+    position: relative !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+
+    min-height: 145px !important;
+
+    padding: 28px 26px !important;
+    margin: 0 !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, 0.07) !important;
+
+    overflow: hidden !important;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease !important;
+}
+
+/* GARIS AKSEN MERAH */
+.hero .hero-list > div::before {
+    content: "" !important;
+
+    position: absolute !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 5px !important;
+    height: 100% !important;
+
+    background: #e30613 !important;
+}
+
+/* ICON */
+.hero .hero-list > div i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    margin: 0 0 18px !important;
+
+    border-radius: 12px !important;
+
+    background: rgba(227, 6, 19, 0.08) !important;
+
+    color: #e30613 !important;
+
+    font-size: 21px !important;
+}
+
+/* TEKS LAYANAN */
+.hero .hero-list > div {
+    color: #111827 !important;
+
+    font-size: 17px !important;
+    font-weight: 800 !important;
+
+    line-height: 1.35 !important;
+    letter-spacing: -0.2px !important;
+}
+
+/* HOVER */
+.hero .hero-list > div:hover {
+    transform: translateY(-6px) !important;
+
+    border-color: rgba(227, 6, 19, 0.25) !important;
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.12) !important;
+}
+
+/* TABLET — 2 KOLOM */
+@media (max-width: 992px) {
+
+    .hero .hero-list {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+/* MOBILE — 1 KOLOM */
+@media (max-width: 600px) {
+
+    .hero .hero-list {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .hero .hero-list > div {
+        min-height: 120px !important;
+        padding: 22px !important;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ========================================= -->
+<!-- LOADING -->
+<!-- ========================================= -->
+
+<div id="loading">
+
+    <div class="loader">
+
+        
+
+        <h2>Loading...</h2>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- HEADER -->
+<!-- ========================================= -->
+
+<header>
+
+    <div class="container">
+
+        <!-- Logo -->
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                
+
+            </a>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav>
+
+            <ul>
+
+                <li>
+
+                    <a href="index.html"
+                        class="active">
+
+                        Beranda
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="about.html">
+
+                        Profil Perusahaan
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="founder.html">
+
+                        Profil Pendiri
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="services.html">
+
+                        Layanan
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="portfolio.html">
+
+                        Portofolio
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="investment.html">
+
+                        Investment
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="contact.html">
+
+                        Kontak
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Mobile Menu -->
+
+        <div class="menu-toggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ========================================= -->
+<!-- HERO -->
+<!-- ========================================= -->
+
+<section class="hero">
+
+    <!-- Video Background -->
+
+    
+
+    <!-- Overlay -->
+
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+
+        <div class="hero-grid">
+
+            <!-- Left -->
+
+            <div class="hero-content"
+                data-aos="fade-right">
+
+                <span class="hero-badge">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Digital Transformation Partner
+
+                </span>
+
+                <h5>
+
+                    WELCOME TO
+
+                </h5>
+
+                <h1>
+
+                    Investment Technology Indonesia
+
+                </h1>
+
+                <h3>
+
+                    Transformasi Digital Menuju Indonesia Maju
+
+                </h3>
+
+                <p>
+
+                    Kami membantu perusahaan, instansi pemerintah,
+                    BUMN, pendidikan, rumah sakit,
+                    startup dan UMKM melakukan transformasi digital
+                    melalui solusi teknologi yang modern,
+                    aman, scalable dan berkelanjutan.
+
+                </p>
+
+                <div class="hero-list">
+
+                    <div class="hero-service-card">
+    <i class="fas fa-code" aria-hidden="true"></i>
+    <span>Software Development</span>
+</div>
+
+                    <div class="hero-service-card">
+    <i class="fas fa-brain" aria-hidden="true"></i>
+    <span>Artificial Intelligence</span>
+</div>
+
+                    <div class="hero-service-card">
+    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+    <span>Mobile Application</span>
+</div>
+
+                    <div class="hero-service-card">
+    <i class="fas fa-cloud" aria-hidden="true"></i>
+    <span>Cloud Computing</span>
+</div>
+
+                    <div class="hero-service-card">
+    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+    <span>Cyber Security</span>
+</div>
+
+                    <div class="hero-service-card">
+    <i class="fas fa-rocket" aria-hidden="true"></i>
+    <span>Digital Transformation</span>
+</div>
+
+                </div>
+
+                <div class="hero-button">
+
+                    <a href="contact.html"
+                        class="btn-primary">
+
+                        Konsultasi Gratis
+
+                    </a>
+
+                    <a href="services.html"
+                        class="btn-secondary">
+
+                        Lihat Layanan
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="hero-image"
+                data-aos="fade-left">
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- HERO INFORMATION -->
+<!-- ========================================= -->
+
+<section class="hero-info">
+
+    <div class="container">
+
+        <div class="hero-info-grid">
+
+            <div class="hero-info-card"
+                data-aos="fade-up">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h3>
+
+                    200+
+
+                </h3>
+
+                <p>
+
+                    Digital Solutions
+
+                </p>
+
+            </div>
+
+            <div class="hero-info-card"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>
+
+                    100+
+
+                </h3>
+
+                <p>
+
+                    Happy Clients
+
+                </p>
+
+            </div>
+
+            <div class="hero-info-card"
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                <i class="fa-solid fa-server"></i>
+
+                <h3>
+
+                    24/7
+
+                </h3>
+
+                <p>
+
+                    Technical Support
+
+                </p>
+
+            </div>
+
+            <div class="hero-info-card"
+                data-aos="fade-up"
+                data-aos-delay="300">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>
+
+                    Professional
+
+                </h3>
+
+                <p>
+
+                    IT Consultant
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- END PART 1 -->
+<!-- PART 2 :
+About Company
+Company Statistics
+Vision Mission
+Why Choose Us
+========================================= -->
+<!-- ========================================= -->
+<!-- ABOUT COMPANY -->
+<!-- ========================================= -->
+
+<section class="about-home section">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <!-- IMAGE -->
+
+            <div class="about-image"
+                data-aos="fade-right">
+
+                <div class="iti-letter-visual" role="img" aria-label="IT visual"><span>IT</span></div>
+
+            </div>
+
+            <!-- CONTENT -->
+
+            <div class="about-content"
+                data-aos="fade-left">
+
+                <div class="section-title left">
+
+                    <h5>
+
+                        ABOUT COMPANY
+
+                    </h5>
+
+                    <h2>
+
+                        Partner Transformasi Digital Bisnis Anda
+
+                    </h2>
+
+                </div>
+
+                <p>
+
+                    Investment Technology Indonesia merupakan perusahaan
+                    penyedia solusi teknologi informasi yang berfokus pada
+                    Software Development,
+                    Website Development,
+                    Mobile Application,
+                    Artificial Intelligence,
+                    Cloud Computing,
+                    Cyber Security,
+                    Networking,
+                    Data Center,
+                    Digital Marketing,
+                    serta Digital Transformation.
+
+                </p>
+
+                <p>
+
+                    Kami membantu perusahaan maupun instansi pemerintah
+                    mengembangkan solusi digital yang modern,
+                    aman,
+                    scalable,
+                    dan mampu meningkatkan produktivitas bisnis.
+
+                </p>
+
+                <div class="about-list">
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Tim Profesional
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Teknologi Modern
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Berpengalaman
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Support 24/7
+
+                    </div>
+
+                </div>
+
+                <div class="hero-button">
+
+                    <a href="about.html"
+                        class="btn-primary">
+
+                        Profil Perusahaan
+
+                    </a>
+
+                    <a href="contact.html"
+                        class="btn-secondary">
+
+                        Hubungi Kami
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- COMPANY STATISTICS -->
+<!-- ========================================= -->
+
+<section class="counter section">
+
+    <div class="container">
+
+        <div class="section-title"
+            data-aos="fade-up">
+
+            <h5>
+
+                COMPANY STATISTICS
+
+            </h5>
+
+            <h2>
+
+                Pertumbuhan Bersama Klien
+
+            </h2>
+
+            <p>
+
+                Kami terus berkembang bersama pelanggan melalui
+                inovasi teknologi dan pelayanan terbaik.
+
+            </p>
+
+        </div>
+
+        <div class="counter-grid">
+
+            <div class="counter-card">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h2 class="counter-number"
+                    data-target="200">
+
+                    0
+
+                </h2>
+
+                <p>
+
+                    Project Selesai
+
+                </p>
+
+            </div>
+
+            <div class="counter-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2 class="counter-number"
+                    data-target="120">
+
+                    0
+
+                </h2>
+
+                <p>
+
+                    Klien
+
+                </p>
+
+            </div>
+
+            <div class="counter-card">
+
+                <i class="fa-solid fa-server"></i>
+
+                <h2 class="counter-number"
+                    data-target="15">
+
+                    0
+
+                </h2>
+
+                <p>
+
+                    Layanan IT
+
+                </p>
+
+            </div>
+
+            <div class="counter-card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h2>
+
+                    24/7
+
+                </h2>
+
+                <p>
+
+                    Technical Support
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- VISION MISSION -->
+<!-- ========================================= -->
+
+<section class="vision section">
+
+    <div class="container">
+
+        <div class="vision-grid">
+
+            <!-- VISION -->
+
+            <div class="vision-card"
+                data-aos="fade-right">
+
+                <div class="vision-icon">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                </div>
+
+                <h3>
+
+                    Visi
+
+                </h3>
+
+                <p>
+
+                    Menjadi perusahaan teknologi informasi terbaik
+                    di Indonesia yang mampu menghadirkan solusi digital
+                    inovatif,
+                    terpercaya,
+                    dan berkelas dunia.
+
+                </p>
+
+            </div>
+
+            <!-- MISSION -->
+
+            <div class="vision-card"
+                data-aos="fade-left">
+
+                <div class="vision-icon">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                </div>
+
+                <h3>
+
+                    Misi
+
+                </h3>
+
+                <ul>
+
+                    <li>
+
+                        Mengembangkan solusi digital yang inovatif.
+
+                    </li>
+
+                    <li>
+
+                        Memberikan pelayanan profesional.
+
+                    </li>
+
+                    <li>
+
+                        Mendukung transformasi digital Indonesia.
+
+                    </li>
+
+                    <li>
+
+                        Menggunakan teknologi terbaru.
+
+                    </li>
+
+                    <li>
+
+                        Menjadi partner jangka panjang pelanggan.
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- WHY CHOOSE US -->
+<!-- ========================================= -->
+
+<section class="why-home section">
+
+    <div class="container">
+
+        <div class="section-title"
+            data-aos="fade-up">
+
+            <h5>
+
+                WHY CHOOSE US
+
+            </h5>
+
+            <h2>
+
+                Mengapa Memilih Kami?
+
+            </h2>
+
+            <p>
+
+                Kami menghadirkan layanan teknologi yang profesional,
+                modern,
+                aman,
+                dan sesuai kebutuhan bisnis Anda.
+
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card"
+                data-aos="fade-up">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>
+
+                    Professional Team
+
+                </h3>
+
+                <p>
+
+                    Didukung tenaga ahli yang berpengalaman
+                    dalam berbagai proyek IT.
+
+                </p>
+
+            </div>
+
+            <div class="why-card"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <h3>
+
+                    Innovative Solution
+
+                </h3>
+
+                <p>
+
+                    Selalu menggunakan teknologi terbaru
+                    agar solusi tetap relevan.
+
+                </p>
+
+            </div>
+
+            <div class="why-card"
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>
+
+                    Secure System
+
+                </h3>
+
+                <p>
+
+                    Mengutamakan keamanan data,
+                    jaringan,
+                    dan aplikasi.
+
+                </p>
+
+            </div>
+
+            <div class="why-card"
+                data-aos="fade-up"
+                data-aos-delay="300">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>
+
+                    Full Support
+
+                </h3>
+
+                <p>
+
+                    Tim support siap membantu
+                    sebelum,
+                    selama,
+                    dan setelah implementasi.
+
+                </p>
+
+            </div>
+
+            <div class="why-card"
+                data-aos="fade-up">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                <h3>
+
+                    Scalable Solution
+
+                </h3>
+
+                <p>
+
+                    Sistem mudah dikembangkan
+                    sesuai pertumbuhan perusahaan.
+
+                </p>
+
+            </div>
+
+            <div class="why-card"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>
+
+                    On Time Delivery
+
+                </h3>
+
+                <p>
+
+                    Pengerjaan sesuai timeline
+                    dengan manajemen proyek yang baik.
+
+                </p>
+
+            </div>
+
+            <div class="why-card"
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                <i class="fa-solid fa-network-wired"></i>
+
+                <h3>
+
+                    End-to-End Solution
+
+                </h3>
+
+                <p>
+
+                    Mulai konsultasi,
+                    development,
+                    deployment,
+                    hingga maintenance.
+
+                </p>
+
+            </div>
+
+            <div class="why-card featured"
+                data-aos="zoom-in">
+
+                <span class="badge">
+
+                    BEST
+
+                </span>
+
+                <i class="fa-solid fa-rocket"></i>
+
+                <h3>
+
+                    Digital Transformation Partner
+
+                </h3>
+
+                <p>
+
+                    Menjadi partner strategis perusahaan
+                    dalam membangun ekosistem digital
+                    yang modern dan berkelanjutan.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- END PART 2 -->
+<!-- PART 3 :
+Services Preview
+Featured Solution
+Technology Stack
+Industries
+========================================= -->
+<!-- ========================================= -->
+<!-- OUR SERVICES -->
+<!-- ========================================= -->
+
+<section class="services section">
+
+    <div class="container">
+
+        <div class="section-title"
+            data-aos="fade-up">
+
+            <h5>
+
+                OUR SERVICES
+
+            </h5>
+
+            <h2>
+
+                14 Layanan Profesional
+
+            </h2>
+
+            <p>
+
+                Kami menyediakan layanan teknologi informasi lengkap
+                mulai dari konsultasi, pengembangan aplikasi,
+                infrastruktur hingga transformasi digital.
+
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>Software Development</h3>
+
+                <p>
+                    ERP, CRM, HRIS, POS, Dashboard,
+                    Sistem Informasi dan Enterprise Application.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <h3>Website Development</h3>
+
+                <p>
+                    Company Profile, Landing Page,
+                    Marketplace, Portal dan Website Enterprise.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+
+                <h3>Mobile Apps</h3>
+
+                <p>
+                    Android & iOS menggunakan
+                    Flutter maupun Native.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+
+                <h3>Artificial Intelligence</h3>
+
+                <p>
+                    Machine Learning,
+                    OCR,
+                    NLP,
+                    AI Chatbot,
+                    Automation.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+
+                <h3>Server & Data Center</h3>
+
+                <p>
+                    Virtualisasi,
+                    Backup,
+                    Storage,
+                    Monitoring,
+                    Data Center.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-cloud"></i>
+                </div>
+
+                <h3>Cloud Computing</h3>
+
+                <p>
+                    VPS,
+                    Cloud Server,
+                    Email Bisnis,
+                    Dedicated Server.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+
+                <h3>Networking</h3>
+
+                <p>
+                    LAN,
+                    WAN,
+                    VPN,
+                    Fiber Optic,
+                    Mikrotik,
+                    Cisco.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>Cyber Security</h3>
+
+                <p>
+                    Firewall,
+                    Penetration Test,
+                    Vulnerability Assessment.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:50px;">
+
+            <a href="services.html"
+                class="btn-primary">
+
+                Lihat Semua Layanan
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FEATURED SOLUTION -->
+<!-- ========================================= -->
+
+<section class="featured-solution section">
+
+    <div class="container">
+
+        <div class="featured-grid">
+
+            <div class="featured-image"
+                data-aos="fade-right">
+
+                <div class="iti-letter-visual" role="img" aria-label="AI visual"><span>AI</span></div>
+
+            </div>
+
+            <div class="featured-content"
+                data-aos="fade-left">
+
+                <div class="section-title left">
+
+                    <h5>
+
+                        FEATURED SOLUTION
+
+                    </h5>
+
+                    <h2>
+
+                        Super App & AI Ecosystem
+
+                    </h2>
+
+                </div>
+
+                <p>
+
+                    Kami mengembangkan ekosistem digital modern
+                    yang mengintegrasikan berbagai layanan
+                    ke dalam satu platform.
+
+                </p>
+
+                <div class="about-list">
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Super App
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Marketplace
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Ride Hailing
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Food Delivery
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Digital Payment
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        AI Platform
+
+                    </div>
+
+                </div>
+
+                <div class="hero-button">
+
+                    <a href="investment.html"
+                        class="btn-primary">
+
+                        Pelajari Selengkapnya
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- TECHNOLOGY -->
+<!-- ========================================= -->
+
+<section class="technology section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>
+
+                TECHNOLOGY STACK
+
+            </h5>
+
+            <h2>
+
+                Teknologi Modern
+
+            </h2>
+
+            <p>
+
+                Kami menggunakan teknologi terbaik
+                untuk menghasilkan solusi yang cepat,
+                aman dan scalable.
+
+            </p>
+
+        </div>
+
+        <div class="technology-grid">
+
+            <div class="tech-card"><i class="fa-brands fa-html5"></i><h3>HTML5</h3></div>
+
+            <div class="tech-card"><i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3></div>
+
+            <div class="tech-card"><i class="fa-brands fa-js"></i><h3>JavaScript</h3></div>
+
+            <div class="tech-card"><i class="fa-brands fa-react"></i><h3>React</h3></div>
+
+            <div class="tech-card"><i class="fa-brands fa-node-js"></i><h3>Node JS</h3></div>
+
+            <div class="tech-card"><i class="fa-solid fa-mobile-screen"></i><h3>Flutter</h3></div>
+
+            <div class="tech-card"><i class="fa-solid fa-laptop-code"></i><h3>Laravel</h3></div>
+
+            <div class="tech-card"><i class="fa-solid fa-database"></i><h3>MySQL</h3></div>
+
+            <div class="tech-card"><i class="fa-solid fa-server"></i><h3>Docker</h3></div>
+
+            <div class="tech-card"><i class="fa-solid fa-cloud"></i><h3>Cloud</h3></div>
+
+            <div class="tech-card"><i class="fa-solid fa-brain"></i><h3>Artificial Intelligence</h3></div>
+
+            <div class="tech-card"><i class="fa-solid fa-shield-halved"></i><h3>Cyber Security</h3></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- INDUSTRY -->
+<!-- ========================================= -->
+
+<section class="industry section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>
+
+                INDUSTRY
+
+            </h5>
+
+            <h2>
+
+                Industri Yang Kami Layani
+
+            </h2>
+
+            <p>
+
+                Solusi kami dapat diterapkan
+                di berbagai sektor industri.
+
+            </p>
+
+        </div>
+
+        <div class="industry-grid">
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-landmark"></i>
+
+                <h3>Pemerintah</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-building"></i>
+
+                <h3>BUMN</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-industry"></i>
+
+                <h3>Perusahaan</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-school"></i>
+
+                <h3>Pendidikan</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-hospital"></i>
+
+                <h3>Rumah Sakit</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-store"></i>
+
+                <h3>UMKM</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <h3>Retail</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-truck"></i>
+
+                <h3>Logistik</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- END PART 3 -->
+<!-- PART 4
+Portfolio
+Clients
+Testimonials
+Timeline
+FAQ
+========================================= -->
+<!-- ========================================= -->
+<!-- PORTFOLIO -->
+<!-- ========================================= -->
+
+<section class="portfolio section">
+
+    <div class="container">
+
+        <div class="section-title"
+             data-aos="fade-up">
+
+            <h5>
+
+                OUR PORTFOLIO
+
+            </h5>
+
+            <h2>
+
+                Project & Digital Solution
+
+            </h2>
+
+            <p>
+
+                Beberapa solusi digital yang kami kembangkan
+                untuk perusahaan, pemerintah,
+                startup dan UMKM.
+
+            </p>
+
+        </div>
+
+        <div class="portfolio-grid">
+
+            <div class="portfolio-card">
+
+                <div class="iti-letter-visual" role="img" aria-label="ERP visual"><span>ERP</span></div>
+
+                <div class="portfolio-content">
+
+                    <span>Enterprise</span>
+
+                    <h3>
+
+                        ERP System
+
+                    </h3>
+
+                    <p>
+
+                        Enterprise Resource Planning
+                        untuk perusahaan.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="portfolio-card">
+
+                <div class="iti-letter-visual" role="img" aria-label="WEB visual"><span>WEB</span></div>
+
+                <div class="portfolio-content">
+
+                    <span>Website</span>
+
+                    <h3>
+
+                        Corporate Website
+
+                    </h3>
+
+                    <p>
+
+                        Website Company Profile
+                        Responsive & SEO Ready.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="portfolio-card">
+
+                <div class="iti-letter-visual" role="img" aria-label="APP visual"><span>APP</span></div>
+
+                <div class="portfolio-content">
+
+                    <span>Mobile Apps</span>
+
+                    <h3>
+
+                        Android & iOS
+
+                    </h3>
+
+                    <p>
+
+                        Flutter Mobile Application
+                        dengan REST API.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="portfolio-card">
+
+                <div class="iti-letter-visual" role="img" aria-label="AI visual"><span>AI</span></div>
+
+                <div class="portfolio-content">
+
+                    <span>Artificial Intelligence</span>
+
+                    <h3>
+
+                        AI Automation
+
+                    </h3>
+
+                    <p>
+
+                        OCR, Chatbot,
+                        Machine Learning
+                        dan AI Assistant.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:50px;">
+
+            <a href="portfolio.html"
+               class="btn-primary">
+
+                Lihat Semua Portfolio
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- CLIENT -->
+<!-- ========================================= -->
+
+<section class="client section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>
+
+                SEKTOR INDUSTRI
+
+            </h5>
+
+            <h2>
+
+                Solusi untuk Berbagai Sektor
+
+            </h2>
+
+        </div>
+
+        <div class="client-grid">
+            <div class="sector-card">
+                <span class="sector-number">01</span>
+                <span class="sector-name">PERBANKAN</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">02</span>
+                <span class="sector-name">INVESTASI & BUMN</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">03</span>
+                <span class="sector-name">PEMERINTAHAN</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">04</span>
+                <span class="sector-name">OTOMOTIF</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">05</span>
+                <span class="sector-name">TEKNOLOGI</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">06</span>
+                <span class="sector-name">LOGISTIK</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">07</span>
+                <span class="sector-name">MANUFAKTUR</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">08</span>
+                <span class="sector-name">UMKM</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================= -->
+<!-- TESTIMONIAL -->
+<!-- ========================================= -->
+
+<section class="testimonial section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>
+
+                TESTIMONIAL
+
+            </h5>
+
+            <h2>
+
+                Apa Kata Klien Kami
+
+            </h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Pelayanan sangat profesional,
+                    hasil website sangat memuaskan.
+
+                </p>
+
+                <h4>
+
+                    Budi Santoso
+
+                </h4>
+
+                <span>
+
+                    CEO Startup
+
+                </span>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Tim sangat komunikatif,
+                    pengerjaan tepat waktu
+                    dan kualitas sangat baik.
+
+                </p>
+
+                <h4>
+
+                    Andi Pratama
+
+                </h4>
+
+                <span>
+
+                    Government Project
+
+                </span>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Sangat membantu proses
+                    transformasi digital perusahaan.
+
+                </p>
+
+                <h4>
+
+                    Dewi Lestari
+
+                </h4>
+
+                <span>
+
+                    Business Owner
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- COMPANY TIMELINE -->
+<!-- ========================================= -->
+
+<section class="timeline section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>
+
+                COMPANY JOURNEY
+
+            </h5>
+
+            <h2>
+
+                Perjalanan Kami
+
+            </h2>
+
+        </div>
+
+        <div class="timeline-grid">
+
+            <div class="timeline-card">
+
+                <span>
+
+                    2023
+
+                </span>
+
+                <h3>
+
+                    Company Established
+
+                </h3>
+
+                <p>
+
+                    Memulai layanan
+                    Software Development.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+
+                    2024
+
+                </span>
+
+                <h3>
+
+                    Business Expansion
+
+                </h3>
+
+                <p>
+
+                    Menambah layanan
+                    AI, Cloud dan Cyber Security.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+
+                    2025
+
+                </span>
+
+                <h3>
+
+                    Super App
+
+                </h3>
+
+                <p>
+
+                    Mengembangkan
+                    Super App Ecosystem.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+
+                    Future
+
+                </span>
+
+                <h3>
+
+                    Global Innovation
+
+                </h3>
+
+                <p>
+
+                    Menjadi perusahaan
+                    teknologi kelas dunia.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FAQ -->
+<!-- ========================================= -->
+
+<section class="faq section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>
+
+                FAQ
+
+            </h5>
+
+            <h2>
+
+                Pertanyaan Umum
+
+            </h2>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Berapa lama pengerjaan website?
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Umumnya 2–8 minggu,
+                    tergantung kompleksitas.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Apakah menerima custom system?
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Ya,
+                    seluruh sistem dibuat
+                    sesuai kebutuhan klien.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Apakah tersedia maintenance?
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Kami menyediakan
+                    maintenance,
+                    monitoring,
+                    backup,
+                    dan technical support.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Apakah melayani seluruh Indonesia?
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Ya.
+                    Kami melayani project
+                    remote maupun onsite.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- DOWNLOAD COMPANY PROFILE -->
+<!-- ========================================= -->
+
+<section class="download section">
+
+    <div class="container">
+
+        <div class="download-box">
+
+            <h2>
+
+                Download Company Profile
+
+            </h2>
+
+            <p>
+
+                Pelajari layanan kami
+                secara lengkap melalui Company Profile.
+
+            </p>
+
+            <a href="assets/documents/Company-Profile.pdf"
+               target="_blank"
+               class="btn-primary">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+                Download PDF
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- END PART 4 -->
+<!-- PART 5
+CTA
+Footer
+Floating WhatsApp
+Popup Chat
+Javascript
+========================================= -->
+    <!-- ========================================= -->
+<!-- FINAL CALL TO ACTION -->
+<!-- ========================================= -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <h2>
+
+            Siap Memulai Transformasi Digital?
+
+        </h2>
+
+        <p>
+
+            Bangun Website, Software, Mobile Apps,
+            Artificial Intelligence, ERP, CRM,
+            Cloud Computing hingga Super App
+            bersama Investment Technology Indonesia.
+
+        </p>
+
+        <div class="hero-button">
+
+            <a href="https://wa.me/6285283397198?text=Halo%20Investment%20Technology%20Indonesia,%20Saya%20ingin%20berkonsultasi."
+                target="_blank"
+                class="btn-primary">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Konsultasi Gratis
+
+            </a>
+
+            <a href="contact.html"
+                class="btn-secondary">
+
+                Hubungi Kami
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- ABOUT -->
+
+            <div class="footer-item">
+
+                
+
+                <h3>
+
+                    Investment Technology Indonesia
+
+                </h3>
+
+                <p>
+
+                    Transformasi Digital Menuju Indonesia Maju.
+
+                    Kami menyediakan solusi teknologi informasi
+                    untuk perusahaan,
+                    pemerintah,
+                    BUMN,
+                    pendidikan,
+                    startup,
+                    dan UMKM.
+
+                </p>
+
+            </div>
+
+            <!-- MENU -->
+
+            <div class="footer-item">
+
+                <h3>
+
+                    Quick Menu
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="index.html">Beranda</a></li>
+
+                    <li><a href="about.html">Profil Perusahaan</a></li>
+
+                    <li><a href="founder.html">Profil Pendiri</a></li>
+
+                    <li><a href="services.html">Layanan</a></li>
+
+                    <li><a href="portfolio.html">Portofolio</a></li>
+
+                    <li><a href="investment.html">Investment</a></li>
+
+                    <li><a href="contact.html">Kontak</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class="footer-item">
+
+                <h3>
+
+                    Hubungi Kami
+
+                </h3>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    alma.budsteddy88@gmail.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    +62 852 8339 7198
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    Senin - Jumat
+
+                    08.00 - 17.00 WIB
+
+                </p>
+
+                <a href="https://wa.me/6285283397198?text=Halo%20Investment%20Technology%20Indonesia,%20Saya%20ingin%20berkonsultasi."
+                    class="btn-primary"
+                    target="_blank">
+
+                    Konsultasi Gratis
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Investment Technology Indonesia
+
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ========================================= -->
+<!-- BACK TO TOP -->
+<!-- ========================================= -->
+
+<button id="backToTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ========================================= -->
+<!-- FLOATING WHATSAPP -->
+<!-- ========================================= -->
+
+<a href="https://wa.me/6285283397198?text=Halo%20Investment%20Technology%20Indonesia,%20Saya%20ingin%20berkonsultasi."
+    class="whatsapp-float"
+    target="_blank">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- ========================================= -->
+<!-- POPUP CHAT -->
+<!-- ========================================= -->
+
+<div id="popup-chat"
+    class="popup-chat">
+
+    <div class="popup-header">
+
+        💬 Investment Technology Indonesia
+
+        <span id="closePopup">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </span>
+
+    </div>
+
+    <div class="popup-body">
+
+        <h3>
+
+            Halo 👋
+
+        </h3>
+
+        <p>
+
+            Selamat datang di
+            Investment Technology Indonesia.
+
+        </p>
+
+        <ul>
+
+            <li>Website Development</li>
+
+            <li>Software Development</li>
+
+            <li>Mobile Application</li>
+
+            <li>Artificial Intelligence</li>
+
+            <li>ERP & CRM</li>
+
+            <li>Cloud Computing</li>
+
+            <li>Networking</li>
+
+            <li>Cyber Security</li>
+
+        </ul>
+
+        <a href="https://wa.me/6285283397198?text=Halo%20Investment%20Technology%20Indonesia,%20Saya%20ingin%20berkonsultasi."
+            target="_blank"
+            class="btn-primary">
+
+            Chat WhatsApp
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- COPYRIGHT -->
+<!-- ========================================= -->
+
+<section class="copyright">
+
+    <div class="container">
+
+        <p>
+
+            Designed & Developed by
+
+            <strong>
+
+                Investment Technology Indonesia
+
+            </strong>
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================================= -->
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/loading.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/faq.js"></script>
+<script src="assets/js/chatbot.js"></script>
+<script src="assets/js/whatsapp.js"></script>
+<script src="assets/js/darkmode.js"></script>
+<script src="assets/js/scrolltop.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+    duration:1000,
+
+    once:true,
+
+    offset:120
+
+});
+
+</script>
+
+<script>
+
+window.addEventListener("load",function(){
+
+    document.getElementById("loading").style.display="none";
+
+});
+
+</script>
+
+<script>
+
+setTimeout(function(){
+
+    document.getElementById("popup-chat").classList.add("show");
+
+},5000);
+
+</script>
+
+<script>
+
+document.getElementById("closePopup").onclick=function(){
+
+    document.getElementById("popup-chat").style.display="none";
+
+}
+
+</script>
+
+</body>
+</html>
+
+<style id="iti-hero-polish-v2">
+/* =========================================
+   HERO POLISH — IT INDONESIA
+   ========================================= */
+
+/* Rapikan area hero */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+/* Digital Transformation Partner */
+.hero-badge,
+.hero-tag,
+.hero-label {
+    margin-bottom: 18px;
+}
+
+/* WELCOME TO */
+.hero-content h5 {
+    margin-bottom: 10px;
+    letter-spacing: 0.16em;
+}
+
+/* Investment Technology Indonesia */
+.hero-content h1 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.08;
+}
+
+/* Transformasi Digital Menuju Indonesia Maju */
+.hero-content h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    line-height: 1.2;
+}
+
+/* Deskripsi */
+.hero-content p {
+    max-width: 720px;
+    margin-bottom: 26px;
+    line-height: 1.8;
+}
+
+/* Feature list */
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    margin: 0 0 30px;
+}
+
+.hero-features > * {
+    margin: 0;
+}
+
+/* Tombol */
+.hero-buttons,
+.hero-btns,
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+/* =========================================
+   HERO IT INDONESIA LOGO
+   ========================================= */
+
+.hero .it-indonesia-logo {
+    width: min(100%, 560px);
+    min-height: 430px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+    padding: 55px;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 75% 25%,
+            rgba(227, 6, 19, 0.22),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #080808 0%,
+            #171717 60%,
+            #280507 100%
+        );
+
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 32px;
+
+    box-shadow:
+        0 35px 80px rgba(0,0,0,.22);
+}
+
+/* Huruf IT besar */
+.hero .it-logo-main {
+    font-size: clamp(110px, 13vw, 190px);
+    line-height: .78;
+    letter-spacing: -18px;
+
+    color: #e30613;
+
+    text-shadow:
+        8px 8px 0 #111,
+        16px 16px 35px rgba(0,0,0,.45);
+}
+
+/* Garis logo */
+.hero .it-logo-main::after {
+    height: 9px;
+    left: -10px;
+    right: -20px;
+    bottom: -18px;
+}
+
+/* Indonesia diperbesar */
+.hero .it-logo-country {
+    margin-top: 28px;
+
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 900;
+    font-style: italic;
+
+    letter-spacing: -2px;
+    line-height: 1;
+
+    color: #ffffff;
+}
+
+/* Dekorasi teknologi */
+.hero .it-indonesia-logo::before {
+    content: "";
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    top: -80px;
+    right: -70px;
+
+    border: 1px solid rgba(227,6,19,.28);
+    border-radius: 50%;
+}
+
+.hero .it-indonesia-logo::after {
+    content: "DIGITAL • TECHNOLOGY • INNOVATION";
+
+    position: absolute;
+    left: 30px;
+    bottom: 24px;
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .20em;
+
+    color: rgba(255,255,255,.38);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .hero .it-indonesia-logo {
+        min-height: 350px;
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .hero .it-logo-main {
+        font-size: 130px;
+    }
+
+    .hero .it-logo-country {
+        font-size: 38px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .hero-content {
+        text-align: left;
+    }
+
+    .hero .it-indonesia-logo {
+        min-height: 280px;
+        padding: 35px 20px;
+        border-radius: 24px;
+    }
+
+    .hero .it-logo-main {
+        font-size: 95px;
+        letter-spacing: -10px;
+    }
+
+    .hero .it-logo-country {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .hero .it-indonesia-logo::after {
+        left: 20px;
+        bottom: 18px;
+        font-size: 7px;
+    }
+}
+</style>
+
+
+<style id="iti-hero-logo-clean-v3">
+
+/* =========================================
+   HERO LOGO CLEAN — TEXT ONLY
+   ========================================= */
+
+.hero .it-indonesia-logo {
+    width: auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0;
+    padding: 40px 20px !important;
+    margin: 0 auto;
+
+    background: none !important;
+    background-image: none !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+/* Hapus semua dekorasi */
+.hero .it-indonesia-logo::before,
+.hero .it-indonesia-logo::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* IT BESAR */
+.hero .it-logo-main {
+    display: block;
+
+    font-size: clamp(140px, 17vw, 240px) !important;
+    font-weight: 900;
+    font-style: italic;
+
+    line-height: .72;
+    letter-spacing: -22px;
+
+    color: #e30613;
+
+    transform: skew(-7deg);
+
+    text-shadow:
+        7px 7px 0 #111111,
+        14px 14px 25px rgba(0,0,0,.15);
+}
+
+/* Garis aksen logo */
+.hero .it-logo-main::after {
+    height: 9px;
+    left: -10px;
+    right: -20px;
+    bottom: -22px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #e30613,
+            #111111
+        );
+}
+
+/* INDONESIA */
+.hero .it-logo-country {
+    display: block;
+
+    margin-top: 45px;
+
+    font-size: clamp(38px, 5vw, 68px) !important;
+    font-weight: 900;
+    font-style: italic;
+
+    line-height: 1;
+    letter-spacing: -3px;
+
+    color: #111111 !important;
+}
+
+/* TAGLINE */
+.hero .it-indonesia-logo .it-logo-tagline {
+    display: block;
+
+    max-width: 520px;
+    margin-top: 22px;
+
+    font-size: clamp(15px, 1.5vw, 21px);
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .02em;
+
+    text-align: center;
+
+    color: #555555;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .hero .it-indonesia-logo {
+        padding: 50px 10px 20px !important;
+    }
+
+    .hero .it-logo-main {
+        font-size: 130px !important;
+        letter-spacing: -13px;
+    }
+
+    .hero .it-logo-country {
+        margin-top: 35px;
+        font-size: 42px !important;
+    }
+
+    .hero .it-indonesia-logo .it-logo-tagline {
+        margin-top: 18px;
+        font-size: 15px;
+    }
+
+}
+
+</style>
+
+
+
+
+<style id="it-indonesia-slogan-wide-final">
+
+/* SLOGAN MEMANJANG TEPAT DI BAWAH LOGO */
+.hero .it-logo-tagline {
+    display: block !important;
+
+    width: max-content !important;
+    max-width: none !important;
+
+    margin: 34px auto 0 !important;
+    padding: 0 !important;
+
+    white-space: nowrap !important;
+
+    font-size: clamp(18px, 1.75vw, 27px) !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
+
+    line-height: 1.2 !important;
+    letter-spacing: -0.4px !important;
+
+    text-align: center !important;
+
+    color: #222222 !important;
+}
+
+/* Beri ruang agar slogan panjang tidak terpotong */
+.hero .it-indonesia-logo {
+    max-width: 900px !important;
+    overflow: visible !important;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+
+    .hero .it-logo-tagline {
+        font-size: 20px !important;
+    }
+
+}
+
+/* MOBILE — tetap satu baris, ukuran menyesuaikan */
+@media (max-width: 576px) {
+
+    .hero .it-logo-tagline {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-top: 24px !important;
+
+        white-space: nowrap !important;
+
+        font-size: clamp(11px, 3.6vw, 17px) !important;
+        letter-spacing: -0.5px !important;
+    }
+
+}
+
+</style>
+
+
+<style id="iti-hero-layout-2-column-final">
+
+/* =========================================
+   HERO — FULL WIDTH + 2 COLUMN SERVICES
+   ========================================= */
+
+/* Konten utama melebar */
+.hero-content {
+    width: 100% !important;
+    max-width: 1200px !important;
+}
+
+/* Judul utama lebih lebar */
+.hero-content h1 {
+    max-width: 1200px !important;
+    width: 100% !important;
+}
+
+/* Tagline memanjang */
+.hero-content h2 {
+    max-width: 1100px !important;
+    width: 100% !important;
+}
+
+/* Deskripsi memanjang ke samping */
+.hero-content > p,
+.hero-description {
+    width: 100% !important;
+    max-width: 1150px !important;
+
+    margin-bottom: 38px !important;
+
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+}
+
+/* =========================================
+   SERVICES — 2 KOLOM
+   ========================================= */
+
+.hero-features {
+    width: 100% !important;
+    max-width: 850px !important;
+
+    display: grid !important;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr)) !important;
+
+    column-gap: 32px !important;
+    row-gap: 14px !important;
+
+    margin: 0 0 38px !important;
+}
+
+/* Setiap layanan */
+.hero-features > * {
+    width: 100% !important;
+    min-height: 58px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    margin: 0 !important;
+    padding: 14px 18px !important;
+
+    border-radius: 12px !important;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+    .hero-content h1 {
+        font-size: 43px !important;
+    }
+
+    .hero-content > p,
+    .hero-description {
+        font-size: 16px !important;
+    }
+
+    .hero-features {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+}
+
+</style>
+

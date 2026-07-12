@@ -2619,1339 +2619,6 @@ html body .about-home a.about-contact-outline:hover i {
 }
 </style>
 
-
-<style id="home-industry-grid-only">
-
-/* ==========================================================
-   HOME PAGE - INDUSTRY GRID ONLY
-========================================================== */
-
-.home-industry-section {
-  padding: 100px 0;
-  background: #f7f7f8;
-}
-
-
-/* HEADING */
-
-.home-industry-heading {
-  max-width: 760px;
-  margin: 0 auto 55px;
-  text-align: center;
-}
-
-.home-industry-eyebrow {
-  display: inline-block;
-  margin-bottom: 14px;
-
-  color: #e31e24;
-
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.home-industry-heading h2 {
-  margin: 0 0 18px;
-
-  color: #111111;
-
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.home-industry-heading p {
-  margin: 0;
-
-  color: #666666;
-
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-
-/* ==========================================================
-   GRID
-========================================================== */
-
-.home-industry-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
-
-  gap: 24px;
-}
-
-
-/* ==========================================================
-   CARD
-========================================================== */
-
-.home-industry-card {
-  position: relative;
-
-  min-height: 140px;
-
-  padding: 28px 20px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden;
-
-  text-align: center;
-
-  background: #ffffff;
-
-  border: 1px solid #eeeeee;
-
-  border-radius: 18px;
-
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.06);
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
-
-
-/* GARIS MERAH ATAS */
-
-.home-industry-card::before {
-  position: absolute;
-
-  top: 0;
-  left: 50%;
-
-  width: 55px;
-  height: 4px;
-
-  content: "";
-
-  background: #e31e24;
-
-  border-radius:
-    0 0 10px 10px;
-
-  transform:
-    translateX(-50%);
-}
-
-
-/* HOVER */
-
-.home-industry-card:hover {
-  border-color:
-    rgba(227, 30, 36, 0.25);
-
-  box-shadow:
-    0 18px 45px rgba(0, 0, 0, 0.10);
-
-  transform:
-    translateY(-7px);
-}
-
-
-/* NAMA INDUSTRI */
-
-.home-industry-card h3 {
-  margin: 0;
-
-  color: #e31e24;
-
-  font-size: 21px;
-  font-weight: 800;
-
-  line-height: 1.35;
-}
-
-
-/* ==========================================================
-   TABLET
-========================================================== */
-
-@media (max-width: 992px) {
-
-  .home-industry-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-  }
-
-}
-
-
-/* ==========================================================
-   MOBILE
-========================================================== */
-
-@media (max-width: 576px) {
-
-  .home-industry-section {
-    padding: 70px 0;
-  }
-
-  .home-industry-heading {
-    margin-bottom: 40px;
-  }
-
-  .home-industry-heading h2 {
-    font-size: 32px;
-  }
-
-  .home-industry-grid {
-    grid-template-columns: 1fr;
-
-    gap: 16px;
-  }
-
-  .home-industry-card {
-    min-height: 110px;
-  }
-
-}
-
-</style>
-
-
-<style id="home-portfolio-grid-only">
-
-/* ==========================================================
-   HOME PAGE - OUR PORTFOLIO ONLY
-========================================================== */
-
-.home-portfolio-section {
-  padding: 100px 0;
-  background: #ffffff;
-}
-
-
-/* ==========================================================
-   HEADING
-========================================================== */
-
-.home-portfolio-heading {
-  max-width: 780px;
-  margin: 0 auto 55px;
-  text-align: center;
-}
-
-.home-portfolio-eyebrow {
-  display: inline-block;
-  margin-bottom: 14px;
-
-  color: #e31e24;
-
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.home-portfolio-heading h2 {
-  margin: 0 0 18px;
-
-  color: #111111;
-
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.home-portfolio-heading p {
-  margin: 0;
-
-  color: #666666;
-
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-
-/* ==========================================================
-   GRID
-========================================================== */
-
-.home-portfolio-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
-
-  gap: 24px;
-
-  align-items: stretch;
-}
-
-
-/* ==========================================================
-   CARD
-========================================================== */
-
-.home-portfolio-card {
-  position: relative;
-
-  min-height: 340px;
-
-  padding: 34px 28px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  overflow: hidden;
-
-  background: #ffffff;
-
-  border: 1px solid #eeeeee;
-
-  border-radius: 18px;
-
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.06);
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
-
-
-/* GARIS MERAH ATAS */
-
-.home-portfolio-card::before {
-  position: absolute;
-
-  top: 0;
-  left: 50%;
-
-  width: 55px;
-  height: 4px;
-
-  content: "";
-
-  background: #e31e24;
-
-  border-radius:
-    0 0 10px 10px;
-
-  transform:
-    translateX(-50%);
-}
-
-
-/* HOVER */
-
-.home-portfolio-card:hover {
-  border-color:
-    rgba(227, 30, 36, 0.25);
-
-  box-shadow:
-    0 18px 45px rgba(0, 0, 0, 0.10);
-
-  transform:
-    translateY(-7px);
-}
-
-
-/* ==========================================================
-   ICON
-========================================================== */
-
-.home-portfolio-icon {
-  width: 68px;
-  height: 68px;
-
-  margin-bottom: 28px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: #e31e24;
-
-  background:
-    rgba(227, 30, 36, 0.07);
-
-  border:
-    1px solid rgba(227, 30, 36, 0.14);
-
-  border-radius: 16px;
-
-  transition:
-    color 0.3s ease,
-    background 0.3s ease,
-    transform 0.3s ease;
-}
-
-
-/* SVG ICON */
-
-.home-portfolio-icon svg {
-  width: 34px;
-  height: 34px;
-
-  stroke: currentColor;
-
-  stroke-width: 1.7;
-
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-
-/* ICON HOVER */
-
-.home-portfolio-card:hover
-.home-portfolio-icon {
-
-  color: #ffffff;
-
-  background: #e31e24;
-
-  transform:
-    translateY(-3px);
-}
-
-
-/* ==========================================================
-   CATEGORY
-========================================================== */
-
-.home-portfolio-category {
-  display: inline-block;
-
-  margin-bottom: 12px;
-
-  color: #e31e24;
-
-  font-size: 12px;
-  font-weight: 700;
-
-  letter-spacing: 1px;
-
-  text-transform: uppercase;
-}
-
-
-/* ==========================================================
-   TITLE
-========================================================== */
-
-.home-portfolio-card h3 {
-  margin: 0 0 14px;
-
-  color: #111111;
-
-  font-size: 23px;
-  font-weight: 700;
-
-  line-height: 1.3;
-}
-
-
-/* ==========================================================
-   DESCRIPTION
-========================================================== */
-
-.home-portfolio-card p {
-  margin: 0;
-
-  color: #666666;
-
-  font-size: 15px;
-
-  line-height: 1.75;
-}
-
-
-/* ==========================================================
-   TABLET
-========================================================== */
-
-@media (max-width: 992px) {
-
-  .home-portfolio-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-  }
-
-}
-
-
-/* ==========================================================
-   MOBILE
-========================================================== */
-
-@media (max-width: 576px) {
-
-  .home-portfolio-section {
-    padding: 70px 0;
-  }
-
-  .home-portfolio-heading {
-    margin-bottom: 40px;
-  }
-
-  .home-portfolio-heading h2 {
-    font-size: 32px;
-  }
-
-  .home-portfolio-grid {
-    grid-template-columns: 1fr;
-
-    gap: 18px;
-  }
-
-  .home-portfolio-card {
-    min-height: auto;
-
-    padding: 30px 25px;
-  }
-
-}
-
-</style>
-
-
-<style id="home-testimonial-grid-only">
-
-/* ==========================================================
-   HOME PAGE - TESTIMONIAL ONLY
-========================================================== */
-
-.home-testimonial-section {
-  padding: 100px 0;
-  background: #f7f7f8;
-}
-
-
-/* HEADING */
-
-.home-testimonial-heading {
-  max-width: 760px;
-  margin: 0 auto 55px;
-  text-align: center;
-}
-
-.home-testimonial-eyebrow {
-  display: inline-block;
-  margin-bottom: 14px;
-
-  color: #e31e24;
-
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.home-testimonial-heading h2 {
-  margin: 0 0 18px;
-
-  color: #111111;
-
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.home-testimonial-heading p {
-  margin: 0;
-
-  color: #666666;
-
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-
-/* ==========================================================
-   GRID
-========================================================== */
-
-.home-testimonial-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
-
-  gap: 24px;
-
-  align-items: stretch;
-}
-
-
-/* ==========================================================
-   CARD
-========================================================== */
-
-.home-testimonial-card {
-  position: relative;
-
-  min-height: 300px;
-
-  padding: 34px 30px;
-
-  display: flex;
-  flex-direction: column;
-
-  overflow: hidden;
-
-  background: #ffffff;
-
-  border: 1px solid #eeeeee;
-
-  border-radius: 18px;
-
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.06);
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
-
-
-/* GARIS MERAH ATAS */
-
-.home-testimonial-card::before {
-  position: absolute;
-
-  top: 0;
-  left: 50%;
-
-  width: 55px;
-  height: 4px;
-
-  content: "";
-
-  background: #e31e24;
-
-  border-radius:
-    0 0 10px 10px;
-
-  transform:
-    translateX(-50%);
-}
-
-
-/* HOVER */
-
-.home-testimonial-card:hover {
-  border-color:
-    rgba(227, 30, 36, 0.25);
-
-  box-shadow:
-    0 18px 45px rgba(0, 0, 0, 0.10);
-
-  transform:
-    translateY(-7px);
-}
-
-
-/* ==========================================================
-   STAR RATING
-========================================================== */
-
-.home-testimonial-rating {
-  display: flex;
-
-  gap: 5px;
-
-  margin-bottom: 24px;
-
-  color: #f5b301;
-
-  font-size: 22px;
-
-  line-height: 1;
-}
-
-
-/* ==========================================================
-   TESTIMONIAL TEXT
-========================================================== */
-
-.home-testimonial-text {
-  margin: 0 0 30px;
-
-  color: #444444;
-
-  font-size: 16px;
-  font-weight: 500;
-
-  line-height: 1.8;
-
-  flex-grow: 1;
-}
-
-
-/* ==========================================================
-   CLIENT
-========================================================== */
-
-.home-testimonial-client {
-  display: flex;
-
-  align-items: center;
-
-  gap: 14px;
-
-  padding-top: 22px;
-
-  border-top:
-    1px solid #eeeeee;
-}
-
-
-/* AVATAR */
-
-.home-testimonial-avatar {
-  width: 50px;
-  height: 50px;
-
-  flex: 0 0 50px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  color: #ffffff;
-
-  background: #e31e24;
-
-  border-radius: 50%;
-
-  font-size: 14px;
-  font-weight: 800;
-
-  letter-spacing: 0.5px;
-}
-
-
-/* CLIENT INFO */
-
-.home-testimonial-info h3 {
-  margin: 0 0 5px;
-
-  color: #111111;
-
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.home-testimonial-info span {
-  display: block;
-
-  color: #777777;
-
-  font-size: 13px;
-  font-weight: 500;
-}
-
-
-/* ==========================================================
-   TABLET
-========================================================== */
-
-@media (max-width: 992px) {
-
-  .home-testimonial-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-  }
-
-}
-
-
-/* ==========================================================
-   MOBILE
-========================================================== */
-
-@media (max-width: 576px) {
-
-  .home-testimonial-section {
-    padding: 70px 0;
-  }
-
-  .home-testimonial-heading {
-    margin-bottom: 40px;
-  }
-
-  .home-testimonial-heading h2 {
-    font-size: 32px;
-  }
-
-  .home-testimonial-grid {
-    grid-template-columns: 1fr;
-
-    gap: 18px;
-  }
-
-  .home-testimonial-card {
-    min-height: auto;
-
-    padding: 30px 25px;
-  }
-
-}
-
-</style>
-
-
-<style id="home-sector-grid-only">
-
-/* ==========================================================
-   HOME PAGE - SEKTOR INDUSTRI ONLY
-========================================================== */
-
-.home-sector-section {
-  padding: 100px 0;
-  background: #ffffff;
-}
-
-
-/* HEADING */
-
-.home-sector-heading {
-  max-width: 760px;
-  margin: 0 auto 55px;
-  text-align: center;
-}
-
-.home-sector-eyebrow {
-  display: inline-block;
-  margin-bottom: 14px;
-
-  color: #e31e24;
-
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.home-sector-heading h2 {
-  margin: 0 0 18px;
-
-  color: #111111;
-
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.home-sector-heading p {
-  margin: 0;
-
-  color: #666666;
-
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-
-/* ==========================================================
-   GRID
-========================================================== */
-
-.home-sector-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
-
-  gap: 24px;
-}
-
-
-/* ==========================================================
-   CARD
-========================================================== */
-
-.home-sector-card {
-  position: relative;
-
-  min-height: 210px;
-
-  padding: 32px 24px;
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
-
-  gap: 22px;
-
-  overflow: hidden;
-
-  text-align: center;
-
-  background: #ffffff;
-
-  border: 1px solid #eeeeee;
-
-  border-radius: 18px;
-
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.06);
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
-
-
-/* GARIS MERAH ATAS */
-
-.home-sector-card::before {
-  position: absolute;
-
-  top: 0;
-  left: 50%;
-
-  width: 55px;
-  height: 4px;
-
-  content: "";
-
-  background: #e31e24;
-
-  border-radius:
-    0 0 10px 10px;
-
-  transform:
-    translateX(-50%);
-}
-
-
-/* HOVER */
-
-.home-sector-card:hover {
-  border-color:
-    rgba(227, 30, 36, 0.25);
-
-  box-shadow:
-    0 18px 45px rgba(0, 0, 0, 0.10);
-
-  transform:
-    translateY(-7px);
-}
-
-
-/* ==========================================================
-   ICON
-========================================================== */
-
-.home-sector-icon {
-  width: 72px;
-  height: 72px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  color: #e31e24;
-
-  background:
-    rgba(227, 30, 36, 0.07);
-
-  border:
-    1px solid rgba(227, 30, 36, 0.14);
-
-  border-radius: 18px;
-
-  transition:
-    color 0.3s ease,
-    background 0.3s ease,
-    transform 0.3s ease;
-}
-
-
-/* SVG */
-
-.home-sector-icon svg {
-  width: 36px;
-  height: 36px;
-
-  fill: none;
-
-  stroke: currentColor;
-
-  stroke-width: 1.7;
-
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-
-/* ICON HOVER */
-
-.home-sector-card:hover
-.home-sector-icon {
-
-  color: #ffffff;
-
-  background: #e31e24;
-
-  transform:
-    translateY(-4px);
-}
-
-
-/* ==========================================================
-   TITLE
-========================================================== */
-
-.home-sector-card h3 {
-  margin: 0;
-
-  color: #111111;
-
-  font-size: 18px;
-  font-weight: 700;
-
-  line-height: 1.4;
-
-  text-transform: uppercase;
-}
-
-
-/* ==========================================================
-   TABLET
-========================================================== */
-
-@media (max-width: 992px) {
-
-  .home-sector-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-  }
-
-}
-
-
-/* ==========================================================
-   MOBILE
-========================================================== */
-
-@media (max-width: 576px) {
-
-  .home-sector-section {
-    padding: 70px 0;
-  }
-
-  .home-sector-heading {
-    margin-bottom: 40px;
-  }
-
-  .home-sector-heading h2 {
-    font-size: 32px;
-  }
-
-  .home-sector-grid {
-    grid-template-columns: 1fr;
-
-    gap: 16px;
-  }
-
-  .home-sector-card {
-    min-height: 180px;
-  }
-
-}
-
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style id="home-journey-clean-grid">
-
-/* ==========================================================
-   COMPANY JOURNEY - CLEAN GRID
-========================================================== */
-
-.home-journey-section {
-  padding: 100px 0;
-  background: #ffffff;
-}
-
-
-/* HEADING */
-
-.home-journey-heading {
-  max-width: 760px;
-  margin: 0 auto 55px;
-  text-align: center;
-}
-
-.home-journey-eyebrow {
-  display: inline-block;
-  margin-bottom: 14px;
-
-  color: #e31e24;
-
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.home-journey-heading h2 {
-  margin: 0 0 18px;
-
-  color: #111111;
-
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.home-journey-heading p {
-  margin: 0;
-
-  color: #666666;
-
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-
-/* ==========================================================
-   GRID
-========================================================== */
-
-.home-journey-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
-
-  gap: 24px;
-
-  position: relative;
-
-  /* PASTIKAN TIDAK ADA GARIS */
-  background: none !important;
-  border: none !important;
-}
-
-
-/* ==========================================================
-   CARD
-========================================================== */
-
-.home-journey-card {
-  position: relative;
-
-  min-height: 230px;
-
-  padding: 34px 28px;
-
-  overflow: hidden;
-
-  background:
-    linear-gradient(
-      145deg,
-      #ffffff 0%,
-      #ffffff 70%,
-      #fff8f8 100%
-    );
-
-  border:
-    1px solid rgba(227, 30, 36, 0.14);
-
-  border-radius: 20px;
-
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.07),
-    0 0 20px rgba(227, 30, 36, 0.03);
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
-
-
-/* GARIS MERAH PENDEK DI ATAS CARD */
-
-.home-journey-card::before {
-  position: absolute;
-
-  top: 0;
-  left: 50%;
-
-  width: 55px;
-  height: 4px;
-
-  content: "";
-
-  background: #e31e24;
-
-  border-radius: 0 0 10px 10px;
-
-  transform: translateX(-50%);
-}
-
-
-/* HOVER */
-
-.home-journey-card:hover {
-  border-color:
-    rgba(227, 30, 36, 0.40);
-
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.10),
-    0 0 28px rgba(227, 30, 36, 0.10);
-
-  transform:
-    translateY(-7px);
-}
-
-
-/* ==========================================================
-   YEAR
-========================================================== */
-
-.home-journey-year {
-  display: inline-flex;
-
-  margin-bottom: 24px;
-
-  padding: 8px 15px;
-
-  color: #e31e24;
-
-  background:
-    rgba(227, 30, 36, 0.07);
-
-  border:
-    1px solid rgba(227, 30, 36, 0.15);
-
-  border-radius: 999px;
-
-  font-size: 13px;
-  font-weight: 800;
-}
-
-
-/* ==========================================================
-   TITLE
-========================================================== */
-
-.home-journey-card h3 {
-  margin: 0 0 14px;
-
-  color: #111111;
-
-  font-size: 22px;
-  font-weight: 700;
-
-  line-height: 1.35;
-}
-
-
-/* ==========================================================
-   DESCRIPTION
-========================================================== */
-
-.home-journey-card p {
-  margin: 0;
-
-  color: #666666;
-
-  font-size: 15px;
-
-  line-height: 1.75;
-}
-
-
-/* ==========================================================
-   PASTIKAN TIDAK ADA TIMELINE
-========================================================== */
-
-.home-journey-section .timeline,
-.home-journey-section .timeline-line,
-.home-journey-section .timeline-dot,
-.home-journey-section .journey-line,
-.home-journey-section .journey-dot {
-  display: none !important;
-}
-
-.home-journey-grid::before,
-.home-journey-grid::after {
-  display: none !important;
-  content: none !important;
-}
-
-
-/* ==========================================================
-   TABLET
-========================================================== */
-
-@media (max-width: 992px) {
-
-  .home-journey-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-  }
-
-}
-
-
-/* ==========================================================
-   MOBILE
-========================================================== */
-
-@media (max-width: 576px) {
-
-  .home-journey-section {
-    padding: 70px 0;
-  }
-
-  .home-journey-heading {
-    margin-bottom: 40px;
-  }
-
-  .home-journey-heading h2 {
-    font-size: 32px;
-  }
-
-  .home-journey-grid {
-    grid-template-columns: 1fr;
-
-    gap: 18px;
-  }
-
-  .home-journey-card {
-    min-height: auto;
-
-    padding: 30px 25px;
-  }
-
-}
-
-</style>
-
 </head>
 
 <body>
@@ -5067,69 +3734,104 @@ Industries
 <!-- INDUSTRY -->
 <!-- ========================================= -->
 
+<section class="industry section">
 
-<!-- =========================
-     INDUSTRY
-========================= -->
-<section class="home-industry-section">
-  <div class="container">
+    <div class="container">
 
-    <div class="home-industry-heading">
+        <div class="section-title">
 
-      <span class="home-industry-eyebrow">
-        INDUSTRY
-      </span>
+            <h5>
 
-      <h2>
-        Industri Yang Kami Layani
-      </h2>
+                INDUSTRY
 
-      <p>
-        Solusi kami dapat diterapkan di berbagai sektor industri.
-      </p>
+            </h5>
+
+            <h2>
+
+                Industri Yang Kami Layani
+
+            </h2>
+
+            <p>
+
+                Solusi kami dapat diterapkan
+                di berbagai sektor industri.
+
+            </p>
+
+        </div>
+
+        <div class="industry-grid">
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-landmark"></i>
+
+                <h3>Pemerintah</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-building"></i>
+
+                <h3>BUMN</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-industry"></i>
+
+                <h3>Perusahaan</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-school"></i>
+
+                <h3>Pendidikan</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-hospital"></i>
+
+                <h3>Rumah Sakit</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-store"></i>
+
+                <h3>UMKM</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <h3>Retail</h3>
+
+            </div>
+
+            <div class="industry-card">
+
+                <i class="fa-solid fa-truck"></i>
+
+                <h3>Logistik</h3>
+
+            </div>
+
+        </div>
 
     </div>
 
-
-    <div class="home-industry-grid">
-
-      <div class="home-industry-card">
-        <h3>Pemerintah</h3>
-      </div>
-
-      <div class="home-industry-card">
-        <h3>BUMN</h3>
-      </div>
-
-      <div class="home-industry-card">
-        <h3>Perusahaan</h3>
-      </div>
-
-      <div class="home-industry-card">
-        <h3>Pendidikan</h3>
-      </div>
-
-      <div class="home-industry-card">
-        <h3>Rumah Sakit</h3>
-      </div>
-
-      <div class="home-industry-card">
-        <h3>UMKM</h3>
-      </div>
-
-      <div class="home-industry-card">
-        <h3>Retail</h3>
-      </div>
-
-      <div class="home-industry-card">
-        <h3>Logistik</h3>
-      </div>
-
-    </div>
-
-  </div>
 </section>
-
 
 <!-- ========================================= -->
 <!-- END PART 3 -->
@@ -5144,634 +3846,447 @@ FAQ
 <!-- PORTFOLIO -->
 <!-- ========================================= -->
 
+<section class="portfolio section">
 
-<!-- =========================
-     OUR PORTFOLIO
-========================= -->
-<section class="home-portfolio-section">
-  <div class="container">
+    <div class="container">
 
-    <div class="home-portfolio-heading">
+        <div class="section-title"
+             data-aos="fade-up">
 
-      <span class="home-portfolio-eyebrow">
-        OUR PORTFOLIO
-      </span>
+            <h5>
 
-      <h2>
-        Project &amp; Digital Solution
-      </h2>
+                OUR PORTFOLIO
 
-      <p>
-        Beberapa solusi digital yang kami kembangkan untuk perusahaan,
-        pemerintah, startup dan UMKM.
-      </p>
+            </h5>
+
+            <h2>
+
+                Project & Digital Solution
+
+            </h2>
+
+            <p>
+
+                Beberapa solusi digital yang kami kembangkan
+                untuk perusahaan, pemerintah,
+                startup dan UMKM.
+
+            </p>
+
+        </div>
+
+        <div class="portfolio-grid">
+
+            <div class="portfolio-card">
+
+                <div class="iti-letter-visual" role="img" aria-label="ERP visual"><span>ERP</span></div>
+
+                <div class="portfolio-content">
+
+                    <span>Enterprise</span>
+
+                    <h3>
+
+                        ERP System
+
+                    </h3>
+
+                    <p>
+
+                        Enterprise Resource Planning
+                        untuk perusahaan.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="portfolio-card">
+
+                <div class="iti-letter-visual" role="img" aria-label="WEB visual"><span>WEB</span></div>
+
+                <div class="portfolio-content">
+
+                    <span>Website</span>
+
+                    <h3>
+
+                        Corporate Website
+
+                    </h3>
+
+                    <p>
+
+                        Website Company Profile
+                        Responsive & SEO Ready.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="portfolio-card">
+
+                <div class="iti-letter-visual" role="img" aria-label="APP visual"><span>APP</span></div>
+
+                <div class="portfolio-content">
+
+                    <span>Mobile Apps</span>
+
+                    <h3>
+
+                        Android & iOS
+
+                    </h3>
+
+                    <p>
+
+                        Flutter Mobile Application
+                        dengan REST API.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="portfolio-card">
+
+                <div class="iti-letter-visual" role="img" aria-label="AI visual"><span>AI</span></div>
+
+                <div class="portfolio-content">
+
+                    <span>Artificial Intelligence</span>
+
+                    <h3>
+
+                        AI Automation
+
+                    </h3>
+
+                    <p>
+
+                        OCR, Chatbot,
+                        Machine Learning
+                        dan AI Assistant.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:50px;">
+
+            <a href="portfolio.html"
+               class="btn-primary">
+
+                Lihat Semua Portfolio
+
+            </a>
+
+        </div>
 
     </div>
 
-
-    <div class="home-portfolio-grid">
-
-
-      <!-- ERP SYSTEM -->
-      <article class="home-portfolio-card">
-
-        <div class="home-portfolio-icon" aria-hidden="true">
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <ellipse
-              cx="12"
-              cy="5"
-              rx="7"
-              ry="3"
-            />
-
-            <path
-              d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5"
-            />
-
-            <path
-              d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"
-            />
-          </svg>
-
-        </div>
-
-        <span class="home-portfolio-category">
-          Enterprise
-        </span>
-
-        <h3>
-          ERP System
-        </h3>
-
-        <p>
-          Enterprise Resource Planning untuk perusahaan.
-        </p>
-
-      </article>
-
-
-      <!-- CORPORATE WEBSITE -->
-      <article class="home-portfolio-card">
-
-        <div class="home-portfolio-icon" aria-hidden="true">
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="3"
-              y="4"
-              width="18"
-              height="16"
-              rx="2"
-            />
-
-            <path d="M3 8h18" />
-
-            <circle
-              cx="6"
-              cy="6"
-              r=".5"
-              fill="currentColor"
-              stroke="none"
-            />
-
-            <circle
-              cx="8"
-              cy="6"
-              r=".5"
-              fill="currentColor"
-              stroke="none"
-            />
-
-            <path
-              d="M8 14h8M12 11v6"
-            />
-          </svg>
-
-        </div>
-
-        <span class="home-portfolio-category">
-          Website
-        </span>
-
-        <h3>
-          Corporate Website
-        </h3>
-
-        <p>
-          Website Company Profile Responsive &amp; SEO Ready.
-        </p>
-
-      </article>
-
-
-      <!-- MOBILE APPS -->
-      <article class="home-portfolio-card">
-
-        <div class="home-portfolio-icon" aria-hidden="true">
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="7"
-              y="2"
-              width="10"
-              height="20"
-              rx="2"
-            />
-
-            <path d="M10 5h4" />
-
-            <circle
-              cx="12"
-              cy="18.5"
-              r="1"
-            />
-          </svg>
-
-        </div>
-
-        <span class="home-portfolio-category">
-          Mobile Apps
-        </span>
-
-        <h3>
-          Android &amp; iOS
-        </h3>
-
-        <p>
-          Flutter Mobile Application dengan REST API.
-        </p>
-
-      </article>
-
-
-      <!-- AI AUTOMATION -->
-      <article class="home-portfolio-card">
-
-        <div class="home-portfolio-icon" aria-hidden="true">
-
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.5 4.5A3 3 0 0 0 6.7 8
-                 3.5 3.5 0 0 0 5 14.5
-                 3.5 3.5 0 0 0 9 19
-                 3 3 0 0 0 12 21V3
-                 A3 3 0 0 0 9.5 4.5Z"
-            />
-
-            <path
-              d="M14.5 4.5A3 3 0 0 1 17.3 8
-                 3.5 3.5 0 0 1 19 14.5
-                 3.5 3.5 0 0 1 15 19
-                 3 3 0 0 1 12 21V3
-                 A3 3 0 0 1 14.5 4.5Z"
-            />
-
-            <path d="M8 10h2" />
-            <path d="M14 10h2" />
-            <path d="M8 15h2" />
-            <path d="M14 15h2" />
-          </svg>
-
-        </div>
-
-        <span class="home-portfolio-category">
-          Artificial Intelligence
-        </span>
-
-        <h3>
-          AI Automation
-        </h3>
-
-        <p>
-          OCR, Chatbot, Machine Learning dan AI Assistant.
-        </p>
-
-      </article>
-
-
-    </div>
-
-  </div>
 </section>
-
 
 <!-- ========================================= -->
 <!-- CLIENT -->
 <!-- ========================================= -->
 
+<section class="client section">
 
-<!-- =========================
-     SEKTOR INDUSTRI
-========================= -->
-<section class="home-sector-section">
-  <div class="container">
+    <div class="container">
 
-    <div class="home-sector-heading">
+        <div class="section-title">
 
-      <span class="home-sector-eyebrow">
-        SEKTOR INDUSTRI
-      </span>
+            <h5>
 
-      <h2>
-        Solusi untuk Berbagai Sektor
-      </h2>
+                SEKTOR INDUSTRI
 
-      <p>
-        Kami menghadirkan solusi teknologi yang dapat disesuaikan
-        dengan kebutuhan berbagai sektor industri.
-      </p>
+            </h5>
 
+            <h2>
+
+                Solusi untuk Berbagai Sektor
+
+            </h2>
+
+        </div>
+
+        <div class="client-grid">
+            <div class="sector-card">
+                <span class="sector-number">01</span>
+                <span class="sector-name">PERBANKAN</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">02</span>
+                <span class="sector-name">INVESTASI & BUMN</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">03</span>
+                <span class="sector-name">PEMERINTAHAN</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">04</span>
+                <span class="sector-name">OTOMOTIF</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">05</span>
+                <span class="sector-name">TEKNOLOGI</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">06</span>
+                <span class="sector-name">LOGISTIK</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">07</span>
+                <span class="sector-name">MANUFAKTUR</span>
+            </div>
+            <div class="sector-card">
+                <span class="sector-number">08</span>
+                <span class="sector-name">UMKM</span>
+            </div>
+        </div>
     </div>
-
-
-    <div class="home-sector-grid">
-
-
-      <!-- PERBANKAN -->
-      <article class="home-sector-card">
-
-        <div class="home-sector-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M3 10h18" />
-            <path d="M5 10v8" />
-            <path d="M9 10v8" />
-            <path d="M15 10v8" />
-            <path d="M19 10v8" />
-            <path d="M3 18h18" />
-            <path d="M2 21h20" />
-            <path d="M12 3 2 8h20L12 3Z" />
-          </svg>
-        </div>
-
-        <h3>Perbankan</h3>
-
-      </article>
-
-
-      <!-- INVESTASI & BUMN -->
-      <article class="home-sector-card">
-
-        <div class="home-sector-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M4 19V9" />
-            <path d="M10 19V13" />
-            <path d="M16 19V6" />
-            <path d="M22 19H2" />
-            <path d="m4 7 5-3 5 4 6-5" />
-            <path d="m17 3h3v3" />
-          </svg>
-        </div>
-
-        <h3>Investasi &amp; BUMN</h3>
-
-      </article>
-
-
-      <!-- PEMERINTAHAN -->
-      <article class="home-sector-card">
-
-        <div class="home-sector-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M3 10h18" />
-            <path d="M5 10v8" />
-            <path d="M10 10v8" />
-            <path d="M14 10v8" />
-            <path d="M19 10v8" />
-            <path d="M2 21h20" />
-            <path d="M12 3 3 8h18L12 3Z" />
-          </svg>
-        </div>
-
-        <h3>Pemerintahan</h3>
-
-      </article>
-
-
-      <!-- OTOMOTIF -->
-      <article class="home-sector-card">
-
-        <div class="home-sector-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="m5 16-2-1v-4l2-1 2-4h10l2 4 2 1v4l-2 1" />
-            <path d="M5 16h14" />
-            <circle cx="7" cy="16" r="2" />
-            <circle cx="17" cy="16" r="2" />
-            <path d="M7 10h10" />
-          </svg>
-        </div>
-
-        <h3>Otomotif</h3>
-
-      </article>
-
-
-      <!-- TEKNOLOGI -->
-      <article class="home-sector-card">
-
-        <div class="home-sector-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <rect x="4" y="4" width="16" height="16" rx="2" />
-            <path d="M9 9h6v6H9z" />
-            <path d="M9 1v3" />
-            <path d="M15 1v3" />
-            <path d="M9 20v3" />
-            <path d="M15 20v3" />
-            <path d="M1 9h3" />
-            <path d="M1 15h3" />
-            <path d="M20 9h3" />
-            <path d="M20 15h3" />
-          </svg>
-        </div>
-
-        <h3>Teknologi</h3>
-
-      </article>
-
-
-      <!-- LOGISTIK -->
-      <article class="home-sector-card">
-
-        <div class="home-sector-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M3 6h11v11H3z" />
-            <path d="M14 10h4l3 3v4h-7z" />
-            <circle cx="7" cy="18" r="2" />
-            <circle cx="18" cy="18" r="2" />
-          </svg>
-        </div>
-
-        <h3>Logistik</h3>
-
-      </article>
-
-
-      <!-- MANUFAKTUR -->
-      <article class="home-sector-card">
-
-        <div class="home-sector-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M3 21V9l6 3V9l6 3V5h4v16H3Z" />
-            <path d="M7 17h2" />
-            <path d="M12 17h2" />
-            <path d="M17 17h2" />
-          </svg>
-        </div>
-
-        <h3>Manufaktur</h3>
-
-      </article>
-
-
-      <!-- UMKM -->
-      <article class="home-sector-card">
-
-        <div class="home-sector-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M4 10v10h16V10" />
-            <path d="M3 4h18l-2 6H5L3 4Z" />
-            <path d="M8 10v10" />
-            <path d="M16 10v10" />
-            <path d="M9 15h6" />
-          </svg>
-        </div>
-
-        <h3>UMKM</h3>
-
-      </article>
-
-
-    </div>
-
-  </div>
 </section>
-
 
 <!-- ========================================= -->
 <!-- TESTIMONIAL -->
 <!-- ========================================= -->
 
+<section class="testimonial section">
 
-<!-- =========================
-     TESTIMONIAL
-========================= -->
-<section class="home-testimonial-section">
-  <div class="container">
+    <div class="container">
 
-    <div class="home-testimonial-heading">
+        <div class="section-title">
 
-      <span class="home-testimonial-eyebrow">
-        TESTIMONIAL
-      </span>
+            <h5>
 
-      <h2>
-        Apa Kata Klien Kami
-      </h2>
+                TESTIMONIAL
 
-      <p>
-        Kepercayaan dan kepuasan klien menjadi bagian penting
-        dalam setiap solusi digital yang kami kembangkan.
-      </p>
+            </h5>
+
+            <h2>
+
+                Apa Kata Klien Kami
+
+            </h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Pelayanan sangat profesional,
+                    hasil website sangat memuaskan.
+
+                </p>
+
+                <h4>
+
+                    Budi Santoso
+
+                </h4>
+
+                <span>
+
+                    CEO Startup
+
+                </span>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Tim sangat komunikatif,
+                    pengerjaan tepat waktu
+                    dan kualitas sangat baik.
+
+                </p>
+
+                <h4>
+
+                    Andi Pratama
+
+                </h4>
+
+                <span>
+
+                    Government Project
+
+                </span>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Sangat membantu proses
+                    transformasi digital perusahaan.
+
+                </p>
+
+                <h4>
+
+                    Dewi Lestari
+
+                </h4>
+
+                <span>
+
+                    Business Owner
+
+                </span>
+
+            </div>
+
+        </div>
 
     </div>
 
-
-    <div class="home-testimonial-grid">
-
-
-      <!-- TESTIMONIAL 1 -->
-      <article class="home-testimonial-card">
-
-        <div
-          class="home-testimonial-rating"
-          aria-label="Rating 5 dari 5 bintang"
-        >
-          <span>★</span>
-          <span>★</span>
-          <span>★</span>
-          <span>★</span>
-          <span>★</span>
-        </div>
-
-        <p class="home-testimonial-text">
-          “Pelayanan sangat profesional, hasil website sangat memuaskan.”
-        </p>
-
-        <div class="home-testimonial-client">
-          <div class="home-testimonial-avatar" aria-hidden="true">
-            BS
-          </div>
-
-          <div class="home-testimonial-info">
-            <h3>Budi Santoso</h3>
-            <span>CEO Startup</span>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- TESTIMONIAL 2 -->
-      <article class="home-testimonial-card">
-
-        <div
-          class="home-testimonial-rating"
-          aria-label="Rating 5 dari 5 bintang"
-        >
-          <span>★</span>
-          <span>★</span>
-          <span>★</span>
-          <span>★</span>
-          <span>★</span>
-        </div>
-
-        <p class="home-testimonial-text">
-          “Tim sangat komunikatif, pengerjaan tepat waktu dan kualitas sangat baik.”
-        </p>
-
-        <div class="home-testimonial-client">
-          <div class="home-testimonial-avatar" aria-hidden="true">
-            AP
-          </div>
-
-          <div class="home-testimonial-info">
-            <h3>Andi Pratama</h3>
-            <span>Government Project</span>
-          </div>
-        </div>
-
-      </article>
-
-
-      <!-- TESTIMONIAL 3 -->
-      <article class="home-testimonial-card">
-
-        <div
-          class="home-testimonial-rating"
-          aria-label="Rating 5 dari 5 bintang"
-        >
-          <span>★</span>
-          <span>★</span>
-          <span>★</span>
-          <span>★</span>
-          <span>★</span>
-        </div>
-
-        <p class="home-testimonial-text">
-          “Sangat membantu proses transformasi digital perusahaan.”
-        </p>
-
-        <div class="home-testimonial-client">
-          <div class="home-testimonial-avatar" aria-hidden="true">
-            DL
-          </div>
-
-          <div class="home-testimonial-info">
-            <h3>Dewi Lestari</h3>
-            <span>Business Owner</span>
-          </div>
-        </div>
-
-      </article>
-
-
-    </div>
-
-  </div>
 </section>
-
 
 <!-- ========================================= -->
 <!-- COMPANY TIMELINE -->
 <!-- ========================================= -->
 
+<section class="timeline section">
 
-<!-- =========================
-     COMPANY JOURNEY
-========================= -->
-<section class="home-journey-section">
-  <div class="container">
+    <div class="container">
 
-    <div class="home-journey-heading">
-      <span class="home-journey-eyebrow">
-        COMPANY JOURNEY
-      </span>
+        <div class="section-title">
 
-      <h2>Perjalanan Kami</h2>
+            <h5>
 
-      <p>
-        Perjalanan kami dalam mengembangkan solusi teknologi
-        dan inovasi digital.
-      </p>
+                COMPANY JOURNEY
+
+            </h5>
+
+            <h2>
+
+                Perjalanan Kami
+
+            </h2>
+
+        </div>
+
+        <div class="timeline-grid">
+
+            <div class="timeline-card">
+
+                <span>
+
+                    2023
+
+                </span>
+
+                <h3>
+
+                    Company Established
+
+                </h3>
+
+                <p>
+
+                    Memulai layanan
+                    Software Development.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+
+                    2024
+
+                </span>
+
+                <h3>
+
+                    Business Expansion
+
+                </h3>
+
+                <p>
+
+                    Menambah layanan
+                    AI, Cloud dan Cyber Security.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+
+                    2025
+
+                </span>
+
+                <h3>
+
+                    Super App
+
+                </h3>
+
+                <p>
+
+                    Mengembangkan
+                    Super App Ecosystem.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+
+                    Future
+
+                </span>
+
+                <h3>
+
+                    Global Innovation
+
+                </h3>
+
+                <p>
+
+                    Menjadi perusahaan
+                    teknologi kelas dunia.
+
+                </p>
+
+            </div>
+
+        </div>
+
     </div>
 
-
-    <div class="home-journey-grid">
-
-      <article class="home-journey-card">
-        <span class="home-journey-year">2023</span>
-
-        <h3>Company Established</h3>
-
-        <p>
-          Memulai layanan Software Development.
-        </p>
-      </article>
-
-
-      <article class="home-journey-card">
-        <span class="home-journey-year">2024</span>
-
-        <h3>Business Expansion</h3>
-
-        <p>
-          Menambah layanan AI, Cloud dan Cyber Security.
-        </p>
-      </article>
-
-
-      <article class="home-journey-card">
-        <span class="home-journey-year">2025</span>
-
-        <h3>Super App</h3>
-
-        <p>
-          Mengembangkan Super App Ecosystem.
-        </p>
-      </article>
-
-
-      <article class="home-journey-card">
-        <span class="home-journey-year">Future</span>
-
-        <h3>Global Innovation</h3>
-
-        <p>
-          Menjadi perusahaan teknologi kelas dunia.
-        </p>
-      </article>
-
-    </div>
-
-  </div>
 </section>
-
 
 <!-- ========================================= -->
 <!-- FAQ -->
@@ -5894,7 +4409,40 @@ FAQ
 <!-- DOWNLOAD COMPANY PROFILE -->
 <!-- ========================================= -->
 
+<section class="download section">
 
+    <div class="container">
+
+        <div class="download-box">
+
+            <h2>
+
+                Download Company Profile
+
+            </h2>
+
+            <p>
+
+                Pelajari layanan kami
+                secara lengkap melalui Company Profile.
+
+            </p>
+
+            <a href="assets/documents/Company-Profile.pdf"
+               target="_blank"
+               class="btn-primary">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+                Download PDF
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- ========================================= -->
 <!-- END PART 4 -->

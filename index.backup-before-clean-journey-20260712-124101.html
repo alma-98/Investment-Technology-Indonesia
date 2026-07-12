@@ -3675,230 +3675,302 @@ html body .about-home a.about-contact-outline:hover i {
 
 
 
-
-
-
-
-
-
-
-
-
-<style id="home-journey-clean-grid">
+<style id="company-journey-bright-grid">
 
 /* ==========================================================
-   COMPANY JOURNEY - CLEAN GRID
+   COMPANY JOURNEY - BRIGHT CARD GRID
 ========================================================== */
 
-.home-journey-section {
-  padding: 100px 0;
-  background: #ffffff;
-}
+/* SECTION */
 
-
-/* HEADING */
-
-.home-journey-heading {
-  max-width: 760px;
-  margin: 0 auto 55px;
-  text-align: center;
-}
-
-.home-journey-eyebrow {
-  display: inline-block;
-  margin-bottom: 14px;
-
-  color: #e31e24;
-
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.home-journey-heading h2 {
-  margin: 0 0 18px;
-
-  color: #111111;
-
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.home-journey-heading p {
-  margin: 0;
-
-  color: #666666;
-
-  font-size: 17px;
-  line-height: 1.8;
+.journey-section,
+.company-journey-section {
+  padding: 100px 0 !important;
+  background: #ffffff !important;
 }
 
 
 /* ==========================================================
-   GRID
+   HEADING
 ========================================================== */
 
-.home-journey-grid {
-  display: grid;
+.journey-section .section-header,
+.journey-section .section-heading,
+.company-journey-section .section-header,
+.company-journey-section .section-heading {
+  max-width: 760px !important;
+  margin: 0 auto 55px !important;
+  text-align: center !important;
+}
+
+
+/* ==========================================================
+   GRID CONTAINER
+========================================================== */
+
+.journey-section .timeline,
+.company-journey-section .timeline,
+.journey-section .journey-timeline,
+.company-journey-section .journey-timeline {
+  position: relative !important;
+
+  display: grid !important;
 
   grid-template-columns:
-    repeat(4, minmax(0, 1fr));
+    repeat(3, minmax(0, 1fr)) !important;
 
-  gap: 24px;
+  gap: 24px !important;
 
-  position: relative;
+  max-width: none !important;
 
-  /* PASTIKAN TIDAK ADA GARIS */
-  background: none !important;
-  border: none !important;
+  margin: 0 !important;
+
+  padding: 0 !important;
 }
 
 
 /* ==========================================================
-   CARD
+   HAPUS SEMUA GARIS TIMELINE
 ========================================================== */
 
-.home-journey-card {
-  position: relative;
+.journey-section .timeline::before,
+.journey-section .timeline::after,
+.company-journey-section .timeline::before,
+.company-journey-section .timeline::after,
+.journey-section .journey-timeline::before,
+.journey-section .journey-timeline::after,
+.company-journey-section .journey-timeline::before,
+.company-journey-section .journey-timeline::after {
+  display: none !important;
+  content: none !important;
+}
 
-  min-height: 230px;
 
-  padding: 34px 28px;
+/* ==========================================================
+   ITEM MENJADI CARD GRID
+========================================================== */
 
-  overflow: hidden;
+.journey-section .timeline-item,
+.company-journey-section .timeline-item,
+.journey-section .journey-item,
+.company-journey-section .journey-item {
+  position: relative !important;
+
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+
+  width: 100% !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  transform: none !important;
+
+  float: none !important;
+}
+
+
+/* ==========================================================
+   HAPUS DOT / TITIK TIMELINE
+========================================================== */
+
+.journey-section .timeline-dot,
+.company-journey-section .timeline-dot,
+.journey-section .journey-dot,
+.company-journey-section .journey-dot {
+  display: none !important;
+}
+
+
+/* ==========================================================
+   CONTENT MENJADI CARD TERANG
+========================================================== */
+
+.journey-section .timeline-content,
+.company-journey-section .timeline-content,
+.journey-section .journey-content,
+.company-journey-section .journey-content {
+  position: relative !important;
+
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 230px !important;
+
+  margin: 0 !important;
+
+  padding: 34px 30px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+
+  overflow: hidden !important;
+
+  text-align: left !important;
 
   background:
     linear-gradient(
       145deg,
       #ffffff 0%,
-      #ffffff 70%,
-      #fff8f8 100%
-    );
+      #ffffff 65%,
+      #fff7f7 100%
+    ) !important;
 
   border:
-    1px solid rgba(227, 30, 36, 0.14);
+    1px solid rgba(227, 30, 36, 0.16) !important;
 
-  border-radius: 20px;
+  border-radius: 20px !important;
 
   box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.07),
-    0 0 20px rgba(227, 30, 36, 0.03);
+    0 12px 35px rgba(0, 0, 0, 0.06),
+    0 0 24px rgba(227, 30, 36, 0.04) !important;
+
+  transform: none !important;
 
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
-    border-color 0.3s ease;
+    border-color 0.3s ease !important;
 }
 
 
-/* GARIS MERAH PENDEK DI ATAS CARD */
+/* GARIS MERAH TERANG DI ATAS CARD */
 
-.home-journey-card::before {
-  position: absolute;
+.journey-section .timeline-content::before,
+.company-journey-section .timeline-content::before,
+.journey-section .journey-content::before,
+.company-journey-section .journey-content::before {
+  position: absolute !important;
 
-  top: 0;
-  left: 50%;
+  top: 0 !important;
+  left: 0 !important;
 
-  width: 55px;
-  height: 4px;
+  width: 100% !important;
+  height: 4px !important;
 
-  content: "";
+  content: "" !important;
 
-  background: #e31e24;
-
-  border-radius: 0 0 10px 10px;
-
-  transform: translateX(-50%);
+  background:
+    linear-gradient(
+      90deg,
+      #e31e24,
+      #ff5b60,
+      #e31e24
+    ) !important;
 }
 
 
-/* HOVER */
+/* ==========================================================
+   HOVER - NYALA TERANG
+========================================================== */
 
-.home-journey-card:hover {
+.journey-section .timeline-content:hover,
+.company-journey-section .timeline-content:hover,
+.journey-section .journey-content:hover,
+.company-journey-section .journey-content:hover {
   border-color:
-    rgba(227, 30, 36, 0.40);
+    rgba(227, 30, 36, 0.45) !important;
 
   box-shadow:
     0 20px 50px rgba(0, 0, 0, 0.10),
-    0 0 28px rgba(227, 30, 36, 0.10);
+    0 0 32px rgba(227, 30, 36, 0.12) !important;
 
   transform:
-    translateY(-7px);
+    translateY(-7px) !important;
 }
 
 
 /* ==========================================================
-   YEAR
+   TAHUN / LABEL
 ========================================================== */
 
-.home-journey-year {
-  display: inline-flex;
+.journey-section .timeline-year,
+.company-journey-section .timeline-year,
+.journey-section .journey-year,
+.company-journey-section .journey-year {
+  display: inline-flex !important;
 
-  margin-bottom: 24px;
+  width: fit-content !important;
 
-  padding: 8px 15px;
+  margin-bottom: 18px !important;
 
-  color: #e31e24;
+  padding: 8px 14px !important;
+
+  color: #e31e24 !important;
 
   background:
-    rgba(227, 30, 36, 0.07);
+    rgba(227, 30, 36, 0.07) !important;
 
   border:
-    1px solid rgba(227, 30, 36, 0.15);
+    1px solid rgba(227, 30, 36, 0.15) !important;
 
-  border-radius: 999px;
+  border-radius: 999px !important;
 
-  font-size: 13px;
-  font-weight: 800;
+  font-size: 13px !important;
+  font-weight: 800 !important;
 }
 
 
 /* ==========================================================
-   TITLE
+   JUDUL CARD
 ========================================================== */
 
-.home-journey-card h3 {
-  margin: 0 0 14px;
+.journey-section .timeline-content h3,
+.company-journey-section .timeline-content h3,
+.journey-section .journey-content h3,
+.company-journey-section .journey-content h3 {
+  margin:
+    0 0 14px !important;
 
-  color: #111111;
+  color:
+    #111111 !important;
 
-  font-size: 22px;
-  font-weight: 700;
+  font-size:
+    22px !important;
 
-  line-height: 1.35;
+  font-weight:
+    700 !important;
+
+  line-height:
+    1.35 !important;
 }
 
 
 /* ==========================================================
-   DESCRIPTION
+   DESKRIPSI
 ========================================================== */
 
-.home-journey-card p {
-  margin: 0;
+.journey-section .timeline-content p,
+.company-journey-section .timeline-content p,
+.journey-section .journey-content p,
+.company-journey-section .journey-content p {
+  margin: 0 !important;
 
-  color: #666666;
+  color:
+    #666666 !important;
 
-  font-size: 15px;
+  font-size:
+    15px !important;
 
-  line-height: 1.75;
+  line-height:
+    1.75 !important;
 }
 
 
 /* ==========================================================
-   PASTIKAN TIDAK ADA TIMELINE
+   HAPUS PANAH TIMELINE JIKA ADA
 ========================================================== */
 
-.home-journey-section .timeline,
-.home-journey-section .timeline-line,
-.home-journey-section .timeline-dot,
-.home-journey-section .journey-line,
-.home-journey-section .journey-dot {
-  display: none !important;
-}
-
-.home-journey-grid::before,
-.home-journey-grid::after {
+.journey-section .timeline-content::after,
+.company-journey-section .timeline-content::after,
+.journey-section .journey-content::after,
+.company-journey-section .journey-content::after {
   display: none !important;
   content: none !important;
 }
@@ -3910,9 +3982,12 @@ html body .about-home a.about-contact-outline:hover i {
 
 @media (max-width: 992px) {
 
-  .home-journey-grid {
+  .journey-section .timeline,
+  .company-journey-section .timeline,
+  .journey-section .journey-timeline,
+  .company-journey-section .journey-timeline {
     grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+      repeat(2, minmax(0, 1fr)) !important;
   }
 
 }
@@ -3924,28 +3999,356 @@ html body .about-home a.about-contact-outline:hover i {
 
 @media (max-width: 576px) {
 
-  .home-journey-section {
-    padding: 70px 0;
+  .journey-section,
+  .company-journey-section {
+    padding:
+      70px 0 !important;
   }
 
-  .home-journey-heading {
-    margin-bottom: 40px;
+  .journey-section .timeline,
+  .company-journey-section .timeline,
+  .journey-section .journey-timeline,
+  .company-journey-section .journey-timeline {
+    grid-template-columns:
+      1fr !important;
+
+    gap:
+      18px !important;
   }
 
-  .home-journey-heading h2 {
-    font-size: 32px;
+  .journey-section .timeline-content,
+  .company-journey-section .timeline-content,
+  .journey-section .journey-content,
+  .company-journey-section .journey-content {
+    min-height:
+      auto !important;
+
+    padding:
+      30px 25px !important;
   }
 
-  .home-journey-grid {
-    grid-template-columns: 1fr;
+}
 
-    gap: 18px;
+</style>
+
+
+<style id="force-remove-journey-lines">
+
+/* ==========================================================
+   FORCE REMOVE ALL COMPANY JOURNEY TIMELINE LINES
+========================================================== */
+
+/* HAPUS GARIS DARI CONTAINER TIMELINE */
+
+.journey-section .timeline::before,
+.journey-section .timeline::after,
+.company-journey-section .timeline::before,
+.company-journey-section .timeline::after,
+
+.journey-section .journey-timeline::before,
+.journey-section .journey-timeline::after,
+.company-journey-section .journey-timeline::before,
+.company-journey-section .journey-timeline::after,
+
+.journey-section .timeline-wrapper::before,
+.journey-section .timeline-wrapper::after,
+.company-journey-section .timeline-wrapper::before,
+.company-journey-section .timeline-wrapper::after,
+
+.journey-section .journey-wrapper::before,
+.journey-section .journey-wrapper::after,
+.company-journey-section .journey-wrapper::before,
+.company-journey-section .journey-wrapper::after {
+  display: none !important;
+  visibility: hidden !important;
+  content: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* HAPUS GARIS DARI SETIAP ITEM */
+
+.journey-section .timeline-item::before,
+.journey-section .timeline-item::after,
+.company-journey-section .timeline-item::before,
+.company-journey-section .timeline-item::after,
+
+.journey-section .journey-item::before,
+.journey-section .journey-item::after,
+.company-journey-section .journey-item::before,
+.company-journey-section .journey-item::after {
+  display: none !important;
+  visibility: hidden !important;
+  content: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* HAPUS DOT / BULATAN TIMELINE */
+
+.journey-section .timeline-dot,
+.company-journey-section .timeline-dot,
+.journey-section .journey-dot,
+.company-journey-section .journey-dot,
+
+.journey-section .timeline-marker,
+.company-journey-section .timeline-marker,
+.journey-section .journey-marker,
+.company-journey-section .journey-marker {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+
+/* HAPUS GARIS / PANAH DARI CONTENT */
+
+.journey-section .timeline-content::after,
+.company-journey-section .timeline-content::after,
+.journey-section .journey-content::after,
+.company-journey-section .journey-content::after {
+  display: none !important;
+  visibility: hidden !important;
+  content: none !important;
+  border: 0 !important;
+}
+
+
+/* PASTIKAN GRID BERSIH */
+
+.journey-section .timeline,
+.company-journey-section .timeline,
+.journey-section .journey-timeline,
+.company-journey-section .journey-timeline {
+  border: none !important;
+  background-image: none !important;
+}
+
+
+/* PASTIKAN ITEM TIDAK PUNYA GARIS */
+
+.journey-section .timeline-item,
+.company-journey-section .timeline-item,
+.journey-section .journey-item,
+.company-journey-section .journey-item {
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  background-image: none !important;
+}
+
+</style>
+
+
+<style id="journey-final-no-line">
+
+/* ==========================================================
+   COMPANY JOURNEY - FORCE REMOVE CENTER LINE
+========================================================== */
+
+/*
+   MATIKAN SEMUA PSEUDO ELEMENT YANG BIASA
+   DIPAKAI SEBAGAI GARIS TIMELINE
+*/
+
+.journey-section .timeline::before,
+.journey-section .timeline::after,
+.journey-section .journey-timeline::before,
+.journey-section .journey-timeline::after,
+
+.company-journey-section .timeline::before,
+.company-journey-section .timeline::after,
+.company-journey-section .journey-timeline::before,
+.company-journey-section .journey-timeline::after,
+
+.journey-section .timeline-container::before,
+.journey-section .timeline-container::after,
+.company-journey-section .timeline-container::before,
+.company-journey-section .timeline-container::after,
+
+.journey-section .timeline-wrapper::before,
+.journey-section .timeline-wrapper::after,
+.company-journey-section .timeline-wrapper::before,
+.company-journey-section .timeline-wrapper::after,
+
+.journey-section .journey-wrapper::before,
+.journey-section .journey-wrapper::after,
+.company-journey-section .journey-wrapper::before,
+.company-journey-section .journey-wrapper::after {
+  content: none !important;
+  display: none !important;
+  position: static !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
+
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+
+/* ==========================================================
+   HAPUS ELEMEN GARIS ASLI JIKA ADA
+========================================================== */
+
+.journey-section .timeline-line,
+.journey-section .journey-line,
+.journey-section .center-line,
+.journey-section .vertical-line,
+.journey-section .line,
+
+.company-journey-section .timeline-line,
+.company-journey-section .journey-line,
+.company-journey-section .center-line,
+.company-journey-section .vertical-line,
+.company-journey-section .line {
+  display: none !important;
+  visibility: hidden !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  border: 0 !important;
+
+  background: none !important;
+
+  opacity: 0 !important;
+}
+
+
+/* ==========================================================
+   PASTIKAN CONTAINER TIDAK MEMILIKI BACKGROUND GARIS
+========================================================== */
+
+.journey-section .timeline,
+.journey-section .journey-timeline,
+.journey-section .timeline-container,
+.journey-section .timeline-wrapper,
+.journey-section .journey-wrapper,
+
+.company-journey-section .timeline,
+.company-journey-section .journey-timeline,
+.company-journey-section .timeline-container,
+.company-journey-section .timeline-wrapper,
+.company-journey-section .journey-wrapper {
+  background: transparent !important;
+  background-image: none !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+
+  box-shadow: none !important;
+}
+
+
+/* ==========================================================
+   HAPUS DOT / MARKER
+========================================================== */
+
+.journey-section .timeline-dot,
+.journey-section .journey-dot,
+.journey-section .timeline-marker,
+.journey-section .journey-marker,
+
+.company-journey-section .timeline-dot,
+.company-journey-section .journey-dot,
+.company-journey-section .timeline-marker,
+.company-journey-section .journey-marker {
+  display: none !important;
+}
+
+
+/* ==========================================================
+   HAPUS GARIS DARI ITEM
+========================================================== */
+
+.journey-section .timeline-item::before,
+.journey-section .timeline-item::after,
+.journey-section .journey-item::before,
+.journey-section .journey-item::after,
+
+.company-journey-section .timeline-item::before,
+.company-journey-section .timeline-item::after,
+.company-journey-section .journey-item::before,
+.company-journey-section .journey-item::after {
+  content: none !important;
+  display: none !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  border: 0 !important;
+
+  background: none !important;
+}
+
+
+/* ==========================================================
+   PASTIKAN GRID CARD BERSIH
+========================================================== */
+
+.journey-section .timeline,
+.journey-section .journey-timeline,
+.company-journey-section .timeline,
+.company-journey-section .journey-timeline {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr)) !important;
+
+  gap: 24px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+  .journey-section .timeline,
+  .journey-section .journey-timeline,
+  .company-journey-section .timeline,
+  .company-journey-section .journey-timeline {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
   }
 
-  .home-journey-card {
-    min-height: auto;
+}
 
-    padding: 30px 25px;
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+
+  .journey-section .timeline,
+  .journey-section .journey-timeline,
+  .company-journey-section .timeline,
+  .company-journey-section .journey-timeline {
+    grid-template-columns:
+      1fr !important;
   }
 
 }
@@ -5701,77 +6104,125 @@ FAQ
 <!-- COMPANY TIMELINE -->
 <!-- ========================================= -->
 
+<section class="timeline section">
 
-<!-- =========================
-     COMPANY JOURNEY
-========================= -->
-<section class="home-journey-section">
-  <div class="container">
+    <div class="container">
 
-    <div class="home-journey-heading">
-      <span class="home-journey-eyebrow">
-        COMPANY JOURNEY
-      </span>
+        <div class="section-title">
 
-      <h2>Perjalanan Kami</h2>
+            <h5>
 
-      <p>
-        Perjalanan kami dalam mengembangkan solusi teknologi
-        dan inovasi digital.
-      </p>
+                COMPANY JOURNEY
+
+            </h5>
+
+            <h2>
+
+                Perjalanan Kami
+
+            </h2>
+
+        </div>
+
+        <div class="timeline-grid">
+
+            <div class="timeline-card">
+
+                <span>
+
+                    2023
+
+                </span>
+
+                <h3>
+
+                    Company Established
+
+                </h3>
+
+                <p>
+
+                    Memulai layanan
+                    Software Development.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+
+                    2024
+
+                </span>
+
+                <h3>
+
+                    Business Expansion
+
+                </h3>
+
+                <p>
+
+                    Menambah layanan
+                    AI, Cloud dan Cyber Security.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+
+                    2025
+
+                </span>
+
+                <h3>
+
+                    Super App
+
+                </h3>
+
+                <p>
+
+                    Mengembangkan
+                    Super App Ecosystem.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+
+                    Future
+
+                </span>
+
+                <h3>
+
+                    Global Innovation
+
+                </h3>
+
+                <p>
+
+                    Menjadi perusahaan
+                    teknologi kelas dunia.
+
+                </p>
+
+            </div>
+
+        </div>
+
     </div>
 
-
-    <div class="home-journey-grid">
-
-      <article class="home-journey-card">
-        <span class="home-journey-year">2023</span>
-
-        <h3>Company Established</h3>
-
-        <p>
-          Memulai layanan Software Development.
-        </p>
-      </article>
-
-
-      <article class="home-journey-card">
-        <span class="home-journey-year">2024</span>
-
-        <h3>Business Expansion</h3>
-
-        <p>
-          Menambah layanan AI, Cloud dan Cyber Security.
-        </p>
-      </article>
-
-
-      <article class="home-journey-card">
-        <span class="home-journey-year">2025</span>
-
-        <h3>Super App</h3>
-
-        <p>
-          Mengembangkan Super App Ecosystem.
-        </p>
-      </article>
-
-
-      <article class="home-journey-card">
-        <span class="home-journey-year">Future</span>
-
-        <h3>Global Innovation</h3>
-
-        <p>
-          Menjadi perusahaan teknologi kelas dunia.
-        </p>
-      </article>
-
-    </div>
-
-  </div>
 </section>
-
 
 <!-- ========================================= -->
 <!-- FAQ -->
@@ -5894,7 +6345,40 @@ FAQ
 <!-- DOWNLOAD COMPANY PROFILE -->
 <!-- ========================================= -->
 
+<section class="download section">
 
+    <div class="container">
+
+        <div class="download-box">
+
+            <h2>
+
+                Download Company Profile
+
+            </h2>
+
+            <p>
+
+                Pelajari layanan kami
+                secara lengkap melalui Company Profile.
+
+            </p>
+
+            <a href="assets/documents/Company-Profile.pdf"
+               target="_blank"
+               class="btn-primary">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+                Download PDF
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- ========================================= -->
 <!-- END PART 4 -->
