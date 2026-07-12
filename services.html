@@ -48,6 +48,190 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
+
+<style id="services-page-grid-redesign-final">
+
+/* ========================================
+   SERVICES PAGE - NO IMAGE CARD GRID
+======================================== */
+
+/* Logo wrapper kosong tidak mengambil ruang */
+header .logo,
+#loading .loader img,
+.intro-image {
+    display: none !important;
+}
+
+/* Header tetap rapi tanpa logo */
+header .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+}
+
+/* INTRO TANPA IMAGE */
+.services-intro .intro-grid,
+.intro .intro-grid,
+.intro-grid {
+    display: block !important;
+}
+
+.services-intro .intro-content,
+.intro .intro-content,
+.intro-content {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.intro-content h3,
+.intro-content p {
+    text-align: center !important;
+}
+
+.intro-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+    max-width: 800px !important;
+    margin: 30px auto 0 !important;
+}
+
+.intro-list > div {
+    padding: 16px 20px !important;
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 14px !important;
+}
+
+/* ========================================
+   SERVICES GRID
+======================================== */
+
+.services-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+    align-items: stretch !important;
+}
+
+/* SERVICE CARD */
+.services-grid .service-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 290px !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 36px 30px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    box-shadow: none !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+/* HOVER */
+.services-grid .service-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ICON BOX */
+.services-grid .service-card .service-icon {
+    width: 68px !important;
+    height: 68px !important;
+    min-width: 68px !important;
+    margin: 0 0 22px !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fff1f2 !important;
+    border-radius: 18px !important;
+
+    color: #dc2626 !important;
+}
+
+/* ICON */
+.services-grid .service-card .service-icon i {
+    margin: 0 !important;
+    color: #dc2626 !important;
+    font-size: 29px !important;
+}
+
+/* TITLE */
+.services-grid .service-card h3 {
+    margin: 0 0 14px !important;
+    color: #111111 !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    line-height: 1.35 !important;
+    text-align: center !important;
+}
+
+/* DESCRIPTION */
+.services-grid .service-card p {
+    margin: 0 !important;
+    color: #666666 !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+    text-align: center !important;
+}
+
+/* SECTION TITLE */
+.services .section-title,
+.services-section .section-title {
+    text-align: center !important;
+}
+
+.services .section-title p,
+.services-section .section-title p {
+    max-width: 850px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .services-grid,
+    .intro-list {
+        grid-template-columns: 1fr !important;
+    }
+
+    .services-grid .service-card {
+        min-height: 250px !important;
+        padding: 30px 24px !important;
+    }
+}
+
+</style>
+
 </head>
 
 <body>
@@ -60,8 +244,7 @@ href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
 <div class="loader">
 
-<img src="assets/images/logo/logo.png"
-alt="Investment Technology Indonesia">
+
 
 <h2>Loading...</h2>
 
@@ -81,8 +264,7 @@ alt="Investment Technology Indonesia">
 
 <a href="index.html">
 
-<img src="assets/images/logo/logo.png"
-alt="Investment Technology Indonesia">
+
 
 </a>
 
@@ -250,8 +432,7 @@ UMKM maupun startup.
 <div class="intro-image"
 data-aos="fade-right">
 
-<img src="assets/images/services/services-banner.jpg"
-alt="Services">
+
 
 </div>
 
@@ -1599,9 +1780,7 @@ Hubungi Kami
 
 <div class="footer-item">
 
-<img src="assets/images/logo/logo.png"
-class="footer-logo"
-alt="Investment Technology Indonesia">
+
 
 <h3>
 
