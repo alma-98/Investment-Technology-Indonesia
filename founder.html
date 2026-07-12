@@ -204,6 +204,80 @@ href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
 </style>
 
+
+<style id="professional-summary-cards-style">
+
+/* PROFESSIONAL SUMMARY CARDS */
+.professional-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.professional-expertise-card {
+    min-height: 210px;
+    padding: 32px 28px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.professional-expertise-card:hover {
+    transform: translateY(-6px);
+    border-color: #dc2626;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.professional-expertise-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    background: #fff1f2;
+    color: #dc2626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.professional-expertise-card h4 {
+    margin: 0 0 12px;
+    color: #111111;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.professional-expertise-card p {
+    margin: 0;
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+@media (max-width: 900px) {
+    .professional-expertise-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .professional-expertise-card {
+        min-height: auto;
+        padding: 26px 22px;
+    }
+}
+
+</style>
+
 </head>
 
 <body>
@@ -1675,63 +1749,50 @@ document.getElementById("popup-chat").style.display="none";
 
 }
 
-</script>
 
-</body>
+<div class="professional-expertise-grid">
 
-</html>
-<div class="founder-focus-grid">
+    <div class="professional-expertise-card">
+        <div class="professional-expertise-icon">
+            &lt;/&gt;
+        
+<div class="professional-expertise-grid">
 
-    <div class="founder-focus-card" data-aos="fade-up">
-        <div class="founder-focus-icon">
-            <i class="fas fa-code" aria-hidden="true"></i>
+    <div class="professional-expertise-card">
+        <div class="professional-expertise-icon">
+            &lt;/&gt;
         </div>
-        <div class="founder-focus-content">
-            <h4>Software Engineering</h4>
-            <p>Enterprise Application, ERP, CRM, Web &amp; Mobile Development.</p>
-        </div>
+        <h4>Software Engineering</h4>
+        <p>
+            Enterprise Application, ERP, CRM,
+            Web &amp; Mobile Development.
+        </p>
     </div>
 
-    <div class="founder-focus-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="founder-focus-icon">
-            <i class="fas fa-brain" aria-hidden="true"></i>
+    <div class="professional-expertise-card">
+        <div class="professional-expertise-icon">
+            AI
         </div>
-        <div class="founder-focus-content">
-            <h4>Artificial Intelligence</h4>
-            <p>Machine Learning, NLP, Computer Vision &amp; AI Automation.</p>
-        </div>
+        <h4>Artificial Intelligence</h4>
+        <p>
+            Machine Learning, NLP,
+            Computer Vision &amp; AI Automation.
+        </p>
     </div>
 
-    <div class="founder-focus-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="founder-focus-icon">
-            <i class="fas fa-cloud" aria-hidden="true"></i>
+    <div class="professional-expertise-card">
+        <div class="professional-expertise-icon">
+            ☁
         </div>
-        <div class="founder-focus-content">
-            <h4>Cloud &amp; Infrastructure</h4>
-            <p>Cloud Computing, Server, Networking dan Cyber Security.</p>
-        </div>
+        <h4>Cloud &amp; Infrastructure</h4>
+        <p>
+            Cloud Computing, Server,
+            Networking dan Cyber Security.
+        </p>
     </div>
 
 </div>
-
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ======================================== -->
-<!-- CORE EXPERTISE -->
-<!-- ======================================== -->
-
-<section class="expertise section">
-
-<div class="container">
-
-<div class="section-title">
-
-<h5>CORE EXPERTISE</h5>
+CORE EXPERTISE</h5>
 
 <h2>Bidang Keahlian</h2>
 
@@ -5334,3 +5395,210 @@ document.getElementById("popup-chat").style.display="none";
 </body>
 
 </html>
+
+<style id="force-founder-expertise-grid">
+/* FORCE 3 EXPERTISE CARDS SEJAJAR */
+
+/* Container kartu keahlian */
+.professional-expertise-grid,
+.expertise-grid,
+.skills-grid,
+.summary-grid .skills,
+.summary-grid .expertise-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+    align-items: stretch !important;
+}
+
+/* Kartu */
+.professional-expertise-card,
+.expertise-card,
+.skill-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 30px 24px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 18px !important;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .professional-expertise-grid,
+    .expertise-grid,
+    .skills-grid,
+    .summary-grid .skills,
+    .summary-grid .expertise-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* HP */
+@media (max-width: 600px) {
+    .professional-expertise-grid,
+    .expertise-grid,
+    .skills-grid,
+    .summary-grid .skills,
+    .summary-grid .expertise-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+</style>
+
+
+<style id="fix-professional-summary-layout">
+/* ========================================
+   PROFESSIONAL SUMMARY - FINAL LAYOUT
+======================================== */
+
+/* Fokus Utama full width */
+.professional-summary .summary-grid {
+    display: block !important;
+    width: 100% !important;
+}
+
+.professional-summary .summary-left {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto 40px !important;
+}
+
+/* 3 kartu sejajar */
+.professional-summary .summary-right {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* Desain kartu */
+.professional-summary .summary-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 230px !important;
+    margin: 0 !important;
+    padding: 34px 28px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease !important;
+}
+
+.professional-summary .summary-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Icon */
+.professional-summary .summary-card i {
+    width: 60px !important;
+    height: 60px !important;
+    margin: 0 0 22px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fff1f2 !important;
+    border-radius: 16px !important;
+
+    color: #dc2626 !important;
+    font-size: 26px !important;
+}
+
+/* Judul */
+.professional-summary .summary-card h4 {
+    margin: 0 0 12px !important;
+    color: #111111 !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    line-height: 1.3 !important;
+}
+
+/* Deskripsi */
+.professional-summary .summary-card p {
+    margin: 0 !important;
+    color: #666666 !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .professional-summary .summary-right {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .professional-summary .summary-right {
+        grid-template-columns: 1fr !important;
+    }
+
+    .professional-summary .summary-card {
+        min-height: 200px !important;
+    }
+}
+</style>
+
+
+<style id="professional-summary-left-align">
+/* PROFESSIONAL SUMMARY - RATA KIRI */
+
+.professional-summary .section-title,
+.professional-summary .summary-left {
+    text-align: left !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.professional-summary .section-title h5,
+.professional-summary .section-title h2,
+.professional-summary .section-title p,
+.professional-summary .summary-left h3,
+.professional-summary .summary-left p {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.professional-summary .section-title p {
+    max-width: 900px !important;
+}
+
+.professional-summary .summary-left {
+    max-width: 900px !important;
+    margin-bottom: 40px !important;
+}
+</style>
+
