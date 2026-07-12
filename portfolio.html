@@ -218,6 +218,182 @@ href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 }
 </style>
 
+
+<style id="digital-innovation-final-style">
+
+/* =========================================
+   DIGITAL INNOVATION GRID CARDS
+   ========================================= */
+
+.digital-innovation-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    width: 100% !important;
+    margin-top: 28px !important;
+}
+
+/* Setiap item menjadi kartu */
+.digital-innovation-grid > div {
+    position: relative !important;
+    overflow: hidden !important;
+
+    min-height: 145px !important;
+    padding: 24px 16px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 14px !important;
+
+    text-align: center !important;
+
+    color: #ffffff !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(229, 9, 20, 0.22),
+            transparent 60%
+        ),
+        #111111 !important;
+
+    border:
+        1px solid rgba(229, 9, 20, 0.38) !important;
+
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.30),
+        0 0 18px rgba(229, 9, 20, 0.10) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Glow */
+.digital-innovation-grid > div::before {
+    content: "" !important;
+
+    position: absolute !important;
+    top: -80px !important;
+    left: 50% !important;
+
+    width: 180px !important;
+    height: 180px !important;
+
+    transform: translateX(-50%) !important;
+
+    background:
+        rgba(229, 9, 20, 0.25) !important;
+
+    filter: blur(55px) !important;
+    border-radius: 50% !important;
+
+    opacity: 0.65 !important;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease !important;
+
+    pointer-events: none !important;
+}
+
+/* Icon */
+.digital-innovation-grid > div > i {
+    position: relative !important;
+    z-index: 2 !important;
+
+    width: 54px !important;
+    height: 54px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+
+    color: #ff2b35 !important;
+    font-size: 25px !important;
+
+    background:
+        rgba(229, 9, 20, 0.10) !important;
+
+    border:
+        1px solid rgba(229, 9, 20, 0.45) !important;
+
+    border-radius: 15px !important;
+
+    box-shadow:
+        0 0 16px rgba(229, 9, 20, 0.18) !important;
+
+    transition:
+        transform 0.35s ease,
+        color 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Hover */
+.digital-innovation-grid > div:hover {
+    transform: translateY(-8px) !important;
+
+    border-color:
+        rgba(255, 35, 45, 1) !important;
+
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.42),
+        0 0 18px rgba(229, 9, 20, 0.45),
+        0 0 42px rgba(229, 9, 20, 0.20) !important;
+}
+
+.digital-innovation-grid > div:hover::before {
+    opacity: 1 !important;
+
+    transform:
+        translateX(-50%)
+        scale(1.25) !important;
+}
+
+.digital-innovation-grid > div:hover > i {
+    color: #ffffff !important;
+    background: #e50914 !important;
+
+    transform: scale(1.10) !important;
+
+    box-shadow:
+        0 0 18px rgba(229, 9, 20, 0.80),
+        0 0 38px rgba(229, 9, 20, 0.45) !important;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .digital-innovation-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .digital-innovation-grid {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+    }
+
+    .digital-innovation-grid > div {
+        min-height: 135px !important;
+    }
+}
+
+</style>
+
 </head>
 
 <body>
@@ -443,7 +619,7 @@ aman, scalable, dan mudah dikembangkan.
 
 </p>
 
-<div class="intro-list">
+<div class="intro-list digital-innovation-grid">
 
 <div>
 
