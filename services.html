@@ -2086,3 +2086,120 @@ document.getElementById("popup-chat").style.display="none";
 </body>
 
 </html>
+
+<style id="services-intro-card-grid-final">
+/* ========================================
+   SERVICES INTRO - CARD GRID
+======================================== */
+
+.intro-content {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.intro-content h3 {
+    text-align: center !important;
+}
+
+.intro-content > p {
+    max-width: 850px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+/* 6 KARTU - 3 x 2 */
+.intro-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 40px auto 0 !important;
+}
+
+/* KARTU */
+.intro-list > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 190px !important;
+    margin: 0 !important;
+    padding: 30px 22px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    color: #111111 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+/* HOVER */
+.intro-list > div:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ICON TERANG */
+.intro-list > div i {
+    width: 68px !important;
+    height: 68px !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fee2e2 !important;
+    border: 1px solid #fecaca !important;
+    border-radius: 18px !important;
+
+    color: #dc2626 !important;
+    font-size: 30px !important;
+
+    box-shadow: 0 8px 22px rgba(220, 38, 38, 0.12) !important;
+}
+
+/* ICON LEBIH TERANG SAAT HOVER */
+.intro-list > div:hover i {
+    background: #dc2626 !important;
+    border-color: #dc2626 !important;
+    color: #ffffff !important;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .intro-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .intro-list {
+        grid-template-columns: 1fr !important;
+    }
+
+    .intro-list > div {
+        min-height: 170px !important;
+    }
+}
+</style>
+
