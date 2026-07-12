@@ -2453,3 +2453,231 @@ document.getElementById("closePopup").onclick=function(){
     }
 }
 </style>
+
+<style>
+/* ========================================
+   OUR VALUES - CENTERED CARD GRID
+======================================== */
+
+.company-values .values-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    margin-top: 42px !important;
+    align-items: stretch !important;
+}
+
+.company-values .value-card {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: center !important;
+    height: 100% !important;
+    min-height: 245px !important;
+    padding: 30px 22px !important;
+    background: #ffffff !important;
+    border: 1px solid #eeeeee !important;
+    border-radius: 18px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06) !important;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease !important;
+}
+
+.company-values .value-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #e31e24 !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.10) !important;
+}
+
+.company-values .value-icon {
+    width: 62px !important;
+    height: 62px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 20px !important;
+    border-radius: 50% !important;
+    background: #fff1f1 !important;
+    color: #e31e24 !important;
+    font-size: 25px !important;
+}
+
+.company-values .value-card h3 {
+    width: 100% !important;
+    margin: 0 0 12px !important;
+    text-align: center !important;
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    color: #171717 !important;
+}
+
+.company-values .value-card p {
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    color: #666666 !important;
+}
+
+/* Section title centered */
+.company-values .section-title {
+    text-align: center !important;
+}
+
+.company-values .section-title p {
+    max-width: 750px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* CORE VALUE / CUSTOMER SUCCESS */
+.company-values .core-value,
+.company-values .core-value-card,
+.company-values .customer-success {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .company-values .values-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .company-values .values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .company-values .values-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .company-values .value-card {
+        min-height: auto !important;
+    }
+}
+</style>
+
+<style>
+/* ========================================
+   OUR VALUES - CENTERED CARD GRID
+======================================== */
+
+.company-values .values-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    margin-top: 42px !important;
+    align-items: stretch !important;
+}
+
+.company-values .value-card {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: center !important;
+    height: 100% !important;
+    min-height: 245px !important;
+    padding: 30px 22px !important;
+    background: #ffffff !important;
+    border: 1px solid #eeeeee !important;
+    border-radius: 18px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06) !important;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease !important;
+}
+
+.company-values .value-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: #e31e24 !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.10) !important;
+}
+
+.company-values .value-icon {
+    width: 62px !important;
+    height: 62px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 20px !important;
+    border-radius: 50% !important;
+    background: #fff1f1 !important;
+    color: #e31e24 !important;
+    font-size: 25px !important;
+}
+
+.company-values .value-card h3 {
+    width: 100% !important;
+    margin: 0 0 12px !important;
+    text-align: center !important;
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    color: #171717 !important;
+}
+
+.company-values .value-card p {
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    color: #666666 !important;
+}
+
+/* Section title centered */
+.company-values .section-title {
+    text-align: center !important;
+}
+
+.company-values .section-title p {
+    max-width: 750px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* CORE VALUE / CUSTOMER SUCCESS */
+.company-values .core-value,
+.company-values .core-value-card,
+.company-values .customer-success {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .company-values .values-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .company-values .values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .company-values .values-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .company-values .value-card {
+        min-height: auto !important;
+    }
+}
+</style>
