@@ -2846,3 +2846,315 @@ document.getElementById("popup-chat").style.display="none";
 </style>
 
 
+
+<style id="investment-growth-partner-grid-final">
+
+/* =====================================================
+   OUR GROWTH + WHY PARTNER WITH US
+   LIGHT CARD GRID
+   ===================================================== */
+
+/* =========================
+   OUR GROWTH
+   ========================= */
+
+.investment-statistics {
+    background: #ffffff !important;
+}
+
+.investment-statistics .counter-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    align-items: stretch !important;
+}
+
+/* Kartu statistik */
+.investment-statistics .counter-box {
+    position: relative !important;
+    overflow: hidden !important;
+
+    min-height: 220px !important;
+    padding: 30px 22px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #ececec !important;
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Garis merah atas */
+.investment-statistics .counter-box::before {
+    content: "" !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 4px !important;
+
+    background: #e50914 !important;
+
+    transform: scaleX(0) !important;
+    transform-origin: center !important;
+
+    transition: transform 0.35s ease !important;
+}
+
+/* Icon */
+.investment-statistics .counter-box > i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 66px !important;
+    height: 66px !important;
+
+    margin: 0 auto 18px !important;
+
+    color: #e50914 !important;
+    font-size: 30px !important;
+
+    background: rgba(229, 9, 20, 0.07) !important;
+    border: 1px solid rgba(229, 9, 20, 0.18) !important;
+    border-radius: 18px !important;
+
+    transition: 0.35s ease !important;
+}
+
+/* Angka */
+.investment-statistics .counter-box h2 {
+    margin: 0 0 8px !important;
+
+    color: #111111 !important;
+
+    font-size: 34px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+}
+
+/* Label */
+.investment-statistics .counter-box p {
+    margin: 0 !important;
+
+    color: #666666 !important;
+
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}
+
+/* Hover */
+.investment-statistics .counter-box:hover {
+    transform: translateY(-8px) !important;
+
+    border-color:
+        rgba(229, 9, 20, 0.38) !important;
+
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.11),
+        0 0 18px rgba(229, 9, 20, 0.08) !important;
+}
+
+.investment-statistics .counter-box:hover::before {
+    transform: scaleX(1) !important;
+}
+
+.investment-statistics .counter-box:hover > i {
+    color: #ffffff !important;
+    background: #e50914 !important;
+
+    transform: scale(1.08) !important;
+
+    box-shadow:
+        0 8px 22px rgba(229, 9, 20, 0.25) !important;
+}
+
+
+/* =====================================================
+   WHY PARTNER WITH US
+   Support beberapa kemungkinan class asli
+   ===================================================== */
+
+.why-partner,
+.why-partner-section,
+.partner-section {
+    background: #ffffff !important;
+}
+
+.why-partner .partner-grid,
+.why-partner-section .partner-grid,
+.partner-section .partner-grid,
+.why-partner .why-grid,
+.why-partner-section .why-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    align-items: stretch !important;
+}
+
+/* Kartu partner */
+.why-partner .partner-card,
+.why-partner-section .partner-card,
+.partner-section .partner-card,
+.why-partner .why-card,
+.why-partner-section .why-card {
+    position: relative !important;
+    overflow: hidden !important;
+
+    min-height: 270px !important;
+    padding: 32px 24px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #ececec !important;
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Icon partner */
+.why-partner .partner-card > i,
+.why-partner-section .partner-card > i,
+.partner-section .partner-card > i,
+.why-partner .why-card > i,
+.why-partner-section .why-card > i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 70px !important;
+    height: 70px !important;
+
+    margin: 0 auto 22px !important;
+
+    color: #e50914 !important;
+    font-size: 32px !important;
+
+    background: rgba(229, 9, 20, 0.07) !important;
+    border: 1px solid rgba(229, 9, 20, 0.18) !important;
+    border-radius: 18px !important;
+
+    transition: 0.35s ease !important;
+}
+
+/* Judul partner */
+.why-partner .partner-card h3,
+.why-partner-section .partner-card h3,
+.partner-section .partner-card h3,
+.why-partner .why-card h3,
+.why-partner-section .why-card h3 {
+    margin: 0 0 14px !important;
+
+    color: #111111 !important;
+
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+}
+
+/* Deskripsi partner */
+.why-partner .partner-card p,
+.why-partner-section .partner-card p,
+.partner-section .partner-card p,
+.why-partner .why-card p,
+.why-partner-section .why-card p {
+    margin: 0 !important;
+
+    color: #666666 !important;
+
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+}
+
+/* Hover partner */
+.why-partner .partner-card:hover,
+.why-partner-section .partner-card:hover,
+.partner-section .partner-card:hover,
+.why-partner .why-card:hover,
+.why-partner-section .why-card:hover {
+    transform: translateY(-8px) !important;
+
+    border-color:
+        rgba(229, 9, 20, 0.38) !important;
+
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.11),
+        0 0 18px rgba(229, 9, 20, 0.08) !important;
+}
+
+/* Hover icon */
+.why-partner .partner-card:hover > i,
+.why-partner-section .partner-card:hover > i,
+.partner-section .partner-card:hover > i,
+.why-partner .why-card:hover > i,
+.why-partner-section .why-card:hover > i {
+    color: #ffffff !important;
+    background: #e50914 !important;
+
+    transform: scale(1.08) !important;
+
+    box-shadow:
+        0 8px 22px rgba(229, 9, 20, 0.25) !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .investment-statistics .counter-grid,
+
+    .why-partner .partner-grid,
+    .why-partner-section .partner-grid,
+    .partner-section .partner-grid,
+    .why-partner .why-grid,
+    .why-partner-section .why-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .investment-statistics .counter-grid,
+
+    .why-partner .partner-grid,
+    .why-partner-section .partner-grid,
+    .partner-section .partner-grid,
+    .why-partner .why-grid,
+    .why-partner-section .why-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+}
+
+</style>
