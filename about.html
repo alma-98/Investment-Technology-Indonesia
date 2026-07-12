@@ -303,13 +303,7 @@
 
         <div class="overview-grid">
 
-            <div class="overview-image"
-                data-aos="fade-right">
-
-                <img src="assets/images/company/company1.jpg"
-                    alt="Investment Technology Indonesia">
-
-            </div>
+            
 
             <div class="overview-content"
                 data-aos="fade-left">
@@ -341,54 +335,48 @@
 
                 </p>
 
-                <div class="overview-list">
+                <div class="overview-list overview-card-grid">
 
-                    <div>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Software Development
-
+                    <div class="overview-service-card">
+                        <div class="overview-service-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <span>Software Development</span>
                     </div>
 
-                    <div>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Website Development
-
+                    <div class="overview-service-card">
+                        <div class="overview-service-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <span>Website Development</span>
                     </div>
 
-                    <div>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Artificial Intelligence
-
+                    <div class="overview-service-card">
+                        <div class="overview-service-icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <span>Artificial Intelligence</span>
                     </div>
 
-                    <div>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Cloud Computing
-
+                    <div class="overview-service-card">
+                        <div class="overview-service-icon">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <span>Cloud Computing</span>
                     </div>
 
-                    <div>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Cyber Security
-
+                    <div class="overview-service-card">
+                        <div class="overview-service-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span>Cyber Security</span>
                     </div>
 
-                    <div>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        IT Consulting
-
+                    <div class="overview-service-card">
+                        <div class="overview-service-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <span>IT Consulting</span>
                     </div>
 
                 </div>
@@ -2260,6 +2248,86 @@ document.getElementById("closePopup").onclick=function(){
 }
 
 </script>
+
+
+<style>
+/* COMPANY OVERVIEW SERVICE CARD GRID */
+.company-overview .overview-card-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    margin-top: 28px !important;
+}
+
+.company-overview .overview-service-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 14px !important;
+    min-height: 145px !important;
+    padding: 22px !important;
+    background: #ffffff !important;
+    border: 1px solid #eeeeee !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+.company-overview .overview-service-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: #e31e24 !important;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10) !important;
+}
+
+.company-overview .overview-service-icon {
+    width: 48px !important;
+    height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 12px !important;
+    background: #fff1f1 !important;
+    color: #e31e24 !important;
+    font-size: 21px !important;
+}
+
+.company-overview .overview-service-card span {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    font-weight: 700 !important;
+    color: #171717 !important;
+}
+
+@media (max-width: 991px) {
+    .company-overview .overview-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .company-overview .overview-card-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .company-overview .overview-service-card {
+        min-height: 120px !important;
+    }
+}
+</style>
+
+
+<style>
+/* COMPANY OVERVIEW - FULL WIDTH WITHOUT IMAGE */
+.company-overview .overview-grid {
+    display: block !important;
+}
+
+.company-overview .overview-content {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+</style>
 
 </body>
 
