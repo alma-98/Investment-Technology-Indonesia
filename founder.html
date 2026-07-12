@@ -6651,3 +6651,146 @@ document.getElementById("popup-chat").style.display="none";
 }
 </style>
 
+
+<style id="professional-experience-card-grid-final">
+/* ========================================
+   PROFESSIONAL EXPERIENCE
+   CARD GRID - TANPA TIMELINE
+======================================== */
+
+/* HAPUS GARIS / TITIK TIMELINE */
+.experience .timeline::before,
+.experience .experience-timeline::before,
+.experience .timeline-item::before,
+.experience .experience-item::before,
+.experience .timeline-dot,
+.experience .timeline-line {
+    display: none !important;
+    content: none !important;
+}
+
+/* CONTAINER */
+.experience .experience-grid,
+.experience .timeline,
+.experience .experience-timeline {
+    position: static !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 40px 0 0 !important;
+}
+
+/* KARTU */
+.experience .experience-card,
+.experience .experience-item,
+.experience .timeline-item {
+    position: static !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 260px !important;
+    margin: 0 !important;
+    padding: 32px 28px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transform: none !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+/* HOVER */
+.experience .experience-card:hover,
+.experience .experience-item:hover,
+.experience .timeline-item:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ICON */
+.experience .experience-card i,
+.experience .experience-item i,
+.experience .timeline-item i {
+    width: 64px !important;
+    height: 64px !important;
+    margin: 0 0 20px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fff1f2 !important;
+    border-radius: 18px !important;
+
+    color: #dc2626 !important;
+    font-size: 28px !important;
+}
+
+/* JUDUL */
+.experience .experience-card h3,
+.experience .experience-item h3,
+.experience .timeline-item h3 {
+    margin: 0 0 10px !important;
+    color: #111111 !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+}
+
+/* SUBJUDUL */
+.experience .experience-card h4,
+.experience .experience-item h4,
+.experience .timeline-item h4 {
+    margin: 0 0 14px !important;
+    color: #dc2626 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+
+/* DESKRIPSI */
+.experience .experience-card p,
+.experience .experience-item p,
+.experience .timeline-item p {
+    margin: 0 !important;
+    color: #666666 !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    text-align: center !important;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .experience .experience-grid,
+    .experience .timeline,
+    .experience .experience-timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .experience .experience-grid,
+    .experience .timeline,
+    .experience .experience-timeline {
+        grid-template-columns: 1fr !important;
+    }
+}
+</style>
+
