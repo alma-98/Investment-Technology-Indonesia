@@ -2259,3 +2259,354 @@ document.getElementById("popup-chat").style.display="none";
 }
 
 </style>
+
+<style id="investment-business-market-revenue-final">
+
+/* =====================================================
+   BUSINESS MODEL / TARGET MARKET / REVENUE STREAM
+   UNIFIED LIGHT CARD TEMPLATE
+   ===================================================== */
+
+/* SECTION BACKGROUND */
+.business-model,
+.target-market,
+.revenue-stream {
+    background: #ffffff !important;
+}
+
+
+/* =====================================================
+   BUSINESS MODEL
+   ===================================================== */
+
+.business-model .business-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    align-items: stretch !important;
+}
+
+.business-model .business-card {
+    position: relative !important;
+    overflow: hidden !important;
+
+    min-height: 260px !important;
+    padding: 30px 24px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #ececec !important;
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Icon */
+.business-model .business-card > i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 68px !important;
+    height: 68px !important;
+
+    margin: 0 auto 22px !important;
+
+    color: #e50914 !important;
+    font-size: 31px !important;
+
+    background: rgba(229, 9, 20, 0.07) !important;
+    border: 1px solid rgba(229, 9, 20, 0.18) !important;
+    border-radius: 18px !important;
+
+    transition: 0.35s ease !important;
+}
+
+.business-model .business-card h3 {
+    margin: 0 0 14px !important;
+
+    color: #111111 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+}
+
+.business-model .business-card p {
+    margin: 0 !important;
+
+    color: #666666 !important;
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+}
+
+/* Hover */
+.business-model .business-card:hover {
+    transform: translateY(-8px) !important;
+
+    border-color: rgba(229, 9, 20, 0.38) !important;
+
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.11),
+        0 0 18px rgba(229, 9, 20, 0.08) !important;
+}
+
+.business-model .business-card:hover > i {
+    color: #ffffff !important;
+    background: #e50914 !important;
+
+    transform: scale(1.08) !important;
+
+    box-shadow:
+        0 8px 22px rgba(229, 9, 20, 0.25) !important;
+}
+
+
+/* =====================================================
+   TARGET MARKET
+   ===================================================== */
+
+.target-market .market-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    align-items: stretch !important;
+}
+
+.target-market .market-card {
+    position: relative !important;
+    overflow: hidden !important;
+
+    min-height: 170px !important;
+    padding: 26px 18px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
+
+    text-align: center !important;
+
+    color: #222222 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+
+    background: #ffffff !important;
+    border: 1px solid #ececec !important;
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Icon Target Market */
+.target-market .market-card > i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 64px !important;
+    height: 64px !important;
+
+    margin: 0 auto !important;
+
+    color: #e50914 !important;
+    font-size: 29px !important;
+
+    background: rgba(229, 9, 20, 0.07) !important;
+    border: 1px solid rgba(229, 9, 20, 0.18) !important;
+    border-radius: 17px !important;
+
+    transition: 0.35s ease !important;
+}
+
+.target-market .market-card h3,
+.target-market .market-card h4 {
+    margin: 0 !important;
+
+    color: #222222 !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+}
+
+/* Hover */
+.target-market .market-card:hover {
+    transform: translateY(-8px) !important;
+
+    border-color: rgba(229, 9, 20, 0.38) !important;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.11),
+        0 0 18px rgba(229, 9, 20, 0.08) !important;
+}
+
+.target-market .market-card:hover > i {
+    color: #ffffff !important;
+    background: #e50914 !important;
+
+    transform: scale(1.08) !important;
+
+    box-shadow:
+        0 8px 22px rgba(229, 9, 20, 0.25) !important;
+}
+
+
+/* =====================================================
+   REVENUE STREAM
+   ===================================================== */
+
+.revenue-stream .revenue-grid,
+.revenue-stream .revenue-stream-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    align-items: stretch !important;
+}
+
+.revenue-stream .revenue-card,
+.revenue-stream .revenue-stream-card {
+    position: relative !important;
+    overflow: hidden !important;
+
+    min-height: 260px !important;
+    padding: 30px 24px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #ececec !important;
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Icon Revenue */
+.revenue-stream .revenue-card > i,
+.revenue-stream .revenue-stream-card > i {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 68px !important;
+    height: 68px !important;
+
+    margin: 0 auto 22px !important;
+
+    color: #e50914 !important;
+    font-size: 31px !important;
+
+    background: rgba(229, 9, 20, 0.07) !important;
+    border: 1px solid rgba(229, 9, 20, 0.18) !important;
+    border-radius: 18px !important;
+
+    transition: 0.35s ease !important;
+}
+
+.revenue-stream .revenue-card h3,
+.revenue-stream .revenue-stream-card h3 {
+    margin: 0 0 14px !important;
+
+    color: #111111 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+}
+
+.revenue-stream .revenue-card p,
+.revenue-stream .revenue-stream-card p {
+    margin: 0 !important;
+
+    color: #666666 !important;
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+}
+
+/* Hover Revenue */
+.revenue-stream .revenue-card:hover,
+.revenue-stream .revenue-stream-card:hover {
+    transform: translateY(-8px) !important;
+
+    border-color: rgba(229, 9, 20, 0.38) !important;
+
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.11),
+        0 0 18px rgba(229, 9, 20, 0.08) !important;
+}
+
+.revenue-stream .revenue-card:hover > i,
+.revenue-stream .revenue-stream-card:hover > i {
+    color: #ffffff !important;
+    background: #e50914 !important;
+
+    transform: scale(1.08) !important;
+
+    box-shadow:
+        0 8px 22px rgba(229, 9, 20, 0.25) !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1100px) {
+
+    .business-model .business-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .target-market .market-grid,
+    .revenue-stream .revenue-grid,
+    .revenue-stream .revenue-stream-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .business-model .business-grid,
+    .target-market .market-grid,
+    .revenue-stream .revenue-grid,
+    .revenue-stream .revenue-stream-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .business-model .business-card,
+    .revenue-stream .revenue-card,
+    .revenue-stream .revenue-stream-card {
+        min-height: auto !important;
+    }
+}
+
+</style>
