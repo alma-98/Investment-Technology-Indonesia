@@ -6505,3 +6505,149 @@ document.getElementById("popup-chat").style.display="none";
 }
 </style>
 
+
+<style id="education-card-no-timeline-final">
+/* ========================================
+   EDUCATION - CARD TANPA TIMELINE
+======================================== */
+
+/* Hapus garis timeline */
+.education .timeline::before,
+.education .education-timeline::before,
+.education .timeline-item::before,
+.education .education-item::before,
+.education .timeline-dot,
+.education .timeline-line {
+    display: none !important;
+    content: none !important;
+}
+
+/* Hilangkan jarak khusus timeline */
+.education .timeline,
+.education .education-timeline {
+    position: static !important;
+    padding: 0 !important;
+    margin: 40px 0 0 !important;
+}
+
+/* Container kartu */
+.education .education-grid,
+.education .timeline,
+.education .education-timeline {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    width: 100% !important;
+}
+
+/* Kartu pendidikan */
+.education .education-card,
+.education .education-item,
+.education .timeline-item {
+    position: static !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 230px !important;
+    margin: 0 !important;
+    padding: 32px 28px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 20px !important;
+
+    transform: none !important;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+/* Hover seperti CORE EXPERTISE */
+.education .education-card:hover,
+.education .education-item:hover,
+.education .timeline-item:hover {
+    transform: translateY(-6px) !important;
+    border-color: #dc2626 !important;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Icon */
+.education .education-card i,
+.education .education-item i,
+.education .timeline-item i {
+    width: 64px !important;
+    height: 64px !important;
+    margin: 0 0 20px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fff1f2 !important;
+    border-radius: 18px !important;
+
+    color: #dc2626 !important;
+    font-size: 28px !important;
+}
+
+/* Judul */
+.education .education-card h3,
+.education .education-item h3,
+.education .timeline-item h3 {
+    margin: 0 0 8px !important;
+    color: #111111 !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    text-align: center !important;
+}
+
+/* Subjudul */
+.education .education-card h4,
+.education .education-item h4,
+.education .timeline-item h4 {
+    margin: 0 0 14px !important;
+    color: #dc2626 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+
+/* Deskripsi */
+.education .education-card p,
+.education .education-item p,
+.education .timeline-item p {
+    margin: 0 !important;
+    color: #666666 !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    text-align: center !important;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .education .education-grid,
+    .education .timeline,
+    .education .education-timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .education .education-grid,
+    .education .timeline,
+    .education .education-timeline {
+        grid-template-columns: 1fr !important;
+    }
+}
+</style>
+
