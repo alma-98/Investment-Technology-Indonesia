@@ -2779,3 +2779,182 @@ document.getElementById("popup-chat").style.display="none";
 }
 
 </style>
+
+<style id="investment-hero-restore-final">
+/* =========================================
+   INVESTMENT HERO — RESTORE / FIX
+   ========================================= */
+
+.investment-hero {
+    position: relative !important;
+    min-height: 620px !important;
+    padding: 160px 0 100px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    background: #ffffff !important;
+    overflow: hidden !important;
+}
+
+/* Hilangkan overlay gelap */
+.investment-hero .overlay {
+    display: none !important;
+}
+
+/* Container */
+.investment-hero .container {
+    position: relative !important;
+    z-index: 2 !important;
+
+    width: 100% !important;
+}
+
+/* Content */
+.investment-hero .hero-content {
+    max-width: 850px !important;
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    text-align: center !important;
+}
+
+/* Label */
+.investment-hero .hero-content h5 {
+    margin: 0 0 18px !important;
+
+    color: #e50914 !important;
+
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.14em !important;
+
+    text-transform: uppercase !important;
+}
+
+/* Judul */
+.investment-hero .hero-content h1 {
+    max-width: 850px !important;
+    margin: 0 auto 24px !important;
+
+    color: #111111 !important;
+
+    font-size: clamp(42px, 6vw, 72px) !important;
+    font-weight: 800 !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.03em !important;
+
+    text-align: center !important;
+}
+
+/* Deskripsi */
+.investment-hero .hero-content p {
+    max-width: 760px !important;
+    margin: 0 auto 34px !important;
+
+    color: #666666 !important;
+
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+
+    text-align: center !important;
+}
+
+/* Container tombol */
+.investment-hero .hero-buttons,
+.investment-hero .hero-btn,
+.investment-hero .button-group,
+.investment-hero .btn-group {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+
+    gap: 14px !important;
+
+    margin-top: 0 !important;
+}
+
+/* Semua tombol */
+.investment-hero .hero-content a {
+    min-width: 160px !important;
+    min-height: 50px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 13px 24px !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+
+    text-decoration: none !important;
+
+    border-radius: 999px !important;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+/* Tombol pertama — merah */
+.investment-hero .hero-content a:first-of-type {
+    color: #ffffff !important;
+    background: #e50914 !important;
+    border: 1.5px solid #e50914 !important;
+
+    box-shadow:
+        0 10px 24px rgba(229, 9, 20, 0.20) !important;
+}
+
+/* Tombol kedua — putih border merah */
+.investment-hero .hero-content a:last-of-type {
+    color: #e50914 !important;
+    background: #ffffff !important;
+    border: 1.5px solid #e50914 !important;
+
+    box-shadow: none !important;
+}
+
+/* Hover */
+.investment-hero .hero-content a:hover {
+    transform: translateY(-3px) !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .investment-hero {
+        min-height: auto !important;
+        padding: 130px 20px 80px !important;
+    }
+
+    .investment-hero .hero-content h1 {
+        font-size: 42px !important;
+    }
+
+    .investment-hero .hero-content p {
+        font-size: 15px !important;
+    }
+
+    .investment-hero .hero-buttons,
+    .investment-hero .hero-btn,
+    .investment-hero .button-group,
+    .investment-hero .btn-group {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .investment-hero .hero-content a {
+        width: 100% !important;
+        max-width: 320px !important;
+    }
+}
+
+</style>
