@@ -1728,3 +1728,235 @@ document.getElementById("popup-chat").style.display="none";
 </body>
 
 </html>
+<style id="contact-cards-clean-grid-final">
+
+/* =====================================================
+   CONTACT PAGE — CLEAN LIGHT CARD GRID
+   ===================================================== */
+
+/* Background terang */
+.contact-cards {
+    background: #ffffff !important;
+}
+
+/* =========================
+   GRID CONTACT CARDS
+   ========================= */
+
+.contact-cards .contact-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    align-items: stretch !important;
+}
+
+/* Kartu */
+.contact-cards .contact-card {
+    position: relative !important;
+    overflow: hidden !important;
+
+    min-width: 0 !important;
+    min-height: 250px !important;
+    padding: 30px 22px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: #ffffff !important;
+    border: 1px solid #ececec !important;
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Garis merah atas saat hover */
+.contact-cards .contact-card::before {
+    content: "" !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 4px !important;
+
+    background: #e50914 !important;
+
+    transform: scaleX(0) !important;
+    transform-origin: center !important;
+
+    transition: transform 0.35s ease !important;
+}
+
+/* =========================
+   ICON
+   ========================= */
+
+.contact-cards .contact-icon {
+    width: 68px !important;
+    height: 68px !important;
+
+    margin: 0 auto 20px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    color: #e50914 !important;
+    font-size: 30px !important;
+
+    background: rgba(229, 9, 20, 0.07) !important;
+    border: 1px solid rgba(229, 9, 20, 0.18) !important;
+    border-radius: 18px !important;
+
+    transition:
+        transform 0.35s ease,
+        color 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+.contact-cards .contact-icon i {
+    color: inherit !important;
+    font-size: inherit !important;
+}
+
+/* =========================
+   TEXT
+   ========================= */
+
+.contact-cards .contact-card h3 {
+    margin: 0 0 12px !important;
+
+    color: #111111 !important;
+
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+
+    text-align: center !important;
+}
+
+.contact-cards .contact-card p {
+    width: 100% !important;
+    margin: 0 0 18px !important;
+
+    color: #666666 !important;
+
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+
+    text-align: center !important;
+
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+}
+
+/* Hilangkan margin kosong untuk kartu tanpa link */
+.contact-cards .contact-card p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* =========================
+   LINK / BUTTON
+   ========================= */
+
+.contact-cards .contact-card > a {
+    margin-top: auto !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-height: 42px !important;
+    padding: 10px 20px !important;
+
+    color: #e50914 !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+
+    text-decoration: none !important;
+
+    background: #ffffff !important;
+    border: 1.5px solid #e50914 !important;
+    border-radius: 999px !important;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease,
+        background 0.3s ease !important;
+}
+
+/* =========================
+   HOVER
+   ========================= */
+
+.contact-cards .contact-card:hover {
+    transform: translateY(-8px) !important;
+
+    border-color:
+        rgba(229, 9, 20, 0.38) !important;
+
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.11),
+        0 0 18px rgba(229, 9, 20, 0.08) !important;
+}
+
+.contact-cards .contact-card:hover::before {
+    transform: scaleX(1) !important;
+}
+
+.contact-cards .contact-card:hover .contact-icon {
+    color: #ffffff !important;
+    background: #e50914 !important;
+
+    transform: scale(1.08) !important;
+
+    box-shadow:
+        0 8px 22px rgba(229, 9, 20, 0.25) !important;
+}
+
+.contact-cards .contact-card > a:hover {
+    color: #ffffff !important;
+    background: #e50914 !important;
+
+    transform: translateY(-2px) !important;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .contact-cards .contact-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contact-cards .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .contact-cards .contact-card {
+        min-height: auto !important;
+        padding: 28px 22px !important;
+    }
+}
+
+</style>
