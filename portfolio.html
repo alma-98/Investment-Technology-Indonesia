@@ -48,6 +48,176 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
+
+<style id="portfolio-glow-grid">
+/* =========================================
+   PORTFOLIO DIGITAL INNOVATION GLOW CARDS
+   ========================================= */
+
+.portfolio-glow-grid,
+.innovation-grid,
+.portfolio-services-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    margin-top: 35px !important;
+}
+
+/* Kartu */
+.portfolio-glow-grid > *,
+.innovation-grid > *,
+.portfolio-services-grid > * {
+    position: relative !important;
+    overflow: hidden !important;
+    min-height: 150px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    padding: 28px 20px !important;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 35, 35, 0.16),
+            transparent 55%
+        ),
+        rgba(12, 12, 12, 0.96) !important;
+
+    border: 1px solid rgba(255, 45, 45, 0.35) !important;
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        0 0 18px rgba(255, 0, 0, 0.08) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Cahaya atas */
+.portfolio-glow-grid > *::before,
+.innovation-grid > *::before,
+.portfolio-services-grid > *::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -70px !important;
+    left: 50% !important;
+    width: 150px !important;
+    height: 150px !important;
+    transform: translateX(-50%) !important;
+
+    background: rgba(255, 0, 0, 0.18) !important;
+    filter: blur(45px) !important;
+    border-radius: 50% !important;
+
+    opacity: 0.75 !important;
+    transition: 0.35s ease !important;
+    pointer-events: none !important;
+}
+
+/* Hover menyala */
+.portfolio-glow-grid > *:hover,
+.innovation-grid > *:hover,
+.portfolio-services-grid > *:hover {
+    transform: translateY(-8px) !important;
+    border-color: rgba(255, 35, 35, 0.95) !important;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.45),
+        0 0 15px rgba(255, 0, 0, 0.28),
+        0 0 35px rgba(255, 0, 0, 0.16) !important;
+}
+
+.portfolio-glow-grid > *:hover::before,
+.innovation-grid > *:hover::before,
+.portfolio-services-grid > *:hover::before {
+    opacity: 1 !important;
+    transform: translateX(-50%) scale(1.25) !important;
+}
+
+/* Icon */
+.portfolio-glow-grid i,
+.innovation-grid i,
+.portfolio-services-grid i {
+    position: relative !important;
+    z-index: 2 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 58px !important;
+    height: 58px !important;
+    margin: 0 auto 18px !important;
+
+    font-size: 26px !important;
+    color: #ff2b2b !important;
+
+    border: 1px solid rgba(255, 43, 43, 0.4) !important;
+    border-radius: 16px !important;
+
+    background: rgba(255, 43, 43, 0.08) !important;
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 0, 0.15) !important;
+
+    transition: 0.35s ease !important;
+}
+
+.portfolio-glow-grid > *:hover i,
+.innovation-grid > *:hover i,
+.portfolio-services-grid > *:hover i {
+    color: #ffffff !important;
+    background: #e50914 !important;
+
+    box-shadow:
+        0 0 15px rgba(229, 9, 20, 0.65),
+        0 0 30px rgba(229, 9, 20, 0.35) !important;
+
+    transform: scale(1.08) !important;
+}
+
+/* Tulisan */
+.portfolio-glow-grid h3,
+.portfolio-glow-grid h4,
+.innovation-grid h3,
+.innovation-grid h4,
+.portfolio-services-grid h3,
+.portfolio-services-grid h4 {
+    position: relative !important;
+    z-index: 2 !important;
+    margin: 0 !important;
+    color: #ffffff !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .portfolio-glow-grid,
+    .innovation-grid,
+    .portfolio-services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-glow-grid,
+    .innovation-grid,
+    .portfolio-services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+}
+</style>
+
 </head>
 
 <body>
@@ -60,8 +230,7 @@ href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
 <div class="loader">
 
-<img src="assets/images/logo/logo.png"
-alt="Investment Technology Indonesia">
+
 
 <h2>Loading...</h2>
 
@@ -81,8 +250,7 @@ alt="Investment Technology Indonesia">
 
 <a href="index.html">
 
-<img src="assets/images/logo/logo.png"
-alt="Investment Technology Indonesia">
+
 
 </a>
 
@@ -254,9 +422,7 @@ perusahaan, pemerintahan, pendidikan, rumah sakit, UMKM maupun startup.
 
 data-aos="fade-right">
 
-<img src="assets/images/portfolio/banner.jpg"
 
-alt="Portfolio">
 
 </div>
 
@@ -457,8 +623,7 @@ Berbagai solusi digital telah kami kembangkan untuk membantu transformasi digita
 
 <div class="portfolio-card" data-aos="fade-up">
 
-<img src="assets/images/portfolio/project1.jpg"
-alt="Website Company Profile">
+
 
 <div class="portfolio-content">
 
@@ -496,8 +661,7 @@ Lihat Detail
 
 <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
 
-<img src="assets/images/portfolio/project2.jpg"
-alt="ERP System">
+
 
 <div class="portfolio-content">
 
@@ -535,8 +699,7 @@ Lihat Detail
 
 <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
 
-<img src="assets/images/portfolio/project3.jpg"
-alt="CRM">
+
 
 <div class="portfolio-content">
 
@@ -574,8 +737,7 @@ Lihat Detail
 
 <div class="portfolio-card" data-aos="fade-up">
 
-<img src="assets/images/portfolio/project4.jpg"
-alt="Mobile Apps">
+
 
 <div class="portfolio-content">
 
@@ -611,8 +773,7 @@ Lihat Detail
 
 <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
 
-<img src="assets/images/portfolio/project5.jpg"
-alt="Artificial Intelligence">
+
 
 <div class="portfolio-content">
 
@@ -648,8 +809,7 @@ Lihat Detail
 
 <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
 
-<img src="assets/images/portfolio/project6.jpg"
-alt="Cloud">
+
 
 <div class="portfolio-content">
 
@@ -1360,11 +1520,7 @@ Hubungi Kami
 
 <div class="footer-item">
 
-<img src="assets/images/logo/logo.png"
 
-class="footer-logo"
-
-alt="Investment Technology Indonesia">
 
 <h3>
 
@@ -1466,47 +1622,69 @@ target="_blank">
 
 </a>
 
-<!-- ======================================== -->
+<!-- ========================================= -->
 <!-- POPUP CHAT -->
-<!-- ======================================== -->
+<!-- ========================================= -->
 
-<div id="popup-chat" class="popup-chat">
+<div id="popup-chat"
+    class="popup-chat">
 
-<div class="popup-header">
+    <div class="popup-header">
 
-💬 Investment Technology Indonesia
+        💬 Investment Technology Indonesia
 
-<span id="closePopup">
+        <span id="closePopup">
 
-<i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-xmark"></i>
 
-</span>
+        </span>
 
-</div>
+    </div>
 
-<div class="popup-body">
+    <div class="popup-body">
 
-<h3>Halo 👋</h3>
+        <h3>
 
-<p>
+            Halo 👋
 
-Terima kasih telah mengunjungi Portfolio kami.
+        </h3>
 
-Silakan konsultasikan kebutuhan digital Anda.
+        <p>
 
-</p>
+            Selamat datang di
+            Investment Technology Indonesia.
 
-<a href="https://wa.me/6285283397198?text=Halo%20Investment%20Technology%20Indonesia,%20Saya%20ingin%20berkonsultasi."
+        </p>
 
-target="_blank"
+        <ul>
 
-class="btn-primary">
+            <li>Website Development</li>
 
-Chat WhatsApp
+            <li>Software Development</li>
 
-</a>
+            <li>Mobile Application</li>
 
-</div>
+            <li>Artificial Intelligence</li>
+
+            <li>ERP & CRM</li>
+
+            <li>Cloud Computing</li>
+
+            <li>Networking</li>
+
+            <li>Cyber Security</li>
+
+        </ul>
+
+        <a href="https://wa.me/6285283397198?text=Halo%20Investment%20Technology%20Indonesia,%20Saya%20ingin%20berkonsultasi."
+            target="_blank"
+            class="btn-primary">
+
+            Chat WhatsApp
+
+        </a>
+
+    </div>
 
 </div>
 
