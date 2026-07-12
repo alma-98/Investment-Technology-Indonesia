@@ -2396,3 +2396,398 @@ document.getElementById("popup-chat").style.display="none";
     box-shadow: none !important;
 }
 </style>
+
+<style id="portfolio-sections-unified-light-v1">
+/* =====================================================
+   PORTFOLIO — UNIFIED LIGHT CARD TEMPLATE
+   Technology / Process / Industry / Benefits
+   ===================================================== */
+
+/* ---------- BACKGROUND SECTION ---------- */
+
+.technology-section,
+.tech-section,
+.development-process,
+.process-section,
+.industry-section,
+.benefits-section {
+    background: #ffffff !important;
+}
+
+/* ---------- GRID UMUM ---------- */
+
+.technology-grid,
+.tech-grid,
+.process-grid,
+.development-grid,
+.industry-grid,
+.benefits-grid {
+    display: grid !important;
+    gap: 20px !important;
+    align-items: stretch !important;
+}
+
+/* Technology: 5 kolom */
+.technology-grid,
+.tech-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+}
+
+/* Development Process: 3 kolom */
+.process-grid,
+.development-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+/* Industry: 4 kolom */
+.industry-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+/* Benefits: 4 kolom */
+.benefits-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+
+/* =====================================================
+   TECHNOLOGY STACK
+   ===================================================== */
+
+.technology-grid > *,
+.tech-grid > * {
+    min-height: 135px !important;
+    padding: 22px 14px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 14px !important;
+
+    text-align: center !important;
+
+    color: #222222 !important;
+    font-weight: 700 !important;
+
+    background: #ffffff !important;
+    border: 1px solid #ececec !important;
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.06) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+.technology-grid > *:hover,
+.tech-grid > *:hover {
+    transform: translateY(-7px) !important;
+    border-color: rgba(229, 9, 20, 0.35) !important;
+
+    box-shadow:
+        0 16px 36px rgba(0, 0, 0, 0.10),
+        0 0 18px rgba(229, 9, 20, 0.08) !important;
+}
+
+/* Icon teknologi */
+.technology-grid i,
+.tech-grid i {
+    color: #e50914 !important;
+    font-size: 34px !important;
+
+    transition:
+        transform 0.35s ease,
+        color 0.35s ease !important;
+}
+
+.technology-grid > *:hover i,
+.tech-grid > *:hover i {
+    transform: scale(1.12) !important;
+}
+
+
+/* =====================================================
+   DEVELOPMENT PROCESS
+   ===================================================== */
+
+.process-grid > *,
+.development-grid > * {
+    position: relative !important;
+    overflow: hidden !important;
+
+    min-height: 230px !important;
+    padding: 30px !important;
+
+    background: #ffffff !important;
+    border: 1px solid #ececec !important;
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+/* Garis merah atas */
+.process-grid > *::before,
+.development-grid > *::before {
+    content: "" !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 4px !important;
+
+    background: #e50914 !important;
+
+    transform: scaleX(0) !important;
+    transform-origin: left !important;
+
+    transition: transform 0.35s ease !important;
+}
+
+.process-grid > *:hover,
+.development-grid > *:hover {
+    transform: translateY(-8px) !important;
+
+    border-color:
+        rgba(229, 9, 20, 0.35) !important;
+
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.11),
+        0 0 18px rgba(229, 9, 20, 0.07) !important;
+}
+
+.process-grid > *:hover::before,
+.development-grid > *:hover::before {
+    transform: scaleX(1) !important;
+}
+
+/* Nomor 01 - 06 */
+.process-grid .number,
+.process-grid .step-number,
+.development-grid .number,
+.development-grid .step-number {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 58px !important;
+    height: 58px !important;
+
+    margin: 0 auto 20px !important;
+
+    color: #e50914 !important;
+    font-size: 22px !important;
+    font-weight: 800 !important;
+
+    background:
+        rgba(229, 9, 20, 0.07) !important;
+
+    border:
+        1px solid rgba(229, 9, 20, 0.18) !important;
+
+    border-radius: 16px !important;
+}
+
+/* Judul proses */
+.process-grid h3,
+.development-grid h3 {
+    color: #111111 !important;
+    text-align: center !important;
+
+    font-size: 20px !important;
+    font-weight: 700 !important;
+
+    margin-bottom: 12px !important;
+}
+
+/* Deskripsi proses */
+.process-grid p,
+.development-grid p {
+    color: #666666 !important;
+    text-align: center !important;
+
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+}
+
+
+/* =====================================================
+   INDUSTRY
+   ===================================================== */
+
+.industry-grid > * {
+    min-height: 145px !important;
+    padding: 24px 16px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 14px !important;
+
+    text-align: center !important;
+
+    color: #222222 !important;
+    font-weight: 700 !important;
+
+    background: #ffffff !important;
+
+    border:
+        1px solid #ececec !important;
+
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.06) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+.industry-grid > *:hover {
+    transform: translateY(-7px) !important;
+
+    border-color:
+        rgba(229, 9, 20, 0.35) !important;
+
+    box-shadow:
+        0 16px 36px rgba(0, 0, 0, 0.10),
+        0 0 18px rgba(229, 9, 20, 0.08) !important;
+}
+
+/* Icon industri */
+.industry-grid i {
+    color: #e50914 !important;
+    font-size: 32px !important;
+
+    transition:
+        transform 0.35s ease !important;
+}
+
+.industry-grid > *:hover i {
+    transform: scale(1.12) !important;
+}
+
+
+/* =====================================================
+   BENEFITS
+   ===================================================== */
+
+.benefits-grid > * {
+    position: relative !important;
+
+    min-height: 160px !important;
+    padding: 26px 18px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 15px !important;
+
+    text-align: center !important;
+
+    color: #222222 !important;
+    font-weight: 700 !important;
+
+    background: #ffffff !important;
+
+    border:
+        1px solid #ececec !important;
+
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.06) !important;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+.benefits-grid > *:hover {
+    transform: translateY(-7px) !important;
+
+    border-color:
+        rgba(229, 9, 20, 0.35) !important;
+
+    box-shadow:
+        0 16px 36px rgba(0, 0, 0, 0.10),
+        0 0 18px rgba(229, 9, 20, 0.08) !important;
+}
+
+/* Icon benefit */
+.benefits-grid i {
+    color: #e50914 !important;
+    font-size: 34px !important;
+
+    transition:
+        transform 0.35s ease !important;
+}
+
+.benefits-grid > *:hover i {
+    transform: scale(1.12) !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1100px) {
+
+    .technology-grid,
+    .tech-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .industry-grid,
+    .benefits-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .process-grid,
+    .development-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .technology-grid,
+    .tech-grid,
+    .process-grid,
+    .development-grid,
+    .industry-grid,
+    .benefits-grid {
+        grid-template-columns:
+            1fr !important;
+
+        gap: 16px !important;
+    }
+
+}
+
+</style>
