@@ -1,0 +1,32 @@
+[debug] [2026-07-15T12:33:21.071Z] ----------------------------------------------------------------------
+[debug] [2026-07-15T12:33:21.074Z] Command:       /Users/macbookpro2015/.nvm/versions/node/v24.18.0/bin/node /Users/macbookpro2015/.nvm/versions/node/v24.18.0/bin/firebase deploy --only hosting --project investment-technology-indonesia
+[debug] [2026-07-15T12:33:21.076Z] CLI Version:   15.23.0
+[debug] [2026-07-15T12:33:21.076Z] Platform:      darwin
+[debug] [2026-07-15T12:33:21.076Z] Node Version:  v24.18.0
+[debug] [2026-07-15T12:33:21.076Z] Detected Agent: unknown
+[debug] [2026-07-15T12:33:21.077Z] Time:          Wed Jul 15 2026 19:33:21 GMT+0700 (Western Indonesia Time)
+[debug] [2026-07-15T12:33:21.077Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-07-15T12:33:23.216Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-15T12:33:23.216Z] > authorizing via signed-in user (alma.budsteddy88@gmail.com)
+[debug] [2026-07-15T12:33:23.217Z] [iam] checking project investment-technology-indonesia for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-07-15T12:33:23.239Z] Checked if tokens are valid: true, expires at: 1784122370497
+[debug] [2026-07-15T12:33:23.240Z] Checked if tokens are valid: true, expires at: 1784122370497
+[debug] [2026-07-15T12:33:23.241Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/investment-technology-indonesia:testIamPermissions [none]
+[debug] [2026-07-15T12:33:23.241Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/investment-technology-indonesia:testIamPermissions  x-goog-user-project=investment-technology-indonesia
+[debug] [2026-07-15T12:33:23.241Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/investment-technology-indonesia:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-15T12:33:23.766Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/investment-technology-indonesia:testIamPermissions 400
+[debug] [2026-07-15T12:33:23.766Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/investment-technology-indonesia:testIamPermissions {"error":{"code":400,"message":"Project 'projects/investment-technology-indonesia' not found or deleted.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"consumer":"projects/investment-technology-indonesia","service":"cloudresourcemanager.googleapis.com","containerInfo":"projects/investment-technology-indonesia"}}]}}
+[debug] [2026-07-15T12:33:23.772Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/investment-technology-indonesia:testIamPermissions had HTTP Error: 400, Project 'projects/investment-technology-indonesia' not found or deleted.
+[debug] [2026-07-15T12:33:23.772Z] Checked if tokens are valid: true, expires at: 1784122370497
+[debug] [2026-07-15T12:33:23.773Z] Checked if tokens are valid: true, expires at: 1784122370497
+[debug] [2026-07-15T12:33:23.773Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/investment-technology-indonesia [none]
+[debug] [2026-07-15T12:33:24.785Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/investment-technology-indonesia 403
+[debug] [2026-07-15T12:33:24.785Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/investment-technology-indonesia {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-07-15T12:33:24.785Z] Request to https://firebase.googleapis.com/v1beta1/projects/investment-technology-indonesia had HTTP Error: 403, The caller does not have permission
+[debug] [2026-07-15T12:33:24.789Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/investment-technology-indonesia had HTTP Error: 403, The caller does not have permission
+    at responseToError (/Users/macbookpro2015/.nvm/versions/node/v24.18.0/lib/node_modules/firebase-tools/lib/responseToError.js:53:12)
+    at RetryOperation._fn (/Users/macbookpro2015/.nvm/versions/node/v24.18.0/lib/node_modules/firebase-tools/lib/apiv2.js:415:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[error] 
+[error] Error: Failed to get Firebase project investment-technology-indonesia. Please make sure the project exists and your account has permission to access it.
