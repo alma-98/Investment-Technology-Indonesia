@@ -4,9 +4,11 @@
     "ignore": [
       "firebase.json",
       ".firebaserc",
+      ".gitignore",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
       "**/.*",
-      "**/node_modules/**",
-      ".git/**"
+      "**/node_modules/**"
     ],
     "cleanUrls": true,
     "trailingSlash": false
