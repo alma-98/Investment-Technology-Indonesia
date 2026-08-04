@@ -5,47 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Investment Technology Indonesia</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
 body{
-background:linear-gradient(135deg,#050816,#111827,#0b1120);
 display:flex;
 justify-content:center;
 align-items:center;
 min-height:100vh;
+background:linear-gradient(135deg,#050816,#0f172a,#111827);
 color:#fff;
 overflow:hidden;
 }
-.bg{
+body:before{
+content:"";
 position:fixed;
 inset:0;
 background:
-radial-gradient(circle at 20% 20%,rgba(220,38,38,.25),transparent 35%),
-radial-gradient(circle at 80% 80%,rgba(37,99,235,.18),transparent 35%);
-filter:blur(30px);
+radial-gradient(circle at top left,rgba(220,38,38,.25),transparent 35%),
+radial-gradient(circle at bottom right,rgba(37,99,235,.18),transparent 35%);
+filter:blur(20px);
 }
 .card{
 position:relative;
-z-index:2;
-width:min(700px,90%);
+z-index:1;
+width:min(760px,92%);
+padding:60px;
+text-align:center;
 background:rgba(255,255,255,.06);
 backdrop-filter:blur(18px);
-padding:60px;
+border:1px solid rgba(255,255,255,.12);
 border-radius:24px;
-border:1px solid rgba(255,255,255,.1);
-text-align:center;
-box-shadow:0 20px 60px rgba(0,0,0,.4);
+box-shadow:0 20px 60px rgba(0,0,0,.45);
 }
-.icon{font-size:72px;margin-bottom:20px}
-h1{font-size:42px;margin-bottom:20px}
-p{color:#d1d5db;line-height:1.8;font-size:18px}
+.icon{
+font-size:72px;
+margin-bottom:20px;
+}
+h1{
+font-size:42px;
+margin-bottom:20px;
+}
+p{
+font-size:18px;
+line-height:1.9;
+color:#d1d5db;
+margin-bottom:40px;
+}
 a{
 display:inline-block;
-margin-top:35px;
 padding:16px 36px;
 background:#dc2626;
 color:#fff;
@@ -54,33 +63,42 @@ border-radius:999px;
 font-weight:600;
 transition:.3s;
 }
-a:hover{background:#ef4444}
-small{
-display:block;
-margin-top:30px;
+a:hover{
+background:#ef4444;
+transform:translateY(-3px);
+}
+footer{
+margin-top:35px;
 color:#9ca3af;
+font-size:14px;
 }
 </style>
 </head>
 <body>
 
-<div class="bg"></div>
-
 <div class="card">
+
 <div class="icon">🚧</div>
 
 <h1>Website Sedang Dalam Perbaikan</h1>
 
 <p>
-Investment Technology Indonesia sedang melakukan peningkatan sistem dan tampilan website.
+Mohon maaf atas ketidaknyamanannya.<br><br>
+
+Website <strong>Investment Technology Indonesia</strong> sedang menjalani proses
+pemeliharaan dan peningkatan sistem agar dapat memberikan layanan yang lebih baik.
+
 <br><br>
-Untuk pemesanan Website, Aplikasi, Sistem Informasi, maupun solusi digital lainnya,
-silakan menghubungi StudioIT.
+
+Untuk informasi lebih lanjut atau pemesanan Website, Aplikasi, maupun Sistem Informasi,
+silakan kunjungi <strong>StudioIT</strong>.
 </p>
 
-<a href="https://studioit.web.app/">Pesan Website di StudioIT</a>
+<a href="https://studioit.web.app/">Kunjungi StudioIT</a>
 
-<small>© 2026 Investment Technology Indonesia</small>
+<footer>
+© 2026 Investment Technology Indonesia
+</footer>
 
 </div>
 
