@@ -3276,7 +3276,7 @@ function openSMS(message="Halo, saya ingin konsultasi."){
 
     window.open(
 
-        `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+        `sms:+6285283397198?body=${encodeURIComponent(message)}`,
 
         "_blank"
 

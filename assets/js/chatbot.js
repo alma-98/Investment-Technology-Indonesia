@@ -2402,7 +2402,7 @@ function initializeSMSButtons(){
 
 function createSMSURL(message){
 
-    return `https://wa.me/${
+    return `sms:+6285283397198?body=${
 
         SMSEngine.phone
 

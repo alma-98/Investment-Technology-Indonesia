@@ -1105,7 +1105,7 @@ function generateSMSURL(message){
 
         SMSContacts.sales;
 
-    return `https://wa.me/${phone}?text=${
+    return `sms:+6285283397198?body=${phone}?text=${
 
         encodeURIComponent(message)
 
