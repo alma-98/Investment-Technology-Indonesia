@@ -813,7 +813,7 @@ table td{
 
 @media screen and (max-width:576px){
 
-.whatsapp-float{
+.sms-float{
 
     width:56px;
 
@@ -2556,12 +2556,12 @@ nav ul li ul li a{
 }
 
 /* ===========================================================
-   FLOATING WHATSAPP
+   FLOATING SMS
 =========================================================== */
 
 @media screen and (max-width:768px){
 
-.whatsapp-float{
+.sms-float{
 
     width:60px;
 
@@ -2986,7 +2986,7 @@ body.dark p{
 
 header,
 footer,
-.whatsapp-float,
+.sms-float,
 .popup-chat,
 #backToTop,
 .menu-toggle,

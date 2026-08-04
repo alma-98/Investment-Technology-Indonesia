@@ -3267,7 +3267,7 @@ function getBotReply(){
 }
 
 /* ===========================================================
-   WHATSAPP
+   SMS
 =========================================================== */
 
 function openSMS(message="Halo, saya ingin konsultasi."){
@@ -3286,7 +3286,7 @@ function openSMS(message="Halo, saya ingin konsultasi."){
 
 function initializeSMS(){
 
-    $$("[data-whatsapp]").forEach(button=>{
+    $$("[data- sms ]").forEach(button=>{
 
         on(button,"click",()=>{
 
@@ -3452,7 +3452,7 @@ function initializeQuickActions(){
 
                     break;
 
-                case "whatsapp":
+                case " sms ":
 
                     openSMS();
 

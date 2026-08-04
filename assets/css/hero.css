@@ -2290,10 +2290,10 @@
 }
 
 /* ===========================================================
-   WHATSAPP CTA
+   SMS CTA
 =========================================================== */
 
-.hero-whatsapp{
+.hero- sms {
 
     display:inline-flex;
 
@@ -2317,7 +2317,7 @@
 
 }
 
-.hero-whatsapp:hover{
+.hero- sms :hover{
 
     transform:translateY(-4px);
 
@@ -2785,7 +2785,7 @@
 
 .hero-btn,
 .hero-btn-outline,
-.hero-whatsapp{
+.hero- sms {
 
     width:100%;
 
@@ -4030,7 +4030,7 @@ body.dark .hero-glow.two{
 
 .hero-btn:focus,
 .hero-btn-outline:focus,
-.hero-whatsapp:focus{
+.hero- sms :focus{
 
     box-shadow:
         0 0 0 4px rgba(214,0,0,.18);

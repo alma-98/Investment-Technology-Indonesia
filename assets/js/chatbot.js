@@ -2333,7 +2333,7 @@ Object.assign(
 "use strict";
 
 /* ===========================================================
-   WHATSAPP
+   SMS
 =========================================================== */
 
 const SMSEngine={
@@ -2374,7 +2374,7 @@ function initializeSMS(){
 function initializeSMSButtons(){
 
     $$(
-        ".chatbot-whatsapp",
+        ".chatbot- sms ",
         Chatbot.container
     ).forEach(button=>{
 
@@ -2618,7 +2618,7 @@ function openWebsite(){
    STATUS
 =========================================================== */
 
-function whatsappStatus(){
+function  sms Status(){
 
     return{
 
@@ -2664,7 +2664,7 @@ Object.assign(
 
     {
 
-        whatsapp:{
+         sms :{
 
             init:
 
@@ -2712,7 +2712,7 @@ Object.assign(
 
             status:
 
-                whatsappStatus
+                 sms Status
 
         }
 
@@ -5144,9 +5144,9 @@ function chatbotReport(){
 
             faqEngineStatus?.(),
 
-        whatsapp:
+         sms :
 
-            whatsappStatus?.(),
+             sms Status?.(),
 
         attachment:
 

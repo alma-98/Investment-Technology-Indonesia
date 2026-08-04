@@ -2151,16 +2151,16 @@
 }
 
 /* ===========================================================
-   WHATSAPP
+   SMS
 =========================================================== */
 
-.footer-whatsapp{
+.footer- sms {
 
     margin-top:45px;
 
 }
 
-.footer-whatsapp a{
+.footer- sms  a{
 
     display:flex;
 
@@ -2184,7 +2184,7 @@
 
 }
 
-.footer-whatsapp a:hover{
+.footer- sms  a:hover{
 
     transform:translateY(-5px);
 
@@ -2192,7 +2192,7 @@
 
 }
 
-.footer-whatsapp i{
+.footer- sms  i{
 
     font-size:28px;
 

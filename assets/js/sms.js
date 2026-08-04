@@ -1,7 +1,7 @@
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 1
  Core • Config • Initialization
 ===========================================================
@@ -29,21 +29,21 @@ const SMSApp={
    CONFIG
 =========================================================== */
 
-const WHATSAPP_CONFIG={
+const SMS_CONFIG={
 
-    selector:".whatsapp",
+    selector:". sms ",
 
-    buttonSelector:".whatsapp-button",
+    buttonSelector:". sms -button",
 
-    popupSelector:".whatsapp-popup",
+    popupSelector:". sms -popup",
 
-    closeSelector:".whatsapp-close",
+    closeSelector:". sms -close",
 
-    formSelector:".whatsapp-form",
+    formSelector:". sms -form",
 
-    inputSelector:".whatsapp-input",
+    inputSelector:". sms -input",
 
-    sendSelector:".whatsapp-send",
+    sendSelector:". sms -send",
 
     defaultCountry:"62",
 
@@ -125,7 +125,7 @@ const SMSContacts={
    LOGGER
 =========================================================== */
 
-function whatsappLog(...args){
+function  sms Log(...args){
 
     if(!SMSApp.debug){
 
@@ -221,7 +221,7 @@ function initializeElements(){
 
     SMS.container=$(
 
-        WHATSAPP_CONFIG.selector
+        SMS_CONFIG.selector
 
     );
 
@@ -233,7 +233,7 @@ function initializeElements(){
 
     SMS.button=$(
 
-        WHATSAPP_CONFIG.buttonSelector,
+        SMS_CONFIG.buttonSelector,
 
         SMS.container
 
@@ -241,7 +241,7 @@ function initializeElements(){
 
     SMS.popup=$(
 
-        WHATSAPP_CONFIG.popupSelector,
+        SMS_CONFIG.popupSelector,
 
         SMS.container
 
@@ -249,7 +249,7 @@ function initializeElements(){
 
     SMS.close=$(
 
-        WHATSAPP_CONFIG.closeSelector,
+        SMS_CONFIG.closeSelector,
 
         SMS.container
 
@@ -257,7 +257,7 @@ function initializeElements(){
 
     SMS.form=$(
 
-        WHATSAPP_CONFIG.formSelector,
+        SMS_CONFIG.formSelector,
 
         SMS.container
 
@@ -265,7 +265,7 @@ function initializeElements(){
 
     SMS.input=$(
 
-        WHATSAPP_CONFIG.inputSelector,
+        SMS_CONFIG.inputSelector,
 
         SMS.container
 
@@ -273,7 +273,7 @@ function initializeElements(){
 
     SMS.send=$(
 
-        WHATSAPP_CONFIG.sendSelector,
+        SMS_CONFIG.sendSelector,
 
         SMS.container
 
@@ -309,7 +309,7 @@ function initializeSMS(){
 
     SMSState.initialized=true;
 
-    whatsappLog(
+     sms Log(
 
         "SMS Initialized"
 
@@ -325,7 +325,7 @@ function refreshSMS(){
 
     initializeElements();
 
-    whatsappLog(
+     sms Log(
 
         "SMS Refreshed"
 
@@ -347,7 +347,7 @@ function destroySMS(){
 
     SMSState.initialized=false;
 
-    whatsappLog(
+     sms Log(
 
         "SMS Destroyed"
 
@@ -379,13 +379,13 @@ window.SMSManager={
 
     app:SMSApp,
 
-    config:WHATSAPP_CONFIG,
+    config:SMS_CONFIG,
 
     state:SMSState,
 
     contacts:SMSContacts,
 
-    whatsapp:SMS,
+     sms :SMS,
 
     init:initializeSMS,
 
@@ -403,7 +403,7 @@ window.SMSManager={
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 2
  Floating Button • Popup • Toggle • UI Controls
 ===========================================================
@@ -689,7 +689,7 @@ function initializeAutoOpen(){
 
     if(
 
-        !WHATSAPP_CONFIG.autoOpen
+        !SMS_CONFIG.autoOpen
 
     ){
 
@@ -711,7 +711,7 @@ function initializeAutoOpen(){
 
     },
 
-    WHATSAPP_CONFIG.autoOpenDelay);
+    SMS_CONFIG.autoOpenDelay);
 
 }
 
@@ -895,7 +895,7 @@ Object.assign(
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 3
  Message Engine • Send Message • URL Generator
 ===========================================================
@@ -1169,7 +1169,7 @@ function updateCharacterCounter(){
 
     const counter=$(
 
-        ".whatsapp-counter",
+        ". sms -counter",
 
         SMS.container
 
@@ -1363,7 +1363,7 @@ Object.assign(
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 4
  Contact List • Department Routing • Contact Manager
 ===========================================================
@@ -1381,7 +1381,7 @@ const ContactManager={
 
     activeDepartment:
 
-        WHATSAPP_CONFIG.defaultDepartment,
+        SMS_CONFIG.defaultDepartment,
 
     contacts:{
 
@@ -1543,7 +1543,7 @@ function renderContactList(){
 
     const list=$(
 
-        ".whatsapp-contact-list",
+        ". sms -contact-list",
 
         SMS.container
 
@@ -1573,7 +1573,7 @@ function renderContactList(){
 
             item.className=
 
-                "whatsapp-contact-item";
+                " sms -contact-item";
 
             item.dataset.department=
 
@@ -1749,7 +1749,7 @@ function resetContacts(){
 
     ContactManager.activeDepartment=
 
-        WHATSAPP_CONFIG.defaultDepartment;
+        SMS_CONFIG.defaultDepartment;
 
     SMSState.selectedDepartment=
 
@@ -1877,7 +1877,7 @@ Object.assign(
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 5
  Quick Message Templates • Preset Messages • Smart Templates
 ===========================================================
@@ -1975,7 +1975,7 @@ function renderTemplateButtons(){
 
     const container=$(
 
-        ".whatsapp-templates",
+        ". sms -templates",
 
         SMS.container
 
@@ -2003,7 +2003,7 @@ function renderTemplateButtons(){
 
         button.className=
 
-            "whatsapp-template";
+            " sms -template";
 
         button.dataset.template=key;
 
@@ -2028,7 +2028,7 @@ function renderTemplateButtons(){
 function initializeTemplateEvents(){
 
     $$(
-        ".whatsapp-template",
+        ". sms -template",
 
         SMS.container
 
@@ -2095,7 +2095,7 @@ function loadTemplate(name){
 function updateTemplateUI(){
 
     $$(
-        ".whatsapp-template",
+        ". sms -template",
 
         SMS.container
 
@@ -2378,7 +2378,7 @@ Object.assign(
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 6
  Form Integration • Contact • Quote • Consultation
 ===========================================================
@@ -2408,7 +2408,7 @@ function initializeForms(){
 
     FormEngine.forms=$$(
 
-        "form[data-whatsapp]",
+        "form[data- sms ]",
 
         document
 
@@ -2828,7 +2828,7 @@ Object.assign(
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 7
  File Attachment • Share Support • Clipboard • QR Sharing
 ===========================================================
@@ -2878,7 +2878,7 @@ function initializeFileInput(){
 
     const input=$(
 
-        ".whatsapp-file",
+        ". sms -file",
 
         SMS.container
 
@@ -2926,7 +2926,7 @@ function handleFiles(files){
 
         ){
 
-            whatsappLog(
+             sms Log(
 
                 "File terlalu besar."
 
@@ -2952,7 +2952,7 @@ function renderAttachment(file){
 
     const container=$(
 
-        ".whatsapp-attachments",
+        ". sms -attachments",
 
         SMS.container
 
@@ -2970,7 +2970,7 @@ function renderAttachment(file){
 
     item.className=
 
-        "whatsapp-attachment";
+        " sms -attachment";
 
     item.innerHTML=`
 
@@ -3020,7 +3020,7 @@ function refreshAttachments(){
 
     const container=$(
 
-        ".whatsapp-attachments",
+        ". sms -attachments",
 
         SMS.container
 
@@ -3118,7 +3118,7 @@ async function shareCurrentPage(){
 
         catch(error){
 
-            whatsappLog(error);
+             sms Log(error);
 
         }
 
@@ -3144,7 +3144,7 @@ async function copyCurrentURL(){
 
         );
 
-        whatsappLog(
+         sms Log(
 
             "URL copied."
 
@@ -3154,7 +3154,7 @@ async function copyCurrentURL(){
 
     catch(error){
 
-        whatsappLog(error);
+         sms Log(error);
 
     }
 
@@ -3188,7 +3188,7 @@ async function copyMessage(){
 
     catch(error){
 
-        whatsappLog(error);
+         sms Log(error);
 
     }
 
@@ -3202,7 +3202,7 @@ function openQRCode(){
 
     const image=$(
 
-        ".whatsapp-qr",
+        ". sms -qr",
 
         SMS.container
 
@@ -3228,7 +3228,7 @@ function initializeClipboard(){
 
     const button=$(
 
-        ".whatsapp-copy",
+        ". sms -copy",
 
         SMS.container
 
@@ -3257,7 +3257,7 @@ function initializeClipboard(){
 function initializeShareButtons(){
 
     $$(
-        ".whatsapp-share",
+        ". sms -share",
 
         SMS.container
 
@@ -3378,7 +3378,7 @@ Object.assign(
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 8
  Analytics • Click Tracking • Statistics • Performance
 ===========================================================
@@ -3544,7 +3544,7 @@ function saveAnalytics(){
 
     catch(error){
 
-        whatsappLog(error);
+         sms Log(error);
 
     }
 
@@ -3588,7 +3588,7 @@ function loadAnalytics(){
 
     catch(error){
 
-        whatsappLog(error);
+         sms Log(error);
 
     }
 
@@ -3858,7 +3858,7 @@ Object.assign(
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 9
  Local Storage • Recent Contacts • Session Manager
 ===========================================================
@@ -3874,13 +3874,13 @@ const StorageEngine={
 
     initialized:false,
 
-    historyKey:"iti-whatsapp-history",
+    historyKey:"iti- sms -history",
 
-    recentKey:"iti-whatsapp-recent",
+    recentKey:"iti- sms -recent",
 
-    sessionKey:"iti-whatsapp-session",
+    sessionKey:"iti- sms -session",
 
-    settingsKey:"iti-whatsapp-settings"
+    settingsKey:"iti- sms -settings"
 
 };
 
@@ -3926,7 +3926,7 @@ function saveHistory(){
 
     catch(error){
 
-        whatsappLog(error);
+         sms Log(error);
 
     }
 
@@ -3958,7 +3958,7 @@ function loadHistory(){
 
     catch(error){
 
-        whatsappLog(error);
+         sms Log(error);
 
     }
 
@@ -4110,7 +4110,7 @@ function loadSession(){
 
     catch(error){
 
-        whatsappLog(error);
+         sms Log(error);
 
     }
 
@@ -4126,15 +4126,15 @@ function saveSettings(){
 
         autoOpen:
 
-            WHATSAPP_CONFIG.autoOpen,
+            SMS_CONFIG.autoOpen,
 
         animation:
 
-            WHATSAPP_CONFIG.animationDuration,
+            SMS_CONFIG.animationDuration,
 
         defaultDepartment:
 
-            WHATSAPP_CONFIG.defaultDepartment
+            SMS_CONFIG.defaultDepartment
 
     };
 
@@ -4170,15 +4170,15 @@ function loadSettings(){
 
         }
 
-        WHATSAPP_CONFIG.autoOpen=
+        SMS_CONFIG.autoOpen=
 
             settings.autoOpen;
 
-        WHATSAPP_CONFIG.animationDuration=
+        SMS_CONFIG.animationDuration=
 
             settings.animation;
 
-        WHATSAPP_CONFIG.defaultDepartment=
+        SMS_CONFIG.defaultDepartment=
 
             settings.defaultDepartment;
 
@@ -4186,7 +4186,7 @@ function loadSettings(){
 
     catch(error){
 
-        whatsappLog(error);
+         sms Log(error);
 
     }
 
@@ -4216,11 +4216,11 @@ function exportStorage(){
 
             autoOpen:
 
-                WHATSAPP_CONFIG.autoOpen,
+                SMS_CONFIG.autoOpen,
 
             animation:
 
-                WHATSAPP_CONFIG.animationDuration
+                SMS_CONFIG.animationDuration
 
         }
 
@@ -4426,7 +4426,7 @@ Object.assign(
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 10
  Responsive • Animation • Performance Optimization
 ===========================================================
@@ -4528,7 +4528,7 @@ function updateResponsive(){
 
             SMS.popup,
 
-            "whatsapp-mobile"
+            " sms -mobile"
 
         );
 
@@ -4538,7 +4538,7 @@ function updateResponsive(){
 
             SMS.popup,
 
-            "whatsapp-mobile"
+            " sms -mobile"
 
         );
 
@@ -4566,7 +4566,7 @@ function initializeAnimation(){
 
         `all ${
 
-            WHATSAPP_CONFIG.animationDuration
+            SMS_CONFIG.animationDuration
 
         }ms ease`;
 
@@ -4645,7 +4645,7 @@ function initializeLazyLoad(){
         );
 
     $$(
-        ".lazy-whatsapp"
+        ".lazy- sms "
     ).forEach(item=>{
 
         PerformanceEngine.observer.observe(item);
@@ -4914,7 +4914,7 @@ Object.assign(
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 11
  Utilities • Debug • Report • Public API
 ===========================================================
@@ -4946,7 +4946,7 @@ function enableDebug(){
 
     SMSApp.debug=true;
 
-    whatsappLog(
+     sms Log(
 
         "Debug Enabled"
 
@@ -5114,7 +5114,7 @@ function generateReport(){
 
         config:
 
-            WHATSAPP_CONFIG,
+            SMS_CONFIG,
 
         state:
 
@@ -5204,7 +5204,7 @@ function destroyManager(){
 
         ?.disconnect();
 
-    whatsappLog(
+     sms Log(
 
         "SMS Manager Destroyed"
 
@@ -5360,7 +5360,7 @@ document.addEventListener(
 /*!
 ===========================================================
  Investment Technology Indonesia
- assets/js/whatsapp.js
+ assets/js/sms.js
  Part 12
  Final Initialization • Cleanup • Export • End of File
 ===========================================================
@@ -5376,7 +5376,7 @@ function initializeSMSManager(){
 
     if(SMSApp.initialized){
 
-        whatsappLog(
+         sms Log(
 
             "SMS Manager already initialized."
 
@@ -5386,7 +5386,7 @@ function initializeSMSManager(){
 
     }
 
-    whatsappLog(
+     sms Log(
 
         "Initializing SMS Manager..."
 
@@ -5414,7 +5414,7 @@ function initializeSMSManager(){
 
     SMSApp.initialized=true;
 
-    whatsappLog(
+     sms Log(
 
         "SMS Manager Ready."
 
@@ -5436,7 +5436,7 @@ window.addEventListener(
 
         refreshPerformance?.();
 
-        whatsappLog(
+         sms Log(
 
             "Window Loaded"
 
@@ -5544,7 +5544,7 @@ function cleanupSMSManager(){
 
         ?.disconnect();
 
-    whatsappLog(
+     sms Log(
 
         "SMS Cleanup Complete"
 
@@ -5574,7 +5574,7 @@ window.addEventListener(
 
 Object.freeze(
 
-    WHATSAPP_CONFIG
+    SMS_CONFIG
 
 );
 
@@ -5614,7 +5614,7 @@ Object.assign(
 
         config:
 
-            WHATSAPP_CONFIG,
+            SMS_CONFIG,
 
         state:
 
@@ -5654,25 +5654,25 @@ document.addEventListener(
    FINAL LOG
 =========================================================== */
 
-whatsappLog(
+ sms Log(
 
 "========================================"
 
 );
 
-whatsappLog(
+ sms Log(
 
 "Investment Technology Indonesia"
 
 );
 
-whatsappLog(
+ sms Log(
 
 "SMS Manager"
 
 );
 
-whatsappLog(
+ sms Log(
 
 "Version:",
 
@@ -5680,7 +5680,7 @@ SMSInfo.version
 
 );
 
-whatsappLog(
+ sms Log(
 
 "Environment:",
 
@@ -5688,7 +5688,7 @@ SMSInfo.environment
 
 );
 
-whatsappLog(
+ sms Log(
 
 "========================================"
 
@@ -5734,6 +5734,6 @@ whatsappLog(
 
 /* ===========================================================
    END OF FILE
-   assets/js/whatsapp.js
+   assets/js/sms.js
 ===========================================================
 */

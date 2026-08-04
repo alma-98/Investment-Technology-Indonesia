@@ -2310,16 +2310,16 @@
 }
 
 /* ===========================================================
-   WHATSAPP SECTION
+   SMS SECTION
 =========================================================== */
 
-.whatsapp-contact{
+. sms -contact{
 
     margin-top:100px;
 
 }
 
-.whatsapp-box{
+. sms -box{
 
     display:grid;
 
@@ -2339,7 +2339,7 @@
 
 }
 
-.whatsapp-icon{
+. sms -icon{
 
     width:90px;
 
@@ -2359,7 +2359,7 @@
 
 }
 
-.whatsapp-content h2{
+. sms -content h2{
 
     margin-bottom:16px;
 
@@ -2367,7 +2367,7 @@
 
 }
 
-.whatsapp-content p{
+. sms -content p{
 
     line-height:1.9;
 
@@ -2375,7 +2375,7 @@
 
 }
 
-.whatsapp-button{
+. sms -button{
 
     display:inline-flex;
 
@@ -2399,7 +2399,7 @@
 
 }
 
-.whatsapp-button:hover{
+. sms -button:hover{
 
     transform:translateY(-4px);
 
@@ -4778,7 +4778,7 @@
 
 }
 
-.whatsapp-box{
+. sms -box{
 
     grid-template-columns:1fr;
 
@@ -4786,7 +4786,7 @@
 
 }
 
-.whatsapp-icon{
+. sms -icon{
 
     margin:0 auto;
 
@@ -5419,7 +5419,7 @@ body.dark .qr-image img{
 
 body.dark .contact-cta-box,
 body.dark .contact-final-box,
-body.dark .whatsapp-box{
+body.dark . sms -box{
 
     background:linear-gradient(
         135deg,
@@ -5431,7 +5431,7 @@ body.dark .whatsapp-box{
 
 body.dark .contact-cta-box h2,
 body.dark .contact-final-box h2,
-body.dark .whatsapp-content h2{
+body.dark . sms -content h2{
 
     color:#ffffff;
 
@@ -5439,7 +5439,7 @@ body.dark .whatsapp-content h2{
 
 body.dark .contact-cta-box p,
 body.dark .contact-final-box p,
-body.dark .whatsapp-content p{
+body.dark . sms -content p{
 
     color:rgba(255,255,255,.92);
 
@@ -6274,7 +6274,7 @@ body.dark .contact ::selection{
 .contact-submit,
 .contact-newsletter,
 .contact-social,
-.whatsapp-contact,
+. sms -contact,
 .contact-cta,
 .contact-final-cta{
 

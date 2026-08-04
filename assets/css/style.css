@@ -3544,10 +3544,10 @@ nav ul li ul li a:hover{
 }
 
 /* ===========================================================
-   FLOATING WHATSAPP
+   FLOATING SMS
 =========================================================== */
 
-.whatsapp-float{
+.sms-float{
     position:fixed;
     right:25px;
     bottom:30px;
@@ -3565,7 +3565,7 @@ nav ul li ul li a:hover{
     transition:.35s;
 }
 
-.whatsapp-float:hover{
+.sms-float:hover{
     transform:scale(1.1);
 }
 
@@ -4181,7 +4181,7 @@ h3{
 
 }
 
-.whatsapp-float{
+.sms-float{
 
     width:58px;
 
@@ -4260,7 +4260,7 @@ body.dark p{
 
 header,
 footer,
-.whatsapp-float,
+.sms-float,
 #backToTop,
 .popup-chat,
 .menu-toggle{
