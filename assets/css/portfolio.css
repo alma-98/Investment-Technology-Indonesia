@@ -6668,3 +6668,114 @@ body.dark .portfolio ::selection{
 /* ===========================================================
    END OF PORTFOLIO.CSS
 =========================================================== */
+/* =================================
+   DIGITAL PROJECT CARD SYSTEM
+================================= */
+
+.project-card {
+
+    background:#080808;
+    border:1px solid rgba(212,167,44,.25);
+    border-radius:20px;
+
+    padding:35px 30px;
+
+    min-height:260px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    transition:.3s ease;
+}
+
+
+.project-card:hover {
+
+    transform:translateY(-8px);
+
+    border-color:#d4a72c;
+
+    box-shadow:
+    0 15px 40px rgba(212,167,44,.15);
+
+}
+
+
+
+.project-category {
+
+    color:#d4a72c;
+
+    font-size:12px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.project-card h3 {
+
+    color:#ffffff;
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.project-card p {
+
+    color:#a1a1aa;
+
+    line-height:1.7;
+
+}
+
+
+
+.project-card a {
+
+    margin-top:25px;
+
+    color:#d4a72c;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+
+.project-card a:hover {
+
+    color:white;
+
+}
+
+
+@media(max-width:768px){
+
+.project-card{
+
+padding:25px;
+
+min-height:auto;
+
+}
+
+.project-card h3{
+
+font-size:22px;
+
+}
+
+}
+
