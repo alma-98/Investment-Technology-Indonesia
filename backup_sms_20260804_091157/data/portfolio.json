@@ -1,0 +1,266 @@
+{
+  "company": "Investment Technology Indonesia",
+  "version": "1.0.0",
+  "lastUpdated": "2026-07-03",
+  "totalProjects": 12,
+  "categories": [
+    "Website",
+    "Mobile App",
+    "Enterprise",
+    "Cloud",
+    "Networking",
+    "Cyber Security",
+    "Data Center",
+    "IoT",
+    "AI",
+    "Digital Transformation"
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "slug": "corporate-company-profile",
+      "title": "Corporate Company Profile",
+      "category": "Website",
+      "client": "Corporate Business",
+      "year": "2026",
+      "status": "Completed",
+      "featured": true,
+      "thumbnail": "assets/images/portfolio/project1.jpg",
+      "gallery": [
+        "assets/images/portfolio/project1.jpg",
+        "assets/images/portfolio/project2.jpg",
+        "assets/images/portfolio/project3.jpg"
+      ],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Bootstrap"
+      ],
+      "description": "Modern responsive company profile website with SEO optimization."
+    },
+    {
+      "id": 2,
+      "slug": "erp-system",
+      "title": "Enterprise ERP System",
+      "category": "Enterprise",
+      "client": "Manufacturing Company",
+      "year": "2026",
+      "status": "Completed",
+      "featured": true,
+      "thumbnail": "assets/images/portfolio/erp.jpg",
+      "gallery": [
+        "assets/images/portfolio/erp.jpg"
+      ],
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "REST API"
+      ],
+      "description": "ERP system covering inventory, purchasing, finance, HR and reporting."
+    },
+    {
+      "id": 3,
+      "slug": "crm-platform",
+      "title": "CRM Platform",
+      "category": "Enterprise",
+      "client": "Sales Organization",
+      "year": "2026",
+      "status": "Completed",
+      "featured": true,
+      "thumbnail": "assets/images/portfolio/crm.jpg",
+      "gallery": [
+        "assets/images/portfolio/crm.jpg"
+      ],
+      "technologies": [
+        "Laravel",
+        "Vue",
+        "MySQL"
+      ],
+      "description": "Customer Relationship Management platform."
+    },
+    {
+      "id": 4,
+      "slug": "mobile-superapp",
+      "title": "Super App Platform",
+      "category": "Mobile App",
+      "client": "Startup",
+      "year": "2026",
+      "status": "Development",
+      "featured": true,
+      "thumbnail": "assets/images/portfolio/project4.jpg",
+      "gallery": [
+        "assets/images/portfolio/project4.jpg"
+      ],
+      "technologies": [
+        "Flutter",
+        "Firebase",
+        "Node.js"
+      ],
+      "description": "Integrated Super App for transportation, logistics, marketplace and digital services."
+    },
+    {
+      "id": 5,
+      "slug": "cloud-migration",
+      "title": "Cloud Migration",
+      "category": "Cloud",
+      "client": "Enterprise",
+      "year": "2025",
+      "status": "Completed",
+      "featured": false,
+      "thumbnail": "assets/images/portfolio/project5.jpg",
+      "gallery": [
+        "assets/images/portfolio/project5.jpg"
+      ],
+      "technologies": [
+        "AWS",
+        "Docker",
+        "Linux"
+      ],
+      "description": "Migration from on-premise infrastructure to cloud environment."
+    },
+    {
+      "id": 6,
+      "slug": "network-infrastructure",
+      "title": "Enterprise Network Infrastructure",
+      "category": "Networking",
+      "client": "Corporate",
+      "year": "2025",
+      "status": "Completed",
+      "featured": false,
+      "thumbnail": "assets/images/portfolio/project6.jpg",
+      "gallery": [
+        "assets/images/portfolio/project6.jpg"
+      ],
+      "technologies": [
+        "Cisco",
+        "MikroTik",
+        "Ubiquiti"
+      ],
+      "description": "LAN, WAN, VPN and enterprise WiFi implementation."
+    },
+    {
+      "id": 7,
+      "slug": "cyber-security",
+      "title": "Cyber Security Solution",
+      "category": "Cyber Security",
+      "client": "Financial Institution",
+      "year": "2025",
+      "status": "Completed",
+      "featured": false,
+      "thumbnail": "assets/images/portfolio/project7.jpg",
+      "gallery": [
+        "assets/images/portfolio/project7.jpg"
+      ],
+      "technologies": [
+        "Fortinet",
+        "Cloudflare",
+        "Firewall"
+      ],
+      "description": "Enterprise cybersecurity implementation."
+    },
+    {
+      "id": 8,
+      "slug": "data-center",
+      "title": "Server & Data Center",
+      "category": "Data Center",
+      "client": "Government",
+      "year": "2025",
+      "status": "Completed",
+      "featured": false,
+      "thumbnail": "assets/images/portfolio/project8.jpg",
+      "gallery": [
+        "assets/images/portfolio/project8.jpg"
+      ],
+      "technologies": [
+        "VMware",
+        "Proxmox",
+        "Linux"
+      ],
+      "description": "High availability server and virtualization deployment."
+    },
+    {
+      "id": 9,
+      "slug": "iot-monitoring",
+      "title": "IoT Monitoring System",
+      "category": "IoT",
+      "client": "Industrial Company",
+      "year": "2026",
+      "status": "Development",
+      "featured": false,
+      "thumbnail": "assets/images/portfolio/project9.jpg",
+      "gallery": [
+        "assets/images/portfolio/project9.jpg"
+      ],
+      "technologies": [
+        "ESP32",
+        "MQTT",
+        "Node.js"
+      ],
+      "description": "IoT monitoring dashboard for industrial equipment."
+    },
+    {
+      "id": 10,
+      "slug": "ai-chatbot",
+      "title": "AI Chatbot Platform",
+      "category": "AI",
+      "client": "Private Company",
+      "year": "2026",
+      "status": "Development",
+      "featured": true,
+      "thumbnail": "assets/images/portfolio/project10.jpg",
+      "gallery": [
+        "assets/images/portfolio/project10.jpg"
+      ],
+      "technologies": [
+        "OpenAI API",
+        "Node.js",
+        "Python"
+      ],
+      "description": "Artificial Intelligence customer support assistant."
+    },
+    {
+      "id": 11,
+      "slug": "digital-transformation",
+      "title": "Digital Transformation",
+      "category": "Digital Transformation",
+      "client": "Enterprise",
+      "year": "2026",
+      "status": "Completed",
+      "featured": false,
+      "thumbnail": "assets/images/portfolio/project11.jpg",
+      "gallery": [
+        "assets/images/portfolio/project11.jpg"
+      ],
+      "technologies": [
+        "Cloud",
+        "ERP",
+        "Automation"
+      ],
+      "description": "Business process digitalization and automation."
+    },
+    {
+      "id": 12,
+      "slug": "investment-technology-website",
+      "title": "Investment Technology Indonesia Website",
+      "category": "Website",
+      "client": "Internal Project",
+      "year": "2026",
+      "status": "Completed",
+      "featured": true,
+      "thumbnail": "assets/images/portfolio/company-profile.jpg",
+      "gallery": [
+        "assets/images/portfolio/company-profile.jpg"
+      ],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "JSON",
+        "GitHub Pages"
+      ],
+      "description": "Official corporate website for Investment Technology Indonesia featuring responsive design, SEO optimization, dynamic JSON content, and modern UI/UX."
+    }
+  ]
+}

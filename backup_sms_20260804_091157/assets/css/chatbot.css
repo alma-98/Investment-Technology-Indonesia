@@ -1,0 +1,6221 @@
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 1
+   Base • Floating Button • Container
+=========================================================== */
+
+/* ===========================================================
+   CHATBOT ROOT
+=========================================================== */
+
+.chatbot{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    z-index:9999;
+
+    font-family:inherit;
+
+}
+
+/* ===========================================================
+   FLOATING BUTTON
+=========================================================== */
+
+.chatbot-toggle{
+
+    position:relative;
+
+    width:68px;
+
+    height:68px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #ff5050
+    );
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+    box-shadow:0 20px 45px rgba(214,0,0,.35);
+
+    transition:.35s ease;
+
+}
+
+.chatbot-toggle:hover{
+
+    transform:translateY(-6px) scale(1.05);
+
+    box-shadow:0 30px 60px rgba(214,0,0,.45);
+
+}
+
+.chatbot-toggle:active{
+
+    transform:scale(.95);
+
+}
+
+.chatbot-toggle i{
+
+    font-size:30px;
+
+}
+
+/* ===========================================================
+   ONLINE PING
+=========================================================== */
+
+.chatbot-toggle::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:8px;
+
+    right:8px;
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:#00d084;
+
+    border:2px solid #ffffff;
+
+}
+
+.chatbot-toggle::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:5px;
+
+    right:5px;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:rgba(0,208,132,.35);
+
+    animation:chatbotPulse 2s infinite;
+
+}
+
+@keyframes chatbotPulse{
+
+    0%{
+
+        transform:scale(.8);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(2);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================================================
+   NOTIFICATION BADGE
+=========================================================== */
+
+.chatbot-badge{
+
+    position:absolute;
+
+    top:-6px;
+
+    left:-6px;
+
+    min-width:24px;
+
+    height:24px;
+
+    padding:0 6px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:999px;
+
+    background:#ff3b30;
+
+    color:#ffffff;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   CHAT WINDOW
+=========================================================== */
+
+.chatbot-window{
+
+    position:absolute;
+
+    right:0;
+
+    bottom:90px;
+
+    width:420px;
+
+    height:680px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.18);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(30px);
+
+    transition:.35s ease;
+
+}
+
+/* ===========================================================
+   OPEN STATE
+=========================================================== */
+
+.chatbot.open .chatbot-window{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.chatbot.open .chatbot-toggle{
+
+    transform:rotate(180deg);
+
+}
+
+/* ===========================================================
+   GLASS STYLE
+=========================================================== */
+
+.chatbot-glass{
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+}
+
+/* ===========================================================
+   BORDER
+=========================================================== */
+
+.chatbot-window{
+
+    border:1px solid rgba(0,0,0,.05);
+
+}
+
+/* ===========================================================
+   SHADOW
+=========================================================== */
+
+.chatbot-shadow{
+
+    box-shadow:
+
+        0 40px 80px rgba(0,0,0,.18),
+
+        0 12px 24px rgba(0,0,0,.08);
+
+}
+
+/* ===========================================================
+   DECORATION
+=========================================================== */
+
+.chatbot-decoration{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+.chatbot-decoration.one{
+
+    width:220px;
+
+    height:220px;
+
+    top:-90px;
+
+    right:-70px;
+
+    background:rgba(214,0,0,.05);
+
+}
+
+.chatbot-decoration.two{
+
+    width:150px;
+
+    height:150px;
+
+    left:-60px;
+
+    bottom:80px;
+
+    background:rgba(255,120,120,.06);
+
+}
+
+/* ===========================================================
+   BACKGROUND
+=========================================================== */
+
+.chatbot-background{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+   CONTAINER
+=========================================================== */
+
+.chatbot-body{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+   SCROLLBAR
+=========================================================== */
+
+.chatbot *::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.chatbot *::-webkit-scrollbar-track{
+
+    background:#f4f4f4;
+
+}
+
+.chatbot *::-webkit-scrollbar-thumb{
+
+    background:#d0d0d0;
+
+    border-radius:999px;
+
+}
+
+.chatbot *::-webkit-scrollbar-thumb:hover{
+
+    background:#b0b0b0;
+
+}
+
+/* ===========================================================
+   TRANSITIONS
+=========================================================== */
+
+.chatbot *{
+
+    transition:
+
+        background .3s ease,
+
+        color .3s ease,
+
+        border-color .3s ease,
+
+        box-shadow .3s ease;
+
+}
+
+/* ===========================================================
+   Z INDEX
+=========================================================== */
+
+.chatbot-window{
+
+    z-index:2;
+
+}
+
+.chatbot-toggle{
+
+    z-index:3;
+
+}
+
+/* ===========================================================
+   HELPERS
+=========================================================== */
+
+.chatbot-hidden{
+
+    display:none !important;
+
+}
+
+.chatbot-visible{
+
+    display:block !important;
+
+}
+
+/* ===========================================================
+   END PART 1
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 2
+   Header • Branding • Status
+=========================================================== */
+
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+.chatbot-header{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:22px 24px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #9f0000
+    );
+
+    color:#ffffff;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+   HEADER DECORATION
+=========================================================== */
+
+.chatbot-header::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    top:-90px;
+
+    right:-80px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.chatbot-header::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:110px;
+
+    height:110px;
+
+    bottom:-50px;
+
+    left:-30px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+}
+
+/* ===========================================================
+   BRAND
+=========================================================== */
+
+.chatbot-brand{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+/* ===========================================================
+   AVATAR
+=========================================================== */
+
+.chatbot-avatar{
+
+    position:relative;
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.18);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+}
+
+.chatbot-avatar img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.chatbot-avatar i{
+
+    font-size:30px;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   AVATAR STATUS
+=========================================================== */
+
+.chatbot-avatar-status{
+
+    position:absolute;
+
+    right:2px;
+
+    bottom:2px;
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:#00d084;
+
+    border:2px solid #ffffff;
+
+}
+
+/* ===========================================================
+   BRAND INFO
+=========================================================== */
+
+.chatbot-brand-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.chatbot-brand-info h3{
+
+    margin-bottom:4px;
+
+    color:#ffffff;
+
+    font-size:19px;
+
+    font-weight:700;
+
+}
+
+.chatbot-brand-info span{
+
+    color:rgba(255,255,255,.90);
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   STATUS
+=========================================================== */
+
+.chatbot-status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:6px;
+
+    font-size:12px;
+
+}
+
+.chatbot-status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#00d084;
+
+    box-shadow:0 0 12px rgba(0,208,132,.6);
+
+}
+
+.chatbot-status-text{
+
+    color:rgba(255,255,255,.92);
+
+}
+
+/* ===========================================================
+   LAST ACTIVE
+=========================================================== */
+
+.chatbot-last-active{
+
+    margin-top:4px;
+
+    font-size:12px;
+
+    color:rgba(255,255,255,.75);
+
+}
+
+/* ===========================================================
+   HEADER ACTIONS
+=========================================================== */
+
+.chatbot-actions{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.chatbot-action{
+
+    width:40px;
+
+    height:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.12);
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-action:hover{
+
+    background:rgba(255,255,255,.22);
+
+    transform:translateY(-2px);
+
+}
+
+.chatbot-action i{
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+   CLOSE BUTTON
+=========================================================== */
+
+.chatbot-close:hover{
+
+    background:#ff3b30;
+
+}
+
+/* ===========================================================
+   MINIMIZE
+=========================================================== */
+
+.chatbot-minimize:hover{
+
+    background:#f4b400;
+
+}
+
+/* ===========================================================
+   REFRESH
+=========================================================== */
+
+.chatbot-refresh:hover{
+
+    background:#4285f4;
+
+}
+
+/* ===========================================================
+   WELCOME BANNER
+=========================================================== */
+
+.chatbot-banner{
+
+    padding:18px 24px;
+
+    background:#fff5f5;
+
+    border-bottom:1px solid rgba(214,0,0,.08);
+
+}
+
+.chatbot-banner h4{
+
+    margin-bottom:8px;
+
+    color:var(--primary);
+
+    font-size:16px;
+
+}
+
+.chatbot-banner p{
+
+    color:#666666;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   NOTIFICATION BAR
+=========================================================== */
+
+.chatbot-notification{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 20px;
+
+    background:#fff9e6;
+
+    border-bottom:1px solid rgba(255,193,7,.25);
+
+}
+
+.chatbot-notification i{
+
+    color:#ff9800;
+
+    font-size:18px;
+
+}
+
+.chatbot-notification span{
+
+    color:#666666;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   AI LABEL
+=========================================================== */
+
+.chatbot-ai-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:12px;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.15);
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+}
+
+.chatbot-ai-label i{
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   SECURITY LABEL
+=========================================================== */
+
+.chatbot-security{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:10px;
+
+    font-size:12px;
+
+    color:rgba(255,255,255,.85);
+
+}
+
+.chatbot-security i{
+
+    color:#00d084;
+
+}
+
+/* ===========================================================
+   HEADER DIVIDER
+=========================================================== */
+
+.chatbot-header-divider{
+
+    height:1px;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   END PART 2
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 3
+   Chat Messages • Bubble Styles
+=========================================================== */
+
+/* ===========================================================
+   CHAT AREA
+=========================================================== */
+
+.chatbot-messages{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    background:#fafafa;
+
+}
+
+/* ===========================================================
+   MESSAGE
+=========================================================== */
+
+.chatbot-message{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:12px;
+
+    max-width:100%;
+
+}
+
+.chatbot-message.bot{
+
+    justify-content:flex-start;
+
+}
+
+.chatbot-message.user{
+
+    justify-content:flex-end;
+
+}
+
+/* ===========================================================
+   AVATAR
+=========================================================== */
+
+.chatbot-message-avatar{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+
+    background:#eeeeee;
+
+}
+
+.chatbot-message-avatar img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* ===========================================================
+   BUBBLE
+=========================================================== */
+
+.chatbot-bubble{
+
+    position:relative;
+
+    max-width:78%;
+
+    padding:16px 18px;
+
+    border-radius:20px;
+
+    word-break:break-word;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+   BOT
+=========================================================== */
+
+.chatbot-message.bot .chatbot-bubble{
+
+    background:#ffffff;
+
+    color:#333333;
+
+    border-bottom-left-radius:6px;
+
+    box-shadow:0 10px 24px rgba(0,0,0,.06);
+
+}
+
+/* ===========================================================
+   USER
+=========================================================== */
+
+.chatbot-message.user .chatbot-bubble{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #ff5252
+    );
+
+    color:#ffffff;
+
+    border-bottom-right-radius:6px;
+
+}
+
+/* ===========================================================
+   MESSAGE TITLE
+=========================================================== */
+
+.chatbot-message-title{
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   PARAGRAPH
+=========================================================== */
+
+.chatbot-bubble p{
+
+    margin:0 0 10px;
+
+}
+
+.chatbot-bubble p:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ===========================================================
+   LIST
+=========================================================== */
+
+.chatbot-bubble ul,
+.chatbot-bubble ol{
+
+    margin:12px 0;
+
+    padding-left:20px;
+
+}
+
+.chatbot-bubble li{
+
+    margin-bottom:8px;
+
+}
+
+/* ===========================================================
+   TIMESTAMP
+=========================================================== */
+
+.chatbot-time{
+
+    margin-top:10px;
+
+    font-size:11px;
+
+    opacity:.7;
+
+}
+
+.chatbot-message.user .chatbot-time{
+
+    text-align:right;
+
+}
+
+/* ===========================================================
+   READ STATUS
+=========================================================== */
+
+.chatbot-read{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:4px;
+
+    margin-left:8px;
+
+    font-size:11px;
+
+}
+
+.chatbot-read i{
+
+    color:#00d084;
+
+}
+
+/* ===========================================================
+   IMAGE MESSAGE
+=========================================================== */
+
+.chatbot-image{
+
+    margin-top:12px;
+
+    overflow:hidden;
+
+    border-radius:16px;
+
+}
+
+.chatbot-image img{
+
+    width:100%;
+
+    display:block;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.chatbot-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ===========================================================
+   FILE MESSAGE
+=========================================================== */
+
+.chatbot-file{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:14px;
+
+    padding:14px;
+
+    border-radius:14px;
+
+    background:rgba(0,0,0,.05);
+
+}
+
+.chatbot-file i{
+
+    font-size:24px;
+
+    color:var(--primary);
+
+}
+
+.chatbot-file-info{
+
+    flex:1;
+
+}
+
+.chatbot-file-info h5{
+
+    margin-bottom:4px;
+
+    font-size:14px;
+
+}
+
+.chatbot-file-info span{
+
+    font-size:12px;
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   LINK PREVIEW
+=========================================================== */
+
+.chatbot-link-preview{
+
+    margin-top:14px;
+
+    overflow:hidden;
+
+    border-radius:16px;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    background:#ffffff;
+
+}
+
+.chatbot-link-preview img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.chatbot-link-content{
+
+    padding:16px;
+
+}
+
+.chatbot-link-content h5{
+
+    margin-bottom:8px;
+
+    color:#222222;
+
+}
+
+.chatbot-link-content p{
+
+    color:#666666;
+
+    font-size:14px;
+
+}
+
+.chatbot-link-content a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+}
+
+/* ===========================================================
+   CODE BLOCK
+=========================================================== */
+
+.chatbot-code{
+
+    margin-top:14px;
+
+    overflow:auto;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:#1e1e1e;
+
+    color:#f4f4f4;
+
+    font-family:Consolas, monospace;
+
+    font-size:13px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   QUOTE
+=========================================================== */
+
+.chatbot-quote{
+
+    margin-top:12px;
+
+    padding-left:16px;
+
+    border-left:4px solid var(--primary);
+
+    font-style:italic;
+
+    color:#666666;
+
+}
+
+/* ===========================================================
+   TABLE
+=========================================================== */
+
+.chatbot-table{
+
+    width:100%;
+
+    margin-top:14px;
+
+    border-collapse:collapse;
+
+}
+
+.chatbot-table th{
+
+    background:#f3f3f3;
+
+    padding:12px;
+
+    text-align:left;
+
+}
+
+.chatbot-table td{
+
+    padding:12px;
+
+    border-top:1px solid #eeeeee;
+
+}
+
+/* ===========================================================
+   DIVIDER
+=========================================================== */
+
+.chatbot-divider{
+
+    margin:18px 0;
+
+    height:1px;
+
+    background:#eeeeee;
+
+}
+
+/* ===========================================================
+   REACTION
+=========================================================== */
+
+.chatbot-reactions{
+
+    display:flex;
+
+    gap:8px;
+
+    margin-top:10px;
+
+}
+
+.chatbot-reaction{
+
+    padding:6px 10px;
+
+    border-radius:999px;
+
+    background:#f4f4f4;
+
+    font-size:13px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.chatbot-reaction:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   END PART 3
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 4
+   Input Area • Attachment • Voice • Upload
+=========================================================== */
+
+/* ===========================================================
+   INPUT AREA
+=========================================================== */
+
+.chatbot-input-area{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    padding:20px;
+
+    border-top:1px solid rgba(0,0,0,.06);
+
+    background:#ffffff;
+
+}
+
+/* ===========================================================
+   INPUT WRAPPER
+=========================================================== */
+
+.chatbot-input-wrapper{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:12px;
+
+    padding:12px;
+
+    border:1px solid #dddddd;
+
+    border-radius:24px;
+
+    background:#fafafa;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-input-wrapper:focus-within{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(214,0,0,.08);
+
+}
+
+/* ===========================================================
+   TEXTAREA
+=========================================================== */
+
+.chatbot-input{
+
+    flex:1;
+
+    min-height:26px;
+
+    max-height:160px;
+
+    resize:none;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#333333;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    font-family:inherit;
+
+}
+
+.chatbot-input::placeholder{
+
+    color:#999999;
+
+}
+
+/* ===========================================================
+   TOOLBAR
+=========================================================== */
+
+.chatbot-toolbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+/* ===========================================================
+   TOOL BUTTON
+=========================================================== */
+
+.chatbot-tool{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#f4f4f4;
+
+    color:#555555;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-tool:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.chatbot-tool i{
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+   SEND BUTTON
+=========================================================== */
+
+.chatbot-send{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #ff5a5a
+    );
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+    flex-shrink:0;
+
+}
+
+.chatbot-send:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 15px 30px rgba(214,0,0,.25);
+
+}
+
+.chatbot-send:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
+
+/* ===========================================================
+   ATTACHMENT
+=========================================================== */
+
+.chatbot-attachment{
+
+    display:none;
+
+}
+
+.chatbot-attachment-label{
+
+    cursor:pointer;
+
+}
+
+/* ===========================================================
+   VOICE
+=========================================================== */
+
+.chatbot-voice.recording{
+
+    background:#ff3b30;
+
+    color:#ffffff;
+
+    animation:chatbotRecord 1s infinite;
+
+}
+
+@keyframes chatbotRecord{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ===========================================================
+   EMOJI
+=========================================================== */
+
+.chatbot-emoji{
+
+    position:relative;
+
+}
+
+.chatbot-emoji-panel{
+
+    position:absolute;
+
+    bottom:60px;
+
+    left:0;
+
+    width:320px;
+
+    max-height:260px;
+
+    overflow-y:auto;
+
+    padding:18px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+
+    display:none;
+
+}
+
+.chatbot-emoji-panel.open{
+
+    display:block;
+
+}
+
+.chatbot-emoji-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(8,1fr);
+
+    gap:10px;
+
+}
+
+.chatbot-emoji-grid span{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.chatbot-emoji-grid span:hover{
+
+    transform:scale(1.2);
+
+}
+
+/* ===========================================================
+   IMAGE PREVIEW
+=========================================================== */
+
+.chatbot-preview{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.chatbot-preview-item{
+
+    position:relative;
+
+    width:90px;
+
+    height:90px;
+
+    overflow:hidden;
+
+    border-radius:16px;
+
+}
+
+.chatbot-preview-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.chatbot-preview-remove{
+
+    position:absolute;
+
+    top:6px;
+
+    right:6px;
+
+    width:24px;
+
+    height:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.7);
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+}
+
+/* ===========================================================
+   FILE PREVIEW
+=========================================================== */
+
+.chatbot-file-preview{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px;
+
+    border-radius:16px;
+
+    background:#f8f8f8;
+
+}
+
+.chatbot-file-preview i{
+
+    font-size:26px;
+
+    color:var(--primary);
+
+}
+
+.chatbot-file-preview h5{
+
+    margin-bottom:4px;
+
+    font-size:14px;
+
+}
+
+.chatbot-file-preview span{
+
+    font-size:12px;
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   DRAG & DROP
+=========================================================== */
+
+.chatbot-dropzone{
+
+    padding:28px;
+
+    border:2px dashed #cccccc;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-dropzone.dragover{
+
+    border-color:var(--primary);
+
+    background:rgba(214,0,0,.05);
+
+}
+
+.chatbot-dropzone i{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    font-size:34px;
+
+    color:var(--primary);
+
+}
+
+.chatbot-dropzone p{
+
+    color:#666666;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   CHARACTER COUNT
+=========================================================== */
+
+.chatbot-counter{
+
+    text-align:right;
+
+    font-size:12px;
+
+    color:#999999;
+
+}
+
+/* ===========================================================
+   SHORTCUTS
+=========================================================== */
+
+.chatbot-shortcuts{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:12px;
+
+    color:#999999;
+
+}
+
+.chatbot-shortcuts kbd{
+
+    padding:3px 8px;
+
+    border-radius:6px;
+
+    background:#f4f4f4;
+
+    font-size:11px;
+
+}
+
+/* ===========================================================
+   END PART 4
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 5
+   Quick Reply • Suggestions • Actions
+=========================================================== */
+
+/* ===========================================================
+   QUICK REPLY
+=========================================================== */
+
+.chatbot-quick-reply{
+
+    padding:18px 20px;
+
+    border-top:1px solid rgba(0,0,0,.05);
+
+    background:#fafafa;
+
+}
+
+.chatbot-quick-title{
+
+    margin-bottom:14px;
+
+    color:#666666;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.chatbot-quick-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.chatbot-chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 16px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    color:#444444;
+
+    font-size:13px;
+
+    cursor:pointer;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.05);
+
+    transition:.3s ease;
+
+}
+
+.chatbot-chip:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    transform:translateY(-2px);
+
+}
+
+.chatbot-chip i{
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   AI SUGGESTIONS
+=========================================================== */
+
+.chatbot-suggestions{
+
+    padding:20px;
+
+}
+
+.chatbot-suggestions-title{
+
+    margin-bottom:16px;
+
+    color:#222222;
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+.chatbot-suggestion-grid{
+
+    display:grid;
+
+    gap:14px;
+
+}
+
+.chatbot-suggestion{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    padding:16px;
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-suggestion:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 16px 34px rgba(0,0,0,.10);
+
+}
+
+.chatbot-suggestion-icon{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    flex-shrink:0;
+
+}
+
+.chatbot-suggestion-content{
+
+    flex:1;
+
+}
+
+.chatbot-suggestion-content h5{
+
+    margin-bottom:6px;
+
+    color:#222222;
+
+}
+
+.chatbot-suggestion-content p{
+
+    color:#666666;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   FAQ CARDS
+=========================================================== */
+
+.chatbot-faq{
+
+    padding:20px;
+
+}
+
+.chatbot-faq-grid{
+
+    display:grid;
+
+    gap:14px;
+
+}
+
+.chatbot-faq-card{
+
+    padding:16px 18px;
+
+    border-radius:16px;
+
+    background:#ffffff;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.05);
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-faq-card:hover{
+
+    background:#fff7f7;
+
+    border-left:4px solid var(--primary);
+
+}
+
+.chatbot-faq-card h5{
+
+    margin-bottom:8px;
+
+    color:#222222;
+
+    font-size:15px;
+
+}
+
+.chatbot-faq-card span{
+
+    color:#666666;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   SMART ACTIONS
+=========================================================== */
+
+.chatbot-actions-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:14px;
+
+    padding:20px;
+
+}
+
+.chatbot-action-card{
+
+    text-align:center;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-action-card:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.chatbot-action-card i{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    font-size:30px;
+
+}
+
+.chatbot-action-card h5{
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   CONTACT SHORTCUTS
+=========================================================== */
+
+.chatbot-shortcut{
+
+    display:flex;
+
+    gap:12px;
+
+    padding:20px;
+
+}
+
+.chatbot-shortcut a{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px;
+
+    border-radius:16px;
+
+    background:#ffffff;
+
+    color:#444444;
+
+    text-decoration:none;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.05);
+
+    transition:.3s ease;
+
+}
+
+.chatbot-shortcut a:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   SERVICE CARDS
+=========================================================== */
+
+.chatbot-services{
+
+    padding:20px;
+
+}
+
+.chatbot-service-grid{
+
+    display:grid;
+
+    gap:14px;
+
+}
+
+.chatbot-service{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+    transition:.3s ease;
+
+}
+
+.chatbot-service:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.chatbot-service-icon{
+
+    width:54px;
+
+    height:54px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+}
+
+.chatbot-service-content{
+
+    flex:1;
+
+}
+
+.chatbot-service-content h5{
+
+    margin-bottom:6px;
+
+    color:#222222;
+
+}
+
+.chatbot-service-content p{
+
+    color:#666666;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   CTA
+=========================================================== */
+
+.chatbot-cta{
+
+    margin:20px;
+
+    padding:24px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #ff5c5c
+    );
+
+    color:#ffffff;
+
+}
+
+.chatbot-cta h4{
+
+    margin-bottom:12px;
+
+}
+
+.chatbot-cta p{
+
+    margin-bottom:18px;
+
+    line-height:1.8;
+
+    opacity:.95;
+
+}
+
+.chatbot-cta .btn{
+
+    width:100%;
+
+}
+
+/* ===========================================================
+   RECOMMENDED
+=========================================================== */
+
+.chatbot-recommended{
+
+    padding:20px;
+
+}
+
+.chatbot-recommended-title{
+
+    margin-bottom:14px;
+
+    color:#222222;
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+
+.chatbot-recommended-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.chatbot-recommended-item{
+
+    padding:10px 16px;
+
+    border-radius:999px;
+
+    background:#f3f3f3;
+
+    color:#555555;
+
+    font-size:13px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-recommended-item:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   END PART 5
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 6
+   Typing • Loading • AI Animation
+=========================================================== */
+
+/* ===========================================================
+   TYPING INDICATOR
+=========================================================== */
+
+.chatbot-typing{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:10px;
+
+    margin:12px 0;
+
+}
+
+.chatbot-typing-avatar{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:14px;
+
+    background:#f3f3f3;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--primary);
+
+    flex-shrink:0;
+
+}
+
+.chatbot-typing-bubble{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:14px 18px;
+
+    border-radius:20px;
+
+    border-bottom-left-radius:8px;
+
+    background:#ffffff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.chatbot-typing-dot{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#bdbdbd;
+
+    animation:chatbotTyping 1.3s infinite;
+
+}
+
+.chatbot-typing-dot:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.chatbot-typing-dot:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+@keyframes chatbotTyping{
+
+    0%,80%,100%{
+
+        transform:translateY(0);
+
+        opacity:.4;
+
+    }
+
+    40%{
+
+        transform:translateY(-6px);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ===========================================================
+   THINKING
+=========================================================== */
+
+.chatbot-thinking{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px;
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+}
+
+.chatbot-thinking-spinner{
+
+    width:26px;
+
+    height:26px;
+
+    border:3px solid rgba(214,0,0,.15);
+
+    border-top-color:var(--primary);
+
+    border-radius:50%;
+
+    animation:chatbotSpin 1s linear infinite;
+
+}
+
+.chatbot-thinking span{
+
+    color:#666666;
+
+    font-size:14px;
+
+}
+
+@keyframes chatbotSpin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ===========================================================
+   AI PROCESSING
+=========================================================== */
+
+.chatbot-processing{
+
+    position:relative;
+
+    height:4px;
+
+    overflow:hidden;
+
+    border-radius:999px;
+
+    background:#eeeeee;
+
+}
+
+.chatbot-processing::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-35%;
+
+    width:35%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        var(--primary),
+
+        transparent
+
+    );
+
+    animation:chatbotProcessing 1.2s linear infinite;
+
+}
+
+@keyframes chatbotProcessing{
+
+    from{
+
+        left:-35%;
+
+    }
+
+    to{
+
+        left:100%;
+
+    }
+
+}
+
+/* ===========================================================
+   LOADING BAR
+=========================================================== */
+
+.chatbot-loading{
+
+    width:100%;
+
+    height:6px;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    background:#efefef;
+
+}
+
+.chatbot-loading-bar{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        #ff6666
+
+    );
+
+    animation:chatbotLoadingBar 2s infinite;
+
+}
+
+@keyframes chatbotLoadingBar{
+
+    0%{
+
+        width:0;
+
+    }
+
+    50%{
+
+        width:75%;
+
+    }
+
+    100%{
+
+        width:100%;
+
+    }
+
+}
+
+/* ===========================================================
+   CONNECTION STATUS
+=========================================================== */
+
+.chatbot-connection{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 16px;
+
+    border-radius:14px;
+
+    background:#f8fafc;
+
+    font-size:13px;
+
+}
+
+.chatbot-online{
+
+    color:#00b56a;
+
+}
+
+.chatbot-offline{
+
+    color:#ff3b30;
+
+}
+
+.chatbot-warning{
+
+    color:#ff9800;
+
+}
+
+.chatbot-connection-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:currentColor;
+
+}
+
+/* ===========================================================
+   RETRY
+=========================================================== */
+
+.chatbot-error{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#fff3f2;
+
+    border:1px solid rgba(255,59,48,.15);
+
+}
+
+.chatbot-error h5{
+
+    margin-bottom:8px;
+
+    color:#ff3b30;
+
+}
+
+.chatbot-error p{
+
+    margin-bottom:16px;
+
+    color:#666666;
+
+    line-height:1.7;
+
+}
+
+.chatbot-retry{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 16px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#ff3b30;
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+}
+
+.chatbot-retry:hover{
+
+    background:#d90000;
+
+}
+
+/* ===========================================================
+   STREAMING TEXT
+=========================================================== */
+
+.chatbot-stream{
+
+    overflow:hidden;
+
+    white-space:pre-wrap;
+
+}
+
+.chatbot-cursor{
+
+    display:inline-block;
+
+    width:2px;
+
+    height:18px;
+
+    margin-left:2px;
+
+    background:var(--primary);
+
+    animation:chatbotCursor .8s infinite;
+
+}
+
+@keyframes chatbotCursor{
+
+    0%,50%{
+
+        opacity:1;
+
+    }
+
+    51%,100%{
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================================================
+   WAVE
+=========================================================== */
+
+.chatbot-wave{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:4px;
+
+    height:28px;
+
+}
+
+.chatbot-wave span{
+
+    width:4px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    animation:chatbotWave .9s infinite ease-in-out;
+
+}
+
+.chatbot-wave span:nth-child(2){
+
+    animation-delay:.1s;
+
+}
+
+.chatbot-wave span:nth-child(3){
+
+    animation-delay:.2s;
+
+}
+
+.chatbot-wave span:nth-child(4){
+
+    animation-delay:.3s;
+
+}
+
+.chatbot-wave span:nth-child(5){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes chatbotWave{
+
+    0%,100%{
+
+        height:8px;
+
+    }
+
+    50%{
+
+        height:28px;
+
+    }
+
+}
+
+/* ===========================================================
+   SKELETON
+=========================================================== */
+
+.chatbot-skeleton{
+
+    border-radius:16px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #ededed,
+
+        #f7f7f7,
+
+        #ededed
+
+    );
+
+    background-size:200% 100%;
+
+    animation:chatbotSkeleton 1.4s linear infinite;
+
+}
+
+.chatbot-skeleton-line{
+
+    height:12px;
+
+    margin-bottom:12px;
+
+    border-radius:999px;
+
+}
+
+.chatbot-skeleton-line:last-child{
+
+    width:60%;
+
+    margin-bottom:0;
+
+}
+
+@keyframes chatbotSkeleton{
+
+    from{
+
+        background-position:200% 0;
+
+    }
+
+    to{
+
+        background-position:-200% 0;
+
+    }
+
+}
+
+/* ===========================================================
+   SUCCESS
+=========================================================== */
+
+.chatbot-success{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 18px;
+
+    border-radius:16px;
+
+    background:#edfdf5;
+
+    color:#00a35a;
+
+}
+
+.chatbot-success i{
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+   END PART 6
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 7
+   Media • Upload • Voice • Camera
+=========================================================== */
+
+/* ===========================================================
+   FILE PANEL
+=========================================================== */
+
+.chatbot-media-panel{
+
+    padding:20px;
+
+    border-top:1px solid rgba(0,0,0,.06);
+
+    background:#ffffff;
+
+}
+
+.chatbot-media-title{
+
+    margin-bottom:18px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#222222;
+
+}
+
+/* ===========================================================
+   MEDIA GRID
+=========================================================== */
+
+.chatbot-media-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:14px;
+
+}
+
+.chatbot-media-card{
+
+    padding:18px 12px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    background:#fafafa;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-media-card:hover{
+
+    transform:translateY(-4px);
+
+    background:rgba(214,0,0,.06);
+
+}
+
+.chatbot-media-card i{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    font-size:28px;
+
+    color:var(--primary);
+
+}
+
+.chatbot-media-card span{
+
+    display:block;
+
+    font-size:12px;
+
+    color:#666666;
+
+}
+
+/* ===========================================================
+   IMAGE GALLERY
+=========================================================== */
+
+.chatbot-gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(90px,1fr));
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.chatbot-gallery-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:16px;
+
+    aspect-ratio:1/1;
+
+    cursor:pointer;
+
+}
+
+.chatbot-gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.35s ease;
+
+}
+
+.chatbot-gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.chatbot-gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(0,0,0,.45);
+
+    color:#ffffff;
+
+    opacity:0;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-gallery-item:hover .chatbot-gallery-overlay{
+
+    opacity:1;
+
+}
+
+/* ===========================================================
+   VIDEO PREVIEW
+=========================================================== */
+
+.chatbot-video{
+
+    margin-top:18px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    background:#000000;
+
+}
+
+.chatbot-video video{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.chatbot-video-info{
+
+    padding:14px 18px;
+
+    background:#ffffff;
+
+}
+
+.chatbot-video-info h5{
+
+    margin-bottom:6px;
+
+    color:#222222;
+
+}
+
+.chatbot-video-info span{
+
+    color:#777777;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   DOCUMENT
+=========================================================== */
+
+.chatbot-document{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-top:18px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#fafafa;
+
+}
+
+.chatbot-document-icon{
+
+    width:56px;
+
+    height:56px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:28px;
+
+}
+
+.chatbot-document-info{
+
+    flex:1;
+
+}
+
+.chatbot-document-info h5{
+
+    margin-bottom:6px;
+
+    color:#222222;
+
+}
+
+.chatbot-document-info span{
+
+    font-size:13px;
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   AUDIO PLAYER
+=========================================================== */
+
+.chatbot-audio{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-top:18px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.chatbot-audio-play{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    cursor:pointer;
+
+}
+
+.chatbot-audio-progress{
+
+    flex:1;
+
+    height:6px;
+
+    overflow:hidden;
+
+    border-radius:999px;
+
+    background:#eeeeee;
+
+}
+
+.chatbot-audio-progress span{
+
+    display:block;
+
+    width:45%;
+
+    height:100%;
+
+    background:var(--primary);
+
+}
+
+.chatbot-audio-time{
+
+    font-size:12px;
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   VOICE RECORDER
+=========================================================== */
+
+.chatbot-recorder{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:20px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#fff6f6;
+
+}
+
+.chatbot-recorder-button{
+
+    width:54px;
+
+    height:54px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#ff3b30;
+
+    color:#ffffff;
+
+    animation:chatbotRecorder 1s infinite;
+
+}
+
+@keyframes chatbotRecorder{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.chatbot-recorder-info{
+
+    flex:1;
+
+}
+
+.chatbot-recorder-info h5{
+
+    margin-bottom:6px;
+
+    color:#222222;
+
+}
+
+.chatbot-recorder-info span{
+
+    color:#666666;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   LOCATION
+=========================================================== */
+
+.chatbot-location{
+
+    margin-top:18px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.chatbot-location-map{
+
+    height:180px;
+
+    background:#ececec;
+
+}
+
+.chatbot-location-content{
+
+    padding:18px;
+
+}
+
+.chatbot-location-content h5{
+
+    margin-bottom:6px;
+
+    color:#222222;
+
+}
+
+.chatbot-location-content p{
+
+    color:#666666;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   CAMERA CAPTURE
+=========================================================== */
+
+.chatbot-camera{
+
+    margin-top:18px;
+
+    text-align:center;
+
+}
+
+.chatbot-camera-preview{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:#000000;
+
+}
+
+.chatbot-camera-preview video,
+
+.chatbot-camera-preview canvas{
+
+    display:block;
+
+    width:100%;
+
+}
+
+.chatbot-camera-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:14px;
+
+    margin-top:18px;
+
+}
+
+/* ===========================================================
+   MEDIA STATUS
+=========================================================== */
+
+.chatbot-upload-progress{
+
+    margin-top:18px;
+
+}
+
+.chatbot-upload-progress label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:13px;
+
+    color:#666666;
+
+}
+
+.chatbot-upload-bar{
+
+    height:8px;
+
+    overflow:hidden;
+
+    border-radius:999px;
+
+    background:#eeeeee;
+
+}
+
+.chatbot-upload-bar span{
+
+    display:block;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #ff6666
+    );
+
+}
+
+/* ===========================================================
+   END PART 7
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 8
+   Settings • History • Profile • Privacy
+=========================================================== */
+
+/* ===========================================================
+   SETTINGS PANEL
+=========================================================== */
+
+.chatbot-settings{
+
+    padding:24px;
+
+    background:#ffffff;
+
+    overflow-y:auto;
+
+}
+
+.chatbot-settings-title{
+
+    margin-bottom:24px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#222222;
+
+}
+
+/* ===========================================================
+   SETTINGS GROUP
+=========================================================== */
+
+.chatbot-setting-group{
+
+    margin-bottom:28px;
+
+}
+
+.chatbot-setting-group:last-child{
+
+    margin-bottom:0;
+
+}
+
+.chatbot-setting-heading{
+
+    margin-bottom:16px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   SETTINGS ITEM
+=========================================================== */
+
+.chatbot-setting{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:18px;
+
+    padding:16px 0;
+
+    border-bottom:1px solid #eeeeee;
+
+}
+
+.chatbot-setting:last-child{
+
+    border-bottom:none;
+
+}
+
+.chatbot-setting-info{
+
+    flex:1;
+
+}
+
+.chatbot-setting-info h5{
+
+    margin-bottom:6px;
+
+    color:#222222;
+
+    font-size:15px;
+
+}
+
+.chatbot-setting-info p{
+
+    color:#777777;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   SWITCH
+=========================================================== */
+
+.chatbot-switch{
+
+    position:relative;
+
+    width:56px;
+
+    height:30px;
+
+    border-radius:999px;
+
+    background:#d9d9d9;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-switch::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:3px;
+
+    left:3px;
+
+    width:24px;
+
+    height:24px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-switch.active{
+
+    background:var(--primary);
+
+}
+
+.chatbot-switch.active::after{
+
+    left:29px;
+
+}
+
+/* ===========================================================
+   LANGUAGE
+=========================================================== */
+
+.chatbot-language{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #dddddd;
+
+    border-radius:14px;
+
+    background:#ffffff;
+
+    color:#333333;
+
+    font-size:14px;
+
+}
+
+.chatbot-language:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+}
+
+/* ===========================================================
+   HISTORY
+=========================================================== */
+
+.chatbot-history{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.chatbot-history-item{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#fafafa;
+
+    transition:.3s ease;
+
+    cursor:pointer;
+
+}
+
+.chatbot-history-item:hover{
+
+    background:#fff4f4;
+
+}
+
+.chatbot-history-item h5{
+
+    margin-bottom:8px;
+
+    color:#222222;
+
+}
+
+.chatbot-history-item span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#888888;
+
+    font-size:12px;
+
+}
+
+.chatbot-history-item p{
+
+    color:#666666;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   PROFILE
+=========================================================== */
+
+.chatbot-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:#fafafa;
+
+}
+
+.chatbot-profile-avatar{
+
+    width:70px;
+
+    height:70px;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:#eeeeee;
+
+}
+
+.chatbot-profile-avatar img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.chatbot-profile-info{
+
+    flex:1;
+
+}
+
+.chatbot-profile-info h4{
+
+    margin-bottom:6px;
+
+    color:#222222;
+
+}
+
+.chatbot-profile-info span{
+
+    color:#777777;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   PROFILE BUTTONS
+=========================================================== */
+
+.chatbot-profile-actions{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:18px;
+
+}
+
+.chatbot-profile-actions .btn{
+
+    flex:1;
+
+}
+
+/* ===========================================================
+   STORAGE
+=========================================================== */
+
+.chatbot-storage{
+
+    margin-top:18px;
+
+}
+
+.chatbot-storage-bar{
+
+    height:8px;
+
+    overflow:hidden;
+
+    border-radius:999px;
+
+    background:#eeeeee;
+
+}
+
+.chatbot-storage-bar span{
+
+    display:block;
+
+    width:45%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        #ff6b6b
+
+    );
+
+}
+
+.chatbot-storage-info{
+
+    margin-top:8px;
+
+    font-size:12px;
+
+    color:#888888;
+
+}
+
+/* ===========================================================
+   PRIVACY
+=========================================================== */
+
+.chatbot-privacy{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#fff8f8;
+
+    border-left:4px solid var(--primary);
+
+}
+
+.chatbot-privacy h5{
+
+    margin-bottom:10px;
+
+    color:#222222;
+
+}
+
+.chatbot-privacy p{
+
+    color:#666666;
+
+    font-size:13px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   SECURITY
+=========================================================== */
+
+.chatbot-security-card{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#f8fbff;
+
+}
+
+.chatbot-security-card i{
+
+    font-size:24px;
+
+    color:#00b56a;
+
+}
+
+.chatbot-security-content{
+
+    flex:1;
+
+}
+
+.chatbot-security-content h5{
+
+    margin-bottom:6px;
+
+    color:#222222;
+
+}
+
+.chatbot-security-content p{
+
+    color:#666666;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   CLEAR CHAT
+=========================================================== */
+
+.chatbot-clear{
+
+    margin-top:22px;
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#ff3b30;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-clear:hover{
+
+    background:#d60000;
+
+}
+
+/* ===========================================================
+   EXPORT
+=========================================================== */
+
+.chatbot-export{
+
+    margin-top:14px;
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid var(--primary);
+
+    border-radius:16px;
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.chatbot-export:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   VERSION
+=========================================================== */
+
+.chatbot-version{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    color:#999999;
+
+    font-size:12px;
+
+}
+
+/* ===========================================================
+   END PART 8
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 9
+   Responsive Design
+=========================================================== */
+
+/* ===========================================================
+   LARGE DESKTOP
+=========================================================== */
+
+@media (max-width:1400px){
+
+.chatbot-window{
+
+    width:400px;
+
+    height:660px;
+
+}
+
+}
+
+/* ===========================================================
+   LAPTOP
+=========================================================== */
+
+@media (max-width:1200px){
+
+.chatbot{
+
+    right:24px;
+
+    bottom:24px;
+
+}
+
+.chatbot-window{
+
+    width:390px;
+
+    height:640px;
+
+}
+
+.chatbot-media-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+}
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width:992px){
+
+.chatbot{
+
+    right:20px;
+
+    bottom:20px;
+
+}
+
+.chatbot-window{
+
+    width:380px;
+
+    height:620px;
+
+}
+
+.chatbot-actions-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.chatbot-community-list,
+
+.chatbot-media-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.chatbot-gallery{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.chatbot-header{
+
+    padding:18px 20px;
+
+}
+
+.chatbot-brand-info h3{
+
+    font-size:18px;
+
+}
+
+}
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width:768px){
+
+.chatbot{
+
+    right:0;
+
+    left:0;
+
+    bottom:0;
+
+}
+
+.chatbot-window{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+
+    height:100dvh;
+
+    border-radius:0;
+
+    max-width:none;
+
+}
+
+.chatbot-toggle{
+
+    right:20px;
+
+    bottom:20px;
+
+    position:fixed;
+
+}
+
+.chatbot-header{
+
+    padding:16px;
+
+}
+
+.chatbot-brand{
+
+    gap:12px;
+
+}
+
+.chatbot-avatar{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+.chatbot-brand-info h3{
+
+    font-size:17px;
+
+}
+
+.chatbot-brand-info span{
+
+    font-size:12px;
+
+}
+
+.chatbot-messages{
+
+    padding:16px;
+
+}
+
+.chatbot-bubble{
+
+    max-width:88%;
+
+    font-size:14px;
+
+}
+
+.chatbot-input-area{
+
+    padding:16px;
+
+}
+
+.chatbot-toolbar{
+
+    flex-wrap:wrap;
+
+}
+
+.chatbot-tool{
+
+    width:40px;
+
+    height:40px;
+
+}
+
+.chatbot-send{
+
+    width:48px;
+
+    height:48px;
+
+}
+
+.chatbot-emoji-panel{
+
+    width:100%;
+
+    left:0;
+
+}
+
+.chatbot-gallery{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.chatbot-media-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ===========================================================
+   SMALL MOBILE
+=========================================================== */
+
+@media (max-width:576px){
+
+.chatbot-header{
+
+    padding:14px;
+
+}
+
+.chatbot-actions{
+
+    gap:6px;
+
+}
+
+.chatbot-action{
+
+    width:36px;
+
+    height:36px;
+
+}
+
+.chatbot-avatar{
+
+    width:46px;
+
+    height:46px;
+
+}
+
+.chatbot-brand-info h3{
+
+    font-size:16px;
+
+}
+
+.chatbot-brand-info span{
+
+    font-size:11px;
+
+}
+
+.chatbot-banner,
+
+.chatbot-notification{
+
+    padding:14px 16px;
+
+}
+
+.chatbot-input-wrapper{
+
+    padding:10px;
+
+}
+
+.chatbot-input{
+
+    font-size:14px;
+
+}
+
+.chatbot-chip{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.chatbot-media-card{
+
+    padding:16px 10px;
+
+}
+
+.chatbot-profile{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.chatbot-profile-actions{
+
+    flex-direction:column;
+
+}
+
+.chatbot-document,
+
+.chatbot-audio,
+
+.chatbot-recorder{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+}
+
+/* ===========================================================
+   EXTRA SMALL
+=========================================================== */
+
+@media (max-width:400px){
+
+.chatbot-toggle{
+
+    width:58px;
+
+    height:58px;
+
+}
+
+.chatbot-toggle i{
+
+    font-size:24px;
+
+}
+
+.chatbot-bubble{
+
+    max-width:94%;
+
+    padding:14px;
+
+}
+
+.chatbot-tool{
+
+    width:36px;
+
+    height:36px;
+
+}
+
+.chatbot-send{
+
+    width:44px;
+
+    height:44px;
+
+}
+
+.chatbot-media-grid{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+}
+
+.chatbot-gallery{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.chatbot-message-avatar{
+
+    width:36px;
+
+    height:36px;
+
+}
+
+}
+
+/* ===========================================================
+   LANDSCAPE
+=========================================================== */
+
+@media (max-height:600px) and (orientation:landscape){
+
+.chatbot-window{
+
+    height:100vh;
+
+}
+
+.chatbot-header{
+
+    padding:12px 16px;
+
+}
+
+.chatbot-banner{
+
+    display:none;
+
+}
+
+.chatbot-notification{
+
+    display:none;
+
+}
+
+}
+
+/* ===========================================================
+   TOUCH DEVICES
+=========================================================== */
+
+@media (hover:none){
+
+.chatbot-toggle:hover,
+
+.chatbot-chip:hover,
+
+.chatbot-tool:hover,
+
+.chatbot-send:hover,
+
+.chatbot-action-card:hover,
+
+.chatbot-service:hover,
+
+.chatbot-media-card:hover{
+
+    transform:none;
+
+}
+
+}
+
+/* ===========================================================
+   SAFE AREA SUPPORT
+=========================================================== */
+
+@supports (padding:max(0px)){
+
+.chatbot-window{
+
+    padding-bottom:max(0px,env(safe-area-inset-bottom));
+
+}
+
+}
+
+/* ===========================================================
+   RESPONSIVE HELPERS
+=========================================================== */
+
+.chatbot img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+.chatbot video{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+.chatbot iframe{
+
+    max-width:100%;
+
+}
+
+/* ===========================================================
+   END PART 9
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 10
+   Dark Mode
+=========================================================== */
+
+/* ===========================================================
+   ROOT
+=========================================================== */
+
+body.dark .chatbot-window{
+
+    background:#10151d;
+
+    color:#ffffff;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+body.dark .chatbot-body{
+
+    background:#10151d;
+
+}
+
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+body.dark .chatbot-header{
+
+    background:linear-gradient(
+        135deg,
+        #870000,
+        #2d0000
+    );
+
+}
+
+body.dark .chatbot-header::before,
+
+body.dark .chatbot-header::after{
+
+    opacity:.25;
+
+}
+
+/* ===========================================================
+   BANNER
+=========================================================== */
+
+body.dark .chatbot-banner{
+
+    background:#171d26;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+body.dark .chatbot-banner h4{
+
+    color:#ff6666;
+
+}
+
+body.dark .chatbot-banner p{
+
+    color:#bfc7d3;
+
+}
+
+/* ===========================================================
+   NOTIFICATION
+=========================================================== */
+
+body.dark .chatbot-notification{
+
+    background:#1a222d;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+body.dark .chatbot-notification span{
+
+    color:#c5ced9;
+
+}
+
+/* ===========================================================
+   MESSAGE AREA
+=========================================================== */
+
+body.dark .chatbot-messages{
+
+    background:#121821;
+
+}
+
+body.dark .chatbot-message.bot .chatbot-bubble{
+
+    background:#1d2632;
+
+    color:#eef2f7;
+
+    box-shadow:none;
+
+}
+
+body.dark .chatbot-message.user .chatbot-bubble{
+
+    background:linear-gradient(
+        135deg,
+        #d60000,
+        #ff5555
+    );
+
+}
+
+/* ===========================================================
+   INPUT
+=========================================================== */
+
+body.dark .chatbot-input-area{
+
+    background:#11161d;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+body.dark .chatbot-input-wrapper{
+
+    background:#1a222d;
+
+    border-color:#2a3443;
+
+}
+
+body.dark .chatbot-input{
+
+    color:#ffffff;
+
+}
+
+body.dark .chatbot-input::placeholder{
+
+    color:#8e99a8;
+
+}
+
+/* ===========================================================
+   TOOLBAR
+=========================================================== */
+
+body.dark .chatbot-tool{
+
+    background:#1d2632;
+
+    color:#d6dde7;
+
+}
+
+body.dark .chatbot-tool:hover{
+
+    background:#d60000;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   QUICK REPLY
+=========================================================== */
+
+body.dark .chatbot-quick-reply{
+
+    background:#11161d;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+}
+
+body.dark .chatbot-chip{
+
+    background:#1d2632;
+
+    color:#d6dde7;
+
+}
+
+body.dark .chatbot-chip:hover{
+
+    background:#d60000;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   CARDS
+=========================================================== */
+
+body.dark .chatbot-suggestion,
+
+body.dark .chatbot-faq-card,
+
+body.dark .chatbot-action-card,
+
+body.dark .chatbot-service,
+
+body.dark .chatbot-document,
+
+body.dark .chatbot-audio,
+
+body.dark .chatbot-location,
+
+body.dark .chatbot-profile,
+
+body.dark .chatbot-history-item,
+
+body.dark .chatbot-setting,
+
+body.dark .chatbot-security-card,
+
+body.dark .chatbot-media-card{
+
+    background:#1b2430;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    color:#ffffff;
+
+}
+
+body.dark .chatbot-suggestion-content p,
+
+body.dark .chatbot-service-content p,
+
+body.dark .chatbot-document-info span,
+
+body.dark .chatbot-history-item p,
+
+body.dark .chatbot-setting-info p,
+
+body.dark .chatbot-location-content p{
+
+    color:#b8c1ce;
+
+}
+
+/* ===========================================================
+   SETTINGS
+=========================================================== */
+
+body.dark .chatbot-settings{
+
+    background:#11161d;
+
+}
+
+body.dark .chatbot-setting{
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+body.dark .chatbot-language{
+
+    background:#1b2430;
+
+    color:#ffffff;
+
+    border-color:#2b3545;
+
+}
+
+/* ===========================================================
+   HISTORY
+=========================================================== */
+
+body.dark .chatbot-history-item:hover{
+
+    background:#222d3a;
+
+}
+
+/* ===========================================================
+   PROFILE
+=========================================================== */
+
+body.dark .chatbot-profile-avatar{
+
+    background:#2a3443;
+
+}
+
+/* ===========================================================
+   MEDIA
+=========================================================== */
+
+body.dark .chatbot-media-panel{
+
+    background:#11161d;
+
+}
+
+body.dark .chatbot-gallery-overlay{
+
+    background:rgba(0,0,0,.65);
+
+}
+
+body.dark .chatbot-video-info{
+
+    background:#1b2430;
+
+}
+
+body.dark .chatbot-file-preview{
+
+    background:#1b2430;
+
+}
+
+/* ===========================================================
+   RECORDER
+=========================================================== */
+
+body.dark .chatbot-recorder{
+
+    background:#241617;
+
+}
+
+body.dark .chatbot-recorder-info span{
+
+    color:#c8d0dc;
+
+}
+
+/* ===========================================================
+   LOADING
+=========================================================== */
+
+body.dark .chatbot-typing-bubble{
+
+    background:#1b2430;
+
+}
+
+body.dark .chatbot-thinking{
+
+    background:#1b2430;
+
+}
+
+body.dark .chatbot-loading{
+
+    background:#2a3443;
+
+}
+
+/* ===========================================================
+   CODE
+=========================================================== */
+
+body.dark .chatbot-code{
+
+    background:#0c1118;
+
+    color:#e8edf4;
+
+}
+
+/* ===========================================================
+   LINK PREVIEW
+=========================================================== */
+
+body.dark .chatbot-link-preview{
+
+    background:#1b2430;
+
+    border-color:#2c3645;
+
+}
+
+body.dark .chatbot-link-content h5{
+
+    color:#ffffff;
+
+}
+
+body.dark .chatbot-link-content p{
+
+    color:#c1cad7;
+
+}
+
+/* ===========================================================
+   TABLE
+=========================================================== */
+
+body.dark .chatbot-table th{
+
+    background:#1d2632;
+
+    color:#ffffff;
+
+}
+
+body.dark .chatbot-table td{
+
+    border-color:#2c3645;
+
+}
+
+/* ===========================================================
+   SCROLLBAR
+=========================================================== */
+
+body.dark .chatbot *::-webkit-scrollbar-track{
+
+    background:#141a22;
+
+}
+
+body.dark .chatbot *::-webkit-scrollbar-thumb{
+
+    background:#3b4658;
+
+}
+
+body.dark .chatbot *::-webkit-scrollbar-thumb:hover{
+
+    background:#556277;
+
+}
+
+/* ===========================================================
+   GLASS EFFECT
+=========================================================== */
+
+body.dark .chatbot-glass{
+
+    background:rgba(18,24,33,.88);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.06);
+
+}
+
+/* ===========================================================
+   BUTTONS
+=========================================================== */
+
+body.dark .chatbot-send{
+
+    background:linear-gradient(
+        135deg,
+        #d60000,
+        #ff4f4f
+    );
+
+}
+
+body.dark .chatbot-send:hover{
+
+    box-shadow:0 16px 36px rgba(214,0,0,.35);
+
+}
+
+/* ===========================================================
+   SELECTION
+=========================================================== */
+
+body.dark .chatbot ::selection{
+
+    background:#ff5555;
+
+    color:#ffffff;
+
+}
+
+body.dark .chatbot ::-moz-selection{
+
+    background:#ff5555;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   END PART 10
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 11
+   Utility Classes
+=========================================================== */
+
+/* ===========================================================
+   DISPLAY
+=========================================================== */
+
+.chatbot-hidden{
+    display:none !important;
+}
+
+.chatbot-block{
+    display:block !important;
+}
+
+.chatbot-inline{
+    display:inline-block !important;
+}
+
+.chatbot-flex{
+    display:flex !important;
+}
+
+.chatbot-inline-flex{
+    display:inline-flex !important;
+}
+
+.chatbot-grid{
+    display:grid !important;
+}
+
+/* ===========================================================
+   FLEX HELPERS
+=========================================================== */
+
+.chatbot-flex-row{
+    flex-direction:row;
+}
+
+.chatbot-flex-column{
+    flex-direction:column;
+}
+
+.chatbot-align-center{
+    align-items:center;
+}
+
+.chatbot-align-start{
+    align-items:flex-start;
+}
+
+.chatbot-align-end{
+    align-items:flex-end;
+}
+
+.chatbot-justify-center{
+    justify-content:center;
+}
+
+.chatbot-justify-between{
+    justify-content:space-between;
+}
+
+.chatbot-justify-around{
+    justify-content:space-around;
+}
+
+.chatbot-wrap{
+    flex-wrap:wrap;
+}
+
+/* ===========================================================
+   GRID HELPERS
+=========================================================== */
+
+.chatbot-grid-2{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.chatbot-grid-3{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.chatbot-grid-4{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.chatbot-grid-auto{
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+/* ===========================================================
+   WIDTH
+=========================================================== */
+
+.chatbot-w-25{
+    width:25%;
+}
+
+.chatbot-w-50{
+    width:50%;
+}
+
+.chatbot-w-75{
+    width:75%;
+}
+
+.chatbot-w-100{
+    width:100%;
+}
+
+.chatbot-max-width{
+    max-width:1200px;
+    margin-inline:auto;
+}
+
+/* ===========================================================
+   SPACING
+=========================================================== */
+
+.chatbot-mt-10{margin-top:10px;}
+.chatbot-mt-20{margin-top:20px;}
+.chatbot-mt-30{margin-top:30px;}
+.chatbot-mt-40{margin-top:40px;}
+.chatbot-mt-60{margin-top:60px;}
+
+.chatbot-mb-10{margin-bottom:10px;}
+.chatbot-mb-20{margin-bottom:20px;}
+.chatbot-mb-30{margin-bottom:30px;}
+.chatbot-mb-40{margin-bottom:40px;}
+.chatbot-mb-60{margin-bottom:60px;}
+
+.chatbot-p-10{padding:10px;}
+.chatbot-p-20{padding:20px;}
+.chatbot-p-30{padding:30px;}
+.chatbot-p-40{padding:40px;}
+
+.chatbot-gap-10{gap:10px;}
+.chatbot-gap-20{gap:20px;}
+.chatbot-gap-30{gap:30px;}
+
+/* ===========================================================
+   TEXT
+=========================================================== */
+
+.chatbot-text-left{
+    text-align:left;
+}
+
+.chatbot-text-center{
+    text-align:center;
+}
+
+.chatbot-text-right{
+    text-align:right;
+}
+
+.chatbot-text-primary{
+    color:var(--primary);
+}
+
+.chatbot-text-white{
+    color:#ffffff;
+}
+
+.chatbot-text-muted{
+    color:#888888;
+}
+
+.chatbot-bold{
+    font-weight:700;
+}
+
+.chatbot-semibold{
+    font-weight:600;
+}
+
+.chatbot-uppercase{
+    text-transform:uppercase;
+}
+
+/* ===========================================================
+   BACKGROUND
+=========================================================== */
+
+.chatbot-bg-white{
+    background:#ffffff;
+}
+
+.chatbot-bg-light{
+    background:#f8fafc;
+}
+
+.chatbot-bg-dark{
+    background:#10151d;
+    color:#ffffff;
+}
+
+.chatbot-bg-primary{
+    background:var(--primary);
+    color:#ffffff;
+}
+
+.chatbot-bg-gradient{
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #ff6666
+    );
+    color:#ffffff;
+}
+
+/* ===========================================================
+   GLASS
+=========================================================== */
+
+.chatbot-glass-light{
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+}
+
+.chatbot-glass-dark{
+
+    background:rgba(17,22,29,.82);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+}
+
+/* ===========================================================
+   BORDER RADIUS
+=========================================================== */
+
+.chatbot-radius-sm{
+    border-radius:10px;
+}
+
+.chatbot-radius-md{
+    border-radius:18px;
+}
+
+.chatbot-radius-lg{
+    border-radius:28px;
+}
+
+.chatbot-radius-full{
+    border-radius:999px;
+}
+
+/* ===========================================================
+   SHADOW
+=========================================================== */
+
+.chatbot-shadow-sm{
+    box-shadow:0 8px 18px rgba(0,0,0,.06);
+}
+
+.chatbot-shadow-md{
+    box-shadow:0 18px 40px rgba(0,0,0,.10);
+}
+
+.chatbot-shadow-lg{
+    box-shadow:0 30px 70px rgba(0,0,0,.16);
+}
+
+/* ===========================================================
+   POSITION
+=========================================================== */
+
+.chatbot-relative{
+    position:relative;
+}
+
+.chatbot-absolute{
+    position:absolute;
+}
+
+.chatbot-fixed{
+    position:fixed;
+}
+
+.chatbot-sticky{
+    position:sticky;
+}
+
+.chatbot-z10{
+    z-index:10;
+}
+
+.chatbot-z100{
+    z-index:100;
+}
+
+.chatbot-z1000{
+    z-index:1000;
+}
+
+/* ===========================================================
+   HOVER EFFECTS
+=========================================================== */
+
+.chatbot-hover-up:hover{
+    transform:translateY(-5px);
+}
+
+.chatbot-hover-scale:hover{
+    transform:scale(1.05);
+}
+
+.chatbot-hover-shadow:hover{
+    box-shadow:0 20px 45px rgba(0,0,0,.16);
+}
+
+.chatbot-transition{
+    transition:.3s ease;
+}
+
+/* ===========================================================
+   IMAGE HELPERS
+=========================================================== */
+
+.chatbot-img-cover{
+    object-fit:cover;
+}
+
+.chatbot-img-contain{
+    object-fit:contain;
+}
+
+.chatbot-img-rounded{
+    border-radius:20px;
+}
+
+.chatbot-img-circle{
+    border-radius:50%;
+}
+
+/* ===========================================================
+   OPACITY
+=========================================================== */
+
+.chatbot-opacity-25{
+    opacity:.25;
+}
+
+.chatbot-opacity-50{
+    opacity:.5;
+}
+
+.chatbot-opacity-75{
+    opacity:.75;
+}
+
+.chatbot-opacity-100{
+    opacity:1;
+}
+
+/* ===========================================================
+   OVERFLOW
+=========================================================== */
+
+.chatbot-overflow-hidden{
+    overflow:hidden;
+}
+
+.chatbot-overflow-auto{
+    overflow:auto;
+}
+
+/* ===========================================================
+   CURSOR
+=========================================================== */
+
+.chatbot-pointer{
+    cursor:pointer;
+}
+
+.chatbot-disabled{
+
+    opacity:.55;
+
+    pointer-events:none;
+
+}
+
+/* ===========================================================
+   USER SELECT
+=========================================================== */
+
+.chatbot-no-select{
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+}
+
+.chatbot-select{
+
+    user-select:text;
+
+}
+
+/* ===========================================================
+   ANIMATION HELPERS
+=========================================================== */
+
+.chatbot-fade-in{
+
+    animation:chatbotFadeIn .35s ease;
+
+}
+
+@keyframes chatbotFadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.chatbot-scale-in{
+
+    animation:chatbotScaleIn .3s ease;
+
+}
+
+@keyframes chatbotScaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ===========================================================
+   END PART 11
+=========================================================== */
+/* ===========================================================
+   CHATBOT.CSS
+   Investment Technology Indonesia
+   Part 12
+   Performance Optimization & End of File
+=========================================================== */
+
+/* ===========================================================
+   PERFORMANCE
+=========================================================== */
+
+.chatbot,
+.chatbot-window,
+.chatbot-body,
+.chatbot-header,
+.chatbot-messages,
+.chatbot-input-area{
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+    will-change:transform,opacity;
+
+}
+
+.chatbot img,
+.chatbot video,
+.chatbot canvas{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   ACCESSIBILITY
+=========================================================== */
+
+.chatbot button:focus,
+.chatbot a:focus,
+.chatbot input:focus,
+.chatbot textarea:focus,
+.chatbot select:focus{
+
+    outline:3px solid rgba(214,0,0,.35);
+
+    outline-offset:3px;
+
+}
+
+.chatbot button:focus-visible,
+.chatbot a:focus-visible{
+
+    box-shadow:0 0 0 5px rgba(214,0,0,.15);
+
+}
+
+.chatbot button{
+
+    touch-action:manipulation;
+
+}
+
+/* ===========================================================
+   TEXT SELECTION
+=========================================================== */
+
+.chatbot ::selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.chatbot ::-moz-selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   LOADING
+=========================================================== */
+
+.chatbot-loading-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(6px);
+
+    z-index:999;
+
+}
+
+.chatbot-loader{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    border:4px solid rgba(214,0,0,.12);
+
+    border-top-color:var(--primary);
+
+    animation:chatbotRotate 1s linear infinite;
+
+}
+
+@keyframes chatbotRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ===========================================================
+   SKELETON OPTIMIZATION
+=========================================================== */
+
+.chatbot-skeleton{
+
+    background-size:200% 100%;
+
+    animation:chatbotSkeletonLoading 1.4s linear infinite;
+
+}
+
+@keyframes chatbotSkeletonLoading{
+
+    from{
+
+        background-position:200% 0;
+
+    }
+
+    to{
+
+        background-position:-200% 0;
+
+    }
+
+}
+
+/* ===========================================================
+   GPU HELPERS
+=========================================================== */
+
+.chatbot-gpu{
+
+    transform:translate3d(0,0,0);
+
+    will-change:transform;
+
+}
+
+.chatbot-no-flicker{
+
+    -webkit-backface-visibility:hidden;
+
+    backface-visibility:hidden;
+
+}
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.chatbot *{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+
+}
+
+}
+
+/* ===========================================================
+   HIGH CONTRAST
+=========================================================== */
+
+@media (prefers-contrast:more){
+
+.chatbot-window{
+
+    border:2px solid #ffffff;
+
+}
+
+.chatbot-bubble{
+
+    border:2px solid currentColor;
+
+}
+
+.chatbot button{
+
+    border:2px solid currentColor;
+
+}
+
+}
+
+/* ===========================================================
+   PRINT
+=========================================================== */
+
+@media print{
+
+.chatbot{
+
+    display:none !important;
+
+}
+
+}
+
+/* ===========================================================
+   SAFE AREA
+=========================================================== */
+
+@supports (padding:max(0px)){
+
+.chatbot-window{
+
+    padding-bottom:max(16px,env(safe-area-inset-bottom));
+
+}
+
+.chatbot-header{
+
+    padding-top:max(20px,env(safe-area-inset-top));
+
+}
+
+}
+
+/* ===========================================================
+   SCROLL OPTIMIZATION
+=========================================================== */
+
+.chatbot-messages{
+
+    overscroll-behavior:contain;
+
+    -webkit-overflow-scrolling:touch;
+
+}
+
+.chatbot-scroll-anchor{
+
+    overflow-anchor:auto;
+
+}
+
+/* ===========================================================
+   MEDIA OPTIMIZATION
+=========================================================== */
+
+.chatbot-picture{
+
+    overflow:hidden;
+
+}
+
+.chatbot-picture img{
+
+    transition:transform .35s ease;
+
+}
+
+.chatbot-picture:hover img{
+
+    transform:scale(1.04);
+
+}
+
+.chatbot-video video{
+
+    object-fit:cover;
+
+}
+
+/* ===========================================================
+   IFRAME / SVG
+=========================================================== */
+
+.chatbot iframe{
+
+    border:0;
+
+    width:100%;
+
+}
+
+.chatbot svg{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+/* ===========================================================
+   TABLE
+=========================================================== */
+
+.chatbot table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.chatbot th,
+.chatbot td{
+
+    padding:10px 12px;
+
+}
+
+/* ===========================================================
+   RESET
+=========================================================== */
+
+.chatbot *{
+
+    box-sizing:border-box;
+
+}
+
+.chatbot hr{
+
+    border:none;
+
+    height:1px;
+
+    margin:20px 0;
+
+    background:rgba(0,0,0,.08);
+
+}
+
+.chatbot ul,
+.chatbot ol{
+
+    padding-left:20px;
+
+}
+
+.chatbot strong{
+
+    font-weight:700;
+
+}
+
+.chatbot em{
+
+    font-style:italic;
+
+}
+
+.chatbot button,
+.chatbot input,
+.chatbot textarea,
+.chatbot select{
+
+    font-family:inherit;
+
+}
+
+/* ===========================================================
+   END OF CHATBOT.CSS
+=========================================================== */

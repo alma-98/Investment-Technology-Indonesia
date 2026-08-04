@@ -1,0 +1,170 @@
+{
+  "company": "Investment Technology Indonesia",
+  "version": "1.0.0",
+  "lastUpdated": "2026-07-03",
+  "totalTestimonials": 10,
+  "averageRating": 5.0,
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Budi Santoso",
+      "position": "IT Manager",
+      "company": "PT Nusantara Digital",
+      "photo": "assets/images/clients/client1.png",
+      "rating": 5,
+      "featured": true,
+      "project": "Company Profile Website",
+      "date": "2026-01-15",
+      "message": "Investment Technology Indonesia memberikan hasil yang sangat memuaskan. Website perusahaan kami tampil profesional, cepat, dan SEO friendly.",
+      "services": [
+        "Website Development",
+        "UI/UX Design"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Andi Pratama",
+      "position": "General Manager",
+      "company": "PT Maju Bersama",
+      "photo": "assets/images/clients/client2.png",
+      "rating": 5,
+      "featured": true,
+      "project": "ERP System",
+      "date": "2026-02-05",
+      "message": "Implementasi ERP berjalan lancar. Tim sangat profesional dan memahami kebutuhan bisnis kami.",
+      "services": [
+        "Software Development",
+        "ERP"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Siti Rahma",
+      "position": "Director",
+      "company": "PT Global Solution",
+      "photo": "assets/images/clients/client3.png",
+      "rating": 5,
+      "featured": true,
+      "project": "Networking",
+      "date": "2026-02-20",
+      "message": "Infrastruktur jaringan perusahaan kini jauh lebih stabil dan aman berkat solusi yang diberikan.",
+      "services": [
+        "Networking",
+        "Infrastructure"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Rizky Hidayat",
+      "position": "CEO",
+      "company": "Startup Indonesia",
+      "photo": "assets/images/clients/client4.png",
+      "rating": 5,
+      "featured": true,
+      "project": "Mobile Application",
+      "date": "2026-03-10",
+      "message": "Aplikasi mobile yang dibuat memiliki performa sangat baik dan desainnya modern.",
+      "services": [
+        "Flutter",
+        "Mobile Development"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Dewi Kartika",
+      "position": "Finance Manager",
+      "company": "PT Prima Finance",
+      "photo": "assets/images/clients/client5.png",
+      "rating": 5,
+      "featured": false,
+      "project": "Cloud Migration",
+      "date": "2026-03-25",
+      "message": "Migrasi ke cloud berjalan tanpa kendala dan membuat operasional kami jauh lebih efisien.",
+      "services": [
+        "Cloud",
+        "Server"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Ahmad Fauzi",
+      "position": "Operations Manager",
+      "company": "PT Logistik Nasional",
+      "photo": "assets/images/clients/client6.png",
+      "rating": 5,
+      "featured": false,
+      "project": "Server & Data Center",
+      "date": "2026-04-12",
+      "message": "Server baru bekerja sangat stabil. Tim memberikan dokumentasi dan pelatihan yang lengkap.",
+      "services": [
+        "Server",
+        "Data Center"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Maria Angelina",
+      "position": "Marketing Manager",
+      "company": "PT Creative Media",
+      "photo": "assets/images/clients/client7.png",
+      "rating": 5,
+      "featured": false,
+      "project": "Digital Marketing",
+      "date": "2026-05-01",
+      "message": "Strategi digital marketing membantu meningkatkan traffic website dan jumlah pelanggan baru.",
+      "services": [
+        "SEO",
+        "Digital Marketing"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Yusuf Kurniawan",
+      "position": "Security Manager",
+      "company": "PT Secure Technology",
+      "photo": "assets/images/clients/client8.png",
+      "rating": 5,
+      "featured": false,
+      "project": "Cyber Security",
+      "date": "2026-05-15",
+      "message": "Audit keamanan dan implementasi firewall dilakukan dengan sangat profesional.",
+      "services": [
+        "Cyber Security",
+        "Firewall"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Linda Wijaya",
+      "position": "Business Owner",
+      "company": "CV Sukses Mandiri",
+      "photo": "assets/images/clients/client9.png",
+      "rating": 5,
+      "featured": false,
+      "project": "Business Automation",
+      "date": "2026-06-01",
+      "message": "Proses bisnis kami menjadi lebih cepat setelah menggunakan sistem yang dikembangkan.",
+      "services": [
+        "Automation",
+        "Software Development"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Hendra Gunawan",
+      "position": "Managing Director",
+      "company": "PT Indonesia Teknologi",
+      "photo": "assets/images/clients/client10.png",
+      "rating": 5,
+      "featured": true,
+      "project": "Super App Development",
+      "date": "2026-06-20",
+      "message": "Tim Investment Technology Indonesia berhasil membangun platform digital modern yang sesuai dengan visi perusahaan kami.",
+      "services": [
+        "Super App",
+        "Artificial Intelligence",
+        "Software Development"
+      ]
+    }
+  ]
+}

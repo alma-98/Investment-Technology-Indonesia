@@ -1,0 +1,6901 @@
+/* ===========================================================
+   ABOUT.CSS
+   Investment Technology Indonesia
+   Part 1
+   About Base
+=========================================================== */
+
+/* ===========================================================
+   ABOUT SECTION
+=========================================================== */
+
+.about{
+
+    position:relative;
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+   ABOUT CONTAINER
+=========================================================== */
+
+.about-container{
+
+    max-width:1280px;
+
+    margin:0 auto;
+
+    padding:0 24px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ===========================================================
+   ABOUT CONTENT
+=========================================================== */
+
+.about-content{
+
+    position:relative;
+
+}
+
+.about-content>*:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ===========================================================
+   ABOUT BADGE
+=========================================================== */
+
+.about-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    margin-bottom:24px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.08);
+
+    border:1px solid rgba(214,0,0,.12);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.about-badge i{
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+   ABOUT LABEL
+=========================================================== */
+
+.about-label{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+/* ===========================================================
+   ABOUT TITLE
+=========================================================== */
+
+.about-title{
+
+    margin-bottom:24px;
+
+    color:var(--secondary);
+
+    font-size:52px;
+
+    font-weight:800;
+
+    line-height:1.18;
+
+}
+
+.about-title span{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================================
+   ABOUT SUBTITLE
+=========================================================== */
+
+.about-subtitle{
+
+    margin-bottom:22px;
+
+    color:#444444;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+}
+
+/* ===========================================================
+   ABOUT DESCRIPTION
+=========================================================== */
+
+.about-description{
+
+    margin-bottom:30px;
+
+}
+
+.about-description p{
+
+    margin-bottom:18px;
+
+    color:#666666;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+}
+
+.about-description p:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ===========================================================
+   ABOUT HIGHLIGHT
+=========================================================== */
+
+.about-highlight{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   ABOUT DIVIDER
+=========================================================== */
+
+.about-divider{
+
+    width:90px;
+
+    height:4px;
+
+    margin:30px 0;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #ff5f5f
+    );
+
+}
+
+/* ===========================================================
+   ABOUT TEXT BLOCK
+=========================================================== */
+
+.about-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.about-text p{
+
+    margin:0;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   ABOUT QUOTE
+=========================================================== */
+
+.about-quote{
+
+    position:relative;
+
+    margin-top:35px;
+
+    padding:28px 30px;
+
+    border-left:5px solid var(--primary);
+
+    border-radius:18px;
+
+    background:#fafafa;
+
+}
+
+.about-quote::before{
+
+    content:"“";
+
+    position:absolute;
+
+    top:12px;
+
+    left:20px;
+
+    color:rgba(214,0,0,.18);
+
+    font-size:70px;
+
+    font-weight:800;
+
+    line-height:1;
+
+}
+
+.about-quote p{
+
+    position:relative;
+
+    margin:0;
+
+    padding-left:20px;
+
+    color:#555555;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+}
+
+/* ===========================================================
+   ABOUT AUTHOR
+=========================================================== */
+
+.about-author{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:20px;
+
+}
+
+.about-author img{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.about-author-info strong{
+
+    display:block;
+
+    color:var(--secondary);
+
+    font-size:16px;
+
+}
+
+.about-author-info span{
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   ABOUT.CSS
+   Part 2
+   About Image • Floating Cards
+=========================================================== */
+
+/* ===========================================================
+   ABOUT IMAGE
+=========================================================== */
+
+.about-image{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:2;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    max-width:620px;
+
+    height:auto;
+
+    display:block;
+
+    border-radius:28px;
+
+    object-fit:cover;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.15);
+
+}
+
+/* ===========================================================
+   IMAGE FRAME
+=========================================================== */
+
+.about-image-frame{
+
+    position:relative;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.about-image-frame::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border:2px solid rgba(255,255,255,.18);
+
+    border-radius:inherit;
+
+    pointer-events:none;
+
+}
+
+.about-image-frame::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:12px;
+
+    border:1px dashed rgba(214,0,0,.15);
+
+    border-radius:22px;
+
+}
+
+/* ===========================================================
+   FLOATING CARD
+=========================================================== */
+
+.about-card{
+
+    position:absolute;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:20px 24px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+    z-index:3;
+
+}
+
+.about-card i{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:24px;
+
+}
+
+.about-card h5{
+
+    margin:0 0 6px;
+
+    color:var(--secondary);
+
+    font-size:18px;
+
+}
+
+.about-card p{
+
+    margin:0;
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   CARD POSITION
+=========================================================== */
+
+.about-card-top{
+
+    top:35px;
+
+    left:-50px;
+
+}
+
+.about-card-right{
+
+    top:90px;
+
+    right:-60px;
+
+}
+
+.about-card-bottom{
+
+    bottom:40px;
+
+    left:-40px;
+
+}
+
+/* ===========================================================
+   EXPERIENCE CARD
+=========================================================== */
+
+.experience-card{
+
+    position:absolute;
+
+    right:-35px;
+
+    bottom:60px;
+
+    width:230px;
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:24px;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.14);
+
+}
+
+.experience-card h2{
+
+    margin-bottom:8px;
+
+    color:var(--primary);
+
+    font-size:42px;
+
+    font-weight:800;
+
+}
+
+.experience-card span{
+
+    color:#555555;
+
+    font-weight:600;
+
+}
+
+.experience-card small{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#888888;
+
+}
+
+/* ===========================================================
+   COMPANY CARD
+=========================================================== */
+
+.company-card{
+
+    position:absolute;
+
+    top:180px;
+
+    left:-70px;
+
+    width:250px;
+
+    padding:24px;
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+
+.company-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.company-card p{
+
+    color:#666666;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   GROWTH CARD
+=========================================================== */
+
+.growth-card{
+
+    position:absolute;
+
+    top:60px;
+
+    right:-80px;
+
+    width:220px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:22px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.growth-card h3{
+
+    margin-bottom:6px;
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+.growth-card p{
+
+    color:#666666;
+
+    margin-bottom:12px;
+
+}
+
+.growth-progress{
+
+    width:100%;
+
+    height:8px;
+
+    background:#eeeeee;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.growth-progress span{
+
+    display:block;
+
+    width:88%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #ff6b6b
+    );
+
+}
+
+/* ===========================================================
+   ACHIEVEMENT BADGE
+=========================================================== */
+
+.achievement-badge{
+
+    position:absolute;
+
+    bottom:-15px;
+
+    right:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px 22px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.achievement-badge i{
+
+    font-size:30px;
+
+    color:#f4b400;
+
+}
+
+.achievement-badge strong{
+
+    display:block;
+
+    color:var(--secondary);
+
+}
+
+.achievement-badge span{
+
+    color:#777777;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   EXPERIENCE WIDGET
+=========================================================== */
+
+.experience-widget{
+
+    position:absolute;
+
+    top:300px;
+
+    right:-40px;
+
+    width:200px;
+
+    padding:20px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.experience-widget ul{
+
+    list-style:none;
+
+    margin:15px 0 0;
+
+    padding:0;
+
+}
+
+.experience-widget li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:10px;
+
+    color:#666666;
+
+}
+
+.experience-widget li:last-child{
+
+    margin-bottom:0;
+
+}
+
+.experience-widget li i{
+
+    color:#22c55e;
+
+}
+
+/* ===========================================================
+   DECORATION
+=========================================================== */
+
+.about-decoration{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+.about-decoration.one{
+
+    width:140px;
+
+    height:140px;
+
+    top:-40px;
+
+    right:-30px;
+
+    background:rgba(214,0,0,.08);
+
+}
+
+.about-decoration.two{
+
+    width:90px;
+
+    height:90px;
+
+    bottom:30px;
+
+    left:-25px;
+
+    background:rgba(255,193,7,.15);
+
+}
+
+.about-decoration.three{
+
+    width:42px;
+
+    height:42px;
+
+    top:45%;
+
+    left:-18px;
+
+    background:rgba(214,0,0,.18);
+
+}
+
+/* ===========================================================
+   ABOUT.CSS
+   Part 2
+   About Image • Floating Cards
+=========================================================== */
+
+/* ===========================================================
+   ABOUT IMAGE
+=========================================================== */
+
+.about-image{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:2;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    max-width:620px;
+
+    height:auto;
+
+    display:block;
+
+    border-radius:28px;
+
+    object-fit:cover;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.15);
+
+}
+
+/* ===========================================================
+   IMAGE FRAME
+=========================================================== */
+
+.about-image-frame{
+
+    position:relative;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.about-image-frame::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border:2px solid rgba(255,255,255,.18);
+
+    border-radius:inherit;
+
+    pointer-events:none;
+
+}
+
+.about-image-frame::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:12px;
+
+    border:1px dashed rgba(214,0,0,.15);
+
+    border-radius:22px;
+
+}
+
+/* ===========================================================
+   FLOATING CARD
+=========================================================== */
+
+.about-card{
+
+    position:absolute;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:20px 24px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+    z-index:3;
+
+}
+
+.about-card i{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:24px;
+
+}
+
+.about-card h5{
+
+    margin:0 0 6px;
+
+    color:var(--secondary);
+
+    font-size:18px;
+
+}
+
+.about-card p{
+
+    margin:0;
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   CARD POSITION
+=========================================================== */
+
+.about-card-top{
+
+    top:35px;
+
+    left:-50px;
+
+}
+
+.about-card-right{
+
+    top:90px;
+
+    right:-60px;
+
+}
+
+.about-card-bottom{
+
+    bottom:40px;
+
+    left:-40px;
+
+}
+
+/* ===========================================================
+   EXPERIENCE CARD
+=========================================================== */
+
+.experience-card{
+
+    position:absolute;
+
+    right:-35px;
+
+    bottom:60px;
+
+    width:230px;
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:24px;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.14);
+
+}
+
+.experience-card h2{
+
+    margin-bottom:8px;
+
+    color:var(--primary);
+
+    font-size:42px;
+
+    font-weight:800;
+
+}
+
+.experience-card span{
+
+    color:#555555;
+
+    font-weight:600;
+
+}
+
+.experience-card small{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#888888;
+
+}
+
+/* ===========================================================
+   COMPANY CARD
+=========================================================== */
+
+.company-card{
+
+    position:absolute;
+
+    top:180px;
+
+    left:-70px;
+
+    width:250px;
+
+    padding:24px;
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+
+.company-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.company-card p{
+
+    color:#666666;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   GROWTH CARD
+=========================================================== */
+
+.growth-card{
+
+    position:absolute;
+
+    top:60px;
+
+    right:-80px;
+
+    width:220px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:22px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.growth-card h3{
+
+    margin-bottom:6px;
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+.growth-card p{
+
+    color:#666666;
+
+    margin-bottom:12px;
+
+}
+
+.growth-progress{
+
+    width:100%;
+
+    height:8px;
+
+    background:#eeeeee;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.growth-progress span{
+
+    display:block;
+
+    width:88%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #ff6b6b
+    );
+
+}
+
+/* ===========================================================
+   ACHIEVEMENT BADGE
+=========================================================== */
+
+.achievement-badge{
+
+    position:absolute;
+
+    bottom:-15px;
+
+    right:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px 22px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.achievement-badge i{
+
+    font-size:30px;
+
+    color:#f4b400;
+
+}
+
+.achievement-badge strong{
+
+    display:block;
+
+    color:var(--secondary);
+
+}
+
+.achievement-badge span{
+
+    color:#777777;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+   EXPERIENCE WIDGET
+=========================================================== */
+
+.experience-widget{
+
+    position:absolute;
+
+    top:300px;
+
+    right:-40px;
+
+    width:200px;
+
+    padding:20px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.experience-widget ul{
+
+    list-style:none;
+
+    margin:15px 0 0;
+
+    padding:0;
+
+}
+
+.experience-widget li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:10px;
+
+    color:#666666;
+
+}
+
+.experience-widget li:last-child{
+
+    margin-bottom:0;
+
+}
+
+.experience-widget li i{
+
+    color:#22c55e;
+
+}
+
+/* ===========================================================
+   DECORATION
+=========================================================== */
+
+.about-decoration{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+.about-decoration.one{
+
+    width:140px;
+
+    height:140px;
+
+    top:-40px;
+
+    right:-30px;
+
+    background:rgba(214,0,0,.08);
+
+}
+
+.about-decoration.two{
+
+    width:90px;
+
+    height:90px;
+
+    bottom:30px;
+
+    left:-25px;
+
+    background:rgba(255,193,7,.15);
+
+}
+
+.about-decoration.three{
+
+    width:42px;
+
+    height:42px;
+
+    top:45%;
+
+    left:-18px;
+
+    background:rgba(214,0,0,.18);
+
+}
+
+/* ===========================================================
+   ABOUT.CSS
+   Part 3
+   Features • Vision • Mission • Values
+=========================================================== */
+
+/* ===========================================================
+   ABOUT FEATURES
+=========================================================== */
+
+.about-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+    margin-top:40px;
+
+}
+
+.about-feature{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    padding:20px;
+
+    background:#fafafa;
+
+    border-radius:18px;
+
+    transition:.35s ease;
+
+}
+
+.about-feature:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.about-feature i{
+
+    width:56px;
+
+    height:56px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:22px;
+
+}
+
+.about-feature h4{
+
+    margin:0 0 8px;
+
+    color:var(--secondary);
+
+    font-size:18px;
+
+}
+
+.about-feature p{
+
+    margin:0;
+
+    color:#666666;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+   FEATURE LIST
+=========================================================== */
+
+.feature-list{
+
+    list-style:none;
+
+    margin:35px 0 0;
+
+    padding:0;
+
+}
+
+.feature-list li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    margin-bottom:18px;
+
+    color:#555555;
+
+    line-height:1.7;
+
+}
+
+.feature-list li:last-child{
+
+    margin-bottom:0;
+
+}
+
+.feature-list li i{
+
+    width:26px;
+
+    height:26px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(34,197,94,.12);
+
+    color:#22c55e;
+
+    font-size:13px;
+
+    flex-shrink:0;
+
+}
+
+/* ===========================================================
+   COMPANY VISION
+=========================================================== */
+
+.company-vision{
+
+    margin-top:60px;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #a60000
+    );
+
+    color:#ffffff;
+
+}
+
+.company-vision h3{
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+    font-size:32px;
+
+}
+
+.company-vision p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+/* ===========================================================
+   COMPANY MISSION
+=========================================================== */
+
+.company-mission{
+
+    margin-top:50px;
+
+}
+
+.mission-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+.mission-card{
+
+    padding:28px;
+
+    border-radius:22px;
+
+    background:#ffffff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.mission-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+
+.mission-card i{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+.mission-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.mission-card p{
+
+    margin:0;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CORE VALUES
+=========================================================== */
+
+.core-values{
+
+    margin-top:60px;
+
+}
+
+.values-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.value-card{
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    border-radius:22px;
+
+    background:#fafafa;
+
+    transition:.35s ease;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#ffffff;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+.value-card i{
+
+    width:72px;
+
+    height:72px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:28px;
+
+}
+
+.value-card h5{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-size:18px;
+
+}
+
+.value-card p{
+
+    margin:0;
+
+    color:#666666;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+   COMPANY HIGHLIGHTS
+=========================================================== */
+
+.company-highlights{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+    margin-top:60px;
+
+}
+
+.highlight-card{
+
+    padding:28px;
+
+    border-radius:22px;
+
+    background:#ffffff;
+
+    border:1px solid rgba(0,0,0,.06);
+
+    transition:.35s ease;
+
+}
+
+.highlight-card:hover{
+
+    border-color:rgba(214,0,0,.18);
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.highlight-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.highlight-card p{
+
+    margin:0;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CAPABILITY TAGS
+=========================================================== */
+
+.capability-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:30px;
+
+}
+
+.capability-tags span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+   ABOUT.CSS
+   Part 4
+   Statistics • Achievement • KPI
+=========================================================== */
+
+/* ===========================================================
+   ABOUT STATISTICS
+=========================================================== */
+
+.about-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:70px;
+
+}
+
+.about-stat{
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.about-stat:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 22px 50px rgba(0,0,0,.12);
+
+}
+
+.about-stat h2{
+
+    margin-bottom:10px;
+
+    font-size:46px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+}
+
+.about-stat span{
+
+    display:block;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:var(--secondary);
+
+}
+
+.about-stat p{
+
+    margin-top:8px;
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   ACHIEVEMENT SECTION
+=========================================================== */
+
+.achievement-section{
+
+    margin-top:80px;
+
+}
+
+.achievement-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.achievement-item{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:#fafafa;
+
+    transition:.35s;
+
+}
+
+.achievement-item:hover{
+
+    background:#ffffff;
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+.achievement-item i{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:30px;
+
+    margin-bottom:22px;
+
+}
+
+.achievement-item h4{
+
+    margin-bottom:14px;
+
+    color:var(--secondary);
+
+}
+
+.achievement-item p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   KPI GRID
+=========================================================== */
+
+.kpi-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+    margin-top:60px;
+
+}
+
+.kpi-card{
+
+    text-align:center;
+
+    padding:28px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+    border:1px solid #eeeeee;
+
+    transition:.35s;
+
+}
+
+.kpi-card:hover{
+
+    border-color:rgba(214,0,0,.25);
+
+    transform:translateY(-6px);
+
+}
+
+.kpi-card h3{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+    margin-bottom:8px;
+
+}
+
+.kpi-card span{
+
+    display:block;
+
+    color:#555555;
+
+    font-weight:600;
+
+}
+
+.kpi-card small{
+
+    color:#888888;
+
+}
+
+/* ===========================================================
+   AWARD LIST
+=========================================================== */
+
+.awards{
+
+    margin-top:70px;
+
+}
+
+.award-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.award-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:22px 28px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.award-card i{
+
+    font-size:34px;
+
+    color:#f4b400;
+
+}
+
+.award-card h5{
+
+    margin-bottom:6px;
+
+    color:var(--secondary);
+
+}
+
+.award-card p{
+
+    margin:0;
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   BUSINESS GROWTH
+=========================================================== */
+
+.business-growth{
+
+    margin-top:70px;
+
+}
+
+.growth-chart{
+
+    width:100%;
+
+    height:320px;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+        180deg,
+        rgba(214,0,0,.10),
+        rgba(214,0,0,0)
+    );
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.growth-chart::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:2px;
+
+    background:#dddddd;
+
+}
+
+/* ===========================================================
+   PORTFOLIO SUMMARY
+=========================================================== */
+
+.portfolio-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+    margin-top:70px;
+
+}
+
+.summary-card{
+
+    padding:30px;
+
+    border-radius:22px;
+
+    background:#fafafa;
+
+    transition:.35s;
+
+}
+
+.summary-card:hover{
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.summary-card h3{
+
+    color:var(--primary);
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+}
+
+.summary-card p{
+
+    color:#666666;
+
+}
+
+/* ===========================================================
+   CLIENT STATS
+=========================================================== */
+
+.client-stats{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+}
+
+.client-card{
+
+    padding:26px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+    text-align:center;
+
+    border:1px solid #eeeeee;
+
+    transition:.35s;
+
+}
+
+.client-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(214,0,0,.20);
+
+}
+
+.client-card h4{
+
+    color:var(--primary);
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.client-card span{
+
+    color:#555555;
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+   PERFORMANCE BAR
+=========================================================== */
+
+.performance-bar{
+
+    margin-top:18px;
+
+    width:100%;
+
+    height:8px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    background:#eeeeee;
+
+}
+
+.performance-bar span{
+
+    display:block;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #ff6a6a
+    );
+
+}
+
+/* ===========================================================
+   BUSINESS SCORE
+=========================================================== */
+
+.business-score{
+
+    margin-top:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:50px;
+
+}
+
+.score-circle{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    border:10px solid rgba(214,0,0,.10);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+}
+
+.score-circle h2{
+
+    color:var(--primary);
+
+    font-size:42px;
+
+    margin:0;
+
+}
+
+.score-circle span{
+
+    color:#666666;
+
+}
+
+/* ===========================================================
+   ABOUT.CSS
+   Part 5
+   CEO • Leadership • Timeline
+=========================================================== */
+
+/* ===========================================================
+   CEO SECTION
+=========================================================== */
+
+.ceo-section{
+
+    margin-top:90px;
+
+}
+
+.ceo-wrapper{
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+/* ===========================================================
+   CEO IMAGE
+=========================================================== */
+
+.ceo-image{
+
+    position:relative;
+
+}
+
+.ceo-image img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    display:block;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.15);
+
+}
+
+.ceo-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:12px;
+
+    border:2px solid rgba(255,255,255,.2);
+
+    border-radius:24px;
+
+    pointer-events:none;
+
+}
+
+/* ===========================================================
+   CEO CARD
+=========================================================== */
+
+.ceo-card{
+
+    position:absolute;
+
+    left:-25px;
+
+    bottom:30px;
+
+    padding:20px 24px;
+
+    border-radius:22px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.ceo-card h4{
+
+    margin-bottom:6px;
+
+    color:var(--secondary);
+
+}
+
+.ceo-card span{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   CEO CONTENT
+=========================================================== */
+
+.ceo-content h2{
+
+    margin-bottom:20px;
+
+    color:var(--secondary);
+
+    font-size:42px;
+
+}
+
+.ceo-content p{
+
+    margin-bottom:18px;
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   CEO SIGNATURE
+=========================================================== */
+
+.ceo-signature{
+
+    margin-top:35px;
+
+}
+
+.ceo-signature h4{
+
+    margin-bottom:6px;
+
+    color:var(--secondary);
+
+}
+
+.ceo-signature span{
+
+    color:#777777;
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+   CEO SOCIAL
+=========================================================== */
+
+.ceo-social{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:25px;
+
+}
+
+.ceo-social a{
+
+    width:44px;
+
+    height:44px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#f5f5f5;
+
+    color:var(--secondary);
+
+    transition:.35s;
+
+}
+
+.ceo-social a:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   CEO QUOTE
+=========================================================== */
+
+.ceo-quote{
+
+    margin-top:40px;
+
+    padding:30px;
+
+    border-left:5px solid var(--primary);
+
+    background:#fafafa;
+
+    border-radius:20px;
+
+}
+
+.ceo-quote p{
+
+    margin:0;
+
+    color:#555555;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+}
+
+/* ===========================================================
+   COMPANY HISTORY
+=========================================================== */
+
+.company-history{
+
+    margin-top:90px;
+
+}
+
+.company-history h2{
+
+    margin-bottom:25px;
+
+    color:var(--secondary);
+
+}
+
+.company-history p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+
+}
+
+/* ===========================================================
+   TIMELINE
+=========================================================== */
+
+.timeline{
+
+    position:relative;
+
+    margin-top:60px;
+
+    padding-left:50px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:18px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:rgba(214,0,0,.15);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:45px;
+
+}
+
+.timeline-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-42px;
+
+    top:6px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    box-shadow:0 0 0 8px rgba(214,0,0,.12);
+
+}
+
+.timeline-content{
+
+    padding:24px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.timeline-year{
+
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.timeline-content h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.timeline-content p{
+
+    margin:0;
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   LEADERSHIP TEAM
+=========================================================== */
+
+.leadership-team{
+
+    margin-top:90px;
+
+}
+
+.team-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+.team-card{
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.team-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.team-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.team-card-content{
+
+    padding:25px;
+
+}
+
+.team-card-content h4{
+
+    margin-bottom:6px;
+
+    color:var(--secondary);
+
+}
+
+.team-card-content span{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.team-card-content p{
+
+    margin-top:14px;
+
+    color:#666666;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   MANAGEMENT INFO
+=========================================================== */
+
+.management-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:60px;
+
+    gap:30px;
+
+}
+
+.management-item{
+
+    flex:1;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    background:#fafafa;
+
+}
+
+.management-item h3{
+
+    color:var(--primary);
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.management-item span{
+
+    color:#555555;
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+   ABOUT.CSS
+   Part 6
+   Gallery • Partners • Branch Office
+=========================================================== */
+
+/* ===========================================================
+   GALLERY SECTION
+=========================================================== */
+
+.about-gallery{
+
+    margin-top:90px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+.gallery-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    cursor:pointer;
+
+    background:#f5f5f5;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        transparent,
+
+        rgba(0,0,0,.75)
+
+    );
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:25px;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.gallery-item:hover .gallery-overlay{
+
+    opacity:1;
+
+}
+
+.gallery-overlay h4{
+
+    color:#ffffff;
+
+    margin-bottom:8px;
+
+}
+
+.gallery-overlay p{
+
+    color:rgba(255,255,255,.85);
+
+    margin:0;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   FEATURED IMAGE
+=========================================================== */
+
+.gallery-featured{
+
+    grid-column:span 2;
+
+    grid-row:span 2;
+
+}
+
+/* ===========================================================
+   OFFICE GALLERY
+=========================================================== */
+
+.office-gallery{
+
+    margin-top:80px;
+
+}
+
+.office-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.office-card{
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    background:#ffffff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.office-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.office-card-content{
+
+    padding:20px;
+
+}
+
+.office-card-content h5{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.office-card-content span{
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   PARTNER LOGOS
+=========================================================== */
+
+.partner-section{
+
+    margin-top:90px;
+
+}
+
+.partner-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.partner-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:25px;
+
+    align-items:center;
+
+}
+
+.partner-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+    border:1px solid #eeeeee;
+
+    transition:.35s;
+
+}
+
+.partner-item:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(214,0,0,.18);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.partner-item img{
+
+    max-width:120px;
+
+    max-height:60px;
+
+    opacity:.65;
+
+    filter:grayscale(100%);
+
+    transition:.35s;
+
+}
+
+.partner-item:hover img{
+
+    opacity:1;
+
+    filter:none;
+
+}
+
+/* ===========================================================
+   CERTIFICATION
+=========================================================== */
+
+.certification-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-top:70px;
+
+}
+
+.certification-card{
+
+    text-align:center;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    background:#fafafa;
+
+    transition:.35s;
+
+}
+
+.certification-card:hover{
+
+    background:#ffffff;
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+.certification-card img{
+
+    width:90px;
+
+    margin-bottom:18px;
+
+}
+
+.certification-card h5{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.certification-card p{
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   COMPANY ACTIVITIES
+=========================================================== */
+
+.activity-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+    margin-top:80px;
+
+}
+
+.activity-card{
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.activity-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.activity-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.activity-content{
+
+    padding:24px;
+
+}
+
+.activity-content h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.activity-content p{
+
+    color:#666666;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   VIDEO SECTION
+=========================================================== */
+
+.company-video{
+
+    margin-top:90px;
+
+}
+
+.video-wrapper{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+}
+
+.video-wrapper img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.video-play{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:34px;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.video-play:hover{
+
+    transform:translate(-50%,-50%) scale(1.08);
+
+}
+
+/* ===========================================================
+   BRANCH OFFICE
+=========================================================== */
+
+.branch-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+    margin-top:80px;
+
+}
+
+.branch-card{
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.branch-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.branch-card i{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+.branch-card h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.branch-card p{
+
+    margin-bottom:12px;
+
+    color:#666666;
+
+}
+
+.branch-card span{
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   GALLERY FILTER
+=========================================================== */
+
+.gallery-filter{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:40px;
+
+}
+
+.gallery-filter button{
+
+    padding:10px 22px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#f5f5f5;
+
+    color:#555555;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.gallery-filter button:hover,
+.gallery-filter button.active{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   ABOUT.CSS
+   Part 6
+   Gallery • Partners • Branch Office
+=========================================================== */
+
+/* ===========================================================
+   GALLERY SECTION
+=========================================================== */
+
+.about-gallery{
+
+    margin-top:90px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+.gallery-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    cursor:pointer;
+
+    background:#f5f5f5;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        transparent,
+
+        rgba(0,0,0,.75)
+
+    );
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:25px;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.gallery-item:hover .gallery-overlay{
+
+    opacity:1;
+
+}
+
+.gallery-overlay h4{
+
+    color:#ffffff;
+
+    margin-bottom:8px;
+
+}
+
+.gallery-overlay p{
+
+    color:rgba(255,255,255,.85);
+
+    margin:0;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   FEATURED IMAGE
+=========================================================== */
+
+.gallery-featured{
+
+    grid-column:span 2;
+
+    grid-row:span 2;
+
+}
+
+/* ===========================================================
+   OFFICE GALLERY
+=========================================================== */
+
+.office-gallery{
+
+    margin-top:80px;
+
+}
+
+.office-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.office-card{
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    background:#ffffff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.office-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.office-card-content{
+
+    padding:20px;
+
+}
+
+.office-card-content h5{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.office-card-content span{
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   PARTNER LOGOS
+=========================================================== */
+
+.partner-section{
+
+    margin-top:90px;
+
+}
+
+.partner-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.partner-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:25px;
+
+    align-items:center;
+
+}
+
+.partner-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+    border:1px solid #eeeeee;
+
+    transition:.35s;
+
+}
+
+.partner-item:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(214,0,0,.18);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.partner-item img{
+
+    max-width:120px;
+
+    max-height:60px;
+
+    opacity:.65;
+
+    filter:grayscale(100%);
+
+    transition:.35s;
+
+}
+
+.partner-item:hover img{
+
+    opacity:1;
+
+    filter:none;
+
+}
+
+/* ===========================================================
+   CERTIFICATION
+=========================================================== */
+
+.certification-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-top:70px;
+
+}
+
+.certification-card{
+
+    text-align:center;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    background:#fafafa;
+
+    transition:.35s;
+
+}
+
+.certification-card:hover{
+
+    background:#ffffff;
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+.certification-card img{
+
+    width:90px;
+
+    margin-bottom:18px;
+
+}
+
+.certification-card h5{
+
+    margin-bottom:8px;
+
+    color:var(--secondary);
+
+}
+
+.certification-card p{
+
+    color:#777777;
+
+}
+
+/* ===========================================================
+   COMPANY ACTIVITIES
+=========================================================== */
+
+.activity-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+    margin-top:80px;
+
+}
+
+.activity-card{
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.activity-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.activity-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.activity-content{
+
+    padding:24px;
+
+}
+
+.activity-content h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.activity-content p{
+
+    color:#666666;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   VIDEO SECTION
+=========================================================== */
+
+.company-video{
+
+    margin-top:90px;
+
+}
+
+.video-wrapper{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+}
+
+.video-wrapper img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.video-play{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:34px;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.video-play:hover{
+
+    transform:translate(-50%,-50%) scale(1.08);
+
+}
+
+/* ===========================================================
+   BRANCH OFFICE
+=========================================================== */
+
+.branch-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+    margin-top:80px;
+
+}
+
+.branch-card{
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.branch-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.branch-card i{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+.branch-card h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.branch-card p{
+
+    margin-bottom:12px;
+
+    color:#666666;
+
+}
+
+.branch-card span{
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   GALLERY FILTER
+=========================================================== */
+
+.gallery-filter{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:40px;
+
+}
+
+.gallery-filter button{
+
+    padding:10px 22px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#f5f5f5;
+
+    color:#555555;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.gallery-filter button:hover,
+.gallery-filter button.active{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   SERVICES.CSS
+   Part 7
+   Statistics • KPI • Timeline
+=========================================================== */
+
+/* ===========================================================
+   STATISTICS SECTION
+=========================================================== */
+
+.services-stats{
+
+    margin-top:100px;
+
+}
+
+.stats-header{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+}
+
+.stats-header h2{
+
+    margin-bottom:18px;
+
+    color:var(--secondary);
+
+}
+
+.stats-header p{
+
+    color:#666666;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   STATS GRID
+=========================================================== */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+.stat-card{
+
+    padding:34px;
+
+    text-align:center;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 28px 65px rgba(0,0,0,.12);
+
+}
+
+.stat-icon{
+
+    width:76px;
+
+    height:76px;
+
+    margin:0 auto 22px;
+
+    border-radius:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(214,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:30px;
+
+}
+
+.stat-card h3{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:42px;
+
+    font-weight:800;
+
+}
+
+.stat-card span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.stat-card p{
+
+    margin:0;
+
+    color:#777777;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================================
+   KPI DASHBOARD
+=========================================================== */
+
+.kpi-dashboard{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-top:90px;
+
+}
+
+.kpi-card{
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+}
+
+.kpi-card h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.kpi-value{
+
+    font-size:38px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+.kpi-progress{
+
+    width:100%;
+
+    height:10px;
+
+    overflow:hidden;
+
+    border-radius:999px;
+
+    background:#eeeeee;
+
+}
+
+.kpi-progress span{
+
+    display:block;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        #ff7070
+
+    );
+
+}
+
+/* ===========================================================
+   ACHIEVEMENTS
+=========================================================== */
+
+.service-achievements{
+
+    margin-top:100px;
+
+}
+
+.achievement-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.achievement-card{
+
+    padding:34px;
+
+    border-radius:26px;
+
+    background:#ffffff;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.achievement-card i{
+
+    font-size:42px;
+
+    color:#f4b400;
+
+    margin-bottom:20px;
+
+}
+
+.achievement-card h4{
+
+    margin-bottom:12px;
+
+    color:var(--secondary);
+
+}
+
+.achievement-card p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   SERVICE TIMELINE
+=========================================================== */
+
+.service-timeline{
+
+    position:relative;
+
+    margin-top:100px;
+
+    padding-left:55px;
+
+}
+
+.service-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:18px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:rgba(214,0,0,.15);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:45px;
+
+}
+
+.timeline-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-44px;
+
+    top:8px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    box-shadow:0 0 0 8px rgba(214,0,0,.10);
+
+}
+
+.timeline-content{
+
+    padding:28px;
+
+    border-radius:22px;
+
+    background:#ffffff;
+
+    box-shadow:0 16px 40px rgba(0,0,0,.08);
+
+}
+
+.timeline-content h4{
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.timeline-content span{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.timeline-content p{
+
+    color:#666666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   CLIENT COVERAGE
+=========================================================== */
+
+.client-coverage{
+
+    margin-top:100px;
+
+}
+
+.coverage-map{
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.coverage-map img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.coverage-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-top:35px;
+
+}
+
+.coverage-item{
+
+    text-align:center;
+
+    padding:24px;
+
+    border-radius:22px;
+
+    background:#fafafa;
+
+}
+
+.coverage-item h3{
+
+    margin-bottom:8px;
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+.coverage-item span{
+
+    color:#555555;
+
+}
+
+/* ===========================================================
+   BUSINESS METRICS
+=========================================================== */
+
+.business-metrics{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:100px;
+
+}
+
+.metric-card{
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.metric-card h3{
+
+    margin-bottom:24px;
+
+    color:var(--secondary);
+
+}
+
+.metric-item{
+
+    margin-bottom:24px;
+
+}
+
+.metric-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.metric-label{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+    color:#555555;
+
+    font-weight:600;
+
+}
+
+.metric-bar{
+
+    width:100%;
+
+    height:10px;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    background:#eeeeee;
+
+}
+
+.metric-bar span{
+
+    display:block;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        #ff7070
+
+    );
+
+}
+
+/* ===========================================================
+   PERFORMANCE INDICATORS
+=========================================================== */
+
+.performance-indicators{
+
+    margin-top:100px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.performance-card{
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+
+        180deg,
+
+        #ffffff,
+
+        #fafafa
+
+    );
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.performance-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.performance-card h2{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:42px;
+
+}
+
+.performance-card span{
+
+    display:block;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.performance-card p{
+
+    margin-top:10px;
+
+    color:#777777;
+
+    font-size:14px;
+
+}
+
+/* ===========================================================
+   ABOUT.CSS
+   Part 8
+   Dark Mode About
+=========================================================== */
+
+/* ===========================================================
+   ABOUT SECTION
+=========================================================== */
+
+body.dark .about{
+
+    background:#0f1117;
+
+    color:#ffffff;
+
+}
+
+body.dark .about-title{
+
+    color:#ffffff;
+
+}
+
+body.dark .about-title span{
+
+    color:#ff5c5c;
+
+}
+
+body.dark .about-subtitle{
+
+    color:#d7d7d7;
+
+}
+
+body.dark .about-description p,
+
+body.dark .about-text p{
+
+    color:#bdbdbd;
+
+}
+
+/* ===========================================================
+   BADGE
+=========================================================== */
+
+body.dark .about-badge{
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#ff6666;
+
+}
+
+body.dark .about-label{
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   ABOUT QUOTE
+=========================================================== */
+
+body.dark .about-quote{
+
+    background:#1b1f27;
+
+    border-left-color:#ff4b4b;
+
+}
+
+body.dark .about-quote p{
+
+    color:#d7d7d7;
+
+}
+
+/* ===========================================================
+   FEATURES
+=========================================================== */
+
+body.dark .about-feature{
+
+    background:#181d25;
+
+}
+
+body.dark .about-feature:hover{
+
+    background:#202632;
+
+}
+
+body.dark .about-feature h4{
+
+    color:#ffffff;
+
+}
+
+body.dark .about-feature p{
+
+    color:#c6c6c6;
+
+}
+
+body.dark .about-feature i{
+
+    background:rgba(255,80,80,.15);
+
+    color:#ff5c5c;
+
+}
+
+/* ===========================================================
+   COMPANY VISION
+=========================================================== */
+
+body.dark .company-vision{
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #7d0000,
+
+            #d10000
+
+        );
+
+}
+
+/* ===========================================================
+   MISSION
+=========================================================== */
+
+body.dark .mission-card{
+
+    background:#181d25;
+
+}
+
+body.dark .mission-card h4{
+
+    color:#ffffff;
+
+}
+
+body.dark .mission-card p{
+
+    color:#c9c9c9;
+
+}
+
+body.dark .mission-card i{
+
+    background:rgba(255,80,80,.15);
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   VALUE CARD
+=========================================================== */
+
+body.dark .value-card{
+
+    background:#181d25;
+
+}
+
+body.dark .value-card:hover{
+
+    background:#222936;
+
+}
+
+body.dark .value-card h5{
+
+    color:#ffffff;
+
+}
+
+body.dark .value-card p{
+
+    color:#c9c9c9;
+
+}
+
+/* ===========================================================
+   HIGHLIGHT CARD
+=========================================================== */
+
+body.dark .highlight-card{
+
+    background:#181d25;
+
+    border-color:#2a2f39;
+
+}
+
+body.dark .highlight-card:hover{
+
+    border-color:#ff5555;
+
+}
+
+body.dark .highlight-card h4{
+
+    color:#ffffff;
+
+}
+
+body.dark .highlight-card p{
+
+    color:#c8c8c8;
+
+}
+
+/* ===========================================================
+   STATISTICS
+=========================================================== */
+
+body.dark .about-stat,
+
+body.dark .kpi-card,
+
+body.dark .client-card,
+
+body.dark .summary-card,
+
+body.dark .achievement-item{
+
+    background:#181d25;
+
+    border-color:#2b313d;
+
+}
+
+body.dark .about-stat span,
+
+body.dark .client-card span,
+
+body.dark .kpi-card span{
+
+    color:#ffffff;
+
+}
+
+body.dark .about-stat p,
+
+body.dark .summary-card p,
+
+body.dark .achievement-item p{
+
+    color:#bbbbbb;
+
+}
+
+body.dark .about-stat h2,
+
+body.dark .summary-card h3,
+
+body.dark .client-card h4,
+
+body.dark .kpi-card h3{
+
+    color:#ff5b5b;
+
+}
+
+/* ===========================================================
+   CEO
+=========================================================== */
+
+body.dark .ceo-content h2{
+
+    color:#ffffff;
+
+}
+
+body.dark .ceo-content p{
+
+    color:#c8c8c8;
+
+}
+
+body.dark .ceo-card{
+
+    background:#1b2029;
+
+}
+
+body.dark .ceo-card h4{
+
+    color:#ffffff;
+
+}
+
+body.dark .ceo-social a{
+
+    background:#232933;
+
+    color:#ffffff;
+
+}
+
+body.dark .ceo-social a:hover{
+
+    background:#d60000;
+
+}
+
+/* ===========================================================
+   COMPANY HISTORY
+=========================================================== */
+
+body.dark .company-history h2{
+
+    color:#ffffff;
+
+}
+
+body.dark .company-history p{
+
+    color:#c8c8c8;
+
+}
+
+/* ===========================================================
+   TIMELINE
+=========================================================== */
+
+body.dark .timeline::before{
+
+    background:#333944;
+
+}
+
+body.dark .timeline-content{
+
+    background:#181d25;
+
+}
+
+body.dark .timeline-content h4{
+
+    color:#ffffff;
+
+}
+
+body.dark .timeline-content p{
+
+    color:#c8c8c8;
+
+}
+
+body.dark .timeline-year{
+
+    background:rgba(255,80,80,.15);
+
+    color:#ff6666;
+
+}
+
+/* ===========================================================
+   TEAM
+=========================================================== */
+
+body.dark .team-card{
+
+    background:#181d25;
+
+}
+
+body.dark .team-card-content h4{
+
+    color:#ffffff;
+
+}
+
+body.dark .team-card-content p{
+
+    color:#c7c7c7;
+
+}
+
+/* ===========================================================
+   GALLERY
+=========================================================== */
+
+body.dark .gallery-item{
+
+    background:#181d25;
+
+}
+
+body.dark .office-card,
+
+body.dark .activity-card,
+
+body.dark .branch-card{
+
+    background:#181d25;
+
+}
+
+body.dark .office-card-content h5,
+
+body.dark .activity-content h4,
+
+body.dark .branch-card h4{
+
+    color:#ffffff;
+
+}
+
+body.dark .office-card-content span,
+
+body.dark .activity-content p,
+
+body.dark .branch-card p,
+
+body.dark .branch-card span{
+
+    color:#c7c7c7;
+
+}
+
+/* ===========================================================
+   PARTNER
+=========================================================== */
+
+body.dark .partner-item{
+
+    background:#181d25;
+
+    border-color:#2b313d;
+
+}
+
+body.dark .partner-item:hover{
+
+    border-color:#ff5555;
+
+}
+
+body.dark .partner-item img{
+
+    opacity:.85;
+
+    filter:none;
+
+}
+
+/* ===========================================================
+   CERTIFICATION
+=========================================================== */
+
+body.dark .certification-card{
+
+    background:#181d25;
+
+}
+
+body.dark .certification-card h5{
+
+    color:#ffffff;
+
+}
+
+body.dark .certification-card p{
+
+    color:#c8c8c8;
+
+}
+
+/* ===========================================================
+   SCORE
+=========================================================== */
+
+body.dark .score-circle{
+
+    border-color:rgba(255,255,255,.08);
+
+}
+
+body.dark .score-circle span{
+
+    color:#c8c8c8;
+
+}
+
+/* ===========================================================
+   FILTER BUTTON
+=========================================================== */
+
+body.dark .gallery-filter button{
+
+    background:#232933;
+
+    color:#ffffff;
+
+}
+
+body.dark .gallery-filter button:hover,
+
+body.dark .gallery-filter button.active{
+
+    background:#d60000;
+
+}
+/* ===========================================================
+   ABOUT.CSS
+   Part 9
+   Utility Classes
+=========================================================== */
+
+/* ===========================================================
+   DISPLAY
+=========================================================== */
+
+.about-block{
+
+    display:block;
+
+}
+
+.about-inline{
+
+    display:inline-block;
+
+}
+
+.about-flex{
+
+    display:flex;
+
+}
+
+.about-inline-flex{
+
+    display:inline-flex;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+}
+
+.about-hidden{
+
+    display:none;
+
+}
+
+/* ===========================================================
+   ALIGNMENT
+=========================================================== */
+
+.about-center{
+
+    text-align:center;
+
+}
+
+.about-left{
+
+    text-align:left;
+
+}
+
+.about-right{
+
+    text-align:right;
+
+}
+
+.about-align-center{
+
+    align-items:center;
+
+}
+
+.about-align-start{
+
+    align-items:flex-start;
+
+}
+
+.about-align-end{
+
+    align-items:flex-end;
+
+}
+
+.about-justify-center{
+
+    justify-content:center;
+
+}
+
+.about-space-between{
+
+    justify-content:space-between;
+
+}
+
+.about-space-around{
+
+    justify-content:space-around;
+
+}
+
+/* ===========================================================
+   FLEX HELPERS
+=========================================================== */
+
+.about-row{
+
+    flex-direction:row;
+
+}
+
+.about-column{
+
+    flex-direction:column;
+
+}
+
+.about-wrap{
+
+    flex-wrap:wrap;
+
+}
+
+.about-nowrap{
+
+    flex-wrap:nowrap;
+
+}
+
+/* ===========================================================
+   WIDTH
+=========================================================== */
+
+.about-w-100{
+
+    width:100%;
+
+}
+
+.about-w-75{
+
+    width:75%;
+
+}
+
+.about-w-50{
+
+    width:50%;
+
+}
+
+.about-auto{
+
+    width:auto;
+
+}
+
+.about-max{
+
+    max-width:1280px;
+
+    margin:auto;
+
+}
+
+/* ===========================================================
+   MARGIN
+=========================================================== */
+
+.about-mt-20{margin-top:20px;}
+.about-mt-40{margin-top:40px;}
+.about-mt-60{margin-top:60px;}
+.about-mt-80{margin-top:80px;}
+
+.about-mb-20{margin-bottom:20px;}
+.about-mb-40{margin-bottom:40px;}
+.about-mb-60{margin-bottom:60px;}
+.about-mb-80{margin-bottom:80px;}
+
+/* ===========================================================
+   PADDING
+=========================================================== */
+
+.about-p-20{padding:20px;}
+.about-p-30{padding:30px;}
+.about-p-40{padding:40px;}
+.about-p-60{padding:60px;}
+
+/* ===========================================================
+   BORDER RADIUS
+=========================================================== */
+
+.about-radius-sm{
+
+    border-radius:12px;
+
+}
+
+.about-radius-md{
+
+    border-radius:20px;
+
+}
+
+.about-radius-lg{
+
+    border-radius:30px;
+
+}
+
+.about-radius-full{
+
+    border-radius:999px;
+
+}
+
+/* ===========================================================
+   SHADOW
+=========================================================== */
+
+.about-shadow-sm{
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.about-shadow-md{
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.about-shadow-lg{
+
+    box-shadow:0 30px 70px rgba(0,0,0,.16);
+
+}
+
+.about-shadow-none{
+
+    box-shadow:none;
+
+}
+
+/* ===========================================================
+   BACKGROUND
+=========================================================== */
+
+.about-bg-white{
+
+    background:#ffffff;
+
+}
+
+.about-bg-light{
+
+    background:#f8f9fb;
+
+}
+
+.about-bg-dark{
+
+    background:#151515;
+
+}
+
+.about-bg-primary{
+
+    background:var(--primary);
+
+}
+
+.about-bg-gradient{
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        #ff6767
+
+    );
+
+}
+
+/* ===========================================================
+   GLASS EFFECT
+=========================================================== */
+
+.about-glass{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+.about-glass-dark{
+
+    background:rgba(25,25,25,.70);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================================================
+   TYPOGRAPHY
+=========================================================== */
+
+.about-text-white{
+
+    color:#ffffff;
+
+}
+
+.about-text-dark{
+
+    color:var(--secondary);
+
+}
+
+.about-text-primary{
+
+    color:var(--primary);
+
+}
+
+.about-text-muted{
+
+    color:#777777;
+
+}
+
+.about-bold{
+
+    font-weight:700;
+
+}
+
+.about-semibold{
+
+    font-weight:600;
+
+}
+
+.about-light{
+
+    font-weight:300;
+
+}
+
+.about-uppercase{
+
+    text-transform:uppercase;
+
+}
+
+.about-capitalize{
+
+    text-transform:capitalize;
+
+}
+
+/* ===========================================================
+   POSITION
+=========================================================== */
+
+.about-relative{
+
+    position:relative;
+
+}
+
+.about-absolute{
+
+    position:absolute;
+
+}
+
+.about-fixed{
+
+    position:fixed;
+
+}
+
+.about-sticky{
+
+    position:sticky;
+
+}
+
+.about-z1{
+
+    z-index:1;
+
+}
+
+.about-z5{
+
+    z-index:5;
+
+}
+
+.about-z10{
+
+    z-index:10;
+
+}
+
+/* ===========================================================
+   OVERFLOW
+=========================================================== */
+
+.about-overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+.about-overflow-visible{
+
+    overflow:visible;
+
+}
+
+/* ===========================================================
+   CURSOR
+=========================================================== */
+
+.about-pointer{
+
+    cursor:pointer;
+
+}
+
+.about-disabled{
+
+    pointer-events:none;
+
+}
+
+/* ===========================================================
+   TRANSITIONS
+=========================================================== */
+
+.about-transition{
+
+    transition:.35s ease;
+
+}
+
+.about-transition-fast{
+
+    transition:.2s ease;
+
+}
+
+.about-transition-slow{
+
+    transition:.6s ease;
+
+}
+
+/* ===========================================================
+   HOVER EFFECTS
+=========================================================== */
+
+.about-hover-up:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.about-hover-scale:hover{
+
+    transform:scale(1.04);
+
+}
+
+.about-hover-shadow:hover{
+
+    box-shadow:0 25px 60px rgba(0,0,0,.16);
+
+}
+
+.about-hover-primary:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   IMAGE HELPERS
+=========================================================== */
+
+.about-img-cover{
+
+    object-fit:cover;
+
+}
+
+.about-img-contain{
+
+    object-fit:contain;
+
+}
+
+.about-img-rounded{
+
+    border-radius:24px;
+
+}
+
+.about-img-circle{
+
+    border-radius:50%;
+
+}
+
+/* ===========================================================
+   OPACITY
+=========================================================== */
+
+.about-opacity-25{
+
+    opacity:.25;
+
+}
+
+.about-opacity-50{
+
+    opacity:.5;
+
+}
+
+.about-opacity-75{
+
+    opacity:.75;
+
+}
+
+.about-opacity-100{
+
+    opacity:1;
+
+}
+
+/* ===========================================================
+   END PART 9
+=========================================================== */
+/* ===========================================================
+   ABOUT.CSS
+   Part 10
+   Final Optimization & Utilities
+=========================================================== */
+
+/* ===========================================================
+   PERFORMANCE OPTIMIZATION
+=========================================================== */
+
+.about,
+.about-container,
+.about-content,
+.about-image,
+.about-card,
+.team-card,
+.gallery-item{
+
+    will-change:transform, opacity;
+
+    backface-visibility:hidden;
+
+    transform:translateZ(0);
+
+}
+
+.about img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   ACCESSIBILITY
+=========================================================== */
+
+.about a:focus,
+.about button:focus,
+.about input:focus,
+.about textarea:focus,
+.about select:focus{
+
+    outline:3px solid rgba(214,0,0,.35);
+
+    outline-offset:4px;
+
+    border-radius:8px;
+
+}
+
+.about button:focus-visible,
+.about a:focus-visible{
+
+    box-shadow:0 0 0 5px rgba(214,0,0,.18);
+
+}
+
+/* ===========================================================
+   SELECTION
+=========================================================== */
+
+.about ::selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.about ::-moz-selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===========================================================
+   LOADING STATE
+=========================================================== */
+
+.about-loading{
+
+    position:relative;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    opacity:.65;
+
+}
+
+.about-loading::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.30),
+        transparent
+    );
+
+    animation:aboutLoading 1.5s linear infinite;
+
+}
+
+@keyframes aboutLoading{
+
+    from{
+
+        transform:translateX(-100%);
+
+    }
+
+    to{
+
+        transform:translateX(100%);
+
+    }
+
+}
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.about *,
+.about::before,
+.about::after{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+
+}
+
+}
+
+/* ===========================================================
+   HIGH CONTRAST
+=========================================================== */
+
+@media (prefers-contrast:more){
+
+.about-title{
+
+    font-weight:900;
+
+}
+
+.about-subtitle{
+
+    color:#222222;
+
+}
+
+.about-card,
+.team-card,
+.branch-card{
+
+    border:2px solid #000000;
+
+}
+
+}
+
+/* ===========================================================
+   PRINT
+=========================================================== */
+
+@media print{
+
+.about{
+
+    padding:40px 0;
+
+    background:#ffffff !important;
+
+    color:#000000 !important;
+
+}
+
+.about-badge,
+.ceo-social,
+.gallery-filter,
+.partner-section,
+.company-video,
+.about-card,
+.company-card,
+.growth-card,
+.experience-card,
+.achievement-badge,
+.experience-widget{
+
+    display:none !important;
+
+}
+
+.about-title,
+.company-history h2,
+.ceo-content h2{
+
+    color:#000000 !important;
+
+}
+
+.about-description p,
+.company-history p,
+.ceo-content p{
+
+    color:#333333 !important;
+
+}
+
+}
+
+/* ===========================================================
+   SAFE AREA SUPPORT
+=========================================================== */
+
+@supports (padding:max(0px)){
+
+.about{
+
+    padding-left:max(24px, env(safe-area-inset-left));
+
+    padding-right:max(24px, env(safe-area-inset-right));
+
+}
+
+}
+
+/* ===========================================================
+   GPU HELPERS
+=========================================================== */
+
+.about-gpu{
+
+    transform:translate3d(0,0,0);
+
+    will-change:transform;
+
+}
+
+.about-no-select{
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+    -moz-user-select:none;
+
+}
+
+.about-select{
+
+    user-select:text;
+
+}
+
+/* ===========================================================
+   IMAGE OPTIMIZATION
+=========================================================== */
+
+.about img{
+
+    image-rendering:auto;
+
+    loading:lazy;
+
+}
+
+.about-image img,
+.gallery-item img,
+.office-card img,
+.activity-card img{
+
+    object-fit:cover;
+
+}
+
+/* ===========================================================
+   SCROLL HELPERS
+=========================================================== */
+
+.about-scroll{
+
+    scroll-margin-top:100px;
+
+}
+
+.about-sticky-offset{
+
+    top:100px;
+
+}
+
+/* ===========================================================
+   CONTAINER HELPERS
+=========================================================== */
+
+.about-container-fluid{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding-left:30px;
+
+    padding-right:30px;
+
+}
+
+.about-container-narrow{
+
+    max-width:960px;
+
+    margin:0 auto;
+
+}
+
+/* ===========================================================
+   FINAL CLEANUP
+=========================================================== */
+
+.about *{
+
+    box-sizing:border-box;
+
+}
+
+.about iframe{
+
+    border:0;
+
+    max-width:100%;
+
+}
+
+.about svg{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+.about video{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================================================
+   END OF ABOUT.CSS
+=========================================================== */
+
+/* ===========================================================
+   ABOUT.CSS
+   Bonus Part 11
+   Premium Enterprise Effects
+=========================================================== */
+
+/* ===========================================================
+   PREMIUM SECTION
+=========================================================== */
+
+.about-premium{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.about-premium::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(214,0,0,.08),
+            transparent 35%,
+            rgba(255,255,255,.05) 65%,
+            rgba(214,0,0,.08)
+        );
+
+    pointer-events:none;
+
+}
+
+/* ===========================================================
+   SHINE EFFECT
+=========================================================== */
+
+.about-shine{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.about-shine::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-50%;
+
+    left:-120%;
+
+    width:60%;
+
+    height:220%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.35),
+            transparent
+        );
+
+    transform:rotate(25deg);
+
+    animation:aboutShine 7s linear infinite;
+
+}
+
+@keyframes aboutShine{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:180%;
+
+    }
+
+}
+
+/* ===========================================================
+   FLOAT ANIMATION
+=========================================================== */
+
+.about-float{
+
+    animation:aboutFloat 7s ease-in-out infinite;
+
+}
+
+@keyframes aboutFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================================================
+   IMAGE GLOW
+=========================================================== */
+
+.about-image-glow{
+
+    position:absolute;
+
+    width:360px;
+
+    height:360px;
+
+    border-radius:50%;
+
+    background:rgba(214,0,0,.14);
+
+    filter:blur(110px);
+
+    z-index:-1;
+
+}
+
+/* ===========================================================
+   ROTATING RING
+=========================================================== */
+
+.about-ring{
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    border:2px dashed rgba(214,0,0,.18);
+
+    animation:aboutRotate 28s linear infinite;
+
+}
+
+@keyframes aboutRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ===========================================================
+   GRID BACKGROUND
+=========================================================== */
+
+.about-grid-light{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+        radial-gradient(
+            rgba(214,0,0,.08) 1px,
+            transparent 1px
+        );
+
+    background-size:34px 34px;
+
+    opacity:.28;
+
+}
+
+/* ===========================================================
+   PREMIUM CARD
+=========================================================== */
+
+.about-premium-card{
+
+    background:rgba(255,255,255,.86);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.30);
+
+    border-radius:28px;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.10),
+        inset 0 1px 0 rgba(255,255,255,.60);
+
+}
+
+/* ===========================================================
+   ICON BOX
+=========================================================== */
+
+.about-icon-box{
+
+    width:68px;
+
+    height:68px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            #ff6565
+        );
+
+    color:#ffffff;
+
+    font-size:28px;
+
+    box-shadow:0 20px 40px rgba(214,0,0,.25);
+
+}
+
+/* ===========================================================
+   PREMIUM BADGE
+=========================================================== */
+
+.about-premium-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(214,0,0,.10),
+            rgba(255,255,255,.92)
+        );
+
+    backdrop-filter:blur(14px);
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+   TEXT SHIMMER
+=========================================================== */
+
+.about-text-shimmer{
+
+    background:
+        linear-gradient(
+            90deg,
+            #222222,
+            var(--primary),
+            #222222
+        );
+
+    background-size:200% auto;
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    color:transparent;
+
+    animation:aboutTextShimmer 4s linear infinite;
+
+}
+
+@keyframes aboutTextShimmer{
+
+    from{
+
+        background-position:-200% center;
+
+    }
+
+    to{
+
+        background-position:200% center;
+
+    }
+
+}
+
+/* ===========================================================
+   HOVER EFFECT
+=========================================================== */
+
+.about-premium-hover{
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+
+}
+
+.about-premium-hover:hover{
+
+    transform:
+        translateY(-10px)
+        scale(1.02);
+
+    box-shadow:
+        0 35px 70px rgba(0,0,0,.16);
+
+}
+
+/* ===========================================================
+   GLASS BORDER
+=========================================================== */
+
+.about-glass-border{
+
+    border:1px solid rgba(255,255,255,.25);
+
+    backdrop-filter:blur(18px);
+
+}
+
+/* ===========================================================
+   END BONUS PART 11
+=========================================================== */
+
+/* ===========================================================
+   ABOUT.CSS
+   Bonus Part 12
+   Enterprise Interactive Effects
+=========================================================== */
+
+/* ===========================================================
+   ANIMATED BACKGROUND
+=========================================================== */
+
+.about-background{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+}
+
+.about-background span{
+
+    position:absolute;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:rgba(214,0,0,.12);
+
+    animation:aboutParticle 18s linear infinite;
+
+}
+
+.about-background span:nth-child(1){
+
+    left:8%;
+
+    animation-duration:12s;
+
+}
+
+.about-background span:nth-child(2){
+
+    left:20%;
+
+    animation-duration:16s;
+
+}
+
+.about-background span:nth-child(3){
+
+    left:35%;
+
+    animation-duration:14s;
+
+}
+
+.about-background span:nth-child(4){
+
+    left:55%;
+
+    animation-duration:18s;
+
+}
+
+.about-background span:nth-child(5){
+
+    left:72%;
+
+    animation-duration:15s;
+
+}
+
+.about-background span:nth-child(6){
+
+    left:90%;
+
+    animation-duration:17s;
+
+}
+
+@keyframes aboutParticle{
+
+    from{
+
+        transform:
+            translateY(120vh)
+            scale(.5);
+
+        opacity:0;
+
+    }
+
+    25%{
+
+        opacity:.55;
+
+    }
+
+    75%{
+
+        opacity:.55;
+
+    }
+
+    to{
+
+        transform:
+            translateY(-120px)
+            scale(1.6);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================================================
+   FLOATING SHAPES
+=========================================================== */
+
+.about-shape{
+
+    position:absolute;
+
+    opacity:.25;
+
+    pointer-events:none;
+
+}
+
+.about-shape.circle{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    border:2px solid rgba(214,0,0,.18);
+
+}
+
+.about-shape.square{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:20px;
+
+    border:2px solid rgba(214,0,0,.18);
+
+    transform:rotate(25deg);
+
+}
+
+.about-shape.triangle{
+
+    width:0;
+
+    height:0;
+
+    border-left:35px solid transparent;
+
+    border-right:35px solid transparent;
+
+    border-bottom:60px solid rgba(214,0,0,.12);
+
+}
+
+/* ===========================================================
+   GRADIENT BORDER
+=========================================================== */
+
+.about-gradient-border{
+
+    position:relative;
+
+    border-radius:28px;
+
+    padding:2px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #ff8080,
+        #ffffff
+    );
+
+}
+
+.about-gradient-border > *{
+
+    background:#ffffff;
+
+    border-radius:26px;
+
+}
+
+/* ===========================================================
+   GLOW CARD
+=========================================================== */
+
+.about-glow-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.about-glow-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    top:-110px;
+
+    right:-110px;
+
+    border-radius:50%;
+
+    background:rgba(214,0,0,.15);
+
+    filter:blur(60px);
+
+}
+
+/* ===========================================================
+   PREMIUM NUMBER
+=========================================================== */
+
+.about-number{
+
+    font-size:64px;
+
+    font-weight:900;
+
+    line-height:1;
+
+    color:rgba(214,0,0,.08);
+
+    user-select:none;
+
+}
+
+/* ===========================================================
+   TIMELINE CONNECTOR
+=========================================================== */
+
+.timeline-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-34px;
+
+    top:30px;
+
+    width:2px;
+
+    height:calc(100% + 18px);
+
+    background:rgba(214,0,0,.12);
+
+}
+
+.timeline-item:last-child::after{
+
+    display:none;
+
+}
+
+/* ===========================================================
+   IMAGE ZOOM EFFECT
+=========================================================== */
+
+.about-image-hover{
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+}
+
+.about-image-hover img{
+
+    transition:transform .6s ease;
+
+}
+
+.about-image-hover:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================================================
+   PREMIUM BUTTON
+=========================================================== */
+
+.about-btn-premium{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px 34px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #ff5f5f
+    );
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+}
+
+.about-btn-premium:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(214,0,0,.28);
+
+}
+
+/* ===========================================================
+   END BONUS PART 12
+=========================================================== */
